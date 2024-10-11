@@ -1,0 +1,833 @@
+D:\window_app\win-project-2\win-project-2\bin\Debug\win-project-2.exe.config
+D:\window_app\win-project-2\win-project-2\bin\Debug\win-project-2.exe
+D:\window_app\win-project-2\win-project-2\bin\Debug\win-project-2.pdb
+D:\window_app\win-project-2\win-project-2\bin\Debug\Firebase.Auth.dll
+D:\window_app\win-project-2\win-project-2\bin\Debug\FireSharp.dll
+D:\window_app\win-project-2\win-project-2\bin\Debug\Google.Api.Gax.dll
+D:\window_app\win-project-2\win-project-2\bin\Debug\Google.Api.Gax.Rest.dll
+D:\window_app\win-project-2\win-project-2\bin\Debug\Google.Apis.Auth.dll
+D:\window_app\win-project-2\win-project-2\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+D:\window_app\win-project-2\win-project-2\bin\Debug\Google.Apis.Core.dll
+D:\window_app\win-project-2\win-project-2\bin\Debug\Google.Apis.dll
+D:\window_app\win-project-2\win-project-2\bin\Debug\Google.Apis.PlatformServices.dll
+D:\window_app\win-project-2\win-project-2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\window_app\win-project-2\win-project-2\bin\Debug\Microsoft.Threading.Tasks.dll
+D:\window_app\win-project-2\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+D:\window_app\win-project-2\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+D:\window_app\win-project-2\win-project-2\bin\Debug\Newtonsoft.Json.dll
+D:\window_app\win-project-2\win-project-2\bin\Debug\System.Buffers.dll
+D:\window_app\win-project-2\win-project-2\bin\Debug\System.Collections.Immutable.dll
+D:\window_app\win-project-2\win-project-2\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\window_app\win-project-2\win-project-2\bin\Debug\System.Memory.dll
+D:\window_app\win-project-2\win-project-2\bin\Debug\System.Net.Http.Extensions.dll
+D:\window_app\win-project-2\win-project-2\bin\Debug\System.Net.Http.Primitives.dll
+D:\window_app\win-project-2\win-project-2\bin\Debug\System.Numerics.Vectors.dll
+D:\window_app\win-project-2\win-project-2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\window_app\win-project-2\win-project-2\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\window_app\win-project-2\win-project-2\bin\Debug\Google.Api.Gax.pdb
+D:\window_app\win-project-2\win-project-2\bin\Debug\Google.Api.Gax.xml
+D:\window_app\win-project-2\win-project-2\bin\Debug\Google.Api.Gax.Rest.pdb
+D:\window_app\win-project-2\win-project-2\bin\Debug\Google.Api.Gax.Rest.xml
+D:\window_app\win-project-2\win-project-2\bin\Debug\Google.Apis.pdb
+D:\window_app\win-project-2\win-project-2\bin\Debug\Google.Apis.xml
+D:\window_app\win-project-2\win-project-2\bin\Debug\Google.Apis.Auth.pdb
+D:\window_app\win-project-2\win-project-2\bin\Debug\Google.Apis.Auth.xml
+D:\window_app\win-project-2\win-project-2\bin\Debug\Google.Apis.Core.pdb
+D:\window_app\win-project-2\win-project-2\bin\Debug\Google.Apis.Core.xml
+D:\window_app\win-project-2\win-project-2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\window_app\win-project-2\win-project-2\bin\Debug\Microsoft.Threading.Tasks.xml
+D:\window_app\win-project-2\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+D:\window_app\win-project-2\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+D:\window_app\win-project-2\win-project-2\bin\Debug\Newtonsoft.Json.xml
+D:\window_app\win-project-2\win-project-2\bin\Debug\System.Buffers.xml
+D:\window_app\win-project-2\win-project-2\bin\Debug\System.Collections.Immutable.xml
+D:\window_app\win-project-2\win-project-2\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\window_app\win-project-2\win-project-2\bin\Debug\System.Memory.xml
+D:\window_app\win-project-2\win-project-2\bin\Debug\System.Net.Http.Extensions.xml
+D:\window_app\win-project-2\win-project-2\bin\Debug\System.Net.Http.Primitives.xml
+D:\window_app\win-project-2\win-project-2\bin\Debug\System.Numerics.Vectors.xml
+D:\window_app\win-project-2\win-project-2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\window_app\win-project-2\win-project-2\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\window_app\win-project-2\win-project-2\obj\Debug\win-project-2.csproj.App.config
+D:\window_app\win-project-2\win-project-2\obj\Debug\win-project-2.csproj.AssemblyReference.cache
+D:\window_app\win-project-2\win-project-2\obj\Debug\win-project-2.csproj.SuggestedBindingRedirects.cache
+D:\window_app\win-project-2\win-project-2\obj\Debug\win-project-2.exe.config
+D:\window_app\win-project-2\win-project-2\obj\Debug\win_project_2.Form1.resources
+D:\window_app\win-project-2\win-project-2\obj\Debug\win_project_2.Properties.Resources.resources
+D:\window_app\win-project-2\win-project-2\obj\Debug\win-project-2.csproj.GenerateResource.cache
+D:\window_app\win-project-2\win-project-2\obj\Debug\win-project-2.csproj.CoreCompileInputs.cache
+D:\window_app\win-project-2\win-project-2\obj\Debug\win-proj.20E85E94.Up2Date
+D:\window_app\win-project-2\win-project-2\obj\Debug\win-project-2.exe
+D:\window_app\win-project-2\win-project-2\obj\Debug\win-project-2.pdb
+D:\window_app\win-project-2\win-project-2\bin\Debug\Guna.UI2.dll
+D:\window_app\win-project-2\win-project-2\obj\Debug\win_project_2.LoginForm.resources
+D:\window_app\win-project-2\win-project-2\bin\Debug\RJCodeAdvance.RJControls.dll
+D:\window_app\win-project-2\win-project-2\obj\Debug\win_project_2.InforForm.resources
+D:\window_app\win-project-2\win-project-2\bin\Debug\Firebase.Storage.dll
+D:\window_app\winproject\win-project-2\bin\Debug\win-project-2.exe.config
+D:\window_app\winproject\win-project-2\bin\Debug\win-project-2.exe
+D:\window_app\winproject\win-project-2\bin\Debug\win-project-2.pdb
+D:\window_app\winproject\win-project-2\bin\Debug\Firebase.Auth.dll
+D:\window_app\winproject\win-project-2\bin\Debug\Firebase.Storage.dll
+D:\window_app\winproject\win-project-2\bin\Debug\FireSharp.dll
+D:\window_app\winproject\win-project-2\bin\Debug\Google.Api.Gax.dll
+D:\window_app\winproject\win-project-2\bin\Debug\Google.Api.Gax.Rest.dll
+D:\window_app\winproject\win-project-2\bin\Debug\Google.Apis.Auth.dll
+D:\window_app\winproject\win-project-2\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+D:\window_app\winproject\win-project-2\bin\Debug\Google.Apis.Core.dll
+D:\window_app\winproject\win-project-2\bin\Debug\Google.Apis.dll
+D:\window_app\winproject\win-project-2\bin\Debug\Google.Apis.PlatformServices.dll
+D:\window_app\winproject\win-project-2\bin\Debug\Guna.UI2.dll
+D:\window_app\winproject\win-project-2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\window_app\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.dll
+D:\window_app\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+D:\window_app\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+D:\window_app\winproject\win-project-2\bin\Debug\Newtonsoft.Json.dll
+D:\window_app\winproject\win-project-2\bin\Debug\RJCodeAdvance.RJControls.dll
+D:\window_app\winproject\win-project-2\bin\Debug\System.Buffers.dll
+D:\window_app\winproject\win-project-2\bin\Debug\System.Collections.Immutable.dll
+D:\window_app\winproject\win-project-2\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\window_app\winproject\win-project-2\bin\Debug\System.Memory.dll
+D:\window_app\winproject\win-project-2\bin\Debug\System.Net.Http.Extensions.dll
+D:\window_app\winproject\win-project-2\bin\Debug\System.Net.Http.Primitives.dll
+D:\window_app\winproject\win-project-2\bin\Debug\System.Numerics.Vectors.dll
+D:\window_app\winproject\win-project-2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\window_app\winproject\win-project-2\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\window_app\winproject\win-project-2\bin\Debug\Google.Api.Gax.pdb
+D:\window_app\winproject\win-project-2\bin\Debug\Google.Api.Gax.xml
+D:\window_app\winproject\win-project-2\bin\Debug\Google.Api.Gax.Rest.pdb
+D:\window_app\winproject\win-project-2\bin\Debug\Google.Api.Gax.Rest.xml
+D:\window_app\winproject\win-project-2\bin\Debug\Google.Apis.pdb
+D:\window_app\winproject\win-project-2\bin\Debug\Google.Apis.xml
+D:\window_app\winproject\win-project-2\bin\Debug\Google.Apis.Auth.pdb
+D:\window_app\winproject\win-project-2\bin\Debug\Google.Apis.Auth.xml
+D:\window_app\winproject\win-project-2\bin\Debug\Google.Apis.Core.pdb
+D:\window_app\winproject\win-project-2\bin\Debug\Google.Apis.Core.xml
+D:\window_app\winproject\win-project-2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\window_app\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.xml
+D:\window_app\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+D:\window_app\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+D:\window_app\winproject\win-project-2\bin\Debug\Newtonsoft.Json.xml
+D:\window_app\winproject\win-project-2\bin\Debug\System.Buffers.xml
+D:\window_app\winproject\win-project-2\bin\Debug\System.Collections.Immutable.xml
+D:\window_app\winproject\win-project-2\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\window_app\winproject\win-project-2\bin\Debug\System.Memory.xml
+D:\window_app\winproject\win-project-2\bin\Debug\System.Net.Http.Extensions.xml
+D:\window_app\winproject\win-project-2\bin\Debug\System.Net.Http.Primitives.xml
+D:\window_app\winproject\win-project-2\bin\Debug\System.Numerics.Vectors.xml
+D:\window_app\winproject\win-project-2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\window_app\winproject\win-project-2\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\window_app\winproject\win-project-2\obj\Debug\win-project-2.csproj.App.config
+D:\window_app\winproject\win-project-2\obj\Debug\win-project-2.csproj.AssemblyReference.cache
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.LoginForm.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.Properties.Resources.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win-project-2.csproj.GenerateResource.cache
+D:\window_app\winproject\win-project-2\obj\Debug\win-project-2.csproj.CoreCompileInputs.cache
+D:\window_app\winproject\win-project-2\obj\Debug\win-proj.20E85E94.Up2Date
+D:\window_app\winproject\win-project-2\obj\Debug\win-project-2.exe
+D:\window_app\winproject\win-project-2\obj\Debug\win-project-2.pdb
+D:\window_app\winproject2\win-project-2\bin\Debug\win-project-2.exe.config
+D:\window_app\winproject2\win-project-2\bin\Debug\win-project-2.exe
+D:\window_app\winproject2\win-project-2\bin\Debug\win-project-2.pdb
+D:\window_app\winproject2\win-project-2\bin\Debug\Firebase.Auth.dll
+D:\window_app\winproject2\win-project-2\bin\Debug\Firebase.Storage.dll
+D:\window_app\winproject2\win-project-2\bin\Debug\FireSharp.dll
+D:\window_app\winproject2\win-project-2\bin\Debug\Google.Api.Gax.dll
+D:\window_app\winproject2\win-project-2\bin\Debug\Google.Api.Gax.Rest.dll
+D:\window_app\winproject2\win-project-2\bin\Debug\Google.Apis.Auth.dll
+D:\window_app\winproject2\win-project-2\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+D:\window_app\winproject2\win-project-2\bin\Debug\Google.Apis.Core.dll
+D:\window_app\winproject2\win-project-2\bin\Debug\Google.Apis.dll
+D:\window_app\winproject2\win-project-2\bin\Debug\Google.Apis.PlatformServices.dll
+D:\window_app\winproject2\win-project-2\bin\Debug\Guna.UI2.dll
+D:\window_app\winproject2\win-project-2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\window_app\winproject2\win-project-2\bin\Debug\Microsoft.Threading.Tasks.dll
+D:\window_app\winproject2\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+D:\window_app\winproject2\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+D:\window_app\winproject2\win-project-2\bin\Debug\Newtonsoft.Json.dll
+D:\window_app\winproject2\win-project-2\bin\Debug\RJCodeAdvance.RJControls.dll
+D:\window_app\winproject2\win-project-2\bin\Debug\System.Buffers.dll
+D:\window_app\winproject2\win-project-2\bin\Debug\System.Collections.Immutable.dll
+D:\window_app\winproject2\win-project-2\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\window_app\winproject2\win-project-2\bin\Debug\System.Memory.dll
+D:\window_app\winproject2\win-project-2\bin\Debug\System.Net.Http.Extensions.dll
+D:\window_app\winproject2\win-project-2\bin\Debug\System.Net.Http.Primitives.dll
+D:\window_app\winproject2\win-project-2\bin\Debug\System.Numerics.Vectors.dll
+D:\window_app\winproject2\win-project-2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\window_app\winproject2\win-project-2\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\window_app\winproject2\win-project-2\bin\Debug\Google.Api.Gax.pdb
+D:\window_app\winproject2\win-project-2\bin\Debug\Google.Api.Gax.xml
+D:\window_app\winproject2\win-project-2\bin\Debug\Google.Api.Gax.Rest.pdb
+D:\window_app\winproject2\win-project-2\bin\Debug\Google.Api.Gax.Rest.xml
+D:\window_app\winproject2\win-project-2\bin\Debug\Google.Apis.pdb
+D:\window_app\winproject2\win-project-2\bin\Debug\Google.Apis.xml
+D:\window_app\winproject2\win-project-2\bin\Debug\Google.Apis.Auth.pdb
+D:\window_app\winproject2\win-project-2\bin\Debug\Google.Apis.Auth.xml
+D:\window_app\winproject2\win-project-2\bin\Debug\Google.Apis.Core.pdb
+D:\window_app\winproject2\win-project-2\bin\Debug\Google.Apis.Core.xml
+D:\window_app\winproject2\win-project-2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\window_app\winproject2\win-project-2\bin\Debug\Microsoft.Threading.Tasks.xml
+D:\window_app\winproject2\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+D:\window_app\winproject2\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+D:\window_app\winproject2\win-project-2\bin\Debug\Newtonsoft.Json.xml
+D:\window_app\winproject2\win-project-2\bin\Debug\System.Buffers.xml
+D:\window_app\winproject2\win-project-2\bin\Debug\System.Collections.Immutable.xml
+D:\window_app\winproject2\win-project-2\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\window_app\winproject2\win-project-2\bin\Debug\System.Memory.xml
+D:\window_app\winproject2\win-project-2\bin\Debug\System.Net.Http.Extensions.xml
+D:\window_app\winproject2\win-project-2\bin\Debug\System.Net.Http.Primitives.xml
+D:\window_app\winproject2\win-project-2\bin\Debug\System.Numerics.Vectors.xml
+D:\window_app\winproject2\win-project-2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\window_app\winproject2\win-project-2\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\window_app\winproject2\win-project-2\obj\Debug\win-project-2.csproj.App.config
+D:\window_app\winproject2\win-project-2\obj\Debug\win-project-2.csproj.AssemblyReference.cache
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.LoginForm.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Properties.Resources.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win-project-2.csproj.GenerateResource.cache
+D:\window_app\winproject2\win-project-2\obj\Debug\win-project-2.csproj.CoreCompileInputs.cache
+D:\window_app\winproject2\win-project-2\obj\Debug\win-proj.20E85E94.Up2Date
+D:\window_app\winproject2\win-project-2\obj\Debug\win-project-2.exe
+D:\window_app\winproject2\win-project-2\obj\Debug\win-project-2.pdb
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win-project-2.csproj.App.config
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win-project-2.csproj.AssemblyReference.cache
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.LoginForm.resources
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Properties.Resources.resources
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win-project-2.csproj.GenerateResource.cache
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win-project-2.csproj.CoreCompileInputs.cache
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win-project-2.exe
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win-project-2.pdb
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\win-project-2.exe.config
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\win-project-2.exe
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\win-project-2.pdb
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Firebase.Auth.dll
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Firebase.Storage.dll
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\FireSharp.dll
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Google.Api.Gax.dll
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Google.Api.Gax.Rest.dll
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.Auth.dll
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.Core.dll
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.dll
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.PlatformServices.dll
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Guna.UI2.dll
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\RJCodeAdvance.RJControls.dll
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\System.Buffers.dll
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\System.Collections.Immutable.dll
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\System.Memory.dll
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Google.Api.Gax.pdb
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Google.Api.Gax.xml
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Google.Api.Gax.Rest.pdb
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Google.Api.Gax.Rest.xml
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.pdb
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.xml
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.Auth.pdb
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.Auth.xml
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.Core.pdb
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.Core.xml
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.xml
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\System.Buffers.xml
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\System.Collections.Immutable.xml
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\System.Memory.xml
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win-project-2.csproj.CopyComplete
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FHome.resources
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FChat.resources
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FStatistic.resources
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.FMain.resources
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.FInfor.resources
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UCNhanvien.resources
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.NhanVienView.resources
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UCNhanVien2.resources
+D:\window_app\winproject2\win-project-2\bin\Debug\FontAwesome.Sharp.dll
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FChat.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FHome.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.FMain.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FStatistic.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.FInfor.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.NhanVienView.resources
+D:\window_app\winproject2 - Copy\win-project-2\obj\Debug\win-project-2.csproj.App.config
+D:\window_app\winproject2 - Copy\win-project-2\obj\Debug\win-project-2.csproj.AssemblyReference.cache
+D:\window_app\winproject2 - Copy\win-project-2\obj\Debug\win_project_2.Forms.FChat.resources
+D:\window_app\winproject2 - Copy\win-project-2\obj\Debug\win_project_2.Forms.FHome.resources
+D:\window_app\winproject2 - Copy\win-project-2\obj\Debug\win_project_2.FMain.resources
+D:\window_app\winproject2 - Copy\win-project-2\obj\Debug\win_project_2.Forms.FStatistic.resources
+D:\window_app\winproject2 - Copy\win-project-2\obj\Debug\win_project_2.FInfor.resources
+D:\window_app\winproject2 - Copy\win-project-2\obj\Debug\win_project_2.LoginForm.resources
+D:\window_app\winproject2 - Copy\win-project-2\obj\Debug\win_project_2.Forms.NhanVienView.resources
+D:\window_app\winproject2 - Copy\win-project-2\obj\Debug\win_project_2.Properties.Resources.resources
+D:\window_app\winproject2 - Copy\win-project-2\obj\Debug\win_project_2.UCNhanvien.resources
+D:\window_app\winproject2 - Copy\win-project-2\obj\Debug\win_project_2.UCNhanVien2.resources
+D:\window_app\winproject2 - Copy\win-project-2\obj\Debug\win-project-2.csproj.GenerateResource.cache
+D:\window_app\winproject2 - Copy\win-project-2\obj\Debug\win-project-2.csproj.CoreCompileInputs.cache
+D:\window_app\winproject2 - Copy\win-project-2\obj\Debug\win-project-2.exe
+D:\window_app\winproject2 - Copy\win-project-2\obj\Debug\win-project-2.pdb
+D:\window_app\winproject2 - Copy\win-project-2\obj\Debug\win_project_2.DataClass.FormTest.resources
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\win-project-2.exe.config
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\win-project-2.exe
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\win-project-2.pdb
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Firebase.Auth.dll
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Firebase.Storage.dll
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\FireSharp.dll
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\FontAwesome.Sharp.dll
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Google.Api.Gax.dll
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Google.Api.Gax.Rest.dll
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Google.Apis.Auth.dll
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Google.Apis.Core.dll
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Google.Apis.dll
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Google.Apis.PlatformServices.dll
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Guna.UI2.dll
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Microsoft.Threading.Tasks.dll
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Newtonsoft.Json.dll
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\RJCodeAdvance.RJControls.dll
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\System.Buffers.dll
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\System.Collections.Immutable.dll
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\System.Memory.dll
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\System.Net.Http.Extensions.dll
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\System.Net.Http.Primitives.dll
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\System.Numerics.Vectors.dll
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Google.Api.Gax.pdb
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Google.Api.Gax.xml
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Google.Api.Gax.Rest.pdb
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Google.Api.Gax.Rest.xml
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Google.Apis.pdb
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Google.Apis.xml
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Google.Apis.Auth.pdb
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Google.Apis.Auth.xml
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Google.Apis.Core.pdb
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Google.Apis.Core.xml
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Microsoft.Threading.Tasks.xml
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\Newtonsoft.Json.xml
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\System.Buffers.xml
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\System.Collections.Immutable.xml
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\System.Memory.xml
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\System.Net.Http.Extensions.xml
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\System.Net.Http.Primitives.xml
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\System.Numerics.Vectors.xml
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\window_app\winproject2 - Copy\win-project-2\obj\Debug\win-proj.20E85E94.Up2Date
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.DataClass.FormTest.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FUserInfor.resources
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\win-project-2.exe.config
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\win-project-2.exe
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\win-project-2.pdb
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Firebase.Auth.dll
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Firebase.Storage.dll
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\FireSharp.dll
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Google.Api.Gax.dll
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Google.Api.Gax.Rest.dll
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Google.Apis.Auth.dll
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Google.Apis.Core.dll
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Google.Apis.dll
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Google.Apis.PlatformServices.dll
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Guna.UI2.dll
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\RJCodeAdvance.RJControls.dll
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\System.Buffers.dll
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\System.Collections.Immutable.dll
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\System.Memory.dll
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Google.Api.Gax.pdb
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Google.Api.Gax.xml
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Google.Api.Gax.Rest.pdb
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Google.Api.Gax.Rest.xml
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Google.Apis.pdb
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Google.Apis.xml
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Google.Apis.Auth.pdb
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Google.Apis.Auth.xml
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Google.Apis.Core.pdb
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Google.Apis.Core.xml
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.xml
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\System.Buffers.xml
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\System.Collections.Immutable.xml
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\System.Memory.xml
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\admin\Downloads\github12\winproject\win-project-2\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win-project-2.csproj.App.config
+C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win-project-2.csproj.AssemblyReference.cache
+C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win_project_2.Forms.FPostEmloyee.resources
+C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win_project_2.Forms.FRating.resources
+C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win_project_2.Forms.FShowPostEmloyee.resources
+C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win_project_2.Forms.FShowRating.resources
+C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win_project_2.DataClass.FormTest.resources
+C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win_project_2.Forms.FChat.resources
+C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win_project_2.Forms.FHome.resources
+C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win_project_2.FMain.resources
+C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win_project_2.Forms.FStatistic.resources
+C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win_project_2.FInfor.resources
+C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win_project_2.Forms.FUserInfor.resources
+C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win_project_2.LoginForm.resources
+C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win_project_2.Forms.NhanVienView.resources
+C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win_project_2.Properties.Resources.resources
+C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win_project_2.UCNhanvien.resources
+C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win_project_2.UCNhanVien2.resources
+C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCRating.resources
+C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win-project-2.csproj.GenerateResource.cache
+C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win-project-2.csproj.CoreCompileInputs.cache
+C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win-proj.20E85E94.Up2Date
+C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win-project-2.exe
+C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win-project-2.pdb
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FPostEmloyee.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FRating.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FShowPostEmloyee.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FShowRating.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.UserControls.UCRating.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FListReview.resources
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListReview.resources
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FPostEmloyee.resources
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FRating.resources
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FShowPostEmloyee.resources
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FShowRating.resources
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.DataClass.FormTest.resources
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FUserInfor.resources
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCRating.resources
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCTho.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win-project-2.csproj.App.config
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win-project-2.csproj.AssemblyReference.cache
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.Forms.FDetail1.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListReview.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.Forms.FPostEmloyee.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.Forms.FRating.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.Forms.FShowListJob.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.Forms.FShowPostEmloyee.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.Forms.FShowRating.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.DataClass.FormTest.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.Forms.FChat.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.Forms.FHome.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.FMain.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.Forms.FStatistic.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.FInfor.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.Forms.FUserInfor.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.LoginForm.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.Forms.NhanVienView.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.Properties.Resources.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCRating.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCShowJobcs.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCTho.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win-project-2.csproj.GenerateResource.cache
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win-project-2.csproj.CoreCompileInputs.cache
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win-project-2.exe
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win-project-2.pdb
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\win-project-2.exe.config
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\win-project-2.exe
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\win-project-2.pdb
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Firebase.Auth.dll
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Firebase.Storage.dll
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\FireSharp.dll
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Google.Api.Gax.dll
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Google.Api.Gax.Rest.dll
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Google.Apis.Auth.dll
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Google.Apis.Core.dll
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Google.Apis.dll
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Google.Apis.PlatformServices.dll
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Guna.UI2.dll
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\RJCodeAdvance.RJControls.dll
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\System.Buffers.dll
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\System.Collections.Immutable.dll
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\System.Memory.dll
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Google.Api.Gax.pdb
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Google.Api.Gax.xml
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Google.Api.Gax.Rest.pdb
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Google.Api.Gax.Rest.xml
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Google.Apis.pdb
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Google.Apis.xml
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Google.Apis.Auth.pdb
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Google.Apis.Auth.xml
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Google.Apis.Core.pdb
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Google.Apis.Core.xml
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.xml
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\System.Buffers.xml
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\System.Collections.Immutable.xml
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\System.Memory.xml
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win-proj.20E85E94.Up2Date
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FDetail1.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FShowListJob.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.UserControls.UCShowJobcs.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.UserControls.UCTho.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FListNguoiTho.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListNguoiTho.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCReceive.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCSendMesage.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListChat.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCListChat.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FListChat.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.UserControls.UCListChat.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.UserControls.UCReceive.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.UserControls.UCSendMesage.resources
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\win-project-2.exe.config
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\win-project-2.exe
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\win-project-2.pdb
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Firebase.Auth.dll
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Firebase.Storage.dll
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\FireSharp.dll
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Api.Gax.dll
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Api.Gax.Rest.dll
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.Auth.dll
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.Core.dll
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.dll
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.PlatformServices.dll
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Guna.UI2.dll
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\RJCodeAdvance.RJControls.dll
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Buffers.dll
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Collections.Immutable.dll
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Memory.dll
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Api.Gax.pdb
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Api.Gax.xml
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Api.Gax.Rest.pdb
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Api.Gax.Rest.xml
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.pdb
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.xml
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.Auth.pdb
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.Auth.xml
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.Core.pdb
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.Core.xml
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.xml
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Buffers.xml
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Collections.Immutable.xml
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Memory.xml
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win-project-2.csproj.App.config
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win-project-2.csproj.AssemblyReference.cache
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FDetail1.resources
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListChat.resources
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListNguoiTho.resources
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListReview.resources
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FPostEmloyee.resources
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FRating.resources
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FShowListJob.resources
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FShowPostEmloyee.resources
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FShowRating.resources
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.DataClass.FormTest.resources
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FChat.resources
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FHome.resources
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.FMain.resources
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FStatistic.resources
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.FInfor.resources
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FUserInfor.resources
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.LoginForm.resources
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.NhanVienView.resources
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Properties.Resources.resources
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCListChat.resources
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCRating.resources
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCReceive.resources
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCSendMesage.resources
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCShowJobcs.resources
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCTho.resources
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win-project-2.csproj.GenerateResource.cache
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win-project-2.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win-proj.20E85E94.Up2Date
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win-project-2.exe
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win-project-2.pdb
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.ThoDetail.resources
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.ThoDetail.resources
+D:\window_app\winproject\win-project-2\bin\Debug\FontAwesome.Sharp.dll
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FDetail1.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListChat.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListNguoiTho.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListReview.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FPostEmloyee.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FRating.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FShowListJob.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FShowPostEmloyee.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FShowRating.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.ThoDetail.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.DataClass.FormTest.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FChat.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FHome.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.FMain.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FStatistic.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.FInfor.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FUserInfor.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.NhanVienView.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCListChat.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCRating.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCReceive.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCSendMesage.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCShowJobcs.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCTho.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.Forms.ThoDetail.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\win-project-2.exe.config
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\win-project-2.exe
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\win-project-2.pdb
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Firebase.Auth.dll
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Firebase.Storage.dll
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\FireSharp.dll
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Api.Gax.dll
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Api.Gax.Rest.dll
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.Auth.dll
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.Core.dll
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.dll
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.PlatformServices.dll
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Guna.UI2.dll
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\RJCodeAdvance.RJControls.dll
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Buffers.dll
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Collections.Immutable.dll
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Memory.dll
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Api.Gax.pdb
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Api.Gax.xml
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Api.Gax.Rest.pdb
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Api.Gax.Rest.xml
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.pdb
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.xml
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.Auth.pdb
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.Auth.xml
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.Core.pdb
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Google.Apis.Core.xml
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.xml
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Buffers.xml
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Collections.Immutable.xml
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Memory.xml
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\user\Documents\GitHub\winproject\win-project-2\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win-project-2.csproj.App.config
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win-project-2.csproj.AssemblyReference.cache
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FDetail1.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListChat.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListNguoiTho.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListReview.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FPostEmloyee.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FRating.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FShowListJob.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FShowPostEmloyee.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FShowRating.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.ThoDetail.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.DataClass.FormTest.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FChat.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FHome.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.FMain.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FStatistic.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.FInfor.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FUserInfor.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.LoginForm.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.NhanVienView.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Properties.Resources.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCListChat.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCRating.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCReceive.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCSendMesage.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCShowJobcs.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCTho.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win-project-2.csproj.GenerateResource.cache
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win-project-2.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win-proj.20E85E94.Up2Date
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win-project-2.exe
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win-project-2.pdb
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCAccept.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListNTapply.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListWaitJob.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCWaitJob.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCWriteRV.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListNTapply.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListWaitJob.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCAccept.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCWaitJob.resources
+C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCWriteRV.resources
+D:\Project\window_app\winproject\win-project-2\bin\Debug\win-project-2.exe.config
+D:\Project\window_app\winproject\win-project-2\bin\Debug\win-project-2.exe
+D:\Project\window_app\winproject\win-project-2\bin\Debug\win-project-2.pdb
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Firebase.Auth.dll
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Firebase.Storage.dll
+D:\Project\window_app\winproject\win-project-2\bin\Debug\FireSharp.dll
+D:\Project\window_app\winproject\win-project-2\bin\Debug\FontAwesome.Sharp.dll
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Google.Api.Gax.dll
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Google.Api.Gax.Rest.dll
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Google.Apis.Auth.dll
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Google.Apis.Core.dll
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Google.Apis.dll
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Google.Apis.PlatformServices.dll
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Guna.UI2.dll
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.dll
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Newtonsoft.Json.dll
+D:\Project\window_app\winproject\win-project-2\bin\Debug\RJCodeAdvance.RJControls.dll
+D:\Project\window_app\winproject\win-project-2\bin\Debug\System.Buffers.dll
+D:\Project\window_app\winproject\win-project-2\bin\Debug\System.Collections.Immutable.dll
+D:\Project\window_app\winproject\win-project-2\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\Project\window_app\winproject\win-project-2\bin\Debug\System.Memory.dll
+D:\Project\window_app\winproject\win-project-2\bin\Debug\System.Net.Http.Extensions.dll
+D:\Project\window_app\winproject\win-project-2\bin\Debug\System.Net.Http.Primitives.dll
+D:\Project\window_app\winproject\win-project-2\bin\Debug\System.Numerics.Vectors.dll
+D:\Project\window_app\winproject\win-project-2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Project\window_app\winproject\win-project-2\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Google.Api.Gax.pdb
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Google.Api.Gax.xml
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Google.Api.Gax.Rest.pdb
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Google.Api.Gax.Rest.xml
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Google.Apis.pdb
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Google.Apis.xml
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Google.Apis.Auth.pdb
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Google.Apis.Auth.xml
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Google.Apis.Core.pdb
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Google.Apis.Core.xml
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.xml
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+D:\Project\window_app\winproject\win-project-2\bin\Debug\Newtonsoft.Json.xml
+D:\Project\window_app\winproject\win-project-2\bin\Debug\System.Buffers.xml
+D:\Project\window_app\winproject\win-project-2\bin\Debug\System.Collections.Immutable.xml
+D:\Project\window_app\winproject\win-project-2\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\Project\window_app\winproject\win-project-2\bin\Debug\System.Memory.xml
+D:\Project\window_app\winproject\win-project-2\bin\Debug\System.Net.Http.Extensions.xml
+D:\Project\window_app\winproject\win-project-2\bin\Debug\System.Net.Http.Primitives.xml
+D:\Project\window_app\winproject\win-project-2\bin\Debug\System.Numerics.Vectors.xml
+D:\Project\window_app\winproject\win-project-2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Project\window_app\winproject\win-project-2\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win-project-2.csproj.App.config
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win-project-2.csproj.AssemblyReference.cache
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FDetail1.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListChat.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListNguoiTho.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListNTapply.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListReview.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListWaitJob.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FPostEmloyee.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FRating.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FShowListJob.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FShowPostEmloyee.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FShowRating.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.ThoDetail.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.DataClass.FormTest.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FChat.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FHome.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.FMain.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FStatistic.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.FInfor.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FUserInfor.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.LoginForm.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.NhanVienView.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.Properties.Resources.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCAccept.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCListChat.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCRating.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCReceive.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCSendMesage.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCShowJobcs.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCWaitJob.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCWriteRV.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCTho.resources
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win-project-2.csproj.GenerateResource.cache
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win-project-2.csproj.CoreCompileInputs.cache
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win-proj.20E85E94.Up2Date
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win-project-2.exe
+D:\Project\window_app\winproject\win-project-2\obj\Debug\win-project-2.pdb
