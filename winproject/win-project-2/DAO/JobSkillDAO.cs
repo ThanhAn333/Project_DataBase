@@ -17,91 +17,90 @@ namespace win_project_2.DAO
             dbConn = new DatabaseConnection();
         }
 
-        public JobSkill GetById(int jobSkillID)
+        // Create
+        public void AddJobSkill(JobSkill jobSkill)
+        {
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                string query = "INSERT INTO JobSkill (JobID, SkillID) VALUES (@JobID, @SkillID)";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@JobID", jobSkill.Job.JobID);
+                command.Parameters.AddWithValue("@SkillID", jobSkill.Skill.SkillID);
+
+                connection.Open();
+                command.ExecuteNonQuery();
+            }
+        }
+
+        // Read
+        public JobSkill GetJobSkillByID(int jobSkillId)
         {
             JobSkill jobSkill = null;
-            using (SqlConnection conn = dbConn.GetConnection())
-            {
-                string query = "SELECT * FROM JobSkills WHERE JobSkillID = @JobSkillID";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@JobSkillID", jobSkillID);
 
-                conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                string query = "SELECT * FROM JobSkill WHERE JobSkillID = @JobSkillID";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@JobSkillID", jobSkillId);
+
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+
                 if (reader.Read())
                 {
+                    Job job = new Job(
+                       (int)reader["JobID"],
+                       reader["Title"].ToString(),
+                       reader["Description"].ToString(),
+                       reader["Location"].ToString(),
+                       reader["Status"].ToString(),
+                       (DateTime)reader["PostedDate"]
+                   );
+                   Skill    skill = new Skill(
+                       (int)reader["SkillID"],
+                       reader["Name"].ToString(),
+                       reader["Description"].ToString()
+
+                   );
                     jobSkill = new JobSkill(
                         (int)reader["JobSkillID"],
-                        (int)reader["JobID"],
-                        (int)reader["SkillID"]
+                        job,
+                        skill
+
                     );
                 }
             }
+
             return jobSkill;
         }
 
-        public List<JobSkill> GetAll()
+        // Update
+        public void UpdateJobSkill(JobSkill jobSkill)
         {
-            List<JobSkill> jobSkills = new List<JobSkill>();
-            using (SqlConnection conn = dbConn.GetConnection())
+            using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "SELECT * FROM JobSkills";
-                SqlCommand cmd = new SqlCommand(query, conn);
+                string query = "UPDATE JobSkill SET JobID = @JobID, SkillID = @SkillID WHERE JobSkillID = @JobSkillID";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@JobID", jobSkill.Job.JobID);
+                command.Parameters.AddWithValue("@SkillID", jobSkill.Skill.SkillID);
+                command.Parameters.AddWithValue("@JobSkillID", jobSkill.JobSkillID);
 
-                conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    JobSkill jobSkill = new JobSkill(
-                        (int)reader["JobSkillID"],
-                        (int)reader["JobID"],
-                        (int)reader["SkillID"]
-                    );
-                    jobSkills.Add(jobSkill);
-                }
-            }
-            return jobSkills;
-        }
-
-        public void Add(JobSkill jobSkill)
-        {
-            using (SqlConnection conn = dbConn.GetConnection())
-            {
-                string query = "INSERT INTO JobSkills (JobID, SkillID) VALUES (@JobID, @SkillID)";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@JobID", jobSkill.JobID);
-                cmd.Parameters.AddWithValue("@SkillID", jobSkill.SkillID);
-
-                conn.Open();
-                cmd.ExecuteNonQuery();
+                connection.Open();
+                command.ExecuteNonQuery();
             }
         }
 
-        public void Update(JobSkill jobSkill)
+        // Delete
+        public void DeleteJobSkill(int jobSkillId)
         {
-            using (SqlConnection conn = dbConn.GetConnection())
+            using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "UPDATE JobSkills SET JobID = @JobID, SkillID = @SkillID WHERE JobSkillID = @JobSkillID";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@JobSkillID", jobSkill.JobSkillID);
-                cmd.Parameters.AddWithValue("@JobID", jobSkill.JobID);
-                cmd.Parameters.AddWithValue("@SkillID", jobSkill.SkillID);
+                string query = "DELETE FROM JobSkill WHERE JobSkillID = @JobSkillID";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@JobSkillID", jobSkillId);
 
-                conn.Open();
-                cmd.ExecuteNonQuery();
-            }
-        }
-
-        public void Delete(int jobSkillID)
-        {
-            using (SqlConnection conn = dbConn.GetConnection())
-            {
-                string query = "DELETE FROM JobSkills WHERE JobSkillID = @JobSkillID";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@JobSkillID", jobSkillID);
-
-                conn.Open();
-                cmd.ExecuteNonQuery();
+                connection.Open();
+                command.ExecuteNonQuery();
             }
         }
     }

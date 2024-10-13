@@ -12,15 +12,20 @@ namespace win_project_2.DAO
         public string Name { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public string Role { get; set; }
+        public string Role { get; set; } 
 
-        public User(int userID, string name, string email, string password, string role)
+        public User(int userId, string name, string email, string password, string role)
         {
-            UserID = userID;
+            UserID = userId;
             Name = name;
             Email = email;
             Password = password;
             Role = role;
+        }
+
+        public override string ToString()
+        {
+            return $"{Name} ({Role})";
         }
     }
 }

@@ -9,14 +9,19 @@ namespace win_project_2.DAO
     public class JobSkill
     {
         public int JobSkillID { get; set; }
-        public int JobID { get; set; }
-        public int SkillID { get; set; }
+        public Job Job { get; set; }
+        public Skill Skill { get; set; }
 
-        public JobSkill(int jobSkillID, int jobID, int skillID)
+        public JobSkill(int jobSkillId, Job job, Skill skill)
         {
-            JobSkillID = jobSkillID;
-            JobID = jobID;
-            SkillID = skillID;
+            JobSkillID = jobSkillId;
+            Job = job;
+            Skill = skill;
+        }
+
+        public override string ToString()
+        {
+            return $"Skill {Skill.Name} required for job {Job.Title}";
         }
     }
 

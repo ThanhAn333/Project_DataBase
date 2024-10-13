@@ -17,95 +17,88 @@ namespace win_project_2.DAO
             dbConn = new DatabaseConnection();
         }
 
-        public UserSkill GetById(int userSkillID)
+        public void AddUserSkill(UserSkill userSkill)
+        {
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                string query = "INSERT INTO UserSkill (UserID, SkillID, ProficiencyLevel) VALUES (@UserID, @SkillID, @ProficiencyLevel)";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@UserID", userSkill.User.UserID);
+                command.Parameters.AddWithValue("@SkillID", userSkill.Skill.SkillID);
+                command.Parameters.AddWithValue("@ProficiencyLevel", userSkill.ProficiencyLevel);
+
+                connection.Open();
+                command.ExecuteNonQuery();
+            }
+        }
+
+        // Read
+        public UserSkill GetUserSkillByID(int userSkillId)
         {
             UserSkill userSkill = null;
-            using (SqlConnection conn = dbConn.GetConnection())
-            {
-                string query = "SELECT * FROM UserSkills WHERE UserSkillID = @UserSkillID";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@UserSkillID", userSkillID);
 
-                conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                string query = "SELECT * FROM UserSkill WHERE UserSkillID = @UserSkillID";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@UserSkillID", userSkillId);
+
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+
                 if (reader.Read())
                 {
+                    User user = new User(
+                        (int)reader["UserID"],
+                        reader["UserName"].ToString(),
+                        reader["UserEmail"].ToString(),
+                        "",
+                        reader["Role"]?.ToString()
+                    );
+                    Skill skill = new Skill(
+                       (int)reader["SkillID"],
+                       reader["Name"].ToString(),
+                       reader["Description"].ToString()
+
+                   );
                     userSkill = new UserSkill(
                         (int)reader["UserSkillID"],
-                        (int)reader["UserID"],
-                        (int)reader["SkillID"],
-                        (int)reader["ProficiencyLevel"]
+                        user,
+                        skill,
+                        reader["ProficiencyLevel"].ToString()
                     );
                 }
             }
+
             return userSkill;
         }
 
-        public List<UserSkill> GetAll()
+        // Update
+        public void UpdateUserSkill(UserSkill userSkill)
         {
-            List<UserSkill> userSkills = new List<UserSkill>();
-            using (SqlConnection conn = dbConn.GetConnection())
+            using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "SELECT * FROM UserSkills";
-                SqlCommand cmd = new SqlCommand(query, conn);
+                string query = "UPDATE UserSkill SET ProficiencyLevel = @ProficiencyLevel WHERE UserSkillID = @UserSkillID";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@ProficiencyLevel", userSkill.ProficiencyLevel);
+                command.Parameters.AddWithValue("@UserSkillID", userSkill.UserSkillID);
 
-                conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    UserSkill userSkill = new UserSkill(
-                        (int)reader["UserSkillID"],
-                        (int)reader["UserID"],
-                        (int)reader["SkillID"],
-                        (int)reader["ProficiencyLevel"]
-                    );
-                    userSkills.Add(userSkill);
-                }
-            }
-            return userSkills;
-        }
-
-        public void Add(UserSkill userSkill)
-        {
-            using (SqlConnection conn = dbConn.GetConnection())
-            {
-                string query = "INSERT INTO UserSkills (UserID, SkillID, ProficiencyLevel) VALUES (@UserID, @SkillID, @ProficiencyLevel)";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@UserID", userSkill.UserID);
-                cmd.Parameters.AddWithValue("@SkillID", userSkill.SkillID);
-                cmd.Parameters.AddWithValue("@ProficiencyLevel", userSkill.ProficiencyLevel);
-
-                conn.Open();
-                cmd.ExecuteNonQuery();
+                connection.Open();
+                command.ExecuteNonQuery();
             }
         }
 
-        public void Update(UserSkill userSkill)
+        // Delete
+        public void DeleteUserSkill(int userSkillId)
         {
-            using (SqlConnection conn = dbConn.GetConnection())
+            using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "UPDATE UserSkills SET UserID = @UserID, SkillID = @SkillID, ProficiencyLevel = @ProficiencyLevel WHERE UserSkillID = @UserSkillID";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@UserSkillID", userSkill.UserSkillID);
-                cmd.Parameters.AddWithValue("@UserID", userSkill.UserID);
-                cmd.Parameters.AddWithValue("@SkillID", userSkill.SkillID);
-                cmd.Parameters.AddWithValue("@ProficiencyLevel", userSkill.ProficiencyLevel);
+                string query = "DELETE FROM UserSkill WHERE UserSkillID = @UserSkillID";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@UserSkillID", userSkillId);
 
-                conn.Open();
-                cmd.ExecuteNonQuery();
-            }
-        }
-
-        public void Delete(int userSkillID)
-        {
-            using (SqlConnection conn = dbConn.GetConnection())
-            {
-                string query = "DELETE FROM UserSkills WHERE UserSkillID = @UserSkillID";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@UserSkillID", userSkillID);
-
-                conn.Open();
-                cmd.ExecuteNonQuery();
+                connection.Open();
+                command.ExecuteNonQuery();
             }
         }
     }

@@ -17,17 +17,36 @@ namespace win_project_2.DAO
             dbConn = new DatabaseConnection();
         }
 
-        public User GetById(int userID)
+        public void AddUser(User user)
+        {
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                string query = "INSERT INTO Users (Name, Email, Password, Role) VALUES (@Name, @Email, @Password, @Role)";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@Name", user.Name);
+                command.Parameters.AddWithValue("@Email", user.Email);
+                command.Parameters.AddWithValue("@Password", user.Password);
+                command.Parameters.AddWithValue("@Role", user.Role);
+
+                connection.Open();
+                command.ExecuteNonQuery();
+            }
+        }
+
+        // Read
+        public User GetUserByID(int userId)
         {
             User user = null;
-            using (SqlConnection conn = dbConn.GetConnection())
+
+            using (SqlConnection connection = dbConn.GetConnection())
             {
                 string query = "SELECT * FROM Users WHERE UserID = @UserID";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@UserID", userID);
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@UserID", userId);
 
-                conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+
                 if (reader.Read())
                 {
                     user = new User(
@@ -39,77 +58,39 @@ namespace win_project_2.DAO
                     );
                 }
             }
+
             return user;
         }
 
-        public List<User> GetAll()
+        // Update
+        public void UpdateUser(User user)
         {
-            List<User> users = new List<User>();
-            using (SqlConnection conn = dbConn.GetConnection())
-            {
-                string query = "SELECT * FROM Users";
-                SqlCommand cmd = new SqlCommand(query, conn);
-
-                conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    User user = new User(
-                        (int)reader["UserID"],
-                        reader["Name"].ToString(),
-                        reader["Email"].ToString(),
-                        reader["Password"].ToString(),
-                        reader["Role"].ToString()
-                    );
-                    users.Add(user);
-                }
-            }
-            return users;
-        }
-
-        public void Add(User user)
-        {
-            using (SqlConnection conn = dbConn.GetConnection())
-            {
-                string query = "INSERT INTO Users (Name, Email, Password, Role) VALUES (@Name, @Email, @Password, @Role)";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@Name", user.Name);
-                cmd.Parameters.AddWithValue("@Email", user.Email);
-                cmd.Parameters.AddWithValue("@Password", user.Password);
-                cmd.Parameters.AddWithValue("@Role", user.Role);
-
-                conn.Open();
-                cmd.ExecuteNonQuery();
-            }
-        }
-
-        public void Update(User user)
-        {
-            using (SqlConnection conn = dbConn.GetConnection())
+            using (SqlConnection connection = dbConn.GetConnection())
             {
                 string query = "UPDATE Users SET Name = @Name, Email = @Email, Password = @Password, Role = @Role WHERE UserID = @UserID";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@UserID", user.UserID);
-                cmd.Parameters.AddWithValue("@Name", user.Name);
-                cmd.Parameters.AddWithValue("@Email", user.Email);
-                cmd.Parameters.AddWithValue("@Password", user.Password);
-                cmd.Parameters.AddWithValue("@Role", user.Role);
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@Name", user.Name);
+                command.Parameters.AddWithValue("@Email", user.Email);
+                command.Parameters.AddWithValue("@Password", user.Password);
+                command.Parameters.AddWithValue("@Role", user.Role);
+                command.Parameters.AddWithValue("@UserID", user.UserID);
 
-                conn.Open();
-                cmd.ExecuteNonQuery();
+                connection.Open();
+                command.ExecuteNonQuery();
             }
         }
 
-        public void Delete(int userID)
+        // Delete
+        public void DeleteUser(int userId)
         {
-            using (SqlConnection conn = dbConn.GetConnection())
+            using (SqlConnection connection = dbConn.GetConnection())
             {
                 string query = "DELETE FROM Users WHERE UserID = @UserID";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@UserID", userID);
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@UserID", userId);
 
-                conn.Open();
-                cmd.ExecuteNonQuery();
+                connection.Open();
+                command.ExecuteNonQuery();
             }
         }
     }

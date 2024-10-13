@@ -9,7 +9,7 @@ namespace win_project_2.SQLConn
 
         public DatabaseConnection()
         {
-            connectionString = @"Data Source=LAPTOP-PMSG8QVF;Initial Catalog=JobApplicationDB;Integrated Security=True";
+            connectionString = @"Data Source=.;Initial Catalog=JobApp;User ID=sa;Password=***********;Encrypt=False";
         }
 
         public SqlConnection GetConnection()

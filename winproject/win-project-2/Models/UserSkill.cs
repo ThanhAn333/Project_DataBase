@@ -4,21 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace win_project_2.DAO
 {
     public class UserSkill
     {
         public int UserSkillID { get; set; }
-        public int UserID { get; set; }
-        public int SkillID { get; set; }
-        public int ProficiencyLevel { get; set; }
+        public User User { get; set; }
+        public Skill Skill { get; set; }
+        public string ProficiencyLevel { get; set; }
 
-        public UserSkill(int userSkillID, int userID, int skillID, int proficiencyLevel)
+        public UserSkill(int userSkillId, User user, Skill skill, string proficiencyLevel)
         {
-            UserSkillID = userSkillID;
-            UserID = userID;
-            SkillID = skillID;
+            UserSkillID = userSkillId;
+            User = user;
+            Skill = skill;
             ProficiencyLevel = proficiencyLevel;
+        }
+
+        public override string ToString()
+        {
+            return $"{User.Name} has {ProficiencyLevel} proficiency in {Skill.Name}";
         }
     }
 

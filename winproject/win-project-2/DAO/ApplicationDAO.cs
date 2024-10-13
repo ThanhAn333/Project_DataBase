@@ -17,99 +17,130 @@ namespace win_project_2.DAO
             dbConn = new DatabaseConnection();
         }
 
-        public Application GetById(int applicationID)
-        {
-            Application application = null;
-            using (SqlConnection conn = dbConn.GetConnection())
-            {
-                string query = "SELECT * FROM Applications WHERE ApplicationID = @ApplicationID";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@ApplicationID", applicationID);
-
-                conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
-                if (reader.Read())
-                {
-                    application = new Application(
-                        (int)reader["ApplicationID"],
-                        (int)reader["UserID"],
-                        (int)reader["JobID"],
-                        (DateTime)reader["ApplicationDate"],
-                        reader["Status"].ToString()
-                    );
-                }
-            }
-            return application;
-        }
-
-        public List<Application> GetAll()
+        public List<Application> GetAllApplications()
         {
             List<Application> applications = new List<Application>();
-            using (SqlConnection conn = dbConn.GetConnection())
-            {
-                string query = "SELECT * FROM Applications";
-                SqlCommand cmd = new SqlCommand(query, conn);
 
-                conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                string query = @"SELECT a.ApplicationID, a.UserID, a.JobID, a.ApplicationDate, a.Status, u.Name AS UserName, u.Email AS UserEmail, j.Title AS JobTitle, j.Description AS JobDescription FROM Application a JOIN Users u ON a.UserID = u.UserID JOIN Job j ON a.JobID = j.JobID";
+                SqlCommand command = new SqlCommand(query, connection);
+
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+
                 while (reader.Read())
                 {
+
+                    User user = new User(
+                        (int)reader["UserID"],
+                        reader["UserName"].ToString(),
+                        reader["UserEmail"].ToString(),
+                        "", 
+                        reader["Role"]?.ToString() 
+                    );
+
+                    Job job = new Job(
+                        (int)reader["JobID"],
+                        reader["JobTitle"].ToString(),
+                        reader["JobDescription"].ToString(),
+                        reader["Location"].ToString(), 
+                        reader["Status"].ToString(),
+                        (DateTime)reader["PostedDate"]
+                    );
+                    int a = user.UserID;
+
                     Application application = new Application(
                         (int)reader["ApplicationID"],
-                        (int)reader["UserID"],
-                        (int)reader["JobID"],
-                        (DateTime)reader["ApplicationDate"],
-                        reader["Status"].ToString()
+                        user,
+                        job,
+                        reader["Status"].ToString(),
+                        (DateTime)reader["ApplicationDate"]
                     );
                     applications.Add(application);
                 }
             }
+
             return applications;
         }
 
-        public void Add(Application application)
+        public void AddApplication(Application application)
         {
-            using (SqlConnection conn = dbConn.GetConnection())
+            using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "INSERT INTO Applications (UserID, JobID, ApplicationDate, Status) VALUES (@UserID, @JobID, @ApplicationDate, @Status)";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@UserID", application.UserID);
-                cmd.Parameters.AddWithValue("@JobID", application.JobID);
-                cmd.Parameters.AddWithValue("@ApplicationDate", application.ApplicationDate);
-                cmd.Parameters.AddWithValue("@Status", application.Status);
+                string query = "INSERT INTO Application (UserID, JobID, Status, ApplicationDate) VALUES (@UserID, @JobID, @Status, @ApplicationDate)";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@UserID", application.Applicant.UserID);
+                command.Parameters.AddWithValue("@JobID", application.AppliedJob.JobID);
+                command.Parameters.AddWithValue("@Status", application.Status);
+                command.Parameters.AddWithValue("@Status", application.ApplicationDate);
 
-                conn.Open();
-                cmd.ExecuteNonQuery();
+                connection.Open();
+                command.ExecuteNonQuery();
             }
         }
 
-        public void Update(Application application)
+        // Read
+        public Application GetApplicationByID(int applicationId)
         {
-            using (SqlConnection conn = dbConn.GetConnection())
-            {
-                string query = "UPDATE Applications SET UserID = @UserID, JobID = @JobID, ApplicationDate = @ApplicationDate, Status = @Status WHERE ApplicationID = @ApplicationID";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@ApplicationID", application.ApplicationID);
-                cmd.Parameters.AddWithValue("@UserID", application.UserID);
-                cmd.Parameters.AddWithValue("@JobID", application.JobID);
-                cmd.Parameters.AddWithValue("@ApplicationDate", application.ApplicationDate);
-                cmd.Parameters.AddWithValue("@Status", application.Status);
+            Application application = null;
 
-                conn.Open();
-                cmd.ExecuteNonQuery();
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                string query = "SELECT * FROM Application WHERE ApplicationID = @ApplicationID";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@ApplicationID", applicationId);
+
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    UserDAO userDAO = new UserDAO();
+                    JobDAO jobDAO = new JobDAO();
+
+                    User user = userDAO.GetUserByID((int)reader["UserID"]);
+                    Job job = jobDAO.GetJobByID((int)reader["JobID"]);
+
+                    application = new Application(
+                        (int)reader["ApplicationID"],
+                        user,
+                        job,
+                        reader["Status"].ToString(),
+                        (DateTime)reader["ApplicationDate"]
+                    );
+                }
+            }
+
+            return application;
+        }
+
+        // Update
+        public void UpdateApplication(Application application)
+        {
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                string query = "UPDATE Application SET Status = @Status WHERE ApplicationID = @ApplicationID";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@Status", application.Status);
+                command.Parameters.AddWithValue("@ApplicationID", application.ApplicationID);
+
+                connection.Open();
+                command.ExecuteNonQuery();
             }
         }
 
-        public void Delete(int applicationID)
+        // Delete
+        public void DeleteApplication(int applicationId)
         {
-            using (SqlConnection conn = dbConn.GetConnection())
+            using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "DELETE FROM Applications WHERE ApplicationID = @ApplicationID";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@ApplicationID", applicationID);
+                string query = "DELETE FROM [dbo].[Application] WHERE ApplicationID = @ApplicationID";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@ApplicationID", applicationId);
 
-                conn.Open();
-                cmd.ExecuteNonQuery();
+                connection.Open();
+                command.ExecuteNonQuery();
             }
         }
     }

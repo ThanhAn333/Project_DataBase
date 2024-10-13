@@ -9,20 +9,25 @@ namespace win_project_2.DAO
     public class Review
     {
         public int ReviewID { get; set; }
-        public int UserID { get; set; }
-        public int JobID { get; set; }
+        public User Reviewer { get; set; }
+        public Job Job { get; set; }
         public int Rating { get; set; }
         public string Comment { get; set; }
         public DateTime ReviewDate { get; set; }
 
-        public Review(int reviewID, int userID, int jobID, int rating, string comment, DateTime reviewDate)
+        public Review(int reviewId, User reviewer, Job job, int rating, string comment, DateTime reviewDate)
         {
-            ReviewID = reviewID;
-            UserID = userID;
-            JobID = jobID;
+            ReviewID = reviewId;
+            Reviewer = reviewer;
+            Job = job;
             Rating = rating;
             Comment = comment;
             ReviewDate = reviewDate;
+        }
+
+        public override string ToString()
+        {
+            return $"{Reviewer.Name} rated job {Job.Title} with {Rating} stars";
         }
     }
 

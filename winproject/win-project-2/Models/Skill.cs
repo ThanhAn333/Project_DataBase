@@ -12,11 +12,16 @@ namespace win_project_2.DAO
         public string Name { get; set; }
         public string Description { get; set; }
 
-        public Skill(int skillID, string name, string description)
+        public Skill(int skillId, string name, string description)
         {
-            SkillID = skillID;
+            SkillID = skillId;
             Name = name;
             Description = description;
+        }
+
+        public override string ToString()
+        {
+            return $"{Name}";
         }
     }
 

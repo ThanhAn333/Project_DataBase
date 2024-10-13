@@ -17,38 +17,12 @@ namespace win_project_2.DAO
             dbConn = new DatabaseConnection();
         }
 
-        public Job GetById(int jobID)
-        {
-            Job job = null;
-            using (SqlConnection conn = dbConn.GetConnection())
-            {
-                string query = "SELECT * FROM Jobs WHERE JobID = @JobID";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@JobID", jobID);
-
-                conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
-                if (reader.Read())
-                {
-                    job = new Job(
-                        (int)reader["JobID"],
-                        reader["Title"].ToString(),
-                        reader["Description"].ToString(),
-                        reader["Location"].ToString(),
-                        (DateTime)reader["PostedDate"],
-                        reader["Status"].ToString()
-                    );
-                }
-            }
-            return job;
-        }
-
         public List<Job> GetAll()
         {
             List<Job> jobs = new List<Job>();
             using (SqlConnection conn = dbConn.GetConnection())
             {
-                string query = "SELECT * FROM Jobs";
+                string query = "SELECT * FROM Job";
                 SqlCommand cmd = new SqlCommand(query, conn);
 
                 conn.Open();
@@ -60,7 +34,6 @@ namespace win_project_2.DAO
                         reader["Title"].ToString(),
                         reader["Description"].ToString(),
                         reader["Location"].ToString(),
-                        (DateTime)reader["PostedDate"],
                         reader["Status"].ToString()
                     );
                     jobs.Add(job);
@@ -68,52 +41,83 @@ namespace win_project_2.DAO
             }
             return jobs;
         }
-
-        public void Add(Job job)
+        public void AddJob(Job job)
         {
-            using (SqlConnection conn = dbConn.GetConnection())
+            using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "INSERT INTO Jobs (Title, Description, Location, PostedDate, Status) VALUES (@Title, @Description, @Location, @PostedDate, @Status)";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@Title", job.Title);
-                cmd.Parameters.AddWithValue("@Description", job.Description);
-                cmd.Parameters.AddWithValue("@Location", job.Location);
-                cmd.Parameters.AddWithValue("@PostedDate", job.PostedDate);
-                cmd.Parameters.AddWithValue("@Status", job.Status);
+                string query = "INSERT INTO Job (Title, Description, Location, Status, PostedDate) VALUES (@Title, @Description, @Location, @Status, @PostedDate)";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@Title", job.Title);
+                command.Parameters.AddWithValue("@Description", job.Description);
+                command.Parameters.AddWithValue("@Location", job.Location);
+                command.Parameters.AddWithValue("@Status", job.Status);
+                command.Parameters.AddWithValue("@PostedDate", job.PostedDate);
 
-                conn.Open();
-                cmd.ExecuteNonQuery();
+                connection.Open();
+                command.ExecuteNonQuery();
             }
         }
 
-        public void Update(Job job)
+        // Read
+        public Job GetJobByID(int jobId)
         {
-            using (SqlConnection conn = dbConn.GetConnection())
-            {
-                string query = "UPDATE Jobs SET Title = @Title, Description = @Description, Location = @Location, PostedDate = @PostedDate, Status = @Status WHERE JobID = @JobID";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@JobID", job.JobID);
-                cmd.Parameters.AddWithValue("@Title", job.Title);
-                cmd.Parameters.AddWithValue("@Description", job.Description);
-                cmd.Parameters.AddWithValue("@Location", job.Location);
-                cmd.Parameters.AddWithValue("@PostedDate", job.PostedDate);
-                cmd.Parameters.AddWithValue("@Status", job.Status);
+            Job job = null;
 
-                conn.Open();
-                cmd.ExecuteNonQuery();
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                string query = "SELECT * FROM Job WHERE JobID = @JobID";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@JobID", jobId);
+
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    job = new Job(
+                        (int)reader["JobID"],
+                        reader["Title"].ToString(),
+                        reader["Description"].ToString(),
+                        reader["Location"].ToString(),
+                        reader["Status"].ToString(),
+                        (DateTime)reader["PostedDate"]
+                    );
+                }
+            }
+
+            return job;
+        }
+
+        // Update
+        public void UpdateJob(Job job)
+        {
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                string query = "UPDATE Job SET Title = @Title, Description = @Description, Location = @Location, Status = @Status, Application = @Application WHERE JobID = @JobID";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@Title", job.Title);
+                command.Parameters.AddWithValue("@Description", job.Description);
+                command.Parameters.AddWithValue("@Location", job.Location);
+                command.Parameters.AddWithValue("@Status", job.Status);
+                command.Parameters.AddWithValue("@JobID", job.JobID);
+                command.Parameters.AddWithValue("@PostedDate", job.PostedDate);
+
+                connection.Open();
+                command.ExecuteNonQuery();
             }
         }
 
-        public void Delete(int jobID)
+        // Delete
+        public void DeleteJob(int jobId)
         {
-            using (SqlConnection conn = dbConn.GetConnection())
+            using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "DELETE FROM Jobs WHERE JobID = @JobID";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@JobID", jobID);
+                string query = "DELETE FROM Job WHERE JobID = @JobID";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@JobID", jobId);
 
-                conn.Open();
-                cmd.ExecuteNonQuery();
+                connection.Open();
+                command.ExecuteNonQuery();
             }
         }
     }

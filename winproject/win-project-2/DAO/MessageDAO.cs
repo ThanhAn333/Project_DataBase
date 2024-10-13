@@ -30,12 +30,27 @@ namespace win_project_2.DAO
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
+                    User user1 = new User(
+                         (int)reader["UserID"],
+                        reader["UserName"].ToString(),
+                        reader["UserEmail"].ToString(),
+                        "",
+                        reader["Role"]?.ToString()
+                    );
+                    User user2 = new User(
+                         (int)reader["UserID"],
+                        reader["UserName"].ToString(),
+                        reader["UserEmail"].ToString(),
+                        "",
+                        reader["Role"]?.ToString()
+                   );
                     message = new Message(
                         (int)reader["MessageID"],
-                        (int)reader["SenderID"],
-                        (int)reader["ReceiverID"],
+                        user1,
+                        user2,
                         reader["Content"].ToString(),
                         (DateTime)reader["Timestamp"]
+
                     );
                 }
             }
@@ -54,63 +69,77 @@ namespace win_project_2.DAO
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
+                    User user1 = new User(
+                         (int)reader["UserID"],
+                        reader["UserName"].ToString(),
+                        reader["UserEmail"].ToString(),
+                        "",
+                        reader["Role"]?.ToString()
+                    );
+                    User user2 = new User(
+                         (int)reader["UserID"],
+                        reader["UserName"].ToString(),
+                        reader["UserEmail"].ToString(),
+                        "",
+                        reader["Role"]?.ToString()
+                   );
                     Message message = new Message(
                         (int)reader["MessageID"],
-                        (int)reader["SenderID"],
-                        (int)reader["ReceiverID"],
+                        user1,
+                        user2,
                         reader["Content"].ToString(),
                         (DateTime)reader["Timestamp"]
-                    );
+                    ) ;
                     messages.Add(message);
                 }
             }
             return messages;
         }
-
-        public void Add(Message message)
+        public void AddMessage(Message message)
         {
-            using (SqlConnection conn = dbConn.GetConnection())
+            using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "INSERT INTO Messages (SenderID, ReceiverID, Content, Timestamp) VALUES (@SenderID, @ReceiverID, @Content, @Timestamp)";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@SenderID", message.SenderID);
-                cmd.Parameters.AddWithValue("@ReceiverID", message.ReceiverID);
-                cmd.Parameters.AddWithValue("@Content", message.Content);
-                cmd.Parameters.AddWithValue("@Timestamp", message.Timestamp);
-
-                conn.Open();
-                cmd.ExecuteNonQuery();
+                string query = "INSERT INTO Message (SenderID, ReceiverID, Content, Timestamp) VALUES (@SenderID, @ReceiverID, @Content, @Timestamp)";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@SenderID", message.Sender.UserID);
+                command.Parameters.AddWithValue("@ReceiverID", message.Receiver.UserID);
+                command.Parameters.AddWithValue("@Content", message.Content);
+                command.Parameters.AddWithValue("@Timestamp", message.Timestamp);
+                connection.Open();
+                command.ExecuteNonQuery();
             }
         }
 
-        public void Update(Message message)
-        {
-            using (SqlConnection conn = dbConn.GetConnection())
-            {
-                string query = "UPDATE Messages SET SenderID = @SenderID, ReceiverID = @ReceiverID, Content = @Content, Timestamp = @Timestamp WHERE MessageID = @MessageID";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@MessageID", message.MessageID);
-                cmd.Parameters.AddWithValue("@SenderID", message.SenderID);
-                cmd.Parameters.AddWithValue("@ReceiverID", message.ReceiverID);
-                cmd.Parameters.AddWithValue("@Content", message.Content);
-                cmd.Parameters.AddWithValue("@Timestamp", message.Timestamp);
 
-                conn.Open();
-                cmd.ExecuteNonQuery();
+
+        // Update
+        public void UpdateMessage(Message message)
+        {
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                string query = "UPDATE Message SET Content = @Content WHERE MessageID = @MessageID";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@Content", message.Content);
+                command.Parameters.AddWithValue("@MessageID", message.MessageID);
+
+                connection.Open();
+                command.ExecuteNonQuery();
             }
         }
 
-        public void Delete(int messageID)
+        // Delete
+        public void DeleteMessage(int messageId)
         {
-            using (SqlConnection conn = dbConn.GetConnection())
+            using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "DELETE FROM Messages WHERE MessageID = @MessageID";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@MessageID", messageID);
+                string query = "DELETE FROM Message WHERE MessageID = @MessageID";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@MessageID", messageId);
 
-                conn.Open();
-                cmd.ExecuteNonQuery();
+                connection.Open();
+                command.ExecuteNonQuery();
             }
         }
+
     }
 }

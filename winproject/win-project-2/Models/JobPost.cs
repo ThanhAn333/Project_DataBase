@@ -9,17 +9,17 @@ namespace win_project_2.DAO
     public class JobPost
     {
         public int JobPostID { get; set; }
-        public int UserID { get; set; }
+        public User Recruiter { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public string Location { get; set; }
         public DateTime PostedDate { get; set; }
-        public string Status { get; set; }
+        public string Status { get; set; } 
 
-        public JobPost(int jobPostID, int userID, string title, string description, string location, DateTime postedDate, string status)
+        public JobPost(int jobPostId, User recruiter, string title, string description, string location, string status, DateTime postedDate)
         {
-            JobPostID = jobPostID;
-            UserID = userID;
+            JobPostID = jobPostId;
+            Recruiter = recruiter;
             Title = title;
             Description = description;
             Location = location;
@@ -27,5 +27,6 @@ namespace win_project_2.DAO
             Status = status;
         }
     }
+
 
 }

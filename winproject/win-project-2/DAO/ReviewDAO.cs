@@ -17,103 +17,97 @@ namespace win_project_2.DAO
             dbConn = new DatabaseConnection();
         }
 
-        public Review GetById(int reviewID)
+        // Create
+        public void AddReview(Review review)
+        {
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                string query = "INSERT INTO Review (UserID, JobID, Rating, Comment, ReviewDate) VALUES (@UserID, @JobID, @Rating, @Comment, @ReviewDate)";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@UserID", review.Reviewer.UserID);
+                command.Parameters.AddWithValue("@JobID", review.Job.JobID);
+                command.Parameters.AddWithValue("@Rating", review.Rating);
+                command.Parameters.AddWithValue("@Comment", review.Comment);
+                command.Parameters.AddWithValue("@ReviewDate", review.ReviewDate);
+
+                connection.Open();
+                command.ExecuteNonQuery();
+            }
+        }
+
+        // Read
+        public Review GetReviewByID(int reviewId)
         {
             Review review = null;
-            using (SqlConnection conn = dbConn.GetConnection())
-            {
-                string query = "SELECT * FROM Reviews WHERE ReviewID = @ReviewID";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@ReviewID", reviewID);
 
-                conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                string query = "SELECT * FROM [dbo].[Review] WHERE ReviewID = @ReviewID";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@ReviewID", reviewId);
+
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+
                 if (reader.Read())
                 {
+                    User user = new User(
+                       (int)reader["UserID"],
+                       reader["UserName"].ToString(),
+                       reader["UserEmail"].ToString(),
+                       "",
+                       reader["Role"]?.ToString()
+                   );
+
+                    Job job = new Job(
+                        (int)reader["JobID"],
+                        reader["JobTitle"].ToString(),
+                        reader["JobDescription"].ToString(),
+                        reader["Location"].ToString(),
+                        reader["Status"].ToString(),
+                        (DateTime)reader["PostedDate"]
+                    );
                     review = new Review(
                         (int)reader["ReviewID"],
-                        (int)reader["UserID"],
-                        (int)reader["JobID"],
+                        user,
+                        job,
                         (int)reader["Rating"],
                         reader["Comment"].ToString(),
                         (DateTime)reader["ReviewDate"]
                     );
                 }
             }
+
             return review;
         }
 
-        public List<Review> GetAll()
+        // Update
+        public void UpdateReview(Review review)
         {
-            List<Review> reviews = new List<Review>();
-            using (SqlConnection conn = dbConn.GetConnection())
+            using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "SELECT * FROM Reviews";
-                SqlCommand cmd = new SqlCommand(query, conn);
+                string query = "UPDATE Review SET Rating = @Rating, Comment = @Comment, ReviewDate = @ReviewDate WHERE ReviewID = @ReviewID";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@Rating", review.Rating);
+                command.Parameters.AddWithValue("@Comment", review.Comment);
+                command.Parameters.AddWithValue("@ReviewID", review.ReviewID);
 
-                conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    Review review = new Review(
-                        (int)reader["ReviewID"],
-                        (int)reader["UserID"],
-                        (int)reader["JobID"],
-                        (int)reader["Rating"],
-                        reader["Comment"].ToString(),
-                        (DateTime)reader["ReviewDate"]
-                    );
-                    reviews.Add(review);
-                }
-            }
-            return reviews;
-        }
-
-        public void Add(Review review)
-        {
-            using (SqlConnection conn = dbConn.GetConnection())
-            {
-                string query = "INSERT INTO Reviews (UserID, JobID, Rating, Comment, ReviewDate) VALUES (@UserID, @JobID, @Rating, @Comment, @ReviewDate)";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@UserID", review.UserID);
-                cmd.Parameters.AddWithValue("@JobID", review.JobID);
-                cmd.Parameters.AddWithValue("@Rating", review.Rating);
-                cmd.Parameters.AddWithValue("@Comment", review.Comment);
-                cmd.Parameters.AddWithValue("@ReviewDate", review.ReviewDate);
-
-                conn.Open();
-                cmd.ExecuteNonQuery();
+                connection.Open();
+                command.ExecuteNonQuery();
             }
         }
 
-        public void Update(Review review)
+        // Delete
+        public void DeleteReview(int reviewId)
         {
-            using (SqlConnection conn = dbConn.GetConnection())
+            using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "UPDATE Reviews SET UserID = @UserID, JobID = @JobID, Rating = @Rating, Comment = @Comment, ReviewDate = @ReviewDate WHERE ReviewID = @ReviewID";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@ReviewID", review.ReviewID);
-                cmd.Parameters.AddWithValue("@UserID", review.UserID);
-                cmd.Parameters.AddWithValue("@JobID", review.JobID);
-                cmd.Parameters.AddWithValue("@Rating", review.Rating);
-                cmd.Parameters.AddWithValue("@Comment", review.Comment);
-                cmd.Parameters.AddWithValue("@ReviewDate", review.ReviewDate);
+                string query = "DELETE FROM Review WHERE ReviewID = @ReviewID";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@ReviewID", reviewId);
 
-                conn.Open();
-                cmd.ExecuteNonQuery();
-            }
-        }
-
-        public void Delete(int reviewID)
-        {
-            using (SqlConnection conn = dbConn.GetConnection())
-            {
-                string query = "DELETE FROM Reviews WHERE ReviewID = @ReviewID";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@ReviewID", reviewID);
-
-                conn.Open();
-                cmd.ExecuteNonQuery();
+                connection.Open();
+                command.ExecuteNonQuery();
             }
         }
     }
