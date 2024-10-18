@@ -52,11 +52,17 @@ namespace win_project_2.DAO
                 if (reader.Read())
                 {
                     User user = new User(
-                       (int)reader["UserID"],
-                       reader["UserName"].ToString(),
-                       reader["UserEmail"].ToString(),
-                       "",
-                       reader["Role"]?.ToString()
+                         (int)reader["UserID"],
+                        reader["UserName"].ToString(),
+                        reader["UserEmail"].ToString(),
+                        "",  // Chưa có mật khẩu, có thể bỏ qua hoặc xử lý sau
+                        reader["Role"]?.ToString(), // Sử dụng toán tử null-conditional để tránh lỗi null
+                        reader["Address"]?.ToString(), // Giả sử bạn đã thêm Address trong User
+                        (DateTime)reader["DateOfBirth"], // Ngày sinh
+                        reader["PhoneNumber"]?.ToString(), // Số điện thoại
+                        reader["ProfilePicture"]?.ToString(), // Hình đại diện
+                        (DateTime)reader["CreatedAt"], // Ngày tạo
+                        (DateTime)reader["UpdatedAt"]  // Ngày cập nhật
                    );
 
                     Job job = new Job(
@@ -64,8 +70,11 @@ namespace win_project_2.DAO
                         reader["JobTitle"].ToString(),
                         reader["JobDescription"].ToString(),
                         reader["Location"].ToString(),
-                        reader["Status"].ToString(),
-                        (DateTime)reader["PostedDate"]
+                        reader["Salary"].ToString(), // Giả sử bạn đã thêm Salary trong Job
+                        reader["Type"]?.ToString(), // Loại công việc
+                        reader["Company"]?.ToString(), // Tên công ty
+                        (DateTime)reader["PostedDate"],
+                        reader["Status"]?.ToString()
                     );
                     review = new Review(
                         (int)reader["ReviewID"],

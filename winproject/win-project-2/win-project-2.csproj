@@ -272,6 +272,24 @@
     <Compile Include="DAO\SkillDAO.cs" />
     <Compile Include="DAO\UserDAO.cs" />
     <Compile Include="DAO\UserSkillDAO.cs" />
+    <Compile Include="Forms\Employer\HomeEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Employer\HomeEmployee.Designer.cs">
+      <DependentUpon>HomeEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormEmployee.Designer.cs">
+      <DependentUpon>FormEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recruiter\HomeRecruiter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recruiter\HomeRecruiter.Designer.cs">
+      <DependentUpon>HomeRecruiter.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Application.cs" />
     <Compile Include="Models\Job.cs" />
     <Compile Include="Models\JobPost.cs" />

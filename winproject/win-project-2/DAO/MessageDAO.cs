@@ -31,18 +31,30 @@ namespace win_project_2.DAO
                 if (reader.Read())
                 {
                     User user1 = new User(
-                         (int)reader["UserID"],
+                          (int)reader["UserID"],
                         reader["UserName"].ToString(),
                         reader["UserEmail"].ToString(),
-                        "",
-                        reader["Role"]?.ToString()
+                        "",  // Chưa có mật khẩu, có thể bỏ qua hoặc xử lý sau
+                        reader["Role"]?.ToString(), // Sử dụng toán tử null-conditional để tránh lỗi null
+                        reader["Address"]?.ToString(), // Giả sử bạn đã thêm Address trong User
+                        (DateTime)reader["DateOfBirth"], // Ngày sinh
+                        reader["PhoneNumber"]?.ToString(), // Số điện thoại
+                        reader["ProfilePicture"]?.ToString(), // Hình đại diện
+                        (DateTime)reader["CreatedAt"], // Ngày tạo
+                        (DateTime)reader["UpdatedAt"]  // Ngày cập nhật
                     );
                     User user2 = new User(
-                         (int)reader["UserID"],
+                          (int)reader["UserID"],
                         reader["UserName"].ToString(),
                         reader["UserEmail"].ToString(),
-                        "",
-                        reader["Role"]?.ToString()
+                        "",  // Chưa có mật khẩu, có thể bỏ qua hoặc xử lý sau
+                        reader["Role"]?.ToString(), // Sử dụng toán tử null-conditional để tránh lỗi null
+                        reader["Address"]?.ToString(), // Giả sử bạn đã thêm Address trong User
+                        (DateTime)reader["DateOfBirth"], // Ngày sinh
+                        reader["PhoneNumber"]?.ToString(), // Số điện thoại
+                        reader["ProfilePicture"]?.ToString(), // Hình đại diện
+                        (DateTime)reader["CreatedAt"], // Ngày tạo
+                        (DateTime)reader["UpdatedAt"]  // Ngày cập nhật
                    );
                     message = new Message(
                         (int)reader["MessageID"],
@@ -70,18 +82,30 @@ namespace win_project_2.DAO
                 while (reader.Read())
                 {
                     User user1 = new User(
-                         (int)reader["UserID"],
+                        (int)reader["UserID"],
                         reader["UserName"].ToString(),
                         reader["UserEmail"].ToString(),
-                        "",
-                        reader["Role"]?.ToString()
+                        "",  // Chưa có mật khẩu, có thể bỏ qua hoặc xử lý sau
+                        reader["Role"]?.ToString(), // Sử dụng toán tử null-conditional để tránh lỗi null
+                        reader["Address"]?.ToString(), // Giả sử bạn đã thêm Address trong User
+                        (DateTime)reader["DateOfBirth"], // Ngày sinh
+                        reader["PhoneNumber"]?.ToString(), // Số điện thoại
+                        reader["ProfilePicture"]?.ToString(), // Hình đại diện
+                        (DateTime)reader["CreatedAt"], // Ngày tạo
+                        (DateTime)reader["UpdatedAt"]  // Ngày cập nhật
                     );
                     User user2 = new User(
                          (int)reader["UserID"],
                         reader["UserName"].ToString(),
                         reader["UserEmail"].ToString(),
-                        "",
-                        reader["Role"]?.ToString()
+                        "",  // Chưa có mật khẩu, có thể bỏ qua hoặc xử lý sau
+                        reader["Role"]?.ToString(), // Sử dụng toán tử null-conditional để tránh lỗi null
+                        reader["Address"]?.ToString(), // Giả sử bạn đã thêm Address trong User
+                        (DateTime)reader["DateOfBirth"], // Ngày sinh
+                        reader["PhoneNumber"]?.ToString(), // Số điện thoại
+                        reader["ProfilePicture"]?.ToString(), // Hình đại diện
+                        (DateTime)reader["CreatedAt"], // Ngày tạo
+                        (DateTime)reader["UpdatedAt"]  // Ngày cập nhật
                    );
                     Message message = new Message(
                         (int)reader["MessageID"],

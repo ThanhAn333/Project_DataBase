@@ -83,9 +83,9 @@
             // 
             this.guna2HtmlLabel2.AutoSize = false;
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(157, 298);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(29, 329);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(144, 15);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(324, 16);
             this.guna2HtmlLabel2.TabIndex = 45;
             this.guna2HtmlLabel2.Text = "Bạn chưa có tài khoản?";
             // 
@@ -151,6 +151,7 @@
             this.btnSignUp.TabIndex = 4;
             this.btnSignUp.Text = "Sign up";
             this.btnSignUp.UseTransparentBackground = true;
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // btnLogin
             // 
@@ -189,12 +190,12 @@
             this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtPassword.ForeColor = System.Drawing.Color.Transparent;
+            this.txtPassword.ForeColor = System.Drawing.Color.Black;
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassword.Location = new System.Drawing.Point(29, 245);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '\0';
+            this.txtPassword.PasswordChar = '.';
             this.txtPassword.PlaceholderForeColor = System.Drawing.Color.Black;
             this.txtPassword.PlaceholderText = "Password";
             this.txtPassword.SelectedText = "";

@@ -4,8 +4,9 @@
     "\\win-project-2",
     "\\win-project-2\\DAO",
     "\\win-project-2\\Forms",
+    "\\win-project-2\\Models",
     "\\win-project-2\\SQLConn"
   ],
-  "SelectedNode": "\\win-project-2\\DAO\\UserDAO.cs",
+  "SelectedNode": "\\win-project-2\\Models\\JobPost.cs",
   "PreviewInSolutionExplorer": false
 }

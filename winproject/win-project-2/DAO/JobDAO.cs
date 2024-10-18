@@ -31,11 +31,14 @@ namespace win_project_2.DAO
                 {
                     Job job = new Job(
                         (int)reader["JobID"],
-                        reader["Title"].ToString(),
-                        reader["Description"].ToString(),
+                        reader["JobTitle"].ToString(),
+                        reader["JobDescription"].ToString(),
                         reader["Location"].ToString(),
-                        reader["Status"].ToString(),
-                        (DateTime)reader["PostedDate"]
+                        reader["Salary"].ToString(), // Giả sử bạn đã thêm Salary trong Job
+                        reader["Type"]?.ToString(), // Loại công việc
+                        reader["Company"]?.ToString(), // Tên công ty
+                        (DateTime)reader["PostedDate"],
+                        reader["Status"]?.ToString()
                     );
                     jobs.Add(job);
                 }
@@ -77,11 +80,14 @@ namespace win_project_2.DAO
                 {
                     job = new Job(
                         (int)reader["JobID"],
-                        reader["Title"].ToString(),
-                        reader["Description"].ToString(),
+                        reader["JobTitle"].ToString(),
+                        reader["JobDescription"].ToString(),
                         reader["Location"].ToString(),
-                        reader["Status"].ToString(),
-                        (DateTime)reader["PostedDate"]
+                        reader["Salary"].ToString(), // Giả sử bạn đã thêm Salary trong Job
+                        reader["Type"]?.ToString(), // Loại công việc
+                        reader["Company"]?.ToString(), // Tên công ty
+                        (DateTime)reader["PostedDate"],
+                        reader["Status"]?.ToString()
                     );
                 }
             }
