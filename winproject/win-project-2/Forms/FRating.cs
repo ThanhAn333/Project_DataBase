@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using win_project_2.DataClass;
+
 
 namespace win_project_2.Forms
 {
@@ -15,7 +15,7 @@ namespace win_project_2.Forms
     {
 
         public string NguoiThoId = "";
-        public string NguoiTimThoId = GlobalVariables.id;
+        
         string FileImageName = "";
         public FRating(string nguoithoid)
         {
@@ -63,27 +63,7 @@ namespace win_project_2.Forms
 
         private async void btn_up_Click(object sender, EventArgs e)
         {
-            var dt = new DB();
-            var path = "";
-            if (FileImageName != "")
-            {
-                path = await dt.uploadFile(FileImageName);
-            }
-            Review review = new Review(NguoiThoId, NguoiTimThoId, guna2RatingStar1.Value, txb_cmt.Text, path);
-            await dt.UpReview(review, NguoiThoId);
-
-            NguoiTho nguoitho = await dt.GetInfoNguoiTho(NguoiThoId);
-            if (nguoitho.rate == 0)
-            {
-                nguoitho.rate = guna2RatingStar1.Value;
-            }
-            else
-            {
-                nguoitho.rate = (nguoitho.rate + guna2RatingStar1.Value) / 2;
-            }
             
-            await dt.UpdateRate(NguoiThoId, nguoitho.rate);
-            this.Close();
         }
 
         private void label1_Click(object sender, EventArgs e)

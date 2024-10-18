@@ -34,7 +34,8 @@ namespace win_project_2.DAO
                         reader["Title"].ToString(),
                         reader["Description"].ToString(),
                         reader["Location"].ToString(),
-                        reader["Status"].ToString()
+                        reader["Status"].ToString(),
+                        (DateTime)reader["PostedDate"]
                     );
                     jobs.Add(job);
                 }

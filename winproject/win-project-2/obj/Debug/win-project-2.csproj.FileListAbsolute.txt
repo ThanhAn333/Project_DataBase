@@ -899,7 +899,6 @@ D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\Project_JobApp\winproject\win-proje
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\Project_JobApp\winproject\win-project-2\obj\Debug\win_project_2.Forms.FShowPostEmloyee.resources
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\Project_JobApp\winproject\win-project-2\obj\Debug\win_project_2.Forms.FShowRating.resources
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\Project_JobApp\winproject\win-project-2\obj\Debug\win_project_2.Forms.ThoDetail.resources
-D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\Project_JobApp\winproject\win-project-2\obj\Debug\win_project_2.DataClass.FormTest.resources
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\Project_JobApp\winproject\win-project-2\obj\Debug\win_project_2.Forms.FChat.resources
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\Project_JobApp\winproject\win-project-2\obj\Debug\win_project_2.Forms.FHome.resources
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\Project_JobApp\winproject\win-project-2\obj\Debug\win_project_2.FMain.resources

@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using win_project_2.Forms;
 using win_project_2.SQLConn;
 
 namespace win_project_2.DAO
@@ -93,5 +94,45 @@ namespace win_project_2.DAO
                 command.ExecuteNonQuery();
             }
         }
+
+
+        //login
+        public void Login(String email, String password)
+        {
+            string sql = "select Role from User  where Email= @Email and Password= @Password";
+            SqlCommand command = new SqlCommand(sql, dbConn.GetConnection());
+            command.Parameters.AddWithValue("@Email", email);
+            command.Parameters.AddWithValue("@Password", password);
+            object result = command.ExecuteScalar();
+            if (result != null)
+            {
+
+                string PhanQuyen = result.ToString();
+                if (PhanQuyen == "Employer")
+                {
+                    FHome fHome = new FHome();
+                    fHome.ShowDialog();
+
+
+                }
+                else if (PhanQuyen == "Recuiter")
+                {
+                   
+                }
+            }
+        }
+
+        public void Register(String name, String email, String password)
+        {
+            string sql = "insert into Users (Name, Email, Password) Values (@Name, @Email, @Password)";
+            SqlCommand command = new SqlCommand(sql, dbConn.GetConnection());
+            command.Parameters.AddWithValue("@Name", email);
+            command.Parameters.AddWithValue("@Email", email);
+            command.Parameters.AddWithValue("@Password", password);
+            
+        }
+        
+
+
     }
 }

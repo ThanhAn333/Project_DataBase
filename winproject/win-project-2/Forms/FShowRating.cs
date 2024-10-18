@@ -7,13 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using win_project_2.DataClass;
+
 
 namespace win_project_2.Forms
 {
     public partial class FShowRating : Form
     {
-        public FShowRating(Review review)
+        public FShowRating()
         {
             InitializeComponent();
             
@@ -26,6 +26,11 @@ namespace win_project_2.Forms
         }
 
         private void ucRating1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

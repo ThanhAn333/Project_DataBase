@@ -120,6 +120,7 @@
             this.guna2Shapes2.TabIndex = 52;
             this.guna2Shapes2.Text = "guna2Shapes1";
             this.guna2Shapes2.Zoom = 80;
+            this.guna2Shapes2.Click += new System.EventHandler(this.guna2Shapes2_Click_1);
             // 
             // label2
             // 
@@ -194,6 +195,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FHome";
             this.Text = "FHome";
+            this.Load += new System.EventHandler(this.FHome_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pt_Chat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pt_TimTho)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pt_TimViec)).EndInit();

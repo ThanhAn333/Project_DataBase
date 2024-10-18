@@ -93,6 +93,7 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "FListNguoiTho";
             this.Text = "FListNguoiTho";
+            this.Load += new System.EventHandler(this.FListNguoiTho_Load);
             this.ResumeLayout(false);
 
         }

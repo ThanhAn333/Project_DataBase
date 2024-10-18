@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using win_project_2.DataClass;
 using win_project_2.Forms;
 
 namespace win_project_2.UserControls
@@ -25,9 +24,7 @@ namespace win_project_2.UserControls
 
         public async void LoadData(string status)
         {
-            var dt = new DB();
-            NguoiTho nguoiTho = await dt.GetInfoNguoiTho(status);
-            lb_name.Text = nguoiTho.Name + "   ĐÃ HOÀN THÀNH CÔNG VIỆC";
+           
         }
 
         private void btn_rv_Click(object sender, EventArgs e)

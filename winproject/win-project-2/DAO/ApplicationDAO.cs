@@ -21,7 +21,7 @@ namespace win_project_2.DAO
         {
             List<Application> applications = new List<Application>();
 
-            using (SqlConnection connection = dbConn.GetConnection())
+            using (SqlConnection connection = dbConn.GetConnection() )
             {
                 string query = @"SELECT a.ApplicationID, a.UserID, a.JobID, a.ApplicationDate, a.Status, u.Name AS UserName, u.Email AS UserEmail, j.Title AS JobTitle, j.Description AS JobDescription FROM Application a JOIN Users u ON a.UserID = u.UserID JOIN Job j ON a.JobID = j.JobID";
                 SqlCommand command = new SqlCommand(query, connection);

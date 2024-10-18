@@ -1,38 +1,53 @@
 ﻿using System;
+using System.Data;
 using System.Data.SqlClient;
 
 namespace win_project_2.SQLConn
 {
     public class DatabaseConnection
     {
-        private string connectionString;
+        public static string strconn = "Data Source=.;Initial Catalog=JOBAPP;Persist Security Info=True;User ID=sa;Password=***********;Encrypt=False";
+        private SqlConnection con = new SqlConnection(strconn);
 
-        public DatabaseConnection()
-        {
-            connectionString = @"Data Source=.;Initial Catalog=JobApp;User ID=sa;Password=***********;Encrypt=False";
-        }
-
+        // Phương thức mở kết nối
         public SqlConnection GetConnection()
         {
-            return new SqlConnection(connectionString);
+            return con;
         }
-
-        public bool TestConnection()
+        public void myConnect()
         {
             try
             {
-                using (SqlConnection conn = GetConnection())
+                if (con.State == ConnectionState.Closed)
                 {
-                    conn.Open();
-                    Console.WriteLine("Kết nối thành công!");
-                    return true;
+                    con.Open();
+                    Console.WriteLine("Kết nối thành công.");
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Kết nối thất bại: " + ex.Message);
-                return false;
+                Console.WriteLine("Lỗi khi kết nối: " + ex.Message);
             }
         }
+
+        // Phương thức đóng kết nối
+        public void myClose()
+        {
+            try
+            {
+                if (con.State == ConnectionState.Open)
+                {
+                    con.Close();
+                    Console.WriteLine("Đóng kết nối thành công.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Lỗi khi đóng kết nối: " + ex.Message);
+            }
+        }
+
+
+        
     }
 }

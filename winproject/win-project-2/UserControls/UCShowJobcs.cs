@@ -14,20 +14,13 @@ namespace win_project_2.UserControls
     public partial class UCShowJobcs : UserControl
     {
         string id_post = "";
-        public UCShowJobcs(Post post)
+        public UCShowJobcs()
         {
             InitializeComponent();
-            LoadData(post);
+            
         }
 
-        public async void LoadData(Post post)
-        {
-            id_post = "p" + post.Id;
-            lb_tag.Text = post.Tag;
-            lb_location.Text = post.Location;
-            lb_price.Text = post.Price.ToString();
-            lb_senderid.Text = post.SenderId;
-        }
+        
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {

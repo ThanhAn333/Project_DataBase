@@ -204,6 +204,7 @@
             this.panelTittleBar.Name = "panelTittleBar";
             this.panelTittleBar.Size = new System.Drawing.Size(1153, 28);
             this.panelTittleBar.TabIndex = 1;
+            this.panelTittleBar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTittleBar_Paint_1);
             // 
             // btnMinimize
             // 

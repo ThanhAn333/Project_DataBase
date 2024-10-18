@@ -30,7 +30,7 @@ namespace win_project_2
         {
             InitializeComponent();
             CollapseMenu();
-            OpenChildForm(new FHome(this));
+            
             this.Padding = new Padding(2);
             this.BackColor = Color.FromArgb(98, 102, 244);//Border color
         }
@@ -261,7 +261,6 @@ namespace win_project_2
         private void btnHome_Click(object sender, EventArgs e)
         {
 
-            OpenChildForm(new FHome(this));
         }
 
         private void btnSignOut_Click(object sender, EventArgs e)
@@ -300,14 +299,12 @@ namespace win_project_2
 
         private void btnNotify_Click(object sender, EventArgs e)
         {
-            if (GlobalVariables.isTho)
-            {
-                OpenChildForm(new FListWaitJob());
-            }
-            else
-            {
-                OpenChildForm(new FListNTapply());
-            }
+           
+        }
+
+        private void panelTittleBar_Paint_1(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

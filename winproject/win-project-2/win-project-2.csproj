@@ -281,11 +281,6 @@
     <Compile Include="Models\Skill.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserSkill.cs" />
-    <Compile Include="DataClass\Data.cs" />
-    <Compile Include="DataClass\DB.cs" />
-    <Compile Include="DataClass\Firebase.cs" />
-    <Compile Include="DataClass\Message.cs" />
-    <Compile Include="DataClass\Review.cs" />
     <Compile Include="Forms\FDetail1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -358,14 +353,6 @@
     <Compile Include="Forms\ThoDetail.Designer.cs">
       <DependentUpon>ThoDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormTest.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormTest.Designer.cs">
-      <DependentUpon>FormTest.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DataClass\NguoiTimTho.cs" />
-    <Compile Include="DataClass\Post.cs" />
     <Compile Include="Forms\FChat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -402,7 +389,6 @@
     <Compile Include="Forms\NhanVienView.Designer.cs">
       <DependentUpon>NhanVienView.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataClass\GlobalVariables.cs" />
     <Compile Include="Forms\FInfor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -415,7 +401,6 @@
     <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataClass\NguoiTho.cs" />
     <Compile Include="Program\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -436,7 +421,6 @@
     <Compile Include="UserControls\UCListChat.Designer.cs">
       <DependentUpon>UCListChat.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataClass\UserInfo.cs" />
     <Compile Include="UserControls\UCRating.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -514,9 +498,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ThoDetail.resx">
       <DependentUpon>ThoDetail.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormTest.resx">
-      <DependentUpon>FormTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FChat.resx">
       <DependentUpon>FChat.cs</DependentUpon>

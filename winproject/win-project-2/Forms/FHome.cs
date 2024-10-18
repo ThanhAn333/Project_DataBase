@@ -17,10 +17,10 @@ namespace win_project_2.Forms
 
         private FMain mainForm;
 
-        public FHome(FMain mainForm)
+        public FHome()
         {
             InitializeComponent();
-            this.mainForm = mainForm;
+            
         }
 
 
@@ -68,6 +68,16 @@ namespace win_project_2.Forms
         private void pt_Chat_Click_1(object sender, EventArgs e)
         {
             mainForm.OpenChildForm(new FPostEmloyee());
+        }
+
+        private void FHome_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Shapes2_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
