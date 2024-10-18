@@ -3,24 +3,176 @@
   "WorkspaceRootPath": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|d:\\nam3\\h\u1EC7 qt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\project\\project_jobapp\\winproject\\win-project-2\\forms\\general\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\general\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|d:\\nam3\\h\u1EC7 qt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\project\\project_jobapp\\winproject\\win-project-2\\forms\\general\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\general\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\dao\\userskilldao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\dao\\userskilldao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\dao\\skilldao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\dao\\skilldao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\dao\\reviewdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\dao\\reviewdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\dao\\messagedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\dao\\messagedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\dao\\jobskilldao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\dao\\jobskilldao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\dao\\jobpostdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\dao\\jobpostdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\dao\\applicationdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\dao\\applicationdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\dao\\jobdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\dao\\jobdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\forms\\fchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\fchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\models\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\models\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\forms\\fdetail1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\fdetail1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|d:\\nam3\\h\u1EC7 qt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\project\\project_jobapp\\winproject\\win-project-2\\models\\jobskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\models\\jobskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|d:\\nam3\\h\u1EC7 qt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\project\\project_jobapp\\winproject\\win-project-2\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\models\\jobpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\models\\jobpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\models\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\models\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\models\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\models\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\forms\\fpostemloyee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\fpostemloyee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\forms\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\forms\\flistwaitjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\flistwaitjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\forms\\flistreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\flistreview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\forms\\flistnguoitho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\flistnguoitho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|d:\\nam3\\h\u1EC7 qt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\project\\project_jobapp\\winproject\\win-project-2\\forms\\general\\formregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\general\\formregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|d:\\nam3\\h\u1EC7 qt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\project\\project_jobapp\\winproject\\win-project-2\\forms\\general\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\general\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|d:\\nam3\\h\u1EC7 qt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\project\\project_jobapp\\winproject\\win-project-2\\forms\\general\\formregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\general\\formregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|d:\\nam3\\h\u1EC7 qt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\project\\project_jobapp\\winproject\\win-project-2\\forms\\general\\formregister.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\general\\formregister.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\dao\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\dao\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|d:\\nam3\\h\u1EC7 qt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\project\\project_jobapp\\winproject\\win-project-2\\forms\\employer\\homeemployee.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\employer\\homeemployee.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|d:\\nam3\\h\u1EC7 qt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\project\\project_jobapp\\winproject\\win-project-2\\forms\\employer\\homeemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\employer\\homeemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\forms\\flistntapply.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\flistntapply.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\usercontrols\\ucaccept.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\usercontrols\\ucaccept.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\usercontrols\\uclistchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\usercontrols\\uclistchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\usercontrols\\ucrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\usercontrols\\ucrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\usercontrols\\ucreceive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\usercontrols\\ucreceive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\usercontrols\\ucshowjobcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\usercontrols\\ucshowjobcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\usercontrols\\ucwaitjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\usercontrols\\ucwaitjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\usercontrols\\ucwriterv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\usercontrols\\ucwriterv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\usercontrols\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\usercontrols\\usercontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\forms\\thodetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\thodetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\forms\\nhanvienview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\nhanvienview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\forms\\fshowlistjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\fshowlistjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\forms\\frating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\frating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\forms\\fhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -31,84 +183,32 @@
       "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\finfor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|d:\\nam3\\h\u1EC7 qt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\project\\project_jobapp\\winproject\\win-project-2\\forms\\fpostemloyee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\fpostemloyee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\forms\\flistchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\flistchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|d:\\nam3\\h\u1EC7 qt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\project\\project_jobapp\\winproject\\win-project-2\\forms\\formemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\formemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\forms\\fshowrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\fshowrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\dao\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\dao\\userdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\forms\\fstatistic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\fstatistic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\forms\\fdetail1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\fdetail1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\forms\\fchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\fchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\sqlconn\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\sqlconn\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\dao\\userskilldao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\dao\\userskilldao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|d:\\nam3\\h\u1EC7 qt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\project\\project_jobapp\\winproject\\win-project-2\\dao\\skilldao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\dao\\skilldao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\dao\\reviewdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\dao\\reviewdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\dao\\jobdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\dao\\jobdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|d:\\nam3\\h\u1EC7 qt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\project\\project_jobapp\\winproject\\win-project-2\\dao\\messagedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\dao\\messagedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|d:\\nam3\\h\u1EC7 qt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\project\\project_jobapp\\winproject\\win-project-2\\dao\\jobskilldao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\dao\\jobskilldao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\dao\\jobpostdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\dao\\jobpostdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\models\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\models\\job.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|d:\\nam3\\h\u1EC7 qt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\project\\project_jobapp\\winproject\\win-project-2\\forms\\employer\\homeemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\employer\\homeemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|d:\\nam3\\h\u1EC7 qt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\project\\project_jobapp\\winproject\\win-project-2\\forms\\recruiter\\homerecruiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\forms\\recruiter\\homerecruiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\recruiter\\homerecruiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|d:\\nam3\\h\u1EC7 qt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\project\\project_jobapp\\winproject\\win-project-2\\forms\\nhanvienview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\nhanvienview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\models\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\models\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|d:\\nam3\\h\u1EC7 qt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\project\\project_jobapp\\winproject\\win-project-2\\models\\jobpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\models\\jobpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\models\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\models\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\models\\userskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -119,32 +219,12 @@
       "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\forms\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\forms\\fhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\fhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\program\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\program\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\forms\\flistchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\flistchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\forms\\flistntapply.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\flistntapply.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\forms\\flistnguoitho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\flistnguoitho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\forms\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -154,7 +234,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -178,309 +258,149 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FHome.cs [Design]",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FHome.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Forms\\FHome.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FHome.cs [Design]",
-              "RelativeToolTip": "win-project-2\\Forms\\FHome.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T06:34:53.041Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FDetail1.cs [Design]",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FDetail1.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Forms\\FDetail1.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FDetail1.cs [Design]",
-              "RelativeToolTip": "win-project-2\\Forms\\FDetail1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T06:14:54.604Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FChat.cs [Design]",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FChat.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Forms\\FChat.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FChat.cs [Design]",
-              "RelativeToolTip": "win-project-2\\Forms\\FChat.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T06:13:00.742Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\LoginForm.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Forms\\LoginForm.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\LoginForm.cs [Design]",
-              "RelativeToolTip": "win-project-2\\Forms\\LoginForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T06:13:04.004Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\LoginForm.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Forms\\LoginForm.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\LoginForm.cs",
-              "RelativeToolTip": "win-project-2\\Forms\\LoginForm.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAgwBcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T06:13:18.337Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FInfor.cs [Design]",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FInfor.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Forms\\FInfor.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FInfor.cs [Design]",
-              "RelativeToolTip": "win-project-2\\Forms\\FInfor.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T06:14:51.685Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ApplicationDAO.cs",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\ApplicationDAO.cs",
-              "RelativeDocumentMoniker": "win-project-2\\DAO\\ApplicationDAO.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\ApplicationDAO.cs",
-              "RelativeToolTip": "win-project-2\\DAO\\ApplicationDAO.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAYwCYAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T06:15:03.635Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FPostEmloyee.cs [Design]",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FPostEmloyee.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Forms\\FPostEmloyee.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FPostEmloyee.cs [Design]",
-              "RelativeToolTip": "win-project-2\\Forms\\FPostEmloyee.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T07:49:28Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "SkillDAO.cs",
               "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\SkillDAO.cs",
               "RelativeDocumentMoniker": "win-project-2\\DAO\\SkillDAO.cs",
               "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\SkillDAO.cs",
               "RelativeToolTip": "win-project-2\\DAO\\SkillDAO.cs",
-              "ViewState": "AQIAAE4AAAAAAAAAAAAowAAAAAAAAAAA",
+              "ViewState": "AQIAACYAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T07:22:59.427Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UserDAO.cs",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\UserDAO.cs",
-              "RelativeDocumentMoniker": "win-project-2\\DAO\\UserDAO.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\UserDAO.cs",
-              "RelativeToolTip": "win-project-2\\DAO\\UserDAO.cs",
-              "ViewState": "AQIAAHwAAAAAAAAAAAAYwIEAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T06:20:16.268Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DatabaseConnection.cs",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\SQLConn\\DatabaseConnection.cs",
-              "RelativeDocumentMoniker": "win-project-2\\SQLConn\\DatabaseConnection.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\SQLConn\\DatabaseConnection.cs",
-              "RelativeToolTip": "win-project-2\\SQLConn\\DatabaseConnection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T06:14:05.756Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FormEmployee.cs [Design]",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FormEmployee.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Forms\\FormEmployee.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FormEmployee.cs [Design]",
-              "RelativeToolTip": "win-project-2\\Forms\\FormEmployee.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T07:14:09.985Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "JobDAO.cs",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\JobDAO.cs",
-              "RelativeDocumentMoniker": "win-project-2\\DAO\\JobDAO.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\JobDAO.cs",
-              "RelativeToolTip": "win-project-2\\DAO\\JobDAO.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAkwFkAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T06:22:54.688Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 2,
               "Title": "UserSkillDAO.cs",
               "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\UserSkillDAO.cs",
               "RelativeDocumentMoniker": "win-project-2\\DAO\\UserSkillDAO.cs",
               "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\UserSkillDAO.cs",
               "RelativeToolTip": "win-project-2\\DAO\\UserSkillDAO.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAqwA8AAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T06:22:58.907Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ReviewDAO.cs",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\ReviewDAO.cs",
-              "RelativeDocumentMoniker": "win-project-2\\DAO\\ReviewDAO.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\ReviewDAO.cs",
-              "RelativeToolTip": "win-project-2\\DAO\\ReviewDAO.cs",
-              "ViewState": "AQIAAD0AAAAAAAAAAAAYwEwAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T06:23:02.743Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "JobSkillDAO.cs",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\JobSkillDAO.cs",
-              "RelativeDocumentMoniker": "win-project-2\\DAO\\JobSkillDAO.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\JobSkillDAO.cs",
-              "RelativeToolTip": "win-project-2\\DAO\\JobSkillDAO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADsAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T07:21:50.426Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "MessageDAO.cs",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\MessageDAO.cs",
-              "RelativeDocumentMoniker": "win-project-2\\DAO\\MessageDAO.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\MessageDAO.cs",
-              "RelativeToolTip": "win-project-2\\DAO\\MessageDAO.cs",
-              "ViewState": "AQIAAJ0AAAAAAAAAAAAswGsAAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T07:22:14.695Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Job.cs",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Models\\Job.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Models\\Job.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Models\\Job.cs",
-              "RelativeToolTip": "win-project-2\\Models\\Job.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAmwBQAAACTAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T06:55:12.408Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Models\\User.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Models\\User.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Models\\User.cs",
-              "RelativeToolTip": "win-project-2\\Models\\User.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAA8wCwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T06:42:20.585Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "HomeEmployee.cs [Design]",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\Employer\\HomeEmployee.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Forms\\Employer\\HomeEmployee.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\Employer\\HomeEmployee.cs [Design]",
-              "RelativeToolTip": "win-project-2\\Forms\\Employer\\HomeEmployee.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T07:16:04.86Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 7,
               "Title": "JobPostDAO.cs",
               "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\JobPostDAO.cs",
               "RelativeDocumentMoniker": "win-project-2\\DAO\\JobPostDAO.cs",
               "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\JobPostDAO.cs",
               "RelativeToolTip": "win-project-2\\DAO\\JobPostDAO.cs",
-              "ViewState": "AQIAAJwAAAAAAAAAAAAswHIAAABHAAAA",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAkwGsAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T06:23:12.335Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "HomeRecruiter.cs [Design]",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\Recruiter\\HomeRecruiter.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Forms\\Recruiter\\HomeRecruiter.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\Recruiter\\HomeRecruiter.cs [Design]",
-              "RelativeToolTip": "win-project-2\\Forms\\Recruiter\\HomeRecruiter.cs [Design]",
+              "DocumentIndex": 9,
+              "Title": "JobDAO.cs",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\JobDAO.cs",
+              "RelativeDocumentMoniker": "win-project-2\\DAO\\JobDAO.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\JobDAO.cs",
+              "RelativeToolTip": "win-project-2\\DAO\\JobDAO.cs",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAowCQAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T07:15:21.493Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "NhanVienView.cs [Design]",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\NhanVienView.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Forms\\NhanVienView.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\NhanVienView.cs [Design]",
-              "RelativeToolTip": "win-project-2\\Forms\\NhanVienView.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T07:11:57.334Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Review.cs",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Models\\Review.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Models\\Review.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Models\\Review.cs",
-              "RelativeToolTip": "win-project-2\\Models\\Review.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T06:50:15.017Z",
+              "WhenOpened": "2024-10-18T06:22:54.688Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 1,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\General\\LoginForm.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\General\\LoginForm.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\General\\LoginForm.cs [Design]",
+              "RelativeToolTip": "win-project-2\\Forms\\General\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T06:13:04.004Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\General\\LoginForm.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\General\\LoginForm.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\General\\LoginForm.cs",
+              "RelativeToolTip": "win-project-2\\Forms\\General\\LoginForm.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAIA6wGAAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T06:13:18.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReviewDAO.cs",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\ReviewDAO.cs",
+              "RelativeDocumentMoniker": "win-project-2\\DAO\\ReviewDAO.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\ReviewDAO.cs",
+              "RelativeToolTip": "win-project-2\\DAO\\ReviewDAO.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAYwDkAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T06:23:02.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MessageDAO.cs",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\MessageDAO.cs",
+              "RelativeDocumentMoniker": "win-project-2\\DAO\\MessageDAO.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\MessageDAO.cs",
+              "RelativeToolTip": "win-project-2\\DAO\\MessageDAO.cs",
+              "ViewState": "AQIAAKMAAAAAAAAAAAAswDgAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T07:22:14.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "JobSkillDAO.cs",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\JobSkillDAO.cs",
+              "RelativeDocumentMoniker": "win-project-2\\DAO\\JobSkillDAO.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\JobSkillDAO.cs",
+              "RelativeToolTip": "win-project-2\\DAO\\JobSkillDAO.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAgwDcAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T07:21:50.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApplicationDAO.cs",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\ApplicationDAO.cs",
+              "RelativeDocumentMoniker": "win-project-2\\DAO\\ApplicationDAO.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\ApplicationDAO.cs",
+              "RelativeToolTip": "win-project-2\\DAO\\ApplicationDAO.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAAEQAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T06:15:03.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Models\\User.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Models\\User.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Models\\User.cs",
+              "RelativeToolTip": "win-project-2\\Models\\User.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAA6wCwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T06:42:20.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Skill.cs",
               "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Models\\Skill.cs",
               "RelativeDocumentMoniker": "win-project-2\\Models\\Skill.cs",
@@ -493,71 +413,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "JobPost.cs",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Models\\JobPost.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Models\\JobPost.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Models\\JobPost.cs",
-              "RelativeToolTip": "win-project-2\\Models\\JobPost.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "DocumentIndex": 12,
+              "Title": "Review.cs",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Models\\Review.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Models\\Review.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Models\\Review.cs",
+              "RelativeToolTip": "win-project-2\\Models\\Review.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T06:57:29.935Z",
+              "WhenOpened": "2024-10-18T06:50:15.017Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "FHome.cs",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FHome.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Forms\\FHome.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FHome.cs",
-              "RelativeToolTip": "win-project-2\\Forms\\FHome.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T06:34:54.424Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "FMain.cs",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FMain.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Forms\\FMain.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FMain.cs",
-              "RelativeToolTip": "win-project-2\\Forms\\FMain.cs",
-              "ViewState": "AQIAAJIAAAAAAAAAAAAowAYBAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T06:43:09.427Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "FMain.cs [Design]",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FMain.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Forms\\FMain.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FMain.cs [Design]",
-              "RelativeToolTip": "win-project-2\\Forms\\FMain.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T06:43:47.497Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "UserSkill.cs",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Models\\UserSkill.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Models\\UserSkill.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Models\\UserSkill.cs",
-              "RelativeToolTip": "win-project-2\\Models\\UserSkill.cs",
+              "DocumentIndex": 13,
+              "Title": "JobSkill.cs",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Models\\JobSkill.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Models\\JobSkill.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Models\\JobSkill.cs",
+              "RelativeToolTip": "win-project-2\\Models\\JobSkill.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T06:47:58.983Z",
+              "WhenOpened": "2024-10-18T16:19:32.45Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 14,
+              "Title": "Message.cs",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Models\\Message.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Models\\Message.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Models\\Message.cs",
+              "RelativeToolTip": "win-project-2\\Models\\Message.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T16:19:31.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "Application.cs",
               "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Models\\Application.cs",
               "RelativeDocumentMoniker": "win-project-2\\Models\\Application.cs",
@@ -570,44 +465,81 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Program\\Program.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Program\\Program.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Program\\Program.cs",
-              "RelativeToolTip": "win-project-2\\Program\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAxAAAA",
+              "DocumentIndex": 18,
+              "Title": "FPostEmloyee.cs [Design]",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FPostEmloyee.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\FPostEmloyee.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FPostEmloyee.cs [Design]",
+              "RelativeToolTip": "win-project-2\\Forms\\FPostEmloyee.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T06:23:39.811Z",
+              "WhenOpened": "2024-10-18T07:49:28Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "FMain.cs [Design]",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FMain.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\FMain.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FMain.cs [Design]",
+              "RelativeToolTip": "win-project-2\\Forms\\FMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T06:43:47.497Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FListWaitJob.cs [Design]",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FListWaitJob.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\FListWaitJob.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FListWaitJob.cs [Design]",
+              "RelativeToolTip": "win-project-2\\Forms\\FListWaitJob.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T08:25:00.689Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FListReview.cs [Design]",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FListReview.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\FListReview.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FListReview.cs [Design]",
+              "RelativeToolTip": "win-project-2\\Forms\\FListReview.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T08:25:02.402Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Job.cs",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Models\\Job.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Models\\Job.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Models\\Job.cs",
+              "RelativeToolTip": "win-project-2\\Models\\Job.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA6wBQAAACTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T06:55:12.408Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "FListChat.cs [Design]",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FListChat.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Forms\\FListChat.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FListChat.cs [Design]",
-              "RelativeToolTip": "win-project-2\\Forms\\FListChat.cs [Design]",
+              "DocumentIndex": 15,
+              "Title": "JobPost.cs",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Models\\JobPost.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Models\\JobPost.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Models\\JobPost.cs",
+              "RelativeToolTip": "win-project-2\\Models\\JobPost.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T06:14:50.627Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-18T06:57:29.935Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "FListNTapply.cs [Design]",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FListNTapply.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Forms\\FListNTapply.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FListNTapply.cs [Design]",
-              "RelativeToolTip": "win-project-2\\Forms\\FListNTapply.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T06:14:49.735Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 22,
               "Title": "FListNguoiTho.cs [Design]",
               "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FListNguoiTho.cs",
               "RelativeDocumentMoniker": "win-project-2\\Forms\\FListNguoiTho.cs",
@@ -619,16 +551,384 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 23,
+              "Title": "FormRegister.cs [Design]",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\General\\FormRegister.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\General\\FormRegister.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\General\\FormRegister.cs [Design]",
+              "RelativeToolTip": "win-project-2\\Forms\\General\\FormRegister.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T14:31:58.177Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "LoginForm.Designer.cs",
-              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\LoginForm.Designer.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Forms\\LoginForm.Designer.cs",
-              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\LoginForm.Designer.cs",
-              "RelativeToolTip": "win-project-2\\Forms\\LoginForm.Designer.cs",
-              "ViewState": "AQIAAKEAAAAAAAAAAAAkwK4AAAA6AAAA",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\General\\LoginForm.Designer.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\General\\LoginForm.Designer.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\General\\LoginForm.Designer.cs",
+              "RelativeToolTip": "win-project-2\\Forms\\General\\LoginForm.Designer.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAArwFIAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T06:13:58.749Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "FormRegister.cs",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\General\\FormRegister.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\General\\FormRegister.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\General\\FormRegister.cs",
+              "RelativeToolTip": "win-project-2\\Forms\\General\\FormRegister.cs",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAkwFAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T14:56:18.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "HomeEmployee.Designer.cs",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\Employer\\HomeEmployee.Designer.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\Employer\\HomeEmployee.Designer.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\Employer\\HomeEmployee.Designer.cs",
+              "RelativeToolTip": "win-project-2\\Forms\\Employer\\HomeEmployee.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T14:29:37.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "FormRegister.Designer.cs",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\General\\FormRegister.Designer.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\General\\FormRegister.Designer.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\General\\FormRegister.Designer.cs",
+              "RelativeToolTip": "win-project-2\\Forms\\General\\FormRegister.Designer.cs",
+              "ViewState": "AQIAAK0AAAAAAAAAAAArwL8AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T15:11:29.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UserDAO.cs",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\UserDAO.cs",
+              "RelativeDocumentMoniker": "win-project-2\\DAO\\UserDAO.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\DAO\\UserDAO.cs",
+              "RelativeToolTip": "win-project-2\\DAO\\UserDAO.cs",
+              "ViewState": "AQIAAH8AAAAAAAAAAAAgwJUAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T06:20:16.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "HomeEmployee.cs [Design]",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\Employer\\HomeEmployee.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\Employer\\HomeEmployee.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\Employer\\HomeEmployee.cs [Design]",
+              "RelativeToolTip": "win-project-2\\Forms\\Employer\\HomeEmployee.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T07:16:04.86Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "FListNTapply.cs [Design]",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FListNTapply.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\FListNTapply.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FListNTapply.cs [Design]",
+              "RelativeToolTip": "win-project-2\\Forms\\FListNTapply.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T06:14:49.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "UCAccept.cs [Design]",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\UserControls\\UCAccept.cs",
+              "RelativeDocumentMoniker": "win-project-2\\UserControls\\UCAccept.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\UserControls\\UCAccept.cs [Design]",
+              "RelativeToolTip": "win-project-2\\UserControls\\UCAccept.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T08:26:05.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "UCListChat.cs [Design]",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\UserControls\\UCListChat.cs",
+              "RelativeDocumentMoniker": "win-project-2\\UserControls\\UCListChat.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\UserControls\\UCListChat.cs [Design]",
+              "RelativeToolTip": "win-project-2\\UserControls\\UCListChat.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T08:26:03.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "UCRating.cs [Design]",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\UserControls\\UCRating.cs",
+              "RelativeDocumentMoniker": "win-project-2\\UserControls\\UCRating.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\UserControls\\UCRating.cs [Design]",
+              "RelativeToolTip": "win-project-2\\UserControls\\UCRating.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T08:26:03.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "UCReceive.cs [Design]",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\UserControls\\UCReceive.cs",
+              "RelativeDocumentMoniker": "win-project-2\\UserControls\\UCReceive.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\UserControls\\UCReceive.cs [Design]",
+              "RelativeToolTip": "win-project-2\\UserControls\\UCReceive.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T08:26:02.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UCShowJobcs.cs [Design]",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\UserControls\\UCShowJobcs.cs",
+              "RelativeDocumentMoniker": "win-project-2\\UserControls\\UCShowJobcs.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\UserControls\\UCShowJobcs.cs [Design]",
+              "RelativeToolTip": "win-project-2\\UserControls\\UCShowJobcs.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T08:25:58.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "UCWaitJob.cs [Design]",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\UserControls\\UCWaitJob.cs",
+              "RelativeDocumentMoniker": "win-project-2\\UserControls\\UCWaitJob.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\UserControls\\UCWaitJob.cs [Design]",
+              "RelativeToolTip": "win-project-2\\UserControls\\UCWaitJob.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T08:25:57.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "UCWriteRV.cs [Design]",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\UserControls\\UCWriteRV.cs",
+              "RelativeDocumentMoniker": "win-project-2\\UserControls\\UCWriteRV.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\UserControls\\UCWriteRV.cs [Design]",
+              "RelativeToolTip": "win-project-2\\UserControls\\UCWriteRV.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T08:25:56.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "UserControl1.cs [Design]",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\UserControls\\UserControl1.cs",
+              "RelativeDocumentMoniker": "win-project-2\\UserControls\\UserControl1.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\UserControls\\UserControl1.cs [Design]",
+              "RelativeToolTip": "win-project-2\\UserControls\\UserControl1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T08:25:53.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ThoDetail.cs [Design]",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\ThoDetail.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\ThoDetail.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\ThoDetail.cs [Design]",
+              "RelativeToolTip": "win-project-2\\Forms\\ThoDetail.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T08:25:43.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "FListChat.cs [Design]",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FListChat.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\FListChat.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FListChat.cs [Design]",
+              "RelativeToolTip": "win-project-2\\Forms\\FListChat.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T06:14:50.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "FInfor.cs [Design]",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FInfor.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\FInfor.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FInfor.cs [Design]",
+              "RelativeToolTip": "win-project-2\\Forms\\FInfor.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T06:14:51.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "FHome.cs [Design]",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FHome.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\FHome.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FHome.cs [Design]",
+              "RelativeToolTip": "win-project-2\\Forms\\FHome.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T06:34:53.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "FRating.cs [Design]",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FRating.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\FRating.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FRating.cs [Design]",
+              "RelativeToolTip": "win-project-2\\Forms\\FRating.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T08:24:29.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "NhanVienView.cs [Design]",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\NhanVienView.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\NhanVienView.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\NhanVienView.cs [Design]",
+              "RelativeToolTip": "win-project-2\\Forms\\NhanVienView.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T07:11:57.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "FShowListJob.cs [Design]",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FShowListJob.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\FShowListJob.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FShowListJob.cs [Design]",
+              "RelativeToolTip": "win-project-2\\Forms\\FShowListJob.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T08:24:27.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "FShowRating.cs [Design]",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FShowRating.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\FShowRating.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FShowRating.cs [Design]",
+              "RelativeToolTip": "win-project-2\\Forms\\FShowRating.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T08:24:26.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "FStatistic.cs [Design]",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FStatistic.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\FStatistic.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FStatistic.cs [Design]",
+              "RelativeToolTip": "win-project-2\\Forms\\FStatistic.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T08:24:22.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "FDetail1.cs [Design]",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FDetail1.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\FDetail1.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FDetail1.cs [Design]",
+              "RelativeToolTip": "win-project-2\\Forms\\FDetail1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T06:14:54.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "FChat.cs [Design]",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FChat.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\FChat.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FChat.cs [Design]",
+              "RelativeToolTip": "win-project-2\\Forms\\FChat.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T06:13:00.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "DatabaseConnection.cs",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\SQLConn\\DatabaseConnection.cs",
+              "RelativeDocumentMoniker": "win-project-2\\SQLConn\\DatabaseConnection.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\SQLConn\\DatabaseConnection.cs",
+              "RelativeToolTip": "win-project-2\\SQLConn\\DatabaseConnection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T06:14:05.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "HomeRecruiter.cs [Design]",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\Recruiter\\HomeRecruiter.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\Recruiter\\HomeRecruiter.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\Recruiter\\HomeRecruiter.cs [Design]",
+              "RelativeToolTip": "win-project-2\\Forms\\Recruiter\\HomeRecruiter.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T07:15:21.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "FHome.cs",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FHome.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\FHome.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FHome.cs",
+              "RelativeToolTip": "win-project-2\\Forms\\FHome.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T06:34:54.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "FMain.cs",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FMain.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\FMain.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Forms\\FMain.cs",
+              "RelativeToolTip": "win-project-2\\Forms\\FMain.cs",
+              "ViewState": "AQIAAJIAAAAAAAAAAAAowAYBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T06:43:09.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "UserSkill.cs",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Models\\UserSkill.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Models\\UserSkill.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Models\\UserSkill.cs",
+              "RelativeToolTip": "win-project-2\\Models\\UserSkill.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T06:47:58.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Program\\Program.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Program\\Program.cs",
+              "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\Project_JobApp\\winproject\\win-project-2\\Program\\Program.cs",
+              "RelativeToolTip": "win-project-2\\Program\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T06:23:39.811Z"
             }
           ]
         }

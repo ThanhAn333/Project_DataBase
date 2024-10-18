@@ -53,9 +53,9 @@ namespace win_project_2.DAO
                         reader["JobTitle"].ToString(),
                         reader["JobDescription"].ToString(),
                         reader["Location"].ToString(),
-                        reader["Salary"].ToString(), // Giả sử bạn đã thêm Salary trong Job
-                        reader["Type"]?.ToString(), // Loại công việc
-                        reader["Company"]?.ToString(), // Tên công ty
+                        reader["Salary"].ToString(), 
+                        reader["Type"]?.ToString(),
+                        reader["Company"]?.ToString(), 
                         (DateTime)reader["PostedDate"],
                         reader["Status"]?.ToString()
                    );

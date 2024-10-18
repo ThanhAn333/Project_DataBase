@@ -52,14 +52,14 @@ namespace win_project_2.DAO
                          (int)reader["UserID"],
                         reader["UserName"].ToString(),
                         reader["UserEmail"].ToString(),
-                        "",  // Chưa có mật khẩu, có thể bỏ qua hoặc xử lý sau
-                        reader["Role"]?.ToString(), // Sử dụng toán tử null-conditional để tránh lỗi null
-                        reader["Address"]?.ToString(), // Giả sử bạn đã thêm Address trong User
-                        (DateTime)reader["DateOfBirth"], // Ngày sinh
-                        reader["PhoneNumber"]?.ToString(), // Số điện thoại
-                        reader["ProfilePicture"]?.ToString(), // Hình đại diện
-                        (DateTime)reader["CreatedAt"], // Ngày tạo
-                        (DateTime)reader["UpdatedAt"]  // Ngày cập nhật
+                        "", 
+                        reader["Role"]?.ToString(),
+                        reader["Address"]?.ToString(), 
+                        (DateTime)reader["DateOfBirth"], 
+                        reader["PhoneNumber"]?.ToString(), 
+                        reader["ProfilePicture"]?.ToString(), 
+                        (DateTime)reader["CreatedAt"], 
+                        (DateTime)reader["UpdatedAt"]  
                     );
                     Skill skill = new Skill(
                        (int)reader["SkillID"],

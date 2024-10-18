@@ -922,3 +922,4 @@ D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\Project_JobApp\winproject\win-proje
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\Project_JobApp\winproject\win-project-2\obj\Debug\win-proj.20E85E94.Up2Date
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\Project_JobApp\winproject\win-project-2\obj\Debug\win-project-2.exe
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\Project_JobApp\winproject\win-project-2\obj\Debug\win-project-2.pdb
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\Project_JobApp\winproject\win-project-2\obj\Debug\win_project_2.Forms.General.FormRegister.resources

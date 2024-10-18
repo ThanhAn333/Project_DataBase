@@ -37,36 +37,36 @@ namespace win_project_2.DAO
                         reader["UserName"].ToString(),
                         reader["UserEmail"].ToString(),
                         "", 
-                        reader["Role"]?.ToString(), // Sử dụng toán tử null-conditional để tránh lỗi null
-                        reader["Address"]?.ToString(), // Giả sử bạn đã thêm Address trong User
-                        (DateTime)reader["DateOfBirth"], // Ngày sinh
-                        reader["PhoneNumber"]?.ToString(), // Số điện thoại
-                        reader["ProfilePicture"]?.ToString(), // Hình đại diện
-                        (DateTime)reader["CreatedAt"], // Ngày tạo
-                        (DateTime)reader["UpdatedAt"]  // Ngày cập nhật
+                        reader["Role"]?.ToString(),
+                        reader["Address"]?.ToString(),
+                        (DateTime)reader["DateOfBirth"], 
+                        reader["PhoneNumber"]?.ToString(), 
+                        reader["ProfilePicture"]?.ToString(), 
+                        (DateTime)reader["CreatedAt"], 
+                        (DateTime)reader["UpdatedAt"]  
                     );
 
-                    // Tạo đối tượng Job từ dữ liệu đọc được
+                   
                     Job job = new Job(
                         (int)reader["JobID"],
                         reader["JobTitle"].ToString(),
                         reader["JobDescription"].ToString(),
                         reader["Location"].ToString(),
-                        reader["Salary"].ToString(), // Giả sử bạn đã thêm Salary trong Job
-                        reader["Type"]?.ToString(), // Loại công việc
-                        reader["Company"]?.ToString(), // Tên công ty
+                        reader["Salary"].ToString(),
+                        reader["Type"]?.ToString(), 
+                        reader["Company"]?.ToString(), 
                         (DateTime)reader["PostedDate"],
                         reader["Status"]?.ToString()
             
                     );
 
-                    // Tạo đối tượng Application từ dữ liệu đọc được
+                  
                     Application application = new Application(
                         (int)reader["ApplicationID"],
-                        user, // Đối tượng User đã tạo
-                        job, // Đối tượng Job đã tạo
-                        reader["Status"].ToString(), // Trạng thái ứng tuyển
-                        (DateTime)reader["ApplicationDate"] // Ngày ứng tuyển
+                        user, 
+                        job, 
+                        reader["Status"].ToString(),
+                        (DateTime)reader["ApplicationDate"] 
                     );
                 }
             }

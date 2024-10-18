@@ -135,15 +135,25 @@ namespace win_project_2.DAO
             return role;
         }
 
-        public void Register(string name, string email, string password)
+        public void Register(string name, string email, string password, string role, string address, DateTime dateofbirth, string phonenumber, DateTime createdat)
         {
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string sql = "INSERT INTO [User] (Name, Email, Password, Role) VALUES (@Name, @Email, @Password, 'User')";
+                
+                string sql = "INSERT INTO [User] (Name, Email, Password, Role, Address, DateOfBirth, PhoneNumber, CreatedAt) " +
+                             "VALUES (@Name, @Email, @Password, @Role, @Address, @DateOfBirth, @PhoneNumber, @CreatedAt)";
+
                 SqlCommand command = new SqlCommand(sql, connection);
+
+                
                 command.Parameters.AddWithValue("@Name", name);
                 command.Parameters.AddWithValue("@Email", email);
                 command.Parameters.AddWithValue("@Password", password);
+                command.Parameters.AddWithValue("@Role", role);
+                command.Parameters.AddWithValue("@Address", address);
+                command.Parameters.AddWithValue("@DateOfBirth", dateofbirth);
+                command.Parameters.AddWithValue("@PhoneNumber", phonenumber);
+                command.Parameters.AddWithValue("@CreatedAt", createdat);
 
                 connection.Open();
                 command.ExecuteNonQuery();
