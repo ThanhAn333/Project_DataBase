@@ -16,5 +16,10 @@ namespace win_project_2.Forms.Recruiter
         {
             InitializeComponent();
         }
+
+        private void HomeRecruiter_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
