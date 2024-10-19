@@ -272,10 +272,10 @@
     <Compile Include="DAO\SkillDAO.cs" />
     <Compile Include="DAO\UserDAO.cs" />
     <Compile Include="DAO\UserSkillDAO.cs" />
-    <Compile Include="Forms\Employer\HomeEmployee.cs">
+    <Compile Include="Forms\Candidate\HomeEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Employer\HomeEmployee.Designer.cs">
+    <Compile Include="Forms\Candidate\HomeEmployee.Designer.cs">
       <DependentUpon>HomeEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\General\FormRegister.cs">
@@ -481,6 +481,9 @@
     <Compile Include="UserControls\UserControl1.Designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\Candidate\HomeEmployee.resx">
+      <DependentUpon>HomeEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FDetail1.resx">
       <DependentUpon>FDetail1.cs</DependentUpon>
     </EmbeddedResource>
@@ -516,6 +519,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\General\FormRegister.resx">
       <DependentUpon>FormRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recruiter\HomeRecruiter.resx">
+      <DependentUpon>HomeRecruiter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ThoDetail.resx">
       <DependentUpon>ThoDetail.cs</DependentUpon>

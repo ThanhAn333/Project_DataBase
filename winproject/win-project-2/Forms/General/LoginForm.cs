@@ -35,15 +35,16 @@ namespace win_project_2
                 UserDAO userDAO = new UserDAO();
                 string role = userDAO.Login(txtEmail.Text, txtPassword.Text);
 
+
                 // Kiểm tra vai trò
                 if (!string.IsNullOrEmpty(role))
                 {
-                    if (role == "Employer")
+                    if (role == "Candidate")
                     {
                         fHome.Show();
                         this.Hide(); 
                     }
-                    else if (role == "Recruiter")
+                    else if (role == "Employer")
                     {
                         HomeRecruiter homeRecruiter = new HomeRecruiter();
                         homeRecruiter.Show();
