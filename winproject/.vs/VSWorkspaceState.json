@@ -4,10 +4,11 @@
     "\\win-project-2",
     "\\win-project-2\\DAO",
     "\\win-project-2\\Forms",
+    "\\win-project-2\\Forms\\Candidate",
     "\\win-project-2\\Forms\\General",
     "\\win-project-2\\Models",
     "\\win-project-2\\SQLConn"
   ],
-  "SelectedNode": "\\win-project-2\\Forms\\General",
+  "SelectedNode": "\\win-project-2\\Forms\\Candidate\\HomeEmployee.cs",
   "PreviewInSolutionExplorer": false
 }
