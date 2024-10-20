@@ -13,7 +13,7 @@ namespace win_project_2
                 // Nếu kết nối thành công, mở LoginForm
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new LoginForm());
+                Application.Run(new Form1());
      
         }
     }

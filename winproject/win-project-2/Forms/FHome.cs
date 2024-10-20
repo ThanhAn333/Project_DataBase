@@ -15,7 +15,7 @@ namespace win_project_2.Forms
     {
 
 
-        private FMain mainForm;
+        //private FMain mainForm;
 
         public FHome()
         {
@@ -37,17 +37,17 @@ namespace win_project_2.Forms
 
         private void pt_TimViec_Click(object sender, EventArgs e)
         {
-            mainForm.OpenChildForm(new FShowListJob());
+            
         }
 
         private void pt_TimTho_Click(object sender, EventArgs e)
         {
-            mainForm.OpenChildForm(new FListNguoiTho());
+           
         }
 
         private void pt_Chat_Click(object sender, EventArgs e)
         {
-            mainForm.OpenChildForm(new FListChat());
+            
         }
 
         private void guna2Shapes2_Click(object sender, EventArgs e)
@@ -57,17 +57,17 @@ namespace win_project_2.Forms
 
         private void pt_TimViec_Click_1(object sender, EventArgs e)
         {
-            mainForm.OpenChildForm(new FShowListJob());
+           
         }
 
         private void pt_TimTho_Click_1(object sender, EventArgs e)
         {
-            mainForm.OpenChildForm(new FListNguoiTho());
+           
         }
 
         private void pt_Chat_Click_1(object sender, EventArgs e)
         {
-            mainForm.OpenChildForm(new FPostEmloyee());
+           
         }
 
         private void FHome_Load_1(object sender, EventArgs e)
