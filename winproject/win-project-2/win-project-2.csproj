@@ -278,6 +278,12 @@
     <Compile Include="Forms\Candidate\HomeEmployee.Designer.cs">
       <DependentUpon>HomeEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Candidate\UC\UCMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Candidate\UC\UCMessage.Designer.cs">
+      <DependentUpon>UCMessage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\General\FormRegister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -289,6 +295,18 @@
     </Compile>
     <Compile Include="Forms\Recruiter\HomeRecruiter.Designer.cs">
       <DependentUpon>HomeRecruiter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Candidate\UC\UCApplication.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Candidate\UC\UCApplication.Designer.cs">
+      <DependentUpon>UCApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Candidate\UC\UCHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Candidate\UC\UCHome.Designer.cs">
+      <DependentUpon>UCHome.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Application.cs" />
     <Compile Include="Models\Job.cs" />
@@ -484,6 +502,9 @@
     <EmbeddedResource Include="Forms\Candidate\HomeEmployee.resx">
       <DependentUpon>HomeEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Candidate\UC\UCMessage.resx">
+      <DependentUpon>UCMessage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FDetail1.resx">
       <DependentUpon>FDetail1.cs</DependentUpon>
     </EmbeddedResource>
@@ -549,6 +570,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\NhanVienView.resx">
       <DependentUpon>NhanVienView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Candidate\UC\UCApplication.resx">
+      <DependentUpon>UCApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Candidate\UC\UCHome.resx">
+      <DependentUpon>UCHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

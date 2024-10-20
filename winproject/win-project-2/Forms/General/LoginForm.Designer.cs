@@ -65,7 +65,7 @@
             // 
             // guna2Panel2
             // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.guna2Panel2.BackColor = System.Drawing.Color.SkyBlue;
             this.guna2Panel2.Controls.Add(this.phide);
             this.guna2Panel2.Controls.Add(this.peye);
             this.guna2Panel2.Controls.Add(this.lbquenmk);
@@ -113,6 +113,7 @@
             // lbquenmk
             // 
             this.lbquenmk.AutoSize = true;
+            this.lbquenmk.LinkColor = System.Drawing.Color.Black;
             this.lbquenmk.Location = new System.Drawing.Point(26, 297);
             this.lbquenmk.Name = "lbquenmk";
             this.lbquenmk.Size = new System.Drawing.Size(103, 16);
@@ -192,6 +193,7 @@
             // txtPassword
             // 
             this.txtPassword.Animated = true;
+            this.txtPassword.BackColor = System.Drawing.Color.Transparent;
             this.txtPassword.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.txtPassword.BorderRadius = 6;
             this.txtPassword.BorderThickness = 2;
@@ -218,7 +220,7 @@
             // txtEmail
             // 
             this.txtEmail.Animated = true;
-            this.txtEmail.BackColor = System.Drawing.Color.White;
+            this.txtEmail.BackColor = System.Drawing.Color.Transparent;
             this.txtEmail.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.txtEmail.BorderRadius = 6;
             this.txtEmail.BorderThickness = 2;
@@ -281,12 +283,12 @@
             // 
             // guna2PictureBox1
             // 
-            this.guna2PictureBox1.Image = global::win_project_2.Properties.Resources.Mesa_de_trabajo_1_copia_4x;
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(895, 658);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(885, 644);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 4;
             this.guna2PictureBox1.TabStop = false;
             // 
@@ -316,19 +318,19 @@
 
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2TextBox txtEmail;
-        private Guna.UI2.WinForms.Guna2TextBox txtPassword;
-        private Guna.UI2.WinForms.Guna2Button btnLogin;
-        private Guna.UI2.WinForms.Guna2Button btnSignUp;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lberror;
-        private System.Windows.Forms.LinkLabel lbquenmk;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2PictureBox phide;
         private Guna.UI2.WinForms.Guna2PictureBox peye;
+        private System.Windows.Forms.LinkLabel lbquenmk;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lberror;
+        private Guna.UI2.WinForms.Guna2Button btnSignUp;
+        private Guna.UI2.WinForms.Guna2Button btnLogin;
+        private Guna.UI2.WinForms.Guna2TextBox txtPassword;
+        private Guna.UI2.WinForms.Guna2TextBox txtEmail;
     }
 }

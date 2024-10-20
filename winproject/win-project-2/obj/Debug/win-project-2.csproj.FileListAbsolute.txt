@@ -925,3 +925,6 @@ D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\Project_JobApp\winproject\win-proje
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\Project_JobApp\winproject\win-project-2\obj\Debug\win_project_2.Forms.General.FormRegister.resources
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\Project_JobApp\winproject\win-project-2\obj\Debug\win_project_2.Forms.Employer.HomeEmployee.resources
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\Project_JobApp\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.HomeRecruiter.resources
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\Project_JobApp\winproject\win-project-2\obj\Debug\win_project_2.Forms.UC.UCHome.resources
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\Project_JobApp\winproject\win-project-2\obj\Debug\win_project_2.Forms.UC.UCApplication.resources
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\Project_JobApp\winproject\win-project-2\obj\Debug\win_project_2.Forms.Candidate.UC.UCMessage.resources
