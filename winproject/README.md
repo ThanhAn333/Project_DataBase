@@ -50,18 +50,6 @@ CREATE TABLE [dbo].[JobPost] (
 );
 GO
 
--- Bảng Message
-CREATE TABLE [dbo].[Message] (
-    MessageID INT IDENTITY(1,1) PRIMARY KEY,
-    SenderID INT NOT NULL,
-    ReceiverID INT NOT NULL,
-    Content NVARCHAR(MAX) NOT NULL,
-    Timestamp DATETIME DEFAULT GETDATE(),
-    FOREIGN KEY (SenderID) REFERENCES [dbo].[User](UserID),
-    FOREIGN KEY (ReceiverID) REFERENCES [dbo].[User](UserID)
-);
-GO
-
 -- Bảng Skill
 CREATE TABLE [dbo].[Skill] (
     SkillID INT IDENTITY(1,1) PRIMARY KEY,
@@ -103,3 +91,28 @@ CREATE TABLE [dbo].[Review] (
     FOREIGN KEY (JobID) REFERENCES [dbo].[Job](JobID)
 );
 GO
+
+-- Bảng Conversation
+CREATE TABLE [dbo].[Conversation] (
+    ConversationID INT IDENTITY(1,1) PRIMARY KEY,
+    User1ID INT NOT NULL,
+    User2ID INT NOT NULL,
+    CreatedAt DATETIME DEFAULT GETDATE(),
+    FOREIGN KEY (User1ID) REFERENCES [dbo].[User](UserID),
+    FOREIGN KEY (User2ID) REFERENCES [dbo].[User](UserID)
+);
+GO
+
+-- Bảng Message
+CREATE TABLE [dbo].[Message] (
+    MessageID INT IDENTITY(1,1) PRIMARY KEY,
+    ConversationID INT NOT NULL,
+    SenderID INT NOT NULL,
+    Content NVARCHAR(MAX) NOT NULL,
+    Timestamp DATETIME DEFAULT GETDATE(),
+    FOREIGN KEY (ConversationID) REFERENCES [dbo].Conversation(ConversationID),
+    FOREIGN KEY (SenderID) REFERENCES [dbo].[User](UserID)
+);
+GO
+
+
