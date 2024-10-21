@@ -351,6 +351,12 @@
     <Compile Include="Forms\Candidate\UC\UCMessage.Designer.cs">
       <DependentUpon>UCMessage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FAdmin.Designer.cs">
+      <DependentUpon>FAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\General\FormRegister.cs">
       <SubType>Form</SubType>
     </Compile>
