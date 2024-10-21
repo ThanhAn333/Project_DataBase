@@ -542,6 +542,30 @@
     <Compile Include="UserControls\UCListChat.Designer.cs">
       <DependentUpon>UCListChat.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UCQLBC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCQLBC.Designer.cs">
+      <DependentUpon>UCQLBC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCQLBV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCQLBV.Designer.cs">
+      <DependentUpon>UCQLBV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCQLDG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCQLDG.Designer.cs">
+      <DependentUpon>UCQLDG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCQLTK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCQLTK.Designer.cs">
+      <DependentUpon>UCQLTK.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UCRating.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -592,6 +616,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Candidate\UC\UCMessage.resx">
       <DependentUpon>UCMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FAdmin.resx">
+      <DependentUpon>FAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FDetail1.resx">
       <DependentUpon>FDetail1.cs</DependentUpon>
@@ -681,6 +708,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UCListChat.resx">
       <DependentUpon>UCListChat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCQLBC.resx">
+      <DependentUpon>UCQLBC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCQLBV.resx">
+      <DependentUpon>UCQLBV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCQLDG.resx">
+      <DependentUpon>UCQLDG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCQLTK.resx">
+      <DependentUpon>UCQLTK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UCRating.resx">
       <DependentUpon>UCRating.cs</DependentUpon>

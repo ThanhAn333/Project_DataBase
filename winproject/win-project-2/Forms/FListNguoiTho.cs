@@ -13,7 +13,7 @@ namespace win_project_2.Forms
 {
     public partial class FListNguoiTho : Form
     {
-        private FMain mainForm;
+        //private FMain mainForm;
         public FListNguoiTho()
         {
             InitializeComponent();

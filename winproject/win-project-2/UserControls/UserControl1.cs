@@ -17,7 +17,7 @@ namespace win_project_2.UserControls
 
     public partial class UCTho : UserControl
     {
-        public FMain ParentFMain { get; set; }
+        //public FMain ParentFMain { get; set; }
         
         public string id = "";
         public UCTho()
