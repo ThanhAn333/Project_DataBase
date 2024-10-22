@@ -381,6 +381,36 @@
     <Compile Include="Forms\Candidate\UC\UCHome.Designer.cs">
       <DependentUpon>UCHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Recruiter\UC\UCAccept.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Recruiter\UC\UCAccept.Designer.cs">
+      <DependentUpon>UCAccept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recruiter\UC\UCApply_Job.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Recruiter\UC\UCApply_Job.Designer.cs">
+      <DependentUpon>UCApply_Job.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recruiter\UC\UCHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Recruiter\UC\UCHome.Designer.cs">
+      <DependentUpon>UCHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recruiter\UC\UCJob.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Recruiter\UC\UCJob.Designer.cs">
+      <DependentUpon>UCJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recruiter\UC\UCPostJob.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Recruiter\UC\UCPostJob.Designer.cs">
+      <DependentUpon>UCPostJob.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\UCComponents\Application.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -658,6 +688,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Recruiter\HomeRecruiter.resx">
       <DependentUpon>HomeRecruiter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recruiter\UC\UCAccept.resx">
+      <DependentUpon>UCAccept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recruiter\UC\UCApply_Job.resx">
+      <DependentUpon>UCApply_Job.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recruiter\UC\UCHome.resx">
+      <DependentUpon>UCHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recruiter\UC\UCJob.resx">
+      <DependentUpon>UCJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recruiter\UC\UCPostJob.resx">
+      <DependentUpon>UCPostJob.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ThoDetail.resx">
       <DependentUpon>ThoDetail.cs</DependentUpon>
