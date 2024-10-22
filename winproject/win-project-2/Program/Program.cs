@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using win_project_2.Forms;
+using win_project_2.Forms.General;
 using win_project_2.SQLConn;
 
 namespace win_project_2
@@ -13,7 +14,7 @@ namespace win_project_2
                 // Nếu kết nối thành công, mở LoginForm
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new FAdmin());
+                Application.Run(new LoginForm());
      
         }
     }
