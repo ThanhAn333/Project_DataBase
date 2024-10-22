@@ -41,6 +41,7 @@ namespace win_project_2
                 {
                     if (role == "Candidate")
                     {
+                        HomeEmployee fHome = new HomeEmployee();
                         fHome.Show();
                         this.Hide(); 
                     }
@@ -48,6 +49,12 @@ namespace win_project_2
                     {
                         HomeRecruiter homeRecruiter = new HomeRecruiter();
                         homeRecruiter.Show();
+                        this.Hide();
+                    }
+                    else if (role == "Admin")
+                    {
+                        FAdmin fAdmin = new FAdmin();
+                        fAdmin.Show();
                         this.Hide();
                     }
                     else
