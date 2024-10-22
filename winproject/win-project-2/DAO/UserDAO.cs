@@ -1,6 +1,9 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 using win_project_2.SQLConn;
 
 namespace win_project_2.DAO
@@ -157,6 +160,27 @@ namespace win_project_2.DAO
 
                 connection.Open();
                 command.ExecuteNonQuery();
+            }
+        }
+        private void LoadAllUsers()
+        {
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                string query = "SELECT * FROM [User]"; // Truy vấn lấy tất cả người dùng
+                SqlCommand command = new SqlCommand(query, connection);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                DataTable userTable = new DataTable();
+
+                try
+                {
+                    connection.Open();
+                    adapter.Fill(userTable); // Điền dữ liệu vào DataTable
+                   // Controler.guna2DataGridView1.DataSource = userTable; // Hiển thị trên DataGridView
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message); // Thông báo lỗi nếu có
+                }
             }
         }
     }
