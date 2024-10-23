@@ -14,6 +14,10 @@ namespace win_project_2.DAO
         public DateTime ApplicationDate { get; set; }
         public string Status { get; set; }
 
+        public Application()
+        {
+
+        }
         public Application(int applicationId, User applicant, Job appliedJob, string status, DateTime applicationDate)
         {
             ApplicationID = applicationId;

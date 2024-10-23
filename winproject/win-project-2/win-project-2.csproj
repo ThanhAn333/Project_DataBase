@@ -553,6 +553,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Service\UserDangNhap.cs" />
     <Compile Include="SQLConn\DatabaseConnection.cs" />
     <Compile Include="UserControls\UCAccept.cs">
       <SubType>UserControl</SubType>

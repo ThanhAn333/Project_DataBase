@@ -224,5 +224,21 @@ namespace win_project_2.DAO
             }
         }
 
+        public DataTable layThongTinTK(string taikhoan, string matkhau)
+        {
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                string sql = "select * from User where Email= @Email and Password= @Password";
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@Email", taikhoan);
+                command.Parameters.AddWithValue("@Password", matkhau);
+
+                SqlDataAdapter da = new SqlDataAdapter(command);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                return dt;
+            }
+        }
+
     }
 }

@@ -39,6 +39,7 @@ namespace win_project_2.UserControls
         }
         private void Detail_Click(object sender, EventArgs e)
         {
+
             FDetail1 fDetail1 = new FDetail1();
 
             // Lấy JobID từ biến và truyền sang form FDetail1
@@ -51,6 +52,7 @@ namespace win_project_2.UserControls
             if (job != null)
             {
                 fDetail1.themThongTin(
+                    job.JobID,
                     job.Title,
                     job.Description,
                     job.Request,

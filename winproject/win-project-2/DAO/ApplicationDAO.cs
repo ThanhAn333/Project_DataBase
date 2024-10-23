@@ -85,7 +85,7 @@ namespace win_project_2.DAO
                 command.Parameters.AddWithValue("@UserID", application.Applicant.UserID);
                 command.Parameters.AddWithValue("@JobID", application.AppliedJob.JobID);
                 command.Parameters.AddWithValue("@Status", application.Status);
-                command.Parameters.AddWithValue("@Status", application.ApplicationDate);
+                command.Parameters.AddWithValue("@ApplicationDate", application.ApplicationDate);
 
                 connection.Open();
                 command.ExecuteNonQuery();
