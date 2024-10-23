@@ -65,9 +65,9 @@
             // 
             this.lb_mini_profile.Controls.Add(this.guna2HtmlLabel1);
             this.lb_mini_profile.Controls.Add(this.guna2CirclePictureBox1);
-            this.lb_mini_profile.Location = new System.Drawing.Point(1170, 12);
+            this.lb_mini_profile.Location = new System.Drawing.Point(1170, 0);
             this.lb_mini_profile.Name = "lb_mini_profile";
-            this.lb_mini_profile.Size = new System.Drawing.Size(272, 67);
+            this.lb_mini_profile.Size = new System.Drawing.Size(272, 99);
             this.lb_mini_profile.TabIndex = 0;
             this.lb_mini_profile.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lb_mini_profile_click);
             // 

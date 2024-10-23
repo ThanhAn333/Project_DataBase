@@ -49,7 +49,8 @@ namespace win_project_2
                 }
                 else if (role == "Employer")
                 {
-                    HomeRecruiter homeRecruiter = new HomeRecruiter();
+                    int userId = result.UserID ?? 0;
+                    HomeRecruiter homeRecruiter = new HomeRecruiter(userId);
                     homeRecruiter.Show();
                     this.Hide();
                 }
