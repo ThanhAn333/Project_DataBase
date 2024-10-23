@@ -41,7 +41,7 @@ namespace win_project_2
             UserDangNhap.email = dr["Email"].ToString();
             UserDangNhap.name = dr["Name"].ToString();
             UserDangNhap.role = dr["Role"].ToString();
-            UserDangNhap.phone = dr["Phone"].ToString();
+            UserDangNhap.phone = dr["PhoneNumber"].ToString();
             UserDangNhap.password = dr["Password"].ToString();
             UserDangNhap.address = dr["Address"].ToString();
             UserDangNhap.birthday = dr["DateOfBirth"].ToString();

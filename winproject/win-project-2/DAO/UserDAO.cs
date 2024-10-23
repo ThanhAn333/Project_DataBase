@@ -228,7 +228,7 @@ namespace win_project_2.DAO
         {
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string sql = "select * from User where Email= @Email and Password= @Password";
+                string sql = "select * from [User] where Email= @Email and Password= @Password";
                 SqlCommand command = new SqlCommand(sql, connection);
                 command.Parameters.AddWithValue("@Email", taikhoan);
                 command.Parameters.AddWithValue("@Password", matkhau);
