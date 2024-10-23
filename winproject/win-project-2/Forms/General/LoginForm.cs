@@ -22,58 +22,57 @@ namespace win_project_2
         {
             InitializeComponent();
         }
-        HomeEmployee fHome = new HomeEmployee();
+        //HomeEmployee fHome = new HomeEmployee();
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
-
             if (string.IsNullOrWhiteSpace(txtEmail.Text) || string.IsNullOrWhiteSpace(txtPassword.Text))
             {
                 lberror.Visible = true;
                 lberror.Text = "Vui lòng nhập email và mật khẩu!";
-                return; 
+                return;
             }
-                UserDAO userDAO = new UserDAO();
-                string role = userDAO.Login(txtEmail.Text, txtPassword.Text);
 
+            UserDAO userDAO = new UserDAO();
+            var result = userDAO.Login(txtEmail.Text, txtPassword.Text);
 
-                // Kiểm tra vai trò
-                if (!string.IsNullOrEmpty(role))
+            if (result.UserID.HasValue && !string.IsNullOrEmpty(result.Role))
+            {
+                string role = result.Role;
+
+                if (role == "Candidate")
                 {
-                    if (role == "Candidate")
-                    {
-                        HomeEmployee fHome = new HomeEmployee();
-                        fHome.Show();
-                        this.Hide(); 
-                    }
-                    else if (role == "Employer")
-                    {
-                        HomeRecruiter homeRecruiter = new HomeRecruiter();
-                        homeRecruiter.Show();
-                        this.Hide();
-                    }
-                    else if (role == "Admin")
-                    {
-                        FAdmin fAdmin = new FAdmin();
-                        fAdmin.Show();
-                        this.Hide();
-                    }
-                    else
-                    {
-                        lberror.Visible = true;
-                        lberror.Text = "Vai trò không xác định!";
-                    }
+                    int userId = result.UserID ?? 0;
+                    HomeEmployee fHome = new HomeEmployee(userId);
+                    fHome.Show();
+                    this.Hide();
+                }
+                else if (role == "Employer")
+                {
+                    HomeRecruiter homeRecruiter = new HomeRecruiter();
+                    homeRecruiter.Show();
+                    this.Hide();
+                }
+                else if (role == "Admin")
+                {
+                    FAdmin fAdmin = new FAdmin();
+                    fAdmin.Show();
+                    this.Hide();
                 }
                 else
                 {
                     lberror.Visible = true;
-                    lberror.Text = "Email hoặc mật khẩu không chính xác!";
-                    txtPassword.ResetText();
+                    lberror.Text = "Vai trò không xác định!";
                 }
-
-
-            
-            
+            }
+            else
+            {
+                lberror.Visible = true;
+                lberror.Text = "Email hoặc mật khẩu không chính xác!";
+                txtPassword.ResetText();
+            }
         }
+
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
@@ -102,7 +101,7 @@ namespace win_project_2
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
-            fHome.Close();
+            //fHome.Close();
         }
     }
 }

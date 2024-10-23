@@ -38,7 +38,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txt_address = new RJCodeAdvance.RJControls.RJTextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.rjButton1 = new RJCodeAdvance.RJControls.RJButton();
+            this.btn_upload = new RJCodeAdvance.RJControls.RJButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.rjButton2 = new RJCodeAdvance.RJControls.RJButton();
             this.label6 = new System.Windows.Forms.Label();
@@ -211,25 +211,25 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Địa chỉ";
             // 
-            // rjButton1
+            // btn_upload
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton1.BorderColor = System.Drawing.Color.Black;
-            this.rjButton1.BorderRadius = 0;
-            this.rjButton1.BorderSize = 1;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(1039, 431);
-            this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(208, 41);
-            this.rjButton1.TabIndex = 11;
-            this.rjButton1.Text = "UPLOAD";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
-            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
+            this.btn_upload.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btn_upload.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btn_upload.BorderColor = System.Drawing.Color.Black;
+            this.btn_upload.BorderRadius = 0;
+            this.btn_upload.BorderSize = 1;
+            this.btn_upload.FlatAppearance.BorderSize = 0;
+            this.btn_upload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_upload.ForeColor = System.Drawing.Color.White;
+            this.btn_upload.Location = new System.Drawing.Point(1039, 431);
+            this.btn_upload.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_upload.Name = "btn_upload";
+            this.btn_upload.Size = new System.Drawing.Size(208, 41);
+            this.btn_upload.TabIndex = 11;
+            this.btn_upload.Text = "UPLOAD";
+            this.btn_upload.TextColor = System.Drawing.Color.White;
+            this.btn_upload.UseVisualStyleBackColor = false;
+            this.btn_upload.Click += new System.EventHandler(this.btn_upload_Click);
             // 
             // pictureBox1
             // 
@@ -354,7 +354,7 @@
             this.Controls.Add(this.rjToggleButton1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.rjButton2);
-            this.Controls.Add(this.rjButton1);
+            this.Controls.Add(this.btn_upload);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txt_address);
@@ -390,7 +390,7 @@
         private RJCodeAdvance.RJControls.RJTextBox txt_address;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private RJCodeAdvance.RJControls.RJButton rjButton1;
+        private RJCodeAdvance.RJControls.RJButton btn_upload;
         private RJCodeAdvance.RJControls.RJButton rjButton2;
         private System.Windows.Forms.Label label6;
         private RJCodeAdvance.RJControls.RJToggleButton rjToggleButton1;

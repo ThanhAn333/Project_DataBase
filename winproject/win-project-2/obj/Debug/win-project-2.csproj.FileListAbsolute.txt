@@ -1121,9 +1121,6 @@ D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.UserCo
 D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\win-project-2.exe.config
 D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\win-project-2.exe
 D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\win-project-2.pdb
-D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Firebase.Auth.dll
-D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Firebase.Storage.dll
-D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\FireSharp.dll
 D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\FontAwesome.Sharp.dll
 D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Google.Api.Gax.dll
 D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Google.Api.Gax.Rest.dll

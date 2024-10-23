@@ -14,9 +14,11 @@ namespace win_project_2.Forms.Employer
 {
     public partial class HomeEmployee : Form
     {
-        public HomeEmployee()
+        private int _userId;
+        public HomeEmployee(int userid)
         {
             InitializeComponent();
+            _userId = userid;
         }
         public void addHienThi(UserControl uc)
         {
@@ -68,6 +70,13 @@ namespace win_project_2.Forms.Employer
             btnHome.Checked = false;
             btnApplication.Checked = false;
             btnMessage.Checked = true;
+        }
+
+        private void lb_mini_profile_click(object sender, MouseEventArgs e)
+        {
+            this.Hide();
+            FUserInfor fUserInfor = new FUserInfor(_userId);
+            fUserInfor.Show();
         }
     }
 }
