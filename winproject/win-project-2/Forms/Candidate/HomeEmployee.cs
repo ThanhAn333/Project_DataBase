@@ -28,14 +28,6 @@ namespace win_project_2.Forms.Employer
             uc.BringToFront();
         }
 
-        private void btnHome_Click(object sender, EventArgs e)
-        {
-            UCHome uC = new UCHome();
-            panelHienThi.Controls.Add(uC);
-            btnHome.Checked = true;
-            btnApplication.Checked = false;
-            btnMessage.Checked = false;
-        }
 
         private void HomeEmployee_Load(object sender, EventArgs e)
         {
@@ -49,6 +41,15 @@ namespace win_project_2.Forms.Employer
             btnMessage.Checked = false;
         }
 
+       
+
+        private void lb_mini_profile_click(object sender, MouseEventArgs e)
+        {
+            this.Hide();
+            FUserInfor fUserInfor = new FUserInfor(_userId);
+            fUserInfor.Show();
+        }
+
         private void btnApplication_Click(object sender, EventArgs e)
         {
             panelHienThi.Controls.Clear();
@@ -56,6 +57,15 @@ namespace win_project_2.Forms.Employer
             addHienThi(uCApplication);
             btnHome.Checked = false;
             btnApplication.Checked = true;
+            btnMessage.Checked = false;
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            UCHome uC = new UCHome();
+            panelHienThi.Controls.Add(uC);
+            btnHome.Checked = true;
+            btnApplication.Checked = false;
             btnMessage.Checked = false;
         }
 
@@ -67,18 +77,6 @@ namespace win_project_2.Forms.Employer
             btnHome.Checked = false;
             btnApplication.Checked = false;
             btnMessage.Checked = true;
-        }
-
-        private void lb_mini_profile_click(object sender, MouseEventArgs e)
-        {
-            this.Hide();
-            FUserInfor fUserInfor = new FUserInfor(_userId);
-            fUserInfor.Show();
-        }
-
-        private void btnHome_Click_1(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -53,6 +53,7 @@ namespace win_project_2.DAO
                         reader["JobTitle"].ToString(),
                         reader["JobDescription"].ToString(),
                         reader["Location"].ToString(),
+                        reader["SkillRequire"].ToString(),
                         reader["Salary"].ToString(), 
                         reader["Type"]?.ToString(),
                         reader["Company"]?.ToString(), 

@@ -29,11 +29,13 @@ namespace win_project_2.Forms.UC
             foreach (DataRow row in dt.Rows)
             {
                 UCShowJobcs uCJob = new UCShowJobcs();
+                int id = (int)row["JobID"];
                 string jobname = row["Title"].ToString();
                 string company = row["Company"].ToString();
                 string salary = row["Salary"].ToString();
                 string location = row["Location"].ToString();
-                uCJob.thongtin(jobname,salary, location, company);
+                string date = row["PostedDate"].ToString();
+                uCJob.thongtin(id,jobname,salary, location, company,date);
                 fpanelJob.Controls.Add(uCJob);
                 uCJob.BringToFront();
 
@@ -49,6 +51,11 @@ namespace win_project_2.Forms.UC
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
         {
 
         }

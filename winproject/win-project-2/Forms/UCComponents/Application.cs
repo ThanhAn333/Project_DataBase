@@ -21,5 +21,15 @@ namespace win_project_2.Forms.UCComponents
         {
 
         }
+        public void themThongTin(string title, string date, string status)
+        {
+            lbltitle.Text = title;
+            lbdate.Text = date;
+            lbstatus.Text = status;
+        }
+        private void btnDetail_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
