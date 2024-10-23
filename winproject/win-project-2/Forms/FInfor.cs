@@ -53,11 +53,9 @@ namespace win_project_2
             }
         }
 
-        private void rjButton1_Click(object sender, EventArgs e)
+        private void btn_upload_Click(object sender, EventArgs e)
         {
             LoadImage(ref FileImageName);
-
-            // Sử dụng using để đảm bảo tài nguyên được giải phóng
             using (var tempImage = new Bitmap(FileImageName))
             {
                 pictureBox1.Image = new Bitmap(tempImage);

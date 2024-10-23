@@ -31,12 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeRecruiter));
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+<<<<<<< HEAD
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2GradientButton6 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton5 = new Guna.UI2.WinForms.Guna2GradientButton();
+=======
+            this.lb_mini_profile = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+>>>>>>> 04f3a4de76e0b68dfd22ba426575bf87a73fb434
             this.panelHienThi = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -50,8 +56,13 @@
 >>>>>>> 5b7c8feacebcc8d7542e12b240f5c0a145afa751
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
+=======
+            this.lb_mini_profile.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
+>>>>>>> 04f3a4de76e0b68dfd22ba426575bf87a73fb434
             this.SuspendLayout();
             // 
             // guna2PictureBox1
@@ -68,8 +79,7 @@
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
-            this.guna2Panel1.Controls.Add(this.guna2CirclePictureBox1);
+            this.guna2Panel1.Controls.Add(this.lb_mini_profile);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Panel1.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
@@ -79,28 +89,38 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1454, 89);
             this.guna2Panel1.TabIndex = 16;
             // 
-            // guna2HtmlLabel1
+            // lb_mini_profile
             // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(1356, 32);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(86, 25);
-            this.guna2HtmlLabel1.TabIndex = 1;
-            this.guna2HtmlLabel1.Text = "Profile";
+            this.lb_mini_profile.Controls.Add(this.guna2HtmlLabel2);
+            this.lb_mini_profile.Controls.Add(this.guna2CirclePictureBox2);
+            this.lb_mini_profile.Location = new System.Drawing.Point(1170, 3);
+            this.lb_mini_profile.Name = "lb_mini_profile";
+            this.lb_mini_profile.Size = new System.Drawing.Size(272, 83);
+            this.lb_mini_profile.TabIndex = 2;
+            this.lb_mini_profile.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btn_mini_profile_clicl);
             // 
-            // guna2CirclePictureBox1
+            // guna2HtmlLabel2
             // 
-            this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(1287, 12);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(72, 60);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2CirclePictureBox1.TabIndex = 0;
-            this.guna2CirclePictureBox1.TabStop = false;
+            this.guna2HtmlLabel2.AutoSize = false;
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(81, 27);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(188, 25);
+            this.guna2HtmlLabel2.TabIndex = 1;
+            this.guna2HtmlLabel2.Text = "Profile";
+            // 
+            // guna2CirclePictureBox2
+            // 
+            this.guna2CirclePictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox2.Image")));
+            this.guna2CirclePictureBox2.ImageRotate = 0F;
+            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(3, 9);
+            this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
+            this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(72, 60);
+            this.guna2CirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2CirclePictureBox2.TabIndex = 0;
+            this.guna2CirclePictureBox2.TabStop = false;
             // 
             // guna2Panel2
             // 
@@ -379,8 +399,13 @@
             this.Load += new System.EventHandler(this.HomeRecruiter_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
+=======
+            this.lb_mini_profile.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
+>>>>>>> 04f3a4de76e0b68dfd22ba426575bf87a73fb434
             this.ResumeLayout(false);
 
         }
@@ -389,12 +414,15 @@
 
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+<<<<<<< HEAD
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton6;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton5;
+=======
+>>>>>>> 04f3a4de76e0b68dfd22ba426575bf87a73fb434
         private Guna.UI2.WinForms.Guna2Panel panelHienThi;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
@@ -405,6 +433,12 @@
         private Guna.UI2.WinForms.Guna2GradientButton btn_Information;
         private Guna.UI2.WinForms.Guna2GradientButton btn_History;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton6;
+<<<<<<< HEAD
 >>>>>>> 5b7c8feacebcc8d7542e12b240f5c0a145afa751
+=======
+        private Guna.UI2.WinForms.Guna2Panel lb_mini_profile;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
+>>>>>>> 04f3a4de76e0b68dfd22ba426575bf87a73fb434
     }
 }

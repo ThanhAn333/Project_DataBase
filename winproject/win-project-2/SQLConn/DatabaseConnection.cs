@@ -13,7 +13,7 @@ namespace win_project_2.SQLConn
         // Phương thức mở kết nối
         public SqlConnection GetConnection()
         {
-            return con;
+            return new SqlConnection(strconn);
         }
         public void myConnect()
         {

@@ -351,10 +351,10 @@
     <Compile Include="Forms\Candidate\UC\UCMessage.Designer.cs">
       <DependentUpon>UCMessage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FAdmin.cs">
+    <Compile Include="Forms\Admin\FAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FAdmin.Designer.cs">
+    <Compile Include="Forms\Admin\FAdmin.Designer.cs">
       <DependentUpon>FAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\General\FormRegister.cs">
@@ -572,28 +572,28 @@
     <Compile Include="UserControls\UCListChat.Designer.cs">
       <DependentUpon>UCListChat.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UCQLBC.cs">
+    <Compile Include="Forms\Admin\UC\UCQLBC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UCQLBC.Designer.cs">
+    <Compile Include="Forms\Admin\UC\UCQLBC.Designer.cs">
       <DependentUpon>UCQLBC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UCQLBV.cs">
+    <Compile Include="Forms\Admin\UC\UCQLBV.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UCQLBV.Designer.cs">
+    <Compile Include="Forms\Admin\UC\UCQLBV.Designer.cs">
       <DependentUpon>UCQLBV.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UCQLDG.cs">
+    <Compile Include="Forms\Admin\UC\UCQLDG.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UCQLDG.Designer.cs">
+    <Compile Include="Forms\Admin\UC\UCQLDG.Designer.cs">
       <DependentUpon>UCQLDG.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UCQLTK.cs">
+    <Compile Include="Forms\Admin\UC\UCQLTK.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UCQLTK.Designer.cs">
+    <Compile Include="Forms\Admin\UC\UCQLTK.Designer.cs">
       <DependentUpon>UCQLTK.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\UCRating.cs">
@@ -647,7 +647,7 @@
     <EmbeddedResource Include="Forms\Candidate\UC\UCMessage.resx">
       <DependentUpon>UCMessage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FAdmin.resx">
+    <EmbeddedResource Include="Forms\Admin\FAdmin.resx">
       <DependentUpon>FAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FDetail1.resx">
@@ -754,16 +754,16 @@
     <EmbeddedResource Include="UserControls\UCListChat.resx">
       <DependentUpon>UCListChat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UCQLBC.resx">
+    <EmbeddedResource Include="Forms\Admin\UC\UCQLBC.resx">
       <DependentUpon>UCQLBC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UCQLBV.resx">
+    <EmbeddedResource Include="Forms\Admin\UC\UCQLBV.resx">
       <DependentUpon>UCQLBV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UCQLDG.resx">
+    <EmbeddedResource Include="Forms\Admin\UC\UCQLDG.resx">
       <DependentUpon>UCQLDG.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UCQLTK.resx">
+    <EmbeddedResource Include="Forms\Admin\UC\UCQLTK.resx">
       <DependentUpon>UCQLTK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UCRating.resx">

@@ -1,6 +1,9 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 using win_project_2.SQLConn;
 
 namespace win_project_2.DAO
@@ -59,12 +62,12 @@ namespace win_project_2.DAO
                         reader["Email"].ToString(),
                         reader["Password"].ToString(),
                         reader["Role"].ToString(),
-                        reader["Address"]?.ToString(),
+                        reader["Address"] != DBNull.Value ? reader["Address"].ToString() : null,
                         reader["DateOfBirth"] != DBNull.Value ? (DateTime)reader["DateOfBirth"] : DateTime.MinValue,
-                        reader["PhoneNumber"]?.ToString(),
-                        reader["ProfilePicture"]?.ToString(),
-                        DateTime.Now, // or assign a value from the database if available
-                        DateTime.Now  // or assign a value from the database if available
+                        reader["PhoneNumber"] != DBNull.Value ? reader["PhoneNumber"].ToString() : null,
+                        reader["ProfilePicture"] != DBNull.Value ? reader["ProfilePicture"].ToString() : null,
+                        reader["CreatedAt"] != DBNull.Value ? (DateTime)reader["CreatedAt"] : DateTime.MinValue,  // CreatedAt from DB
+                        reader["UpdatedAt"] != DBNull.Value ? (DateTime)reader["UpdatedAt"] : DateTime.MinValue   // UpdatedAt from DB
                     );
                 }
             }
@@ -77,9 +80,18 @@ namespace win_project_2.DAO
         {
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "UPDATE [User] SET Name = @Name, Email = @Email, Password = @Password, Role = @Role, " +
-                               "Address = @Address, DateOfBirth = @DateOfBirth, PhoneNumber = @PhoneNumber, ProfilePicture = @ProfilePicture, " +
-                               "UpdatedAt = @UpdatedAt WHERE UserID = @UserID";
+                string query = "UPDATE [User] SET " +
+                               "Name = @Name, " +
+                               "Email = @Email, " +
+                               "Password = @Password, " +
+                               "Role = @Role, " +
+                               "Address = @Address, " +
+                               "DateOfBirth = @DateOfBirth, " +
+                               "PhoneNumber = @PhoneNumber, " +
+                               "ProfilePicture = @ProfilePicture, " +
+                               "UpdatedAt = @UpdatedAt " +
+                               "WHERE UserID = @UserID";
+
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Name", user.Name);
                 command.Parameters.AddWithValue("@Email", user.Email);
@@ -112,28 +124,32 @@ namespace win_project_2.DAO
         }
 
         // Login
-        public string Login(string email, string password)
+        public (int? UserID, string Role) Login(string email, string password)
         {
+            int? userId = null;
             string role = null;
 
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string sql = "SELECT Role FROM [User] WHERE Email = @Email AND Password = @Password";
+                string sql = "SELECT UserID, Role FROM [User] WHERE Email = @Email AND Password = @Password";
                 SqlCommand command = new SqlCommand(sql, connection);
                 command.Parameters.AddWithValue("@Email", email);
                 command.Parameters.AddWithValue("@Password", password);
 
                 connection.Open();
-                object result = command.ExecuteScalar();
-
-                if (result != null)
+                using (SqlDataReader reader = command.ExecuteReader())
                 {
-                    role = result.ToString();
+                    if (reader.Read())
+                    {
+                        userId = reader.GetInt32(reader.GetOrdinal("UserID"));
+                        role = reader.GetString(reader.GetOrdinal("Role"));
+                    }
                 }
             }
 
-            return role;
+            return (userId, role);
         }
+
 
         public void Register(string name, string email, string password, string role, string address, DateTime dateofbirth, string phonenumber, DateTime createdat)
         {
@@ -157,6 +173,27 @@ namespace win_project_2.DAO
 
                 connection.Open();
                 command.ExecuteNonQuery();
+            }
+        }
+        private void LoadAllUsers()
+        {
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                string query = "SELECT * FROM [User]"; // Truy vấn lấy tất cả người dùng
+                SqlCommand command = new SqlCommand(query, connection);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                DataTable userTable = new DataTable();
+
+                try
+                {
+                    connection.Open();
+                    adapter.Fill(userTable); // Điền dữ liệu vào DataTable
+                   // Controler.guna2DataGridView1.DataSource = userTable; // Hiển thị trên DataGridView
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message); // Thông báo lỗi nếu có
+                }
             }
         }
     }
