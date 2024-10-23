@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using win_project_2.SQLConn;
@@ -126,6 +128,23 @@ namespace win_project_2.DAO
                 connection.Open();
                 command.ExecuteNonQuery();
             }
+        }
+
+
+        public DataTable DoDuLieuJob()
+        {
+            DataTable dataTable = new DataTable();
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                string sql = "SELECT * FROM Job";
+                SqlCommand cmd = new SqlCommand(sql,connection);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+                da.Fill(dataTable);
+            
+            }
+            return dataTable;
+
         }
     }
 }

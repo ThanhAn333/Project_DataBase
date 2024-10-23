@@ -606,7 +606,6 @@
             this.txb_Name.SelectedText = "";
             this.txb_Name.Size = new System.Drawing.Size(456, 37);
             this.txb_Name.TabIndex = 3;
-           
             // 
             // avatar_box
             // 
@@ -665,6 +664,7 @@
             this.bnt_Huy.TabIndex = 22;
             this.bnt_Huy.Text = "HỦY";
             this.bnt_Huy.UseTransparentBackground = true;
+            this.bnt_Huy.Click += new System.EventHandler(this.bnt_Huy_Click);
             // 
             // dtBirthday
             // 

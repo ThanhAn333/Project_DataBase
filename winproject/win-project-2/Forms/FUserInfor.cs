@@ -39,6 +39,8 @@ namespace win_project_2.Forms
                 txb_Email.Text = user.Email;
                 txb_SDT.Text = user.PhoneNumber;
                 dtBirthday.Value = user.birthDate;
+                
+                
             }
         }
 
@@ -84,5 +86,9 @@ namespace win_project_2.Forms
             }
         }
 
+        private void bnt_Huy_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

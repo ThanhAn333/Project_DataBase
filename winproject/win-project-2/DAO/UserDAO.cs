@@ -175,6 +175,7 @@ namespace win_project_2.DAO
                 command.ExecuteNonQuery();
             }
         }
+        
         private void LoadAllUsers()
         {
             using (SqlConnection connection = dbConn.GetConnection())

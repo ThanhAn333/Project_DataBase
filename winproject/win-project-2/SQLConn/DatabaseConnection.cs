@@ -6,8 +6,7 @@ namespace win_project_2.SQLConn
 {
     public class DatabaseConnection
     {
-        public static string strconn = @"Data Source=LAPTOP-PMSG8QVF;Initial Catalog=JOBAPP;Integrated Security=True
-";
+        public static string strconn = @"Data Source=.;Initial Catalog=JOBAPP;Integrated Security=True;Encrypt=False";
         private SqlConnection con = new SqlConnection(strconn);
 
         // Phương thức mở kết nối

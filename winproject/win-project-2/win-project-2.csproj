@@ -423,12 +423,6 @@
     <Compile Include="Forms\UCComponents\JobDetail.Designer.cs">
       <DependentUpon>JobDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UCComponents\UCJob.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\UCComponents\UCJob.Designer.cs">
-      <DependentUpon>UCJob.cs</DependentUpon>
-    </Compile>
     <Compile Include="Models\Application.cs" />
     <Compile Include="Models\Job.cs" />
     <Compile Include="Models\JobPost.cs" />
@@ -614,10 +608,10 @@
     <Compile Include="UserControls\UCSendMesage.Designer.cs">
       <DependentUpon>UCSendMesage.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UCShowJobcs.cs">
+    <Compile Include="Forms\UCComponents\UCShowJobcs.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UCShowJobcs.Designer.cs">
+    <Compile Include="Forms\UCComponents\UCShowJobcs.Designer.cs">
       <DependentUpon>UCShowJobcs.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\UCWaitJob.cs">
@@ -740,9 +734,6 @@
     <EmbeddedResource Include="Forms\UCComponents\JobDetail.resx">
       <DependentUpon>JobDetail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UCComponents\UCJob.resx">
-      <DependentUpon>UCJob.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -775,7 +766,7 @@
     <EmbeddedResource Include="UserControls\UCSendMesage.resx">
       <DependentUpon>UCSendMesage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UCShowJobcs.resx">
+    <EmbeddedResource Include="Forms\UCComponents\UCShowJobcs.resx">
       <DependentUpon>UCShowJobcs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UCWaitJob.resx">
