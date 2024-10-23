@@ -21,7 +21,7 @@ namespace win_project_2.DAO
         {
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "INSERT INTO User (Name, Email, Password, Role, Address, DateOfBirth, PhoneNumber, ProfilePicture, CreatedAt, UpdatedAt) " +
+                string query = "INSERT INTO [User] (Name, Email, Password, Role, Address, DateOfBirth, PhoneNumber, ProfilePicture, CreatedAt, UpdatedAt) " +
                                "VALUES (@Name, @Email, @Password, @Role, @Address, @DateOfBirth, @PhoneNumber, @ProfilePicture, @CreatedAt, @UpdatedAt)";
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Name", user.Name);
@@ -39,6 +39,9 @@ namespace win_project_2.DAO
                 command.ExecuteNonQuery();
             }
         }
+
+
+
 
         // Read
         public User GetUserByID(int userId)
@@ -176,7 +179,7 @@ namespace win_project_2.DAO
             }
         }
         
-        private void LoadAllUsers()
+        public DataTable LoadAllUsers()
         {
             using (SqlConnection connection = dbConn.GetConnection())
             {
@@ -189,13 +192,37 @@ namespace win_project_2.DAO
                 {
                     connection.Open();
                     adapter.Fill(userTable); // Điền dữ liệu vào DataTable
-                   // Controler.guna2DataGridView1.DataSource = userTable; // Hiển thị trên DataGridView
+                                             // Controler.guna2DataGridView1.DataSource = userTable; // Hiển thị trên DataGridView
+                    return userTable;
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Lỗi: " + ex.Message); // Thông báo lỗi nếu có
                 }
             }
+            return null;
         }
+
+        public int GetMaxUserID()
+        {
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                string query = "SELECT ISNULL(MAX(UserID), 0) FROM [User]";
+                SqlCommand command = new SqlCommand(query, connection);
+
+                try
+                {
+                    connection.Open();
+                    object result = command.ExecuteScalar();
+                    return Convert.ToInt32(result);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi lấy UserID lớn nhất: " + ex.Message);
+                    return 0;
+                }
+            }
+        }
+
     }
 }

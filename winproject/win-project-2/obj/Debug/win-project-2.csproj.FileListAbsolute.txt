@@ -958,7 +958,6 @@ D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.For
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UC.UCHome.resources
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UCComponents.Application.resources
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UCComponents.JobDetail.resources
-D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UCComponents.UCJob.resources
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Properties.Resources.resources
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCAccept.resources
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCListChat.resources
@@ -1361,3 +1360,8 @@ D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT\Project_DataBase\winproject
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT\Project_DataBase\winproject\win-project-2\obj\Debug\win-proj.20E85E94.Up2Date
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT\Project_DataBase\winproject\win-project-2\obj\Debug\win-project-2.exe
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT\Project_DataBase\winproject\win-project-2\obj\Debug\win-project-2.pdb
+D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCAccept.resources
+D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCApply_Job.resources
+D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCHome.resources
+D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCJob.resources
+D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCPostJob.resources
