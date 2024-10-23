@@ -57,7 +57,7 @@ namespace win_project_2.UserControls
                     job.Description,
                     job.Request,
                     job.Location,
-                    job.Salar,
+                    job.Salary,
                     job.Company,
                     job.Type,
                     job.PostedDate.ToString()
