@@ -69,7 +69,7 @@
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Controls.Add(this.lb_mini_profile);
+            
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Panel1.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 1);
