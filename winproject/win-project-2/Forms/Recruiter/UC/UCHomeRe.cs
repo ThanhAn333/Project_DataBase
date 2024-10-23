@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace win_project_2.Forms.Recruiter.UC
 {
-    public partial class UCJob : UserControl
+    public partial class UCHomeRe : UserControl
     {
-        public UCJob()
+        public UCHomeRe()
         {
             InitializeComponent();
-        }
-
-        private void lb_tag_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
