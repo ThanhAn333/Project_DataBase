@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -52,6 +53,7 @@ namespace win_project_2.DAO
                         reader["JobTitle"].ToString(),
                         reader["JobDescription"].ToString(),
                         reader["Location"].ToString(),
+                        reader["SkillRequire"].ToString(),
                         reader["Salary"].ToString(),
                         reader["Type"]?.ToString(), 
                         reader["Company"]?.ToString(), 
@@ -152,6 +154,23 @@ namespace win_project_2.DAO
                 connection.Open();
                 command.ExecuteNonQuery();
             }
+        }
+
+
+        public DataTable DoDuLieuApplication()
+        {
+            DataTable dataTable = new DataTable();
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                string sql = "SELECT * FROM Application";
+                SqlCommand cmd = new SqlCommand(sql, connection);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+                da.Fill(dataTable);
+
+            }
+            return dataTable;
+
         }
     }
 }

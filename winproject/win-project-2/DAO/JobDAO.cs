@@ -36,6 +36,7 @@ namespace win_project_2.DAO
                         reader["JobTitle"].ToString(),
                         reader["JobDescription"].ToString(),
                         reader["Location"].ToString(),
+                        reader["SkillRequire"].ToString(),
                         reader["Salary"].ToString(), 
                         reader["Type"]?.ToString(), 
                         reader["Company"]?.ToString(),
@@ -82,9 +83,10 @@ namespace win_project_2.DAO
                 {
                     job = new Job(
                         (int)reader["JobID"],
-                        reader["JobTitle"].ToString(),
-                        reader["JobDescription"].ToString(),
+                        reader["Title"].ToString(),
+                        reader["Description"].ToString(),
                         reader["Location"].ToString(),
+                        reader["SkillRequire"].ToString(),
                         reader["Salary"].ToString(), 
                         reader["Type"]?.ToString(), 
                         reader["Company"]?.ToString(), 
@@ -96,6 +98,7 @@ namespace win_project_2.DAO
 
             return job;
         }
+
 
         // Update
         public void UpdateJob(Job job)

@@ -12,18 +12,24 @@ namespace win_project_2.DAO
         public string Title { get; set; }
         public string Description { get; set; }
         public string Location { get; set; }
-        public string Salar {  get; set; }
+        public string Request {  get; set; }
+        public string Salar { get; set; }
         public string Type { get; set; }
-        public string Company {  get; set; }
+        public string Company { get; set; }
         public DateTime PostedDate { get; set; }
         public string Status { get; set; }
 
-        public Job(int jobID, string title, string description, string location, string salar, string type, string company, DateTime postedDate, string status)
+        public Job(){
+
+            }
+
+        public Job(int jobID, string title, string description, string location,string request, string salar, string type, string company, DateTime postedDate, string status)
         {
             JobID = jobID;
             Title = title;
             Description = description;
             Location = location;
+            Request = request;
             Salar = salar;
             Type = type;
             Company = company;
