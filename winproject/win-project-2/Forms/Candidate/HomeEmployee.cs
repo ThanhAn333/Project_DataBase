@@ -32,8 +32,6 @@ namespace win_project_2.Forms.Employer
         {
             UCHome uC = new UCHome();
             panelHienThi.Controls.Add(uC);
-            uC.Dock = DockStyle.Fill;
-            uC.BringToFront();
             btnHome.Checked = true;
             btnApplication.Checked = false;
             btnMessage.Checked = false;
@@ -43,7 +41,8 @@ namespace win_project_2.Forms.Employer
         {
             panelHienThi.Controls.Clear();
             UCHome uC = new UCHome();
-            addHienThi(uC);
+            panelHienThi.Controls.Add(uC);
+            uC.Dock = DockStyle.Fill;
             uC.BringToFront();
             btnHome.Checked = true;
             btnApplication.Checked = false;
@@ -55,7 +54,6 @@ namespace win_project_2.Forms.Employer
             panelHienThi.Controls.Clear();
             UCApplication uCApplication = new UCApplication();
             addHienThi(uCApplication);
-            uCApplication.BringToFront();
             btnHome.Checked = false;
             btnApplication.Checked = true;
             btnMessage.Checked = false;
@@ -66,7 +64,6 @@ namespace win_project_2.Forms.Employer
             panelHienThi.Controls.Clear();
             UCMessage uCMessage = new UCMessage();
             addHienThi(uCMessage);
-            uCMessage.BringToFront();
             btnHome.Checked = false;
             btnApplication.Checked = false;
             btnMessage.Checked = true;
@@ -77,6 +74,11 @@ namespace win_project_2.Forms.Employer
             this.Hide();
             FUserInfor fUserInfor = new FUserInfor(_userId);
             fUserInfor.Show();
+        }
+
+        private void btnHome_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
