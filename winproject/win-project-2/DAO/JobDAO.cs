@@ -9,7 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
 using win_project_2.SQLConn;
+using win_project_2.Models;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Windows;
 
 namespace win_project_2.DAO
 {
@@ -119,7 +121,7 @@ namespace win_project_2.DAO
                 //command.Parameters.AddWithValue("@JobID", job.JobID);
                 command.Parameters.AddWithValue("@Salary", job.Salary);
                 command.Parameters.AddWithValue("@Type", job.Type);
-                command.Parameters.AddWithValue("@Compant", job.Company);
+                command.Parameters.AddWithValue("@Company", job.Company);
                 command.Parameters.AddWithValue("@Status", job.Status);
                 command.Parameters.AddWithValue("@PostedDate", job.PostedDate);
                 connection.Open();
@@ -141,7 +143,62 @@ namespace win_project_2.DAO
             }
         }
 
+        public DataTable TimKiemJob(string timKiem)
+        {
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                DataTable dt = new DataTable();
+                    string query = "SELECT * FROM Job WHERE Title LIKE '%' + @TimKiem + '%'";
+                    SqlCommand cmd = new SqlCommand(query, connection);
+                    cmd.Parameters.AddWithValue("@TimKiem", timKiem);
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                    adapter.Fill(dt);
+                    return dt;
+                
+            }
+        }
+        public DataTable HienThiLocation()
+        {
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                DataTable dt = new DataTable();
+                try
+                {
+                    string query = "SELECT Location FROM Job WHERE Location IS NOT NULL";
+                    SqlCommand cmd = new SqlCommand(query, connection);
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dt);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+                return dt;
+            }
+        }
+        public DataTable LayDuLieuLocation(string location)
+        {
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                DataTable dt = new DataTable();
+                try
+                {
+                    connection.Open();
+                    string query = "SELECT * FROM Job WHERE Location = @Location";
+                    SqlCommand cmd = new SqlCommand(query, connection);
+                    cmd.Parameters.AddWithValue("@Location", location); 
 
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dt);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+                return dt; 
+            }
+        }
+       
         public DataTable DoDuLieuJob()
         {
             DataTable dataTable = new DataTable();

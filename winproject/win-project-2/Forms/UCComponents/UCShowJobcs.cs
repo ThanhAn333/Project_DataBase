@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using win_project_2.DAO;
+using win_project_2.Models;
 using win_project_2.Forms;
 
 namespace win_project_2.UserControls

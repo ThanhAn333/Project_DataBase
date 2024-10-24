@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using win_project_2.SQLConn;
+using win_project_2.Models;
 
 namespace win_project_2.DAO
 {
@@ -66,7 +67,8 @@ namespace win_project_2.DAO
                     Application application = new Application(
                         (int)reader["ApplicationID"],
                         user, 
-                        job, 
+                        job,
+                        reader["Title"].ToString(),
                         reader["Status"].ToString(),
                         (DateTime)reader["ApplicationDate"] 
                     );
@@ -80,10 +82,11 @@ namespace win_project_2.DAO
         {
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "INSERT INTO Application (UserID, JobID, Status, ApplicationDate) VALUES (@UserID, @JobID, @Status, @ApplicationDate)";
+                string query = "INSERT INTO Application (UserID, JobID, Title, Status, ApplicationDate) VALUES (@UserID, @JobID, @Title, @Status, @ApplicationDate)";
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@UserID", application.Applicant.UserID);
                 command.Parameters.AddWithValue("@JobID", application.AppliedJob.JobID);
+                command.Parameters.AddWithValue("@Title", application.AppliedJob.Title);
                 command.Parameters.AddWithValue("@Status", application.Status);
                 command.Parameters.AddWithValue("@ApplicationDate", application.ApplicationDate);
 
@@ -118,6 +121,7 @@ namespace win_project_2.DAO
                         (int)reader["ApplicationID"],
                         user,
                         job,
+                        reader["Title"].ToString(),
                         reader["Status"].ToString(),
                         (DateTime)reader["ApplicationDate"]
                     );
@@ -156,7 +160,20 @@ namespace win_project_2.DAO
             }
         }
 
+        public bool CheckApplicationExists(int userId, int jobId)
+        {
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                string query = "SELECT COUNT(*) FROM Application WHERE UserID = @UserID AND JobID = @JobID";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@UserID", userId);
+                command.Parameters.AddWithValue("@JobID", jobId);
 
+                connection.Open();
+                int count = (int)command.ExecuteScalar();
+                return count > 0;
+            }
+        }
         public DataTable DoDuLieuApplication()
         {
             DataTable dataTable = new DataTable();

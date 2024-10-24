@@ -35,7 +35,7 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.fpanelJob = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cblocation = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
@@ -104,7 +104,7 @@
             // 
             // guna2GradientPanel1
             // 
-            this.guna2GradientPanel1.Controls.Add(this.guna2ComboBox1);
+            this.guna2GradientPanel1.Controls.Add(this.cblocation);
             this.guna2GradientPanel1.Controls.Add(this.guna2Button6);
             this.guna2GradientPanel1.Controls.Add(this.guna2Button5);
             this.guna2GradientPanel1.Controls.Add(this.guna2Button4);
@@ -121,21 +121,22 @@
             this.guna2GradientPanel1.Size = new System.Drawing.Size(1612, 129);
             this.guna2GradientPanel1.TabIndex = 5;
             // 
-            // guna2ComboBox1
+            // cblocation
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.White;
-            this.guna2ComboBox1.BorderRadius = 15;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(1039, 22);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(355, 36);
-            this.guna2ComboBox1.TabIndex = 2;
+            this.cblocation.BackColor = System.Drawing.Color.White;
+            this.cblocation.BorderRadius = 15;
+            this.cblocation.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cblocation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cblocation.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cblocation.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cblocation.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cblocation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cblocation.ItemHeight = 30;
+            this.cblocation.Location = new System.Drawing.Point(1039, 22);
+            this.cblocation.Name = "cblocation";
+            this.cblocation.Size = new System.Drawing.Size(355, 36);
+            this.cblocation.TabIndex = 2;
+            this.cblocation.SelectedIndexChanged += new System.EventHandler(this.cblocation_SelectedIndexChanged);
             // 
             // guna2Button6
             // 
@@ -208,7 +209,7 @@
             this.btnTimKiem.Size = new System.Drawing.Size(143, 36);
             this.btnTimKiem.TabIndex = 4;
             this.btnTimKiem.Text = "Tìm việc";
-            this.btnTimKiem.Click += new System.EventHandler(this.guna2Button1_Click_1);
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // guna2Button3
             // 
@@ -345,7 +346,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button btnTimKiem;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox cblocation;
         private Guna.UI2.WinForms.Guna2TextBox txtTimKiem;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;

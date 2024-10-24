@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using win_project_2.SQLConn;
+using win_project_2.Models;
+
 
 namespace win_project_2.DAO
 {

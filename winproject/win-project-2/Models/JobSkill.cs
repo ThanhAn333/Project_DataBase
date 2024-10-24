@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace win_project_2.DAO
+namespace win_project_2.Models
 {
     public class JobSkill
     {

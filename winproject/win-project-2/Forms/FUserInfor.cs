@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Web.Security;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using win_project_2.Models;
 using win_project_2.DAO;
 
 namespace win_project_2.Forms

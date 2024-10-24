@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using win_project_2.SQLConn;
+using win_project_2.Models;
 
 namespace win_project_2.DAO
 {

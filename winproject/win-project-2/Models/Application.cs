@@ -4,13 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace win_project_2.DAO
+namespace win_project_2.Models
 {
     public class Application
     {
         public int ApplicationID { get; set; }
         public User Applicant { get; set; }
         public Job AppliedJob { get; set; }
+
+        public string Title {  get; set; }
         public DateTime ApplicationDate { get; set; }
         public string Status { get; set; }
 
@@ -18,11 +20,12 @@ namespace win_project_2.DAO
         {
 
         }
-        public Application(int applicationId, User applicant, Job appliedJob, string status, DateTime applicationDate)
+        public Application(int applicationId, User applicant, Job appliedJob,string title, string status, DateTime applicationDate)
         {
             ApplicationID = applicationId;
             Applicant = applicant;
             AppliedJob = appliedJob;
+            Title = title;
             ApplicationDate = applicationDate;
             Status = status;
         }
