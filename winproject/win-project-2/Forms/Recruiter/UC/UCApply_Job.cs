@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace win_project_2.Forms.Recruiter.UC
 {
-    public partial class UC_ListApply_Job : UserControl
+    public partial class UCApply_Job : UserControl
     {
-        public UC_ListApply_Job()
+        public UCApply_Job()
         {
             InitializeComponent();
+        }
+
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

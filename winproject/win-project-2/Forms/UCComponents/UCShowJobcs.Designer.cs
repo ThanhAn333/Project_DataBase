@@ -39,8 +39,6 @@
             this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2CirclePictureBox3 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbDate = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -181,33 +179,11 @@
             this.guna2CirclePictureBox1.TabStop = false;
             this.guna2CirclePictureBox1.UseTransparentBackground = true;
             // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.MintCream;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(22, 176);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(51, 18);
-            this.guna2HtmlLabel1.TabIndex = 81;
-            this.guna2HtmlLabel1.Text = "Date:";
-            // 
-            // lbDate
-            // 
-            this.lbDate.AutoSize = false;
-            this.lbDate.BackColor = System.Drawing.Color.MintCream;
-            this.lbDate.Location = new System.Drawing.Point(86, 176);
-            this.lbDate.Name = "lbDate";
-            this.lbDate.Size = new System.Drawing.Size(108, 18);
-            this.lbDate.TabIndex = 82;
-            this.lbDate.Text = "Date:";
-            // 
             // UCShowJobcs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.lbDate);
-            this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.lblCompany);
             this.Controls.Add(this.lblLocation);
             this.Controls.Add(this.lblSalary);
@@ -242,7 +218,5 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblLocation;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCompany;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbDate;
     }
 }

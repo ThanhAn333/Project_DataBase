@@ -387,29 +387,11 @@
     <Compile Include="Forms\Recruiter\UC\UCAccept.Designer.cs">
       <DependentUpon>UCAccept.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Recruiter\UC\UCHomeRe.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Recruiter\UC\UCHomeRe.Designer.cs">
-      <DependentUpon>UCHomeRe.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Recruiter\UC\UCPostJob.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Forms\Recruiter\UC\UCPostJob.Designer.cs">
       <DependentUpon>UCPostJob.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Recruiter\UC\UC_Job.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Recruiter\UC\UC_Job.Designer.cs">
-      <DependentUpon>UC_Job.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Recruiter\UC\UC_ListApply_Job.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Recruiter\UC\UC_ListApply_Job.Designer.cs">
-      <DependentUpon>UC_ListApply_Job.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\UCComponents\Application.cs">
       <SubType>UserControl</SubType>
@@ -432,12 +414,6 @@
     <Compile Include="Models\Skill.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserSkill.cs" />
-    <Compile Include="Forms\Candidate\FDetail1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Candidate\FDetail1.Designer.cs">
-      <DependentUpon>FDetail1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FListChat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -553,7 +529,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Service\UserDangNhap.cs" />
     <Compile Include="SQLConn\DatabaseConnection.cs" />
     <Compile Include="UserControls\UCAccept.cs">
       <SubType>UserControl</SubType>
@@ -645,9 +620,6 @@
     <EmbeddedResource Include="Forms\Admin\FAdmin.resx">
       <DependentUpon>FAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Candidate\FDetail1.resx">
-      <DependentUpon>FDetail1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FListChat.resx">
       <DependentUpon>FListChat.cs</DependentUpon>
     </EmbeddedResource>
@@ -687,17 +659,8 @@
     <EmbeddedResource Include="Forms\Recruiter\UC\UCAccept.resx">
       <DependentUpon>UCAccept.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Recruiter\UC\UCHomeRe.resx">
-      <DependentUpon>UCHomeRe.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Recruiter\UC\UCPostJob.resx">
       <DependentUpon>UCPostJob.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Recruiter\UC\UC_Job.resx">
-      <DependentUpon>UC_Job.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Recruiter\UC\UC_ListApply_Job.resx">
-      <DependentUpon>UC_ListApply_Job.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ThoDetail.resx">
       <DependentUpon>ThoDetail.cs</DependentUpon>
@@ -854,7 +817,9 @@
   <ItemGroup>
     <None Include="Resources\job-work.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Service\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
   <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">

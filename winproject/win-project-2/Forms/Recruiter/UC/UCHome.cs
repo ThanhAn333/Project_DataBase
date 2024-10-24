@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace win_project_2.Forms.UCComponents
+namespace win_project_2.Forms.Recruiter.UC
 {
-    public partial class Application : UserControl
+    public partial class UCHome : UserControl
     {
-        public Application()
+        public UCHome()
         {
             InitializeComponent();
         }
 
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
 
         }

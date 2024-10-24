@@ -12,7 +12,6 @@ using win_project_2.Forms;
 using win_project_2.Forms.Employer;
 using win_project_2.Forms.General;
 using win_project_2.Forms.Recruiter;
-using win_project_2.Service;
 using win_project_2.SQLConn;
 
 namespace win_project_2
@@ -35,18 +34,6 @@ namespace win_project_2
             }
 
             UserDAO userDAO = new UserDAO();
-            DataTable dt = userDAO.layThongTinTK(txtEmail.Text,txtPassword.Text);
-            DataRow dr = dt.Rows[0];
-            UserDangNhap.userId = (int)dr["UserID"];
-            UserDangNhap.email = dr["Email"].ToString();
-            UserDangNhap.name = dr["Name"].ToString();
-            UserDangNhap.role = dr["Role"].ToString();
-            UserDangNhap.phone = dr["PhoneNumber"].ToString();
-            UserDangNhap.password = dr["Password"].ToString();
-            UserDangNhap.address = dr["Address"].ToString();
-            UserDangNhap.birthday = dr["DateOfBirth"].ToString();
-            
-
             var result = userDAO.Login(txtEmail.Text, txtPassword.Text);
 
             if (result.UserID.HasValue && !string.IsNullOrEmpty(result.Role))

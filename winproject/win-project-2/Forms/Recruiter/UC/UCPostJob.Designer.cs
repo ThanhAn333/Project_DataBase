@@ -29,31 +29,30 @@
         private void InitializeComponent()
         {
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.dtPostDay = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lb_status = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lb_type = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lb_des = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btn_PostJob = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Shapes6 = new Guna.UI2.WinForms.Guna2Shapes();
-            this.lb_salary = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lb_company = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lb_location = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lb_price = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lb_skill = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lb_loca = new Guna.UI2.WinForms.Guna2TextBox();
             this.lb_namejob = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lbError = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lb_Status = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.dtPostDay = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2HtmlLabel4
@@ -69,21 +68,32 @@
             this.guna2HtmlLabel4.Text = "Thông tin công việc";
             this.guna2HtmlLabel4.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox2.Location = new System.Drawing.Point(-28, 41);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(10, 41);
+            this.pictureBox2.TabIndex = 88;
+            this.pictureBox2.TabStop = false;
+            // 
             // guna2Panel1
             // 
             this.guna2Panel1.Controls.Add(this.dtPostDay);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel3);
-            this.guna2Panel1.Controls.Add(this.lb_status);
-            this.guna2Panel1.Controls.Add(this.lb_type);
+            this.guna2Panel1.Controls.Add(this.lb_Status);
+            this.guna2Panel1.Controls.Add(this.guna2TextBox2);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel2);
             this.guna2Panel1.Controls.Add(this.lb_des);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel9);
             this.guna2Panel1.Controls.Add(this.btn_PostJob);
             this.guna2Panel1.Controls.Add(this.guna2Shapes6);
-            this.guna2Panel1.Controls.Add(this.lb_salary);
-            this.guna2Panel1.Controls.Add(this.lb_company);
-            this.guna2Panel1.Controls.Add(this.lb_location);
+            this.guna2Panel1.Controls.Add(this.lb_price);
+            this.guna2Panel1.Controls.Add(this.lb_skill);
+            this.guna2Panel1.Controls.Add(this.lb_loca);
             this.guna2Panel1.Controls.Add(this.lb_namejob);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel8);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel7);
@@ -94,107 +104,6 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1174, 582);
             this.guna2Panel1.TabIndex = 89;
-            // 
-            // dtPostDay
-            // 
-            this.dtPostDay.BackColor = System.Drawing.Color.White;
-            this.dtPostDay.BorderRadius = 5;
-            this.dtPostDay.Checked = true;
-            this.dtPostDay.FillColor = System.Drawing.Color.White;
-            this.dtPostDay.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtPostDay.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtPostDay.Location = new System.Drawing.Point(820, 321);
-            this.dtPostDay.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtPostDay.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtPostDay.Name = "dtPostDay";
-            this.dtPostDay.Size = new System.Drawing.Size(258, 40);
-            this.dtPostDay.TabIndex = 118;
-            this.dtPostDay.Value = new System.DateTime(2024, 10, 18, 22, 4, 54, 455);
-            // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.AutoSize = false;
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(680, 324);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(134, 37);
-            this.guna2HtmlLabel3.TabIndex = 117;
-            this.guna2HtmlLabel3.Text = "Ngày Đăng :";
-            // 
-            // lb_status
-            // 
-            this.lb_status.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_status.BorderColor = System.Drawing.Color.DimGray;
-            this.lb_status.BorderRadius = 4;
-            this.lb_status.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lb_status.DefaultText = "";
-            this.lb_status.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.lb_status.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.lb_status.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.lb_status.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.lb_status.FillColor = System.Drawing.SystemColors.Control;
-            this.lb_status.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lb_status.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lb_status.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lb_status.Location = new System.Drawing.Point(680, 262);
-            this.lb_status.Margin = new System.Windows.Forms.Padding(4);
-            this.lb_status.Name = "lb_status";
-            this.lb_status.PasswordChar = '\0';
-            this.lb_status.PlaceholderText = "";
-            this.lb_status.SelectedText = "";
-            this.lb_status.Size = new System.Drawing.Size(398, 40);
-            this.lb_status.TabIndex = 116;
-            // 
-            // lb_type
-            // 
-            this.lb_type.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_type.BorderColor = System.Drawing.Color.DimGray;
-            this.lb_type.BorderRadius = 4;
-            this.lb_type.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lb_type.DefaultText = "";
-            this.lb_type.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.lb_type.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.lb_type.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.lb_type.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.lb_type.FillColor = System.Drawing.SystemColors.Control;
-            this.lb_type.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lb_type.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lb_type.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lb_type.Location = new System.Drawing.Point(104, 262);
-            this.lb_type.Margin = new System.Windows.Forms.Padding(4);
-            this.lb_type.Name = "lb_type";
-            this.lb_type.PasswordChar = '\0';
-            this.lb_type.PlaceholderText = "";
-            this.lb_type.SelectedText = "";
-            this.lb_type.Size = new System.Drawing.Size(398, 40);
-            this.lb_type.TabIndex = 115;
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(680, 219);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(178, 37);
-            this.guna2HtmlLabel1.TabIndex = 114;
-            this.guna2HtmlLabel1.Text = "Trạng Thái:";
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.AutoSize = false;
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(104, 219);
-            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(251, 37);
-            this.guna2HtmlLabel2.TabIndex = 113;
-            this.guna2HtmlLabel2.Text = "Ngành Nghề";
             // 
             // lb_des
             // 
@@ -250,7 +159,6 @@
             this.btn_PostJob.Size = new System.Drawing.Size(160, 38);
             this.btn_PostJob.TabIndex = 110;
             this.btn_PostJob.Text = "Đăng bài";
-            this.btn_PostJob.Click += new System.EventHandler(this.btn_PostJob_Click);
             // 
             // guna2Shapes6
             // 
@@ -272,77 +180,77 @@
             this.guna2Shapes6.Text = "guna2Shapes6";
             this.guna2Shapes6.Zoom = 80;
             // 
-            // lb_salary
+            // lb_price
             // 
-            this.lb_salary.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_salary.BorderColor = System.Drawing.Color.DimGray;
-            this.lb_salary.BorderRadius = 4;
-            this.lb_salary.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lb_salary.DefaultText = "";
-            this.lb_salary.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.lb_salary.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.lb_salary.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.lb_salary.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.lb_salary.FillColor = System.Drawing.SystemColors.Control;
-            this.lb_salary.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lb_salary.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lb_salary.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lb_salary.Location = new System.Drawing.Point(680, 172);
-            this.lb_salary.Margin = new System.Windows.Forms.Padding(4);
-            this.lb_salary.Name = "lb_salary";
-            this.lb_salary.PasswordChar = '\0';
-            this.lb_salary.PlaceholderText = "";
-            this.lb_salary.SelectedText = "";
-            this.lb_salary.Size = new System.Drawing.Size(398, 40);
-            this.lb_salary.TabIndex = 104;
+            this.lb_price.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lb_price.BorderColor = System.Drawing.Color.DimGray;
+            this.lb_price.BorderRadius = 4;
+            this.lb_price.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lb_price.DefaultText = "";
+            this.lb_price.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.lb_price.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.lb_price.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lb_price.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lb_price.FillColor = System.Drawing.SystemColors.Control;
+            this.lb_price.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lb_price.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lb_price.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lb_price.Location = new System.Drawing.Point(680, 172);
+            this.lb_price.Margin = new System.Windows.Forms.Padding(4);
+            this.lb_price.Name = "lb_price";
+            this.lb_price.PasswordChar = '\0';
+            this.lb_price.PlaceholderText = "";
+            this.lb_price.SelectedText = "";
+            this.lb_price.Size = new System.Drawing.Size(398, 40);
+            this.lb_price.TabIndex = 104;
             // 
-            // lb_company
+            // lb_skill
             // 
-            this.lb_company.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_company.BorderColor = System.Drawing.Color.DimGray;
-            this.lb_company.BorderRadius = 4;
-            this.lb_company.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lb_company.DefaultText = "";
-            this.lb_company.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.lb_company.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.lb_company.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.lb_company.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.lb_company.FillColor = System.Drawing.SystemColors.Control;
-            this.lb_company.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lb_company.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lb_company.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lb_company.Location = new System.Drawing.Point(104, 172);
-            this.lb_company.Margin = new System.Windows.Forms.Padding(4);
-            this.lb_company.Name = "lb_company";
-            this.lb_company.PasswordChar = '\0';
-            this.lb_company.PlaceholderText = "";
-            this.lb_company.SelectedText = "";
-            this.lb_company.Size = new System.Drawing.Size(398, 40);
-            this.lb_company.TabIndex = 103;
+            this.lb_skill.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lb_skill.BorderColor = System.Drawing.Color.DimGray;
+            this.lb_skill.BorderRadius = 4;
+            this.lb_skill.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lb_skill.DefaultText = "";
+            this.lb_skill.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.lb_skill.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.lb_skill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lb_skill.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lb_skill.FillColor = System.Drawing.SystemColors.Control;
+            this.lb_skill.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lb_skill.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lb_skill.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lb_skill.Location = new System.Drawing.Point(104, 172);
+            this.lb_skill.Margin = new System.Windows.Forms.Padding(4);
+            this.lb_skill.Name = "lb_skill";
+            this.lb_skill.PasswordChar = '\0';
+            this.lb_skill.PlaceholderText = "";
+            this.lb_skill.SelectedText = "";
+            this.lb_skill.Size = new System.Drawing.Size(398, 40);
+            this.lb_skill.TabIndex = 103;
             // 
-            // lb_location
+            // lb_loca
             // 
-            this.lb_location.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_location.BorderColor = System.Drawing.Color.DimGray;
-            this.lb_location.BorderRadius = 4;
-            this.lb_location.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lb_location.DefaultText = "";
-            this.lb_location.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.lb_location.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.lb_location.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.lb_location.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.lb_location.FillColor = System.Drawing.SystemColors.Control;
-            this.lb_location.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lb_location.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lb_location.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.lb_location.Location = new System.Drawing.Point(680, 86);
-            this.lb_location.Margin = new System.Windows.Forms.Padding(4);
-            this.lb_location.Name = "lb_location";
-            this.lb_location.PasswordChar = '\0';
-            this.lb_location.PlaceholderText = "";
-            this.lb_location.SelectedText = "";
-            this.lb_location.Size = new System.Drawing.Size(398, 40);
-            this.lb_location.TabIndex = 102;
+            this.lb_loca.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lb_loca.BorderColor = System.Drawing.Color.DimGray;
+            this.lb_loca.BorderRadius = 4;
+            this.lb_loca.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lb_loca.DefaultText = "";
+            this.lb_loca.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.lb_loca.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.lb_loca.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lb_loca.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lb_loca.FillColor = System.Drawing.SystemColors.Control;
+            this.lb_loca.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lb_loca.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lb_loca.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lb_loca.Location = new System.Drawing.Point(680, 86);
+            this.lb_loca.Margin = new System.Windows.Forms.Padding(4);
+            this.lb_loca.Name = "lb_loca";
+            this.lb_loca.PasswordChar = '\0';
+            this.lb_loca.PlaceholderText = "";
+            this.lb_loca.SelectedText = "";
+            this.lb_loca.Size = new System.Drawing.Size(398, 40);
+            this.lb_loca.TabIndex = 102;
             // 
             // lb_namejob
             // 
@@ -406,6 +314,7 @@
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(246, 37);
             this.guna2HtmlLabel6.TabIndex = 98;
             this.guna2HtmlLabel6.Text = "Địa điểm làm việc:";
+            this.guna2HtmlLabel6.Click += new System.EventHandler(this.guna2HtmlLabel6_Click);
             // 
             // guna2HtmlLabel5
             // 
@@ -419,39 +328,118 @@
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(204, 37);
             this.guna2HtmlLabel5.TabIndex = 97;
             this.guna2HtmlLabel5.Text = "Tên công việc:";
+            this.guna2HtmlLabel5.Click += new System.EventHandler(this.guna2HtmlLabel5_Click);
             // 
             // guna2Panel2
             // 
-            this.guna2Panel2.Controls.Add(this.lbError);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel4);
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(1174, 45);
             this.guna2Panel2.TabIndex = 90;
             // 
-            // pictureBox2
+            // lb_Status
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox2.Location = new System.Drawing.Point(-28, 41);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(10, 41);
-            this.pictureBox2.TabIndex = 88;
-            this.pictureBox2.TabStop = false;
+            this.lb_Status.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lb_Status.BorderColor = System.Drawing.Color.DimGray;
+            this.lb_Status.BorderRadius = 4;
+            this.lb_Status.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lb_Status.DefaultText = "";
+            this.lb_Status.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.lb_Status.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.lb_Status.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lb_Status.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.lb_Status.FillColor = System.Drawing.SystemColors.Control;
+            this.lb_Status.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lb_Status.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lb_Status.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.lb_Status.Location = new System.Drawing.Point(680, 262);
+            this.lb_Status.Margin = new System.Windows.Forms.Padding(4);
+            this.lb_Status.Name = "lb_Status";
+            this.lb_Status.PasswordChar = '\0';
+            this.lb_Status.PlaceholderText = "";
+            this.lb_Status.SelectedText = "";
+            this.lb_Status.Size = new System.Drawing.Size(398, 40);
+            this.lb_Status.TabIndex = 116;
             // 
-            // lbError
+            // guna2TextBox2
             // 
-            this.lbError.AutoSize = false;
-            this.lbError.BackColor = System.Drawing.Color.Transparent;
-            this.lbError.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbError.ForeColor = System.Drawing.Color.Red;
-            this.lbError.Location = new System.Drawing.Point(450, 11);
-            this.lbError.Name = "lbError";
-            this.lbError.Size = new System.Drawing.Size(334, 30);
-            this.lbError.TabIndex = 119;
-            this.lbError.Text = "Vui lòng nhập đầy đủ thông tin !";
-            this.lbError.Visible = false;
+            this.guna2TextBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.guna2TextBox2.BorderColor = System.Drawing.Color.DimGray;
+            this.guna2TextBox2.BorderRadius = 4;
+            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox2.DefaultText = "";
+            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox2.FillColor = System.Drawing.SystemColors.Control;
+            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox2.Location = new System.Drawing.Point(104, 262);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2TextBox2.Name = "guna2TextBox2";
+            this.guna2TextBox2.PasswordChar = '\0';
+            this.guna2TextBox2.PlaceholderText = "";
+            this.guna2TextBox2.SelectedText = "";
+            this.guna2TextBox2.Size = new System.Drawing.Size(398, 40);
+            this.guna2TextBox2.TabIndex = 115;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.AutoSize = false;
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(680, 219);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(178, 37);
+            this.guna2HtmlLabel1.TabIndex = 114;
+            this.guna2HtmlLabel1.Text = "Trạng Thái:";
+            this.guna2HtmlLabel1.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.AutoSize = false;
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(104, 219);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(251, 37);
+            this.guna2HtmlLabel2.TabIndex = 113;
+            this.guna2HtmlLabel2.Text = "Kỹ năng cần thiết:";
+            // 
+            // dtPostDay
+            // 
+            this.dtPostDay.BackColor = System.Drawing.Color.White;
+            this.dtPostDay.BorderRadius = 5;
+            this.dtPostDay.Checked = true;
+            this.dtPostDay.FillColor = System.Drawing.Color.White;
+            this.dtPostDay.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtPostDay.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtPostDay.Location = new System.Drawing.Point(820, 321);
+            this.dtPostDay.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtPostDay.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtPostDay.Name = "dtPostDay";
+            this.dtPostDay.Size = new System.Drawing.Size(258, 40);
+            this.dtPostDay.TabIndex = 118;
+            this.dtPostDay.Value = new System.DateTime(2024, 10, 18, 22, 4, 54, 455);
+            // 
+            // guna2HtmlLabel3
+            // 
+            this.guna2HtmlLabel3.AutoSize = false;
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(680, 324);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(134, 37);
+            this.guna2HtmlLabel3.TabIndex = 117;
+            this.guna2HtmlLabel3.Text = "Ngày Đăng :";
+            this.guna2HtmlLabel3.Click += new System.EventHandler(this.guna2HtmlLabel3_Click);
             // 
             // UCPostJob
             // 
@@ -461,10 +449,10 @@
             this.Controls.Add(this.pictureBox2);
             this.Name = "UCPostJob";
             this.Size = new System.Drawing.Size(1174, 582);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -478,20 +466,19 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2Button btn_PostJob;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes6;
-        private Guna.UI2.WinForms.Guna2TextBox lb_salary;
-        private Guna.UI2.WinForms.Guna2TextBox lb_company;
-        private Guna.UI2.WinForms.Guna2TextBox lb_location;
+        private Guna.UI2.WinForms.Guna2TextBox lb_price;
+        private Guna.UI2.WinForms.Guna2TextBox lb_skill;
+        private Guna.UI2.WinForms.Guna2TextBox lb_loca;
         private Guna.UI2.WinForms.Guna2TextBox lb_namejob;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
-        private Guna.UI2.WinForms.Guna2TextBox lb_status;
-        private Guna.UI2.WinForms.Guna2TextBox lb_type;
+        private Guna.UI2.WinForms.Guna2TextBox lb_Status;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtPostDay;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbError;
     }
 }
