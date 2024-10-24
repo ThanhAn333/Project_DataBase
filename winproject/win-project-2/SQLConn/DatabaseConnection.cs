@@ -1,12 +1,17 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq.Expressions;
 
 namespace win_project_2.SQLConn
 {
     public class DatabaseConnection
     {
         public static string strconn = @"Data Source=LAPTOP-163UHFS2\SQLEXPRESS;Initial Catalog=JOBAPP;Integrated Security=True;Encrypt=False";
+
+        //public static string strconn = @"Data Source=LAPTOP-PMSG8QVF.;Initial Catalog=JOBAPP;Integrated Security=True;Encrypt=False";
+        //public static string strconn = @"Data Source=LAPTOP-IGR3NG0G\THANHAN;Initial Catalog=JOBAPP;Integrated Security=True;Encrypt=False";
+
         private SqlConnection con = new SqlConnection(strconn);
 
         // Phương thức mở kết nối
@@ -48,6 +53,6 @@ namespace win_project_2.SQLConn
         }
 
 
-        
+
     }
 }
