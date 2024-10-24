@@ -1003,7 +1003,6 @@ D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UC.UCHome.resources
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UCComponents.Application.resources
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UCComponents.JobDetail.resources
-D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UCComponents.UCJob.resources
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Properties.Resources.resources
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCAccept.resources
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCListChat.resources
@@ -1021,9 +1020,6 @@ D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win-project-2.pdb
 D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\win-project-2.exe.config
 D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\win-project-2.exe
 D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\win-project-2.pdb
-D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Firebase.Auth.dll
-D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Firebase.Storage.dll
-D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\FireSharp.dll
 D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\FontAwesome.Sharp.dll
 D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Google.Api.Gax.dll
 D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Google.Api.Gax.Rest.dll
@@ -1365,6 +1361,7 @@ D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.For
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCHome.resources
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCJob.resources
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCPostJob.resources
+<<<<<<< HEAD
 D:\project\DBMS\Project_DataBase\winproject\win-project-2\bin\Debug\win-project-2.exe.config
 D:\project\DBMS\Project_DataBase\winproject\win-project-2\bin\Debug\win-project-2.exe
 D:\project\DBMS\Project_DataBase\winproject\win-project-2\bin\Debug\win-project-2.pdb
@@ -1511,3 +1508,10 @@ D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win-project-
 D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win-project-2.csproj.CopyComplete
 D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win-project-2.exe
 D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win-project-2.pdb
+=======
+D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCAccept.resources
+D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCApply_Job.resources
+D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCHome.resources
+D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCJob.resources
+D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCPostJob.resources
+>>>>>>> 6bba67e1a7ab2aecb8cf286fe867439d322b596e
