@@ -9,12 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using win_project_2.DAO;
-<<<<<<< HEAD
 using win_project_2.Models;
-=======
 using System.IO;
 
->>>>>>> ae840687d084eb4d12dd1226380c7307c0e46a70
 
 namespace win_project_2.UserControls
 {

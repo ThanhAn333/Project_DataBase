@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using win_project_2.Forms.Candidate.UC;
 using win_project_2.Forms.UC;
+using win_project_2.Service;
 
 namespace win_project_2.Forms.Employer
 {
@@ -41,14 +42,6 @@ namespace win_project_2.Forms.Employer
             btnMessage.Checked = false;
         }
 
-       
-
-        private void lb_mini_profile_click(object sender, MouseEventArgs e)
-        {
-            this.Hide();
-            FUserInfor fUserInfor = new FUserInfor(_userId);
-            fUserInfor.Show();
-        }
 
         private void btnApplication_Click(object sender, EventArgs e)
         {
@@ -62,8 +55,9 @@ namespace win_project_2.Forms.Employer
 
         private void btnHome_Click(object sender, EventArgs e)
         {
+            panelHienThi.Controls.Clear();
             UCHome uC = new UCHome();
-            panelHienThi.Controls.Add(uC);
+            addHienThi(uC);
             btnHome.Checked = true;
             btnApplication.Checked = false;
             btnMessage.Checked = false;
@@ -77,6 +71,13 @@ namespace win_project_2.Forms.Employer
             btnHome.Checked = false;
             btnApplication.Checked = false;
             btnMessage.Checked = true;
+        }
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+            
+            FUserInfor fUserInfor = new FUserInfor(UserDangNhap.userId);
+            fUserInfor.Show();
         }
     }
 }

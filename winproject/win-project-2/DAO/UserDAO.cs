@@ -6,12 +6,9 @@ using System.Data.SqlClient;
 using System.IO;
 using System.Windows.Forms;
 using win_project_2.SQLConn;
-<<<<<<< HEAD
 using win_project_2.Models;
-=======
 using System.Drawing;
 
->>>>>>> ae840687d084eb4d12dd1226380c7307c0e46a70
 
 namespace win_project_2.DAO
 {

@@ -522,10 +522,10 @@
     <Compile Include="Forms\FStatistic.Designer.cs">
       <DependentUpon>FStatistic.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FUserInfor.cs">
+    <Compile Include="Forms\UCComponents\FUserInfor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FUserInfor.Designer.cs">
+    <Compile Include="Forms\UCComponents\FUserInfor.Designer.cs">
       <DependentUpon>FUserInfor.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\NhanVienView.cs">
@@ -714,7 +714,7 @@
     <EmbeddedResource Include="Forms\FInfor.resx">
       <DependentUpon>FInfor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FUserInfor.resx">
+    <EmbeddedResource Include="Forms\UCComponents\FUserInfor.resx">
       <DependentUpon>FUserInfor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\General\LoginForm.resx">

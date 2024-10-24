@@ -43,7 +43,7 @@
             this.btnHome = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnProfile = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.paneltong.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
@@ -130,7 +130,7 @@
             this.guna2GradientButton5.FocusedColor = System.Drawing.Color.Blue;
             this.guna2GradientButton5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientButton5.ForeColor = System.Drawing.Color.Black;
-            this.guna2GradientButton5.Location = new System.Drawing.Point(75, 842);
+            this.guna2GradientButton5.Location = new System.Drawing.Point(69, 842);
             this.guna2GradientButton5.Name = "guna2GradientButton5";
             this.guna2GradientButton5.Size = new System.Drawing.Size(180, 53);
             this.guna2GradientButton5.TabIndex = 24;
@@ -149,7 +149,7 @@
             this.guna2GradientButton4.FocusedColor = System.Drawing.Color.Blue;
             this.guna2GradientButton4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientButton4.ForeColor = System.Drawing.Color.Black;
-            this.guna2GradientButton4.Location = new System.Drawing.Point(75, 774);
+            this.guna2GradientButton4.Location = new System.Drawing.Point(70, 774);
             this.guna2GradientButton4.Name = "guna2GradientButton4";
             this.guna2GradientButton4.Size = new System.Drawing.Size(180, 50);
             this.guna2GradientButton4.TabIndex = 23;
@@ -162,7 +162,7 @@
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(7, 720);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(165, 48);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(213, 48);
             this.guna2HtmlLabel2.TabIndex = 22;
             this.guna2HtmlLabel2.Text = "Hỗ trợ";
             // 
@@ -234,7 +234,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.Controls.Add(this.guna2CirclePictureBox1);
-            this.guna2Panel1.Controls.Add(this.guna2Button1);
+            this.guna2Panel1.Controls.Add(this.btnProfile);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.FillColor = System.Drawing.Color.Transparent;
@@ -247,7 +247,7 @@
             // 
             this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(1882, 8);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(1855, 7);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.Size = new System.Drawing.Size(64, 64);
@@ -255,22 +255,24 @@
             this.guna2CirclePictureBox1.TabIndex = 2;
             this.guna2CirclePictureBox1.TabStop = false;
             // 
-            // guna2Button1
+            // btnProfile
             // 
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.White;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.guna2Button1.Location = new System.Drawing.Point(1684, 6);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(245, 69);
-            this.guna2Button1.TabIndex = 1;
-            this.guna2Button1.Text = "Trang cá nhân";
+            this.btnProfile.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnProfile.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnProfile.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnProfile.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnProfile.FillColor = System.Drawing.Color.White;
+            this.btnProfile.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfile.ForeColor = System.Drawing.Color.Black;
+            this.btnProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.Image")));
+            this.btnProfile.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnProfile.Location = new System.Drawing.Point(1623, 6);
+            this.btnProfile.Name = "btnProfile";
+            this.btnProfile.Size = new System.Drawing.Size(306, 69);
+            this.btnProfile.TabIndex = 1;
+            this.btnProfile.Text = "Trang cá nhân";
+            this.btnProfile.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
             // guna2PictureBox1
             // 
@@ -292,7 +294,6 @@
             this.Controls.Add(this.paneltong);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "HomeEmployee";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HomeEmployee";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.HomeEmployee_Load);
@@ -324,7 +325,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnProfile;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
     }
 }
