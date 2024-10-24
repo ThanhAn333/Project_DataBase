@@ -30,5 +30,13 @@ namespace win_project_2.Forms.Recruiter.UC
             uC_ListApp_Job.Show();
 
         }
+        public void SetData(DataRow row)
+        {
+            lblNameJob.Text = row["JobName"].ToString();    // Tên cột trong DataTable
+            lblSalary.Text = row["Salary"].ToString();
+            lblLocation.Text = row["Location"].ToString();
+            lblCompany.Text = row["Company"].ToString();
+        }
+
     }
 }
