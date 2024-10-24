@@ -36,6 +36,13 @@ namespace win_project_2
 
             UserDAO userDAO = new UserDAO();
             DataTable dt = userDAO.layThongTinTK(txtEmail.Text,txtPassword.Text);
+            if (dt == null || dt.Rows.Count == 0)
+            {
+                lberror.Visible = true;
+                lberror.Text = "Email hoặc mật khẩu không chính xác!";
+                txtPassword.ResetText();
+                return;
+            }
             DataRow dr = dt.Rows[0];
             UserDangNhap.userId = (int)dr["UserID"];
             UserDangNhap.email = dr["Email"].ToString();

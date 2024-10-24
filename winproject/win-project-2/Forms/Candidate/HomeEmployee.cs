@@ -75,8 +75,7 @@ namespace win_project_2.Forms.Employer
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            
-            FUserInfor fUserInfor = new FUserInfor(UserDangNhap.userId);
+            FUserInfor fUserInfor = new FUserInfor();
             fUserInfor.Show();
         }
     }

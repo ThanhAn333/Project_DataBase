@@ -96,11 +96,10 @@
             // panelHienThi
             // 
             this.panelHienThi.BorderRadius = 15;
-            this.panelHienThi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelHienThi.FillColor = System.Drawing.Color.SteelBlue;
             this.panelHienThi.Location = new System.Drawing.Point(0, 0);
             this.panelHienThi.Name = "panelHienThi";
-            this.panelHienThi.Size = new System.Drawing.Size(1636, 878);
+            this.panelHienThi.Size = new System.Drawing.Size(1624, 866);
             this.panelHienThi.TabIndex = 12;
             // 
             // guna2Panel3
@@ -266,7 +265,7 @@
             this.btnProfile.ForeColor = System.Drawing.Color.Black;
             this.btnProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.Image")));
             this.btnProfile.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnProfile.Location = new System.Drawing.Point(1623, 6);
+            this.btnProfile.Location = new System.Drawing.Point(1613, 6);
             this.btnProfile.Name = "btnProfile";
             this.btnProfile.Size = new System.Drawing.Size(306, 69);
             this.btnProfile.TabIndex = 1;

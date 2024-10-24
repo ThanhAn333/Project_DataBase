@@ -13,18 +13,17 @@ using System.Windows.Forms;
 using System.Xml.Linq;
 using win_project_2.Models;
 using win_project_2.DAO;
+using win_project_2.Service;
 
 namespace win_project_2.Forms
 {
     public partial class FUserInfor : Form
     {
         string FileImageName = "";
-        private int _userId;
 
         
-        public FUserInfor(int _userid)
+        public FUserInfor()
         {
-            _userId = _userid;
             InitializeComponent();
             LoadDataUser();
         }
@@ -32,20 +31,30 @@ namespace win_project_2.Forms
         void LoadDataUser()
         {
             UserDAO userDAO = new UserDAO();
-            User user = userDAO.GetUserByID(_userId);
-
-            if (user != null)
+            txb_Name.Text = UserDangNhap.name;
+            txb_Email.Text = UserDangNhap.email;
+            txb_SDT.Text = UserDangNhap.phone;
+            dtBirthday.Value = DateTime.Parse(UserDangNhap.birthday);
+            if (!string.IsNullOrEmpty(UserDangNhap.image))
             {
-                txb_Name.Text = user.Name;
-                txb_Email.Text = user.Email;
-                txb_SDT.Text = user.PhoneNumber;
-                dtBirthday.Value = user.birthDate;
-                
-                
+                avatar_box.Image = Image.FromFile(UserDangNhap.image);
             }
         }
 
+        private string SaveImageToDirectory(string filePath)
+        {
+            string directoryPath = @"D:\AnhLinhTinh";
+            if (!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
 
+            string fileName = Path.GetFileName(filePath);
+            string destPath = Path.Combine(directoryPath, fileName);
+
+            File.Copy(filePath, destPath, true);
+            return fileName;
+        }
         void LoadImage(ref string imageName)
         {
             OpenFileDialog fileImageName = new OpenFileDialog();
@@ -61,21 +70,28 @@ namespace win_project_2.Forms
             using (var tempImage = new Bitmap(FileImageName))
             {
                 avatar_box.Image = new Bitmap(tempImage);
-
             }
         }
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
             UserDAO userDAO = new UserDAO();
-            User user = userDAO.GetUserByID(_userId);
+            User user = userDAO.GetUserByID(UserDangNhap.userId);
 
             if (user != null)
             {
+                
                 user.Name = txb_Name.Text;
                 user.Email = txb_Email.Text;
                 user.birthDate = dtBirthday.Value;
                 user.PhoneNumber = txb_SDT.Text;
+
+                
+                if (!string.IsNullOrEmpty(FileImageName))
+                {
+                    user.image = SaveImageToDirectory(FileImageName);
+                    UserDangNhap.image = user.image;
+                }
 
                 userDAO.UpdateUser(user);
 
@@ -91,5 +107,11 @@ namespace win_project_2.Forms
         {
 
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+

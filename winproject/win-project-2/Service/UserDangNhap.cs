@@ -16,5 +16,6 @@ namespace win_project_2.Service
         public static string password;
         public static string address;
         public static string birthday;
+        public static string image;
     }
 }
