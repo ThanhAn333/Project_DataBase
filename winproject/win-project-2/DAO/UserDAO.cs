@@ -3,9 +3,15 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.IO;
 using System.Windows.Forms;
 using win_project_2.SQLConn;
+<<<<<<< HEAD
 using win_project_2.Models;
+=======
+using System.Drawing;
+
+>>>>>>> ae840687d084eb4d12dd1226380c7307c0e46a70
 
 namespace win_project_2.DAO
 {
@@ -17,6 +23,11 @@ namespace win_project_2.DAO
         {
             dbConn = new DatabaseConnection();
         }
+
+
+       
+
+
 
         public void AddUser(User user)
         {
@@ -179,30 +190,30 @@ namespace win_project_2.DAO
                 command.ExecuteNonQuery();
             }
         }
-        
+
         public DataTable LoadAllUsers()
         {
-            using (SqlConnection connection = dbConn.GetConnection())
+            using (SqlConnection connection = dbConn.GetConnection())  // Kết nối SQL
             {
-                string query = "SELECT * FROM [User]"; // Truy vấn lấy tất cả người dùng
+                string query = "SELECT * FROM [User]";  // Truy vấn tất cả dữ liệu từ bảng User
                 SqlCommand command = new SqlCommand(query, connection);
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
                 DataTable userTable = new DataTable();
 
                 try
                 {
-                    connection.Open();
-                    adapter.Fill(userTable); // Điền dữ liệu vào DataTable
-                                             // Controler.guna2DataGridView1.DataSource = userTable; // Hiển thị trên DataGridView
-                    return userTable;
+                    connection.Open();  // Mở kết nối
+                    adapter.Fill(userTable);  // Điền dữ liệu vào DataTable
+                    return userTable;  // Trả về DataTable
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Lỗi: " + ex.Message); // Thông báo lỗi nếu có
+                    MessageBox.Show("Lỗi: " + ex.Message);  // Thông báo lỗi nếu có
+                    return null;  // Trả về null nếu gặp lỗi
                 }
             }
-            return null;
         }
+
 
         public int GetMaxUserID()
         {
