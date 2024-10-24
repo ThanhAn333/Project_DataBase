@@ -56,7 +56,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lb_dem = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pb_avatar = new System.Windows.Forms.PictureBox();
@@ -459,7 +459,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Indigo;
-            this.guna2Panel1.Controls.Add(this.lb_dem);
+            this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.Location = new System.Drawing.Point(148, 78);
@@ -468,16 +468,16 @@
             this.guna2Panel1.Size = new System.Drawing.Size(310, 156);
             this.guna2Panel1.TabIndex = 30;
             // 
-            // lb_dem
+            // label2
             // 
-            this.lb_dem.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lb_dem.ForeColor = System.Drawing.SystemColors.Control;
-            this.lb_dem.Location = new System.Drawing.Point(190, 21);
-            this.lb_dem.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lb_dem.Name = "lb_dem";
-            this.lb_dem.Size = new System.Drawing.Size(56, 38);
-            this.lb_dem.TabIndex = 3;
-            this.lb_dem.Text = "100";
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
+            this.label2.Location = new System.Drawing.Point(197, 21);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(50, 44);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "0";
             // 
             // label1
             // 
@@ -599,9 +599,9 @@
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label lb_dem;
     }
 }

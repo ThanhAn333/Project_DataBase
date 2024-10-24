@@ -52,10 +52,5 @@ namespace win_project_2.Forms
         {
             ShowUserControl(new UCQLBC());
         }
-
-        private void ucqltk1_Load(object sender, EventArgs e)
-        {
-            
-        }
     }
 }

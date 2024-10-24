@@ -1516,3 +1516,6 @@ D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCPostJob.resources
 >>>>>>> 6bba67e1a7ab2aecb8cf286fe867439d322b596e
 >>>>>>> ae840687d084eb4d12dd1226380c7307c0e46a70
+D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCHomeRe.resources
+D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UC_Job.resources
+D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UC_ListApply_Job.resources

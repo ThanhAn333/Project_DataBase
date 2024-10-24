@@ -8,10 +8,6 @@ using System.Windows.Forms;
 using win_project_2.SQLConn;
 using win_project_2.Models;
 using System.Drawing;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
-using System.Net;
-using System.Web.Security;
-using System.Xml.Linq;
 
 
 namespace win_project_2.DAO
@@ -24,6 +20,10 @@ namespace win_project_2.DAO
         {
             dbConn = new DatabaseConnection();
         }
+
+
+       
+
 
 
         public void AddUser(User user)
@@ -48,6 +48,7 @@ namespace win_project_2.DAO
                 command.ExecuteNonQuery();
             }
         }
+
 
 
 
@@ -232,28 +233,21 @@ namespace win_project_2.DAO
             }
         }
 
-        //đếm số lượng user
-        public int CountUsers()
+        public DataTable layThongTinTK(string taikhoan, string matkhau)
         {
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "SELECT COUNT(*) FROM [User]";
-                SqlCommand command = new SqlCommand(query, connection);
+                string sql = "select * from [User] where Email= @Email and Password= @Password";
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.AddWithValue("@Email", taikhoan);
+                command.Parameters.AddWithValue("@Password", matkhau);
 
-                try
-                {
-                    connection.Open();
-                    object result = command.ExecuteScalar();
-                    return Convert.ToInt32(result); // Trả về tổng số User
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Lỗi khi đếm số lượng User: " + ex.Message);
-                    return 0;
-                }
+                SqlDataAdapter da = new SqlDataAdapter(command);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                return dt;
             }
         }
-
 
     }
 }

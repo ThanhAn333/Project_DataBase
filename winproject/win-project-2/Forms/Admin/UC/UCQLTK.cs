@@ -25,16 +25,8 @@ namespace win_project_2.UserControls
 
         private void LoadAllUser()
         {
-
-            
             UserDAO userDAO = new UserDAO();  // Khởi tạo đối tượng UserDAO
-            int userCount = userDAO.CountUsers();
             DataTable userTable = userDAO.LoadAllUsers();  // Lấy dữ liệu từ DAO
-
-            
-            Console.WriteLine("Số lượng User: " + userCount);  // Kiểm tra số lượng
-            lb_dem.Text = userCount.ToString();
-         
 
             if (userTable != null && userTable.Rows.Count > 0)
             {
