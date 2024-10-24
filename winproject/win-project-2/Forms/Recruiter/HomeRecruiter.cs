@@ -32,7 +32,7 @@ namespace win_project_2.Forms.Recruiter
         private void btn_mini_profile_click(object sender, MouseEventArgs e)
         {
             this.Hide();
-            FUserInfor fUserInfor = new FUserInfor(_userId);
+            FUserInfor fUserInfor = new FUserInfor();
             fUserInfor.Show();
         }
 

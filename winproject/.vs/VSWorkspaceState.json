@@ -6,9 +6,10 @@
     "\\win-project-2\\Forms",
     "\\win-project-2\\Forms\\Candidate",
     "\\win-project-2\\Forms\\General",
+    "\\win-project-2\\Forms\\UCComponents",
     "\\win-project-2\\Models",
     "\\win-project-2\\SQLConn"
   ],
-  "SelectedNode": "\\win-project-2\\Forms\\General\\LoginForm.cs",
+  "SelectedNode": "\\win-project-2\\Forms\\UCComponents\\FUserInfor.cs",
   "PreviewInSolutionExplorer": false
 }
