@@ -436,6 +436,7 @@
             this.btn_logout.Size = new System.Drawing.Size(111, 53);
             this.btn_logout.TabIndex = 24;
             this.btn_logout.Text = "Logout";
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click_1);
             // 
             // btnMessenge
             // 
@@ -455,6 +456,7 @@
             this.btnMessenge.Size = new System.Drawing.Size(180, 100);
             this.btnMessenge.TabIndex = 21;
             this.btnMessenge.Text = "Message";
+            this.btnMessenge.Click += new System.EventHandler(this.btnMessenge_Click_1);
             // 
             // btn_Home
             // 
@@ -478,6 +480,7 @@
             this.btn_Home.Size = new System.Drawing.Size(180, 100);
             this.btn_Home.TabIndex = 19;
             this.btn_Home.Text = "Home";
+            this.btn_Home.Click += new System.EventHandler(this.btn_Home_Click_1);
             // 
             // guna2CirclePictureBox4
             // 

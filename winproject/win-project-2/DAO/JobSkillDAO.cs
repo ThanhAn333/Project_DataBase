@@ -50,16 +50,17 @@ namespace win_project_2.DAO
                 if (reader.Read())
                 {
                     Job job = new Job(
-                       (int)reader["JobID"],
-                        reader["JobTitle"].ToString(),
-                        reader["JobDescription"].ToString(),
+                        (int)reader["JobID"],
+                        reader["Title"].ToString(),
+                        reader["Description"].ToString(),
                         reader["Location"].ToString(),
                         reader["SkillRequire"].ToString(),
-                        reader["Salary"].ToString(), 
+                        reader["Salary"].ToString(),
                         reader["Type"]?.ToString(),
-                        reader["Company"]?.ToString(), 
+                        reader["Company"]?.ToString(),
                         (DateTime)reader["PostedDate"],
-                        reader["Status"]?.ToString()
+                        reader["Status"]?.ToString(),
+                        (int)reader["EmployerID"]
                    );
                    Skill    skill = new Skill(
                        (int)reader["SkillID"],

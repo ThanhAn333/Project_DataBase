@@ -1,17 +1,10 @@
-﻿using Guna.UI2.WinForms.Suite;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Media.Imaging;
+using System.Windows;
 using win_project_2.SQLConn;
 using win_project_2.Models;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using System.Windows;
 
 namespace win_project_2.DAO
 {
@@ -24,12 +17,13 @@ namespace win_project_2.DAO
             dbConn = new DatabaseConnection();
         }
 
-        public List<Job> GetAll()
+        // Lấy tất cả công việc từ view
+        public List<Job> GetAllJobs()
         {
             List<Job> jobs = new List<Job>();
             using (SqlConnection conn = dbConn.GetConnection())
             {
-                string query = "SELECT * FROM Job";
+                string query = "SELECT * FROM ViewAllJobs"; // Giả định bạn có view này
                 SqlCommand cmd = new SqlCommand(query, conn);
 
                 conn.Open();
@@ -38,49 +32,56 @@ namespace win_project_2.DAO
                 {
                     Job job = new Job(
                         (int)reader["JobID"],
-                        reader["JobTitle"].ToString(),
-                        reader["JobDescription"].ToString(),
+                        reader["Title"].ToString(),
+                        reader["Description"].ToString(),
                         reader["Location"].ToString(),
                         reader["SkillRequire"].ToString(),
-                        reader["Salary"].ToString(), 
-                        reader["Type"]?.ToString(), 
+                        reader["Salary"].ToString(),
+                        reader["Type"]?.ToString(),
                         reader["Company"]?.ToString(),
                         (DateTime)reader["PostedDate"],
-                        reader["Status"]?.ToString()
+                        reader["Status"]?.ToString(),
+                        (int)reader["EmployerID"]
                     );
                     jobs.Add(job);
                 }
             }
             return jobs;
         }
-        public void AddJob(string title, string description, string location, decimal salary, string type, string company, string status, DateTime postedDate)
+
+        // Thêm công việc sử dụng stored procedure
+        public void AddJob(string title, string description, string location, string skillRequire, decimal salary, string type, string company, string status, int employer)
         {
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "INSERT INTO Job (Title, Description, Location, Salary, Type, Company, Status, PostedDate) VALUES (@Title, @Description, @Location, @Salary, @Type, @Company, @Status, @PostedDate)";
-                SqlCommand command = new SqlCommand(query, connection);
+                SqlCommand command = new SqlCommand("sp_AddJob", connection);
+                command.CommandType = CommandType.StoredProcedure;
+
+                // Thêm tham số theo đúng định nghĩa của stored procedure
                 command.Parameters.AddWithValue("@Title", title);
                 command.Parameters.AddWithValue("@Description", description);
                 command.Parameters.AddWithValue("@Location", location);
+                command.Parameters.AddWithValue("@SkillRequire", skillRequire);
                 command.Parameters.AddWithValue("@Salary", salary);
                 command.Parameters.AddWithValue("@Type", type);
                 command.Parameters.AddWithValue("@Company", company);
                 command.Parameters.AddWithValue("@Status", status);
-                command.Parameters.AddWithValue("@PostedDate", postedDate);
+                command.Parameters.AddWithValue("@EmployerID", employer);
 
                 connection.Open();
-                command.ExecuteNonQuery();
+                command.ExecuteNonQuery(); // Thực thi stored procedure
             }
         }
 
-        // Read
+
+        // Lấy công việc theo ID từ view
         public Job GetJobByID(int jobId)
         {
             Job job = null;
 
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "SELECT * FROM Job WHERE JobID = @JobID";
+                string query = "SELECT * FROM ViewJobDetails WHERE JobID = @JobID"; // Giả định bạn có view này
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@JobID", jobId);
 
@@ -95,11 +96,12 @@ namespace win_project_2.DAO
                         reader["Description"].ToString(),
                         reader["Location"].ToString(),
                         reader["SkillRequire"].ToString(),
-                        reader["Salary"].ToString(), 
-                        reader["Type"]?.ToString(), 
-                        reader["Company"]?.ToString(), 
+                        reader["Salary"].ToString(),
+                        reader["Type"]?.ToString(),
+                        reader["Company"]?.ToString(),
                         (DateTime)reader["PostedDate"],
-                        reader["Status"]?.ToString()
+                        reader["Status"]?.ToString(),
+                        (int)reader["EmployerID"]
                     );
                 }
             }
@@ -107,35 +109,37 @@ namespace win_project_2.DAO
             return job;
         }
 
-
-        // Update
+        // Cập nhật công việc sử dụng stored procedure
         public void UpdateJob(Job job)
         {
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "UPDATE Job SET Title = @Title, Description = @Description, Location = @Location, Salary = @Salary, Type= @Type, Company = @Company, Status = @Status, PostedDate = @PostedDate WHERE JobID = @JobID";
+                string query = "sp_UpdateJob"; // Tên stored procedure
                 SqlCommand command = new SqlCommand(query, connection);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@JobID", job.JobID);
                 command.Parameters.AddWithValue("@Title", job.Title);
                 command.Parameters.AddWithValue("@Description", job.Description);
                 command.Parameters.AddWithValue("@Location", job.Location);
-                //command.Parameters.AddWithValue("@JobID", job.JobID);
                 command.Parameters.AddWithValue("@Salary", job.Salary);
                 command.Parameters.AddWithValue("@Type", job.Type);
                 command.Parameters.AddWithValue("@Company", job.Company);
                 command.Parameters.AddWithValue("@Status", job.Status);
                 command.Parameters.AddWithValue("@PostedDate", job.PostedDate);
+
                 connection.Open();
                 command.ExecuteNonQuery();
             }
         }
 
-        // Delete
+        // Xóa công việc sử dụng stored procedure
         public void DeleteJob(int jobId)
         {
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "DELETE FROM Job WHERE JobID = @JobID";
+                string query = "sp_DeleteJob"; // Tên stored procedure
                 SqlCommand command = new SqlCommand(query, connection);
+                command.CommandType = CommandType.StoredProcedure;
                 command.Parameters.AddWithValue("@JobID", jobId);
 
                 connection.Open();
@@ -143,20 +147,22 @@ namespace win_project_2.DAO
             }
         }
 
+        // Tìm kiếm công việc
         public DataTable TimKiemJob(string timKiem)
         {
             using (SqlConnection connection = dbConn.GetConnection())
             {
                 DataTable dt = new DataTable();
-                    string query = "SELECT * FROM Job WHERE Title LIKE '%' + @TimKiem + '%'";
-                    SqlCommand cmd = new SqlCommand(query, connection);
-                    cmd.Parameters.AddWithValue("@TimKiem", timKiem);
-                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                    adapter.Fill(dt);
-                    return dt;
-                
+                string query = "SELECT * FROM ViewJobSearch WHERE Title LIKE '%' + @TimKiem + '%'"; // Giả định bạn có view này
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@TimKiem", timKiem);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(dt);
+                return dt;
             }
         }
+
+        // Lấy danh sách địa điểm
         public DataTable HienThiLocation()
         {
             using (SqlConnection connection = dbConn.GetConnection())
@@ -164,7 +170,7 @@ namespace win_project_2.DAO
                 DataTable dt = new DataTable();
                 try
                 {
-                    string query = "SELECT Location FROM Job WHERE Location IS NOT NULL";
+                    string query = "SELECT DISTINCT Location FROM ViewAllJobs"; // Giả định bạn có view này
                     SqlCommand cmd = new SqlCommand(query, connection);
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
                     da.Fill(dt);
@@ -176,6 +182,8 @@ namespace win_project_2.DAO
                 return dt;
             }
         }
+
+        // Lấy dữ liệu theo địa điểm
         public DataTable LayDuLieuLocation(string location)
         {
             using (SqlConnection connection = dbConn.GetConnection())
@@ -184,9 +192,9 @@ namespace win_project_2.DAO
                 try
                 {
                     connection.Open();
-                    string query = "SELECT * FROM Job WHERE Location = @Location";
+                    string query = "SELECT * FROM ViewJobsByLocation WHERE Location = @Location"; // Giả định bạn có view này
                     SqlCommand cmd = new SqlCommand(query, connection);
-                    cmd.Parameters.AddWithValue("@Location", location); 
+                    cmd.Parameters.AddWithValue("@Location", location);
 
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
                     da.Fill(dt);
@@ -195,24 +203,23 @@ namespace win_project_2.DAO
                 {
                     MessageBox.Show("Error: " + ex.Message);
                 }
-                return dt; 
+                return dt;
             }
         }
-       
+
+        // Lấy dữ liệu công việc
         public DataTable DoDuLieuJob()
         {
             DataTable dataTable = new DataTable();
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string sql = "SELECT * FROM Job";
-                SqlCommand cmd = new SqlCommand(sql,connection);
+                string sql = "SELECT * FROM ViewAllJobs"; // Giả định bạn có view này
+                SqlCommand cmd = new SqlCommand(sql, connection);
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
 
                 da.Fill(dataTable);
-            
             }
             return dataTable;
-
         }
     }
 }

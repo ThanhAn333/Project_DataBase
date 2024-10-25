@@ -23,12 +23,12 @@ namespace win_project_2.Forms
 
         }
 
-        public void themThongTin(int jobid, string jobname, string description, string request,string location, string salary, string company, string type, string date)
+        public void themThongTin(int jobid, string jobname, string description, string skillRequire,string location, string salary, string company, string type, string date)
         {
             jobID = jobid;
             lb_jobname.Text = jobname;
             lbDescrip.Text = description;
-            lbRequest.Text = request;
+            lbRequest.Text = skillRequire;
             lbLocation.Text = location;
             lbSalary.Text = salary;
             lbCompany.Text = company;
@@ -47,12 +47,13 @@ namespace win_project_2.Forms
             int userId = UserDangNhap.userId;
             int jobId = jobID;
             string title = lb_jobname.Text;
-            string status = "Pending";        
+            string status = "Pending";
+            int employer = UserDangNhap.userId;
             DateTime applicationDate = DateTime.Parse(lbdate.Text);  
 
             User applicant = new User(userId, "UserName", "Email", "", "Role", "Address", DateTime.Now, "Phone", "Profile", DateTime.Now, DateTime.Now);
 
-            Job appliedJob = new Job(jobId, title, "Description", "Location", "SkillRequire", "Salary", "Type", "Company", DateTime.Now, "Status");
+            Job appliedJob = new Job(jobId, title, "Description", "Location", "SkillRequire", "Salary", "Type", "Company", DateTime.Now, "Status", employer);
 
             win_project_2.Models.Application application = new win_project_2.Models.Application(0, applicant, appliedJob,title, status, applicationDate);
 
