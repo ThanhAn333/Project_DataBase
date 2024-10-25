@@ -53,9 +53,9 @@ namespace win_project_2.Forms.Recruiter.UC
             else if (rbFreelance.Checked) { type = "Freelance"; }
 
             string status = "";
-            if (rbOpen.Checked) { type = "Open"; }
-            else if (rbClosed.Checked) { type = "Closed"; }
-            else if (rbPaused.Checked) { type = "Paused"; }
+            if (rbOpen.Checked) { status = "Open"; }
+            else if (rbClosed.Checked) { status = "Closed"; }
+            else if (rbPaused.Checked) { status = "Paused"; }
             try
             {
                 JobDAO jobDAO = new JobDAO();

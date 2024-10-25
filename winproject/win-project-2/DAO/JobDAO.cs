@@ -58,8 +58,8 @@ namespace win_project_2.DAO
         {
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "INSERT INTO Job (Title, Description, Location, SkillRequire, PostedDate, Salary, Type, Company, Status, Employer ) " +
-                                        "VALUES (@Title, @Description, @Location, @SkillRequire, @PostedDate, @Salary, @Type, @Company, @Status, @Employer)";
+                string query = "INSERT INTO Job (Title, Description, Location, SkillRequire, PostedDate, Salary, Type, Company, Status, EmployerID ) " +
+                                        "VALUES (@Title, @Description, @Location, @SkillRequire, @PostedDate, @Salary, @Type, @Company, @Status, @EmployerID)";
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Title", title);
                 command.Parameters.AddWithValue("@Description", description);
@@ -70,7 +70,7 @@ namespace win_project_2.DAO
                 command.Parameters.AddWithValue("@Type", type);
                 command.Parameters.AddWithValue("@Company", company);
                 command.Parameters.AddWithValue("@Status", status);
-                command.Parameters.AddWithValue("@Employer", employer);
+                command.Parameters.AddWithValue("@EmployerID", employer);
                 connection.Open();
                 command.ExecuteNonQuery();
             }
@@ -103,7 +103,7 @@ namespace win_project_2.DAO
                         reader["Company"]?.ToString(),
                         (DateTime)reader["PostedDate"],
                         reader["Status"]?.ToString(),
-                        (int)reader["Employer"]
+                        (int)reader["EmployerID"]
                     );
                 }
             }

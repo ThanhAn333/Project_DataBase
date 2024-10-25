@@ -60,7 +60,7 @@ namespace win_project_2.DAO
                         reader["Company"]?.ToString(),
                         (DateTime)reader["PostedDate"],
                         reader["Status"]?.ToString(),
-                        (int)reader["Employer"]
+                        (int)reader["EmployerID"]
                    );
                    Skill    skill = new Skill(
                        (int)reader["SkillID"],

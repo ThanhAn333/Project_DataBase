@@ -18,7 +18,7 @@ namespace win_project_2.Models
         public string Type { get; set; }
         public string Company { get; set; }
         public string Status { get; set; }
-        public int Employer { get; set; }
+        public int EmployerID { get; set; }
 
 
         public Job(){
@@ -37,7 +37,7 @@ namespace win_project_2.Models
             Company = company;
             PostedDate = postedDate;
             Status = status;
-            Employer = employer;
+            EmployerID = employer;
         }
 
         public override string ToString()

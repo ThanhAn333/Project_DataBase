@@ -44,6 +44,7 @@ namespace win_project_2.Forms.Recruiter
 
         private void btn_Home_Click_1(object sender, EventArgs e)
         {
+            pnHienThi.Controls.Clear();
             UCHomeRe uC = new UCHomeRe();
             pnHienThi.Controls.Add(uC);
             btn_Home.Checked = true;
