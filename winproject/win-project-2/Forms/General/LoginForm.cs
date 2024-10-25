@@ -52,6 +52,7 @@ namespace win_project_2
             UserDangNhap.password = dr["Password"].ToString();
             UserDangNhap.address = dr["Address"].ToString();
             UserDangNhap.birthday = dr["DateOfBirth"].ToString();
+            UserDangNhap.image = dr["ProfilePicture"].ToString();
             
 
             var result = userDAO.Login(txtEmail.Text, txtPassword.Text);
@@ -60,7 +61,7 @@ namespace win_project_2
             {
                 string role = result.Role;
 
-                if (role == "Applicant")
+                if (role == "Candidate")
                 {
                     int userId = result.UserID ?? 0;
                     HomeEmployee fHome = new HomeEmployee(userId);
