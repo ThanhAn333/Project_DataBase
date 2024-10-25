@@ -112,6 +112,11 @@ namespace win_project_2.Forms
         {
 
         }
+
+        private void avatar_box_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

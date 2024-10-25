@@ -60,7 +60,7 @@ namespace win_project_2
             {
                 string role = result.Role;
 
-                if (role == "Candidate")
+                if (role == "Applicant")
                 {
                     int userId = result.UserID ?? 0;
                     HomeEmployee fHome = new HomeEmployee(userId);

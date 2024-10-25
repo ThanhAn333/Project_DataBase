@@ -1358,7 +1358,6 @@ D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.For
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCHome.resources
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCJob.resources
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCPostJob.resources
-<<<<<<< HEAD
 D:\project\DBMS\Project_DataBase\winproject\win-project-2\bin\Debug\win-project-2.exe.config
 D:\project\DBMS\Project_DataBase\winproject\win-project-2\bin\Debug\win-project-2.exe
 D:\project\DBMS\Project_DataBase\winproject\win-project-2\bin\Debug\win-project-2.pdb
@@ -1508,14 +1507,6 @@ D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win-project-
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCHomeRe.resources
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UC_Job.resources
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UC_ListApply_Job.resources
-=======
-D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCAccept.resources
-D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCApply_Job.resources
-D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCHome.resources
-D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCJob.resources
-D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCPostJob.resources
->>>>>>> 6bba67e1a7ab2aecb8cf286fe867439d322b596e
->>>>>>> ae840687d084eb4d12dd1226380c7307c0e46a70
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCHomeRe.resources
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UC_Job.resources
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UC_ListApply_Job.resources
@@ -1668,3 +1659,5 @@ D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winpro
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCHomeRe.resources
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UC_Job.resources
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UC_ListApply_Job.resources
+D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCAccept.resources
+D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCPostJob.resources
