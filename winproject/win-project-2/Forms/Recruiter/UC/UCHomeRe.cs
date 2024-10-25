@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using win_project_2.DAO;
 
 namespace win_project_2.Forms.Recruiter.UC
 {
@@ -15,6 +16,12 @@ namespace win_project_2.Forms.Recruiter.UC
         public UCHomeRe()
         {
             InitializeComponent();
+            LoadAllJob();
+        }
+
+        void LoadAllJob()
+        {
+            
         }
     }
 }

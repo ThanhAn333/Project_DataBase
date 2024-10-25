@@ -59,7 +59,8 @@ namespace win_project_2.Forms.Recruiter.UC
             try
             {
                 JobDAO jobDAO = new JobDAO();
-                jobDAO.AddJob(title, description, location, skillRequire, postedDate, salary, type, company, status, employer);
+                jobDAO.AddJob(title, description, location, skillRequire, salary, type, company, status, employer);
+
                 MessageBox.Show("Thêm công việc thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)

@@ -1,14 +1,10 @@
 ﻿using Guna.UI2.WinForms;
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.IO;
 using System.Windows.Forms;
 using win_project_2.SQLConn;
 using win_project_2.Models;
-using System.Drawing;
-
 
 namespace win_project_2.DAO
 {
@@ -21,18 +17,16 @@ namespace win_project_2.DAO
             dbConn = new DatabaseConnection();
         }
 
-
-       
-
-
-
+        // Add User using stored procedure
         public void AddUser(User user)
         {
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "INSERT INTO [User] (Name, Email, Password, Role, Address, DateOfBirth, PhoneNumber, ProfilePicture, CreatedAt, UpdatedAt) " +
-                               "VALUES (@Name, @Email, @Password, @Role, @Address, @DateOfBirth, @PhoneNumber, @ProfilePicture, @CreatedAt, @UpdatedAt)";
-                SqlCommand command = new SqlCommand(query, connection);
+                SqlCommand command = new SqlCommand("sp_AddUser", connection)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+
                 command.Parameters.AddWithValue("@Name", user.Name);
                 command.Parameters.AddWithValue("@Email", user.Email);
                 command.Parameters.AddWithValue("@Password", user.Password);
@@ -49,18 +43,14 @@ namespace win_project_2.DAO
             }
         }
 
-
-
-
-        // Read
+        // Get User by ID using view
         public User GetUserByID(int userId)
         {
             User user = null;
 
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "SELECT * FROM [User] WHERE UserID = @UserID";
-                SqlCommand command = new SqlCommand(query, connection);
+                SqlCommand command = new SqlCommand("SELECT * FROM vw_User WHERE UserID = @UserID", connection);
                 command.Parameters.AddWithValue("@UserID", userId);
 
                 connection.Open();
@@ -78,8 +68,8 @@ namespace win_project_2.DAO
                         reader["DateOfBirth"] != DBNull.Value ? (DateTime)reader["DateOfBirth"] : DateTime.MinValue,
                         reader["PhoneNumber"] != DBNull.Value ? reader["PhoneNumber"].ToString() : null,
                         reader["ProfilePicture"] != DBNull.Value ? reader["ProfilePicture"].ToString() : null,
-                        reader["CreatedAt"] != DBNull.Value ? (DateTime)reader["CreatedAt"] : DateTime.MinValue,  // CreatedAt from DB
-                        reader["UpdatedAt"] != DBNull.Value ? (DateTime)reader["UpdatedAt"] : DateTime.MinValue   // UpdatedAt from DB
+                        reader["CreatedAt"] != DBNull.Value ? (DateTime)reader["CreatedAt"] : DateTime.MinValue,
+                        reader["UpdatedAt"] != DBNull.Value ? (DateTime)reader["UpdatedAt"] : DateTime.MinValue
                     );
                 }
             }
@@ -87,24 +77,17 @@ namespace win_project_2.DAO
             return user;
         }
 
-        // Update
+        // Update User using stored procedure
         public void UpdateUser(User user)
         {
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "UPDATE [User] SET " +
-                               "Name = @Name, " +
-                               "Email = @Email, " +
-                               "Password = @Password, " +
-                               "Role = @Role, " +
-                               "Address = @Address, " +
-                               "DateOfBirth = @DateOfBirth, " +
-                               "PhoneNumber = @PhoneNumber, " +
-                               "ProfilePicture = @ProfilePicture, " +
-                               "UpdatedAt = @UpdatedAt " +
-                               "WHERE UserID = @UserID";
+                SqlCommand command = new SqlCommand("sp_UpdateUser", connection)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
 
-                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@UserID", user.UserID);
                 command.Parameters.AddWithValue("@Name", user.Name);
                 command.Parameters.AddWithValue("@Email", user.Email);
                 command.Parameters.AddWithValue("@Password", user.Password);
@@ -114,20 +97,21 @@ namespace win_project_2.DAO
                 command.Parameters.AddWithValue("@PhoneNumber", user.PhoneNumber ?? (object)DBNull.Value);
                 command.Parameters.AddWithValue("@ProfilePicture", user.image ?? (object)DBNull.Value);
                 command.Parameters.AddWithValue("@UpdatedAt", DateTime.Now);
-                command.Parameters.AddWithValue("@UserID", user.UserID);
 
                 connection.Open();
                 command.ExecuteNonQuery();
             }
         }
 
-        // Delete
+        // Delete User using stored procedure
         public void DeleteUser(int userId)
         {
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "DELETE FROM [User] WHERE UserID = @UserID";
-                SqlCommand command = new SqlCommand(query, connection);
+                SqlCommand command = new SqlCommand("sp_DeleteUser", connection)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
                 command.Parameters.AddWithValue("@UserID", userId);
 
                 connection.Open();
@@ -135,7 +119,7 @@ namespace win_project_2.DAO
             }
         }
 
-        // Login
+        // Login using stored procedure
         public (int? UserID, string Role) Login(string email, string password)
         {
             int? userId = null;
@@ -143,8 +127,10 @@ namespace win_project_2.DAO
 
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string sql = "SELECT UserID, Role FROM [User] WHERE Email = @Email AND Password = @Password";
-                SqlCommand command = new SqlCommand(sql, connection);
+                SqlCommand command = new SqlCommand("sp_Login", connection)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
                 command.Parameters.AddWithValue("@Email", email);
                 command.Parameters.AddWithValue("@Password", password);
 
@@ -162,62 +148,63 @@ namespace win_project_2.DAO
             return (userId, role);
         }
 
-
-        public void Register(string name, string email, string password, string role, string address, DateTime dateofbirth, string phonenumber, DateTime createdat)
+        // Register user
+        public void Register(string name, string email, string password, string role, string address, DateTime dateofbirth, string phonenumber)
         {
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                
-                string sql = "INSERT INTO [User] (Name, Email, Password, Role, Address, DateOfBirth, PhoneNumber, CreatedAt) " +
-                             "VALUES (@Name, @Email, @Password, @Role, @Address, @DateOfBirth, @PhoneNumber, @CreatedAt)";
+                SqlCommand command = new SqlCommand("sp_RegisterUser", connection)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
 
-                SqlCommand command = new SqlCommand(sql, connection);
-
-                
                 command.Parameters.AddWithValue("@Name", name);
                 command.Parameters.AddWithValue("@Email", email);
                 command.Parameters.AddWithValue("@Password", password);
                 command.Parameters.AddWithValue("@Role", role);
-                command.Parameters.AddWithValue("@Address", address);
+                command.Parameters.AddWithValue("@Address", address ?? (object)DBNull.Value);
                 command.Parameters.AddWithValue("@DateOfBirth", dateofbirth);
                 command.Parameters.AddWithValue("@PhoneNumber", phonenumber);
-                command.Parameters.AddWithValue("@CreatedAt", createdat);
+                command.Parameters.AddWithValue("@CreatedAt", DateTime.Now);
 
                 connection.Open();
                 command.ExecuteNonQuery();
             }
         }
 
+        // Load all users using view
         public DataTable LoadAllUsers()
         {
-            using (SqlConnection connection = dbConn.GetConnection())  // Kết nối SQL
+            using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "SELECT * FROM [User]";  // Truy vấn tất cả dữ liệu từ bảng User
+                string query = "SELECT * FROM vw_User";  // Use view
                 SqlCommand command = new SqlCommand(query, connection);
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
                 DataTable userTable = new DataTable();
 
                 try
                 {
-                    connection.Open();  // Mở kết nối
-                    adapter.Fill(userTable);  // Điền dữ liệu vào DataTable
-                    return userTable;  // Trả về DataTable
+                    connection.Open();
+                    adapter.Fill(userTable);
+                    return userTable;
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Lỗi: " + ex.Message);  // Thông báo lỗi nếu có
-                    return null;  // Trả về null nếu gặp lỗi
+                    MessageBox.Show("Lỗi: " + ex.Message);
+                    return null;
                 }
             }
         }
 
-
+        // Get max UserID using stored procedure
         public int GetMaxUserID()
         {
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "SELECT ISNULL(MAX(UserID), 0) FROM [User]";
-                SqlCommand command = new SqlCommand(query, connection);
+                SqlCommand command = new SqlCommand("sp_GetMaxUserID", connection)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
 
                 try
                 {
@@ -233,11 +220,12 @@ namespace win_project_2.DAO
             }
         }
 
+        // Get account information using view
         public DataTable layThongTinTK(string taikhoan, string matkhau)
         {
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string sql = "select * from [User] where Email= @Email and Password= @Password";
+                string sql = "SELECT * FROM vw_User WHERE Email = @Email AND Password = @Password";
                 SqlCommand command = new SqlCommand(sql, connection);
                 command.Parameters.AddWithValue("@Email", taikhoan);
                 command.Parameters.AddWithValue("@Password", matkhau);
@@ -248,6 +236,5 @@ namespace win_project_2.DAO
                 return dt;
             }
         }
-
     }
 }
