@@ -12,6 +12,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using System.Xml.Linq;
 using System.Web.Security;
 using win_project_2.DAO;
+using win_project_2.Service;
 
 namespace win_project_2.Forms.Recruiter.UC
 {
@@ -22,28 +23,43 @@ namespace win_project_2.Forms.Recruiter.UC
             InitializeComponent();
         }
 
-        private void btn_PostJob_Click(object sender, EventArgs e)
-        {
-            string title = lb_namejob.Text;
-            string description = lb_des.Text;
-            string location = lb_location.Text;
-            decimal salary;
-            string type = lb_type.Text;
-            string company = lb_company.Text;
-            string status = lb_status.Text;
-            DateTime postedDate = dtPostDay.Value;
+        UserDangNhap us = new UserDangNhap();
 
-            if (string.IsNullOrEmpty(title) || string.IsNullOrEmpty(description) || string.IsNullOrEmpty(location) || !decimal.TryParse(lb_salary.Text, out salary) || string.IsNullOrEmpty(type) || string.IsNullOrEmpty(company) || string.IsNullOrEmpty(status))
+        private void btn_Post_Click(object sender, EventArgs e)
+        {
+            int employer = UserDangNhap.userId;
+            string title = txt_title.Text;
+            string description = txt_des.Text;
+            string location = txt_locaton.Text;
+            string skillRequire = txt_skill.Text;
+            DateTime postedDate = DateTime.Now;
+            decimal salary = decimal.Parse(txt_salary.Text);
+            string company = txt_company.Text;
+
+            if (string.IsNullOrEmpty(title) || string.IsNullOrEmpty(description) || string.IsNullOrEmpty(location) ||
+                string.IsNullOrEmpty(skillRequire) || !decimal.TryParse(txt_salary.Text, out salary) || string.IsNullOrEmpty(company))
             {
                 lbError.Visible = true;
                 lbError.Text = "Vui lòng điền đầy đủ thông tin !";
                 return;
             }
+            //Type  ('Full-time', 'Part-time', 'Contract', 'Internship', 'Freelance')),
+            //Status(Status IN('Open', 'Closed', 'Paused')),
+            string type = "";
+            if (rbFulltime.Checked) { type = "Full-time"; }
+            else if (rbFarttime.Checked) { type = "Part-time"; }
+            else if (rbContract.Checked) { type = "Contract"; }
+            else if (rbInternship.Checked) { type = "Internship"; }
+            else if (rbFreelance.Checked) { type = "Freelance"; }
 
+            string status = "";
+            if (rbOpen.Checked) { type = "Open"; }
+            else if (rbClosed.Checked) { type = "Closed"; }
+            else if (rbPaused.Checked) { type = "Paused"; }
             try
             {
                 JobDAO jobDAO = new JobDAO();
-                jobDAO.AddJob(title, description, location, salary, type, company, status, postedDate);
+                jobDAO.AddJob(title, description, location, skillRequire, postedDate, salary, type, company, status, employer);
                 MessageBox.Show("Thêm công việc thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)

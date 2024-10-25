@@ -42,7 +42,7 @@ namespace win_project_2.Forms.Recruiter
 
         }
 
-        private void btn_Home_Click(object sender, EventArgs e)
+        private void btn_Home_Click_1(object sender, EventArgs e)
         {
             UCHomeRe uC = new UCHomeRe();
             pnHienThi.Controls.Add(uC);
@@ -50,7 +50,6 @@ namespace win_project_2.Forms.Recruiter
             btnPostJob.Checked = false;
             btnMessenge.Checked = false;
         }
-
         private void btnPostJob_Click(object sender, EventArgs e)
         {
             pnHienThi.Controls.Clear();
@@ -60,7 +59,8 @@ namespace win_project_2.Forms.Recruiter
             btnPostJob.Checked = true;
             btnMessenge.Checked = false;
         }
-        private void btnMessenge_Click(object sender, EventArgs e)
+
+        private void btnMessenge_Click_1(object sender, EventArgs e)
         {
             pnHienThi.Controls.Clear();
             //UCMessage 
@@ -68,6 +68,11 @@ namespace win_project_2.Forms.Recruiter
             btn_Home.Checked = false;
             btnPostJob.Checked = false;
             btnMessenge.Checked = true;
+        }
+
+        private void btn_logout_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

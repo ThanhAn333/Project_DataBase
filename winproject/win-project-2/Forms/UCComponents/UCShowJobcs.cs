@@ -56,7 +56,7 @@ namespace win_project_2.UserControls
                     job.JobID,
                     job.Title,
                     job.Description,
-                    job.Request,
+                    job.SkillRequire,
                     job.Location,
                     job.Salary,
                     job.Company,

@@ -68,15 +68,16 @@ namespace win_project_2.DAO
 
                     Job job = new Job(
                         (int)reader["JobID"],
-                        reader["JobTitle"].ToString(),
-                        reader["JobDescription"].ToString(),
+                        reader["Title"].ToString(),
+                        reader["Description"].ToString(),
                         reader["Location"].ToString(),
                         reader["SkillRequire"].ToString(),
-                        reader["Salary"].ToString(), 
-                        reader["Type"]?.ToString(), 
-                        reader["Company"]?.ToString(), 
+                        reader["Salary"].ToString(),
+                        reader["Type"]?.ToString(),
+                        reader["Company"]?.ToString(),
                         (DateTime)reader["PostedDate"],
-                        reader["Status"]?.ToString()
+                        reader["Status"]?.ToString(),
+                        (int)reader["Employer"]
                     );
                     review = new Review(
                         (int)reader["ReviewID"],
