@@ -23,7 +23,7 @@ namespace win_project_2.DAO
             List<Job> jobs = new List<Job>();
             using (SqlConnection conn = dbConn.GetConnection())
             {
-                string query = "SELECT * FROM ViewAllJobs"; // Giả định bạn có view này
+                string query = "SELECT * FROM ViewAllJobs"; 
                 SqlCommand cmd = new SqlCommand(query, conn);
 
                 conn.Open();

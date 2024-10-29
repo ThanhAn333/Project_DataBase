@@ -166,5 +166,22 @@ namespace win_project_2.DAO
             }
         }
 
+
+        public void SendMessage(string sender, string receiver, string message)
+        {
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                connection.Open();
+                string query = "INSERT INTO Message (SenderID, ReceiverID, Content) VALUES (@SenderID, @ReceiverID, @Content)";
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@SenderID", sender);
+                    command.Parameters.AddWithValue("@ReceiverID", receiver);
+                    command.Parameters.AddWithValue("@Content", message);
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
     }
 }

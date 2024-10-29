@@ -35,10 +35,16 @@ namespace win_project_2.Forms
             txb_Email.Text = UserDangNhap.email;
             txb_SDT.Text = UserDangNhap.phone;
             dtBirthday.Value = DateTime.Parse(UserDangNhap.birthday);
-            if (UserDangNhap.image!= null)
-            { 
+            if(UserDangNhap.image != "")
+            {
                 avatar_box.Image = Image.FromFile(UserDangNhap.image);
+
             }
+            else
+            {
+                avatar_box.Image = Image.FromFile("D:\\Nam3\\Hệ QT Cơ sở dữ liệu\\Project\\PROJECT_MOI\\Project_DataBase\\winproject\\win-project-2\\Resources\\user.png");
+            }
+
         }
 
         private string SaveImageToDirectory(string filePath)

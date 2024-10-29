@@ -1858,3 +1858,19 @@ D:\Project_DataBase\winproject\win-project-2\bin\Debug\System.Threading.Channels
 D:\Project_DataBase\winproject\win-project-2\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\Project_DataBase\winproject\win-project-2\bin\Debug\System.ValueTuple.xml
 D:\Project_DataBase\winproject\win-project-2\obj\Debug\win-proj.20E85E94.Up2Date
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.dll
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Security.dll
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\Owin.dll
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Client.pdb
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Core.pdb
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.pdb
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.xml
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Security.xml

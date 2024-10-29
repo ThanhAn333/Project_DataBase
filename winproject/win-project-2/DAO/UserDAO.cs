@@ -16,7 +16,7 @@ namespace win_project_2.DAO
         {
             dbConn = new DatabaseConnection();
         }
-
+         
         // Add User using stored procedure
         public void AddUser(User user)
         {
@@ -82,7 +82,7 @@ namespace win_project_2.DAO
         {
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                SqlCommand command = new SqlCommand("sp_UpdateUser", connection)
+                SqlCommand command = new SqlCommand("UpdateUserProfile", connection)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
@@ -91,12 +91,12 @@ namespace win_project_2.DAO
                 command.Parameters.AddWithValue("@Name", user.Name);
                 command.Parameters.AddWithValue("@Email", user.Email);
                 command.Parameters.AddWithValue("@Password", user.Password);
-                command.Parameters.AddWithValue("@Role", user.Role);
+                
                 command.Parameters.AddWithValue("@Address", user.Address ?? (object)DBNull.Value);
                 command.Parameters.AddWithValue("@DateOfBirth", user.birthDate == DateTime.MinValue ? (object)DBNull.Value : user.birthDate);
                 command.Parameters.AddWithValue("@PhoneNumber", user.PhoneNumber ?? (object)DBNull.Value);
                 command.Parameters.AddWithValue("@ProfilePicture", user.image ?? (object)DBNull.Value);
-                command.Parameters.AddWithValue("@UpdatedAt", DateTime.Now);
+                
 
                 connection.Open();
                 command.ExecuteNonQuery();

@@ -6,17 +6,13 @@ namespace win_project_2.SQLConn
 {
     public class DatabaseConnection
     {
-        public static string strconn = @"Data Source=LAPTOP-PMSG8QVF;Initial Catalog=APPJOB;Integrated Security=True;Encrypt=False";
-
-<<<<<<< HEAD
         public static string strconn = @"Data Source=LAPTOP-IGR3NG0G\THANHAN;Initial Catalog=APPJOB;Integrated Security=True;Encrypt=False";
+
+
 
         private SqlConnection con = new SqlConnection(strconn);
 
-        // Phương thức mở kết nối
-=======
-        // Phương thức lấy kết nối
->>>>>>> f7613bc16f364a550c74497145e4ec0010e4d2b7
+
         public SqlConnection GetConnection()
         {
             return new SqlConnection(strconn);
