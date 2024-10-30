@@ -27,7 +27,7 @@ namespace win_project_2.UserControls
         private void AddJobsToPanel()
         {
             // Xóa các control cũ trong panelbv
-            panelbv.Controls.Clear();
+            fpanelbv.Controls.Clear();
 
             // Tạo một thể hiện của JobDAO và lấy DataTable
             JobDAO jobDao = new JobDAO();
@@ -44,7 +44,7 @@ namespace win_project_2.UserControls
                 ucJob.Margin = new Padding(10);
 
                 // Thêm UC_Job vào panelbv
-                panelbv.Controls.Add(ucJob);
+                fpanelbv.Controls.Add(ucJob);
             }
         }
 

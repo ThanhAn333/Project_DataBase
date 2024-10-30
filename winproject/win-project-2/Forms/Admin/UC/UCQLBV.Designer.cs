@@ -46,8 +46,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.panelbv = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.panelbd = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.fpanelbv = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.guna2Panel2.SuspendLayout();
@@ -264,16 +264,6 @@
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // panelbv
-            // 
-            this.panelbv.AllowDrop = true;
-            this.panelbv.AutoScroll = true;
-            this.panelbv.Location = new System.Drawing.Point(167, 283);
-            this.panelbv.Name = "panelbv";
-            this.panelbv.Size = new System.Drawing.Size(480, 398);
-            this.panelbv.TabIndex = 41;
-            this.panelbv.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel1_Paint);
-            // 
             // panelbd
             // 
             this.panelbd.AllowDrop = true;
@@ -283,12 +273,20 @@
             this.panelbd.Size = new System.Drawing.Size(480, 398);
             this.panelbd.TabIndex = 42;
             // 
+            // fpanelbv
+            // 
+            this.fpanelbv.AutoScroll = true;
+            this.fpanelbv.Location = new System.Drawing.Point(167, 300);
+            this.fpanelbv.Name = "fpanelbv";
+            this.fpanelbv.Size = new System.Drawing.Size(447, 285);
+            this.fpanelbv.TabIndex = 43;
+            // 
             // UCQLBV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.fpanelbv);
             this.Controls.Add(this.panelbd);
-            this.Controls.Add(this.panelbv);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.txt_name);
@@ -328,7 +326,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel panelbv;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel panelbd;
+        private System.Windows.Forms.FlowLayoutPanel fpanelbv;
     }
 }

@@ -58,8 +58,8 @@ namespace win_project_2.UserControls
 
         private void bt_detail_Click(object sender, EventArgs e)
         {
-            ThoDetail f = new ThoDetail(id);
-            f.ShowDialog();
+            //ThoDetail f = new ThoDetail(id);
+           // f.ShowDialog();
         }
 
         private void guna2Shapes1_Click_1(object sender, EventArgs e)
