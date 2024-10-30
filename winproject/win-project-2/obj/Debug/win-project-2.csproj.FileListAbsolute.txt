@@ -1874,3 +1874,19 @@ D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winpro
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.xml
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Security.xml
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.dll
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Security.dll
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Owin.dll
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Client.pdb
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Core.pdb
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.pdb
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.xml
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Security.xml
