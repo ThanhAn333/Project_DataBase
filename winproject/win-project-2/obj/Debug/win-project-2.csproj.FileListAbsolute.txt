@@ -1873,4 +1873,42 @@ D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winpro
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.xml
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Security.xml
+<<<<<<< HEAD
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Candidate.UC.FormDetailJob.resources
+=======
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.dll
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Security.dll
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Owin.dll
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Client.pdb
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Core.pdb
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.pdb
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.xml
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Security.xml
+D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCHomeRe.resources
+D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UC_Job.resources
+D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UC_ListApply_Job.resources
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.dll
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Security.dll
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Owin.dll
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Client.pdb
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Core.pdb
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.pdb
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.xml
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Security.xml
+>>>>>>> e49bc9bdacd028f149992df4de0ad5258a55b643

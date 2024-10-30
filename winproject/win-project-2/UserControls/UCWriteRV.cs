@@ -29,8 +29,8 @@ namespace win_project_2.UserControls
 
         private void btn_rv_Click(object sender, EventArgs e)
         {
-            FRating f = new FRating(_idnt);
-            f.Show();
+            //FRating f = new FRating(_idnt);
+            //f.Show();
         }
 
         private void guna2Shapes1_Click(object sender, EventArgs e)

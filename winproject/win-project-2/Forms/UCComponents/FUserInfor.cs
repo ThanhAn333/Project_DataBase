@@ -35,14 +35,25 @@ namespace win_project_2.Forms
             txb_Email.Text = UserDangNhap.email;
             txb_SDT.Text = UserDangNhap.phone;
             dtBirthday.Value = DateTime.Parse(UserDangNhap.birthday);
-            if(UserDangNhap.image != "")
+            if(UserDangNhap.image != "" || UserDangNhap.image == null)
             {
-                avatar_box.Image = Image.FromFile(UserDangNhap.image);
+                //avatar_box.Image = Image.FromFile(UserDangNhap.image);
 
             }
             else
             {
                 avatar_box.Image = Image.FromFile("D:\\Nam3\\Hệ QT Cơ sở dữ liệu\\Project\\PROJECT_MOI\\Project_DataBase\\winproject\\win-project-2\\Resources\\user.png");
+            }
+
+            SkillDAO skillDAO = new SkillDAO();
+            List<Skill> skills = skillDAO.GetSkillsByUserId(UserDangNhap.userId);
+
+            if (skills.Count > 0)
+            {
+                Skill skill = skills[0];
+                txb_skill_name.Text = skill.Name;
+                txb_skill_descript.Text = skill.Description;
+                Level.SelectedItem = skill.ProficiencyLevel;
             }
 
         }
@@ -99,6 +110,26 @@ namespace win_project_2.Forms
             else
             {
                 MessageBox.Show("Không tìm thấy thông tin người dùng!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btn_Luu_Click(object sender, EventArgs e)
+        {
+            SkillDAO skillDAO = new SkillDAO();
+
+            string name = txb_skill_name.Text;
+            string description = txb_skill_descript.Text;
+            string proficiencyLevel = Level.SelectedItem.ToString();
+
+            bool isAdded = skillDAO.AddSkill(UserDangNhap.userId, name, description, proficiencyLevel);
+
+            if (isAdded)
+            {
+                MessageBox.Show("Kỹ năng đã được thêm thành công.");
+            }
+            else
+            {
+                MessageBox.Show("Thêm kỹ năng thất bại.");
             }
         }
     }

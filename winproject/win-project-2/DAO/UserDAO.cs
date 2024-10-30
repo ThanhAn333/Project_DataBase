@@ -229,11 +229,10 @@ namespace win_project_2.DAO
                 SqlCommand command = new SqlCommand(sql, connection);
                 command.Parameters.AddWithValue("@Email", taikhoan);
                 command.Parameters.AddWithValue("@Password", matkhau);
-
                 SqlDataAdapter da = new SqlDataAdapter(command);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
-                return dt;
+                return dt;  
             }
         }
     }

@@ -221,5 +221,45 @@ namespace win_project_2.DAO
             }
             return dataTable;
         }
+
+        public List<Job> GetJobsByEmployer(int employerId)
+        {
+            List<Job> jobList = new List<Job>();
+
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                SqlCommand command = new SqlCommand("sp_GetJobsByEmployer", connection)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                command.Parameters.AddWithValue("@EmployerID", employerId);
+
+                connection.Open();
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Job job = new Job
+                        {
+                            JobID = reader.GetInt32(reader.GetOrdinal("JobID")),
+                            Title = reader.GetString(reader.GetOrdinal("Title")),
+                            Description = reader.GetString(reader.GetOrdinal("Description")),
+                            Location = reader.GetString(reader.GetOrdinal("Location")),
+                            SkillRequire = reader.GetString(reader.GetOrdinal("SkillRequire")),
+                            PostedDate = reader.GetDateTime(reader.GetOrdinal("PostedDate")),
+                            Salary = reader.GetDecimal(reader.GetOrdinal("Salary")).ToString("F2"),
+                            Type = reader.IsDBNull(reader.GetOrdinal("Type")) ? null : reader.GetString(reader.GetOrdinal("Type")),
+                            Company = reader.IsDBNull(reader.GetOrdinal("Company")) ? null : reader.GetString(reader.GetOrdinal("Company")),
+                            Status = reader.GetString(reader.GetOrdinal("Status")),
+                            EmployerID = reader.GetInt32(reader.GetOrdinal("EmployerID"))
+                        };
+                        jobList.Add(job);
+                    }
+                }
+            }
+
+            return jobList;
+        }
+
     }
 }

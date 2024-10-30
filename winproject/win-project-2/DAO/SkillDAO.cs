@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using win_project_2.SQLConn;
 using win_project_2.Models;
+using System.Data;
 
 namespace win_project_2.DAO
 {
@@ -18,45 +19,57 @@ namespace win_project_2.DAO
             dbConn = new DatabaseConnection();
         }
 
-        public void AddSkill(Skill skill)
+        public bool AddSkill(int userId, string name, string description, string proficiencyLevel)
         {
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "INSERT INTO Skill (Name, Description) VALUES (@Name, @Description)";
-                SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@Name", skill.Name);
-                command.Parameters.AddWithValue("@Description", skill.Description);
+                using (SqlCommand command = new SqlCommand("sp_AddSkill", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
 
-                connection.Open();
-                command.ExecuteNonQuery();
+                    // Thêm các tham số cho stored procedure
+                    command.Parameters.AddWithValue("@UserID", userId);
+                    command.Parameters.AddWithValue("@Name", name);
+                    command.Parameters.AddWithValue("@Description", description);
+                    command.Parameters.AddWithValue("@ProficiencyLevel", proficiencyLevel);
+
+                    connection.Open();
+                    int rowsAffected = command.ExecuteNonQuery();
+                    return rowsAffected > 0;
+                }
             }
         }
 
         // Read
-        public Skill GetSkillByID(int skillId)
+        public List<Skill> GetSkillsByUserId(int userId)
         {
-            Skill skill = null;
+            List<Skill> skills = new List<Skill>();
 
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "SELECT * FROM Skill WHERE SkillID = @SkillID";
-                SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@SkillID", skillId);
-
-                connection.Open();
-                SqlDataReader reader = command.ExecuteReader();
-
-                if (reader.Read())
+                using (SqlCommand command = new SqlCommand("sp_GetSkillsByUserID", connection))
                 {
-                    skill = new Skill(
-                        (int)reader["SkillID"],
-                        reader["Name"].ToString(),
-                        reader["Description"].ToString()
-                    );
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@UserID", userId);
+
+                    connection.Open();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Skill skill = new Skill(
+                                reader.GetInt32(reader.GetOrdinal("SkillID")),
+                                reader.GetString(reader.GetOrdinal("Name")),
+                                reader["Description"] as string,
+                                reader.GetString(reader.GetOrdinal("ProficiencyLevel"))
+                            );
+                            skills.Add(skill);
+                        }
+                    }
                 }
             }
 
-            return skill;
+            return skills;
         }
 
         // Update
