@@ -493,10 +493,10 @@
     <Compile Include="Forms\FPostEmloyee.Designer.cs">
       <DependentUpon>FPostEmloyee.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FRating.cs">
+    <Compile Include="Forms\Recruiter\FRating.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FRating.Designer.cs">
+    <Compile Include="Forms\Recruiter\FRating.Designer.cs">
       <DependentUpon>FRating.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FShowListJob.cs">
@@ -517,10 +517,10 @@
     <Compile Include="Forms\FShowRating.Designer.cs">
       <DependentUpon>FShowRating.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ThoDetail.cs">
+    <Compile Include="Forms\UCComponents\ThoDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ThoDetail.Designer.cs">
+    <Compile Include="Forms\UCComponents\ThoDetail.Designer.cs">
       <DependentUpon>ThoDetail.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FChat.cs">
@@ -687,7 +687,7 @@
     <EmbeddedResource Include="Forms\FPostEmloyee.resx">
       <DependentUpon>FPostEmloyee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FRating.resx">
+    <EmbeddedResource Include="Forms\Recruiter\FRating.resx">
       <DependentUpon>FRating.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FShowListJob.resx">
@@ -720,7 +720,7 @@
     <EmbeddedResource Include="Forms\Recruiter\UC\UC_ListApply_Job.resx">
       <DependentUpon>UC_ListApply_Job.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ThoDetail.resx">
+    <EmbeddedResource Include="Forms\UCComponents\ThoDetail.resx">
       <DependentUpon>ThoDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FChat.resx">
