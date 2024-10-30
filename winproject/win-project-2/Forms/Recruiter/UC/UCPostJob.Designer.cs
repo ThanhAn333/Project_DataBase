@@ -30,22 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCPostJob));
             this.lbError_status = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbError_type = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.rbPaused = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.rbOpen = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel18 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.rbClosed = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.guna2HtmlLabel19 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.rbFreelance = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.rbContract = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.rbInternship = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.rbFulltime = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.guna2HtmlLabel16 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel17 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.rbFarttime = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.guna2HtmlLabel15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txt_skill = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_salary = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_des = new Guna.UI2.WinForms.Guna2TextBox();
@@ -62,12 +52,12 @@
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbError = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.txt_Type = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnQuayLai)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -84,19 +74,6 @@
             this.lbError_status.TabIndex = 210;
             this.lbError_status.Text = "Vui lòng chọn trạng thái";
             this.lbError_status.Visible = false;
-            // 
-            // lbError_type
-            // 
-            this.lbError_type.AutoSize = false;
-            this.lbError_type.BackColor = System.Drawing.Color.Transparent;
-            this.lbError_type.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbError_type.ForeColor = System.Drawing.Color.Red;
-            this.lbError_type.Location = new System.Drawing.Point(229, 572);
-            this.lbError_type.Name = "lbError_type";
-            this.lbError_type.Size = new System.Drawing.Size(217, 34);
-            this.lbError_type.TabIndex = 209;
-            this.lbError_type.Text = "Vui lòng chọn loại công việc";
-            this.lbError_type.Visible = false;
             // 
             // rbPaused
             // 
@@ -178,130 +155,6 @@
             this.guna2HtmlLabel19.Size = new System.Drawing.Size(88, 25);
             this.guna2HtmlLabel19.TabIndex = 203;
             this.guna2HtmlLabel19.Text = "Open";
-            // 
-            // rbFreelance
-            // 
-            this.rbFreelance.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbFreelance.CheckedState.BorderThickness = 0;
-            this.rbFreelance.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbFreelance.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rbFreelance.Location = new System.Drawing.Point(268, 535);
-            this.rbFreelance.Name = "rbFreelance";
-            this.rbFreelance.Size = new System.Drawing.Size(22, 25);
-            this.rbFreelance.TabIndex = 202;
-            this.rbFreelance.Text = "guna2CustomRadioButton2";
-            this.rbFreelance.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rbFreelance.UncheckedState.BorderThickness = 2;
-            this.rbFreelance.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rbFreelance.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // rbContract
-            // 
-            this.rbContract.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbContract.CheckedState.BorderThickness = 0;
-            this.rbContract.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbContract.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rbContract.Location = new System.Drawing.Point(268, 445);
-            this.rbContract.Name = "rbContract";
-            this.rbContract.Size = new System.Drawing.Size(22, 25);
-            this.rbContract.TabIndex = 201;
-            this.rbContract.Text = "guna2CustomRadioButton3";
-            this.rbContract.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rbContract.UncheckedState.BorderThickness = 2;
-            this.rbContract.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rbContract.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // rbInternship
-            // 
-            this.rbInternship.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbInternship.CheckedState.BorderThickness = 0;
-            this.rbInternship.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbInternship.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rbInternship.Location = new System.Drawing.Point(268, 490);
-            this.rbInternship.Name = "rbInternship";
-            this.rbInternship.Size = new System.Drawing.Size(22, 25);
-            this.rbInternship.TabIndex = 200;
-            this.rbInternship.Text = "guna2CustomRadioButton2";
-            this.rbInternship.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rbInternship.UncheckedState.BorderThickness = 2;
-            this.rbInternship.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rbInternship.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // rbFulltime
-            // 
-            this.rbFulltime.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbFulltime.CheckedState.BorderThickness = 0;
-            this.rbFulltime.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbFulltime.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rbFulltime.Location = new System.Drawing.Point(268, 355);
-            this.rbFulltime.Name = "rbFulltime";
-            this.rbFulltime.Size = new System.Drawing.Size(22, 25);
-            this.rbFulltime.TabIndex = 199;
-            this.rbFulltime.Text = "guna2CustomRadioButton2";
-            this.rbFulltime.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rbFulltime.UncheckedState.BorderThickness = 2;
-            this.rbFulltime.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rbFulltime.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // guna2HtmlLabel16
-            // 
-            this.guna2HtmlLabel16.AutoSize = false;
-            this.guna2HtmlLabel16.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel16.Font = new System.Drawing.Font("Sylfaen", 12F);
-            this.guna2HtmlLabel16.Location = new System.Drawing.Point(296, 490);
-            this.guna2HtmlLabel16.Name = "guna2HtmlLabel16";
-            this.guna2HtmlLabel16.Size = new System.Drawing.Size(96, 25);
-            this.guna2HtmlLabel16.TabIndex = 198;
-            this.guna2HtmlLabel16.Text = "Internship";
-            // 
-            // guna2HtmlLabel17
-            // 
-            this.guna2HtmlLabel17.AutoSize = false;
-            this.guna2HtmlLabel17.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel17.Font = new System.Drawing.Font("Sylfaen", 12F);
-            this.guna2HtmlLabel17.Location = new System.Drawing.Point(296, 445);
-            this.guna2HtmlLabel17.Name = "guna2HtmlLabel17";
-            this.guna2HtmlLabel17.Size = new System.Drawing.Size(96, 25);
-            this.guna2HtmlLabel17.TabIndex = 197;
-            this.guna2HtmlLabel17.Text = "Contract";
-            // 
-            // guna2HtmlLabel14
-            // 
-            this.guna2HtmlLabel14.AutoSize = false;
-            this.guna2HtmlLabel14.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel14.Font = new System.Drawing.Font("Sylfaen", 12F);
-            this.guna2HtmlLabel14.Location = new System.Drawing.Point(296, 400);
-            this.guna2HtmlLabel14.Name = "guna2HtmlLabel14";
-            this.guna2HtmlLabel14.Size = new System.Drawing.Size(96, 25);
-            this.guna2HtmlLabel14.TabIndex = 196;
-            this.guna2HtmlLabel14.Text = "Part-time";
-            // 
-            // rbFarttime
-            // 
-            this.rbFarttime.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbFarttime.CheckedState.BorderThickness = 0;
-            this.rbFarttime.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbFarttime.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rbFarttime.Location = new System.Drawing.Point(268, 400);
-            this.rbFarttime.Name = "rbFarttime";
-            this.rbFarttime.Size = new System.Drawing.Size(22, 25);
-            this.rbFarttime.TabIndex = 195;
-            this.rbFarttime.Text = "guna2CustomRadioButton2";
-            this.rbFarttime.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rbFarttime.UncheckedState.BorderThickness = 2;
-            this.rbFarttime.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rbFarttime.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // guna2HtmlLabel15
-            // 
-            this.guna2HtmlLabel15.AutoSize = false;
-            this.guna2HtmlLabel15.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel15.Font = new System.Drawing.Font("Sylfaen", 12F);
-            this.guna2HtmlLabel15.Location = new System.Drawing.Point(296, 355);
-            this.guna2HtmlLabel15.Name = "guna2HtmlLabel15";
-            this.guna2HtmlLabel15.Size = new System.Drawing.Size(88, 25);
-            this.guna2HtmlLabel15.TabIndex = 194;
-            this.guna2HtmlLabel15.Text = "Full-time";
             // 
             // txt_skill
             // 
@@ -551,17 +404,6 @@
             this.guna2HtmlLabel6.TabIndex = 180;
             this.guna2HtmlLabel6.Text = "Company :";
             // 
-            // guna2HtmlLabel5
-            // 
-            this.guna2HtmlLabel5.AutoSize = false;
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Sylfaen", 12F);
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(296, 535);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(96, 25);
-            this.guna2HtmlLabel5.TabIndex = 179;
-            this.guna2HtmlLabel5.Text = "Freelance";
-            // 
             // guna2HtmlLabel4
             // 
             this.guna2HtmlLabel4.AutoSize = false;
@@ -620,27 +462,39 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1403, 76);
             this.guna2Panel1.TabIndex = 174;
             // 
+            // txt_Type
+            // 
+            this.txt_Type.BackColor = System.Drawing.Color.Transparent;
+            this.txt_Type.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txt_Type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txt_Type.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Type.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Type.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txt_Type.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.txt_Type.ItemHeight = 30;
+            this.txt_Type.Items.AddRange(new object[] {
+            "Full-time",
+            "Part-time",
+            "Contract",
+            "Internship",
+            "Freelance"});
+            this.txt_Type.Location = new System.Drawing.Point(268, 353);
+            this.txt_Type.Name = "txt_Type";
+            this.txt_Type.Size = new System.Drawing.Size(242, 36);
+            this.txt_Type.TabIndex = 211;
+            // 
             // UCPostJob
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txt_Type);
             this.Controls.Add(this.lbError_status);
-            this.Controls.Add(this.lbError_type);
             this.Controls.Add(this.rbPaused);
             this.Controls.Add(this.rbOpen);
             this.Controls.Add(this.guna2HtmlLabel10);
             this.Controls.Add(this.guna2HtmlLabel18);
             this.Controls.Add(this.rbClosed);
             this.Controls.Add(this.guna2HtmlLabel19);
-            this.Controls.Add(this.rbFreelance);
-            this.Controls.Add(this.rbContract);
-            this.Controls.Add(this.rbInternship);
-            this.Controls.Add(this.rbFulltime);
-            this.Controls.Add(this.guna2HtmlLabel16);
-            this.Controls.Add(this.guna2HtmlLabel17);
-            this.Controls.Add(this.guna2HtmlLabel14);
-            this.Controls.Add(this.rbFarttime);
-            this.Controls.Add(this.guna2HtmlLabel15);
             this.Controls.Add(this.txt_skill);
             this.Controls.Add(this.txt_salary);
             this.Controls.Add(this.txt_des);
@@ -655,7 +509,6 @@
             this.Controls.Add(this.guna2HtmlLabel8);
             this.Controls.Add(this.guna2HtmlLabel7);
             this.Controls.Add(this.guna2HtmlLabel6);
-            this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.guna2HtmlLabel4);
             this.Controls.Add(this.guna2HtmlLabel12);
             this.Controls.Add(this.guna2HtmlLabel13);
@@ -672,22 +525,12 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2HtmlLabel lbError_status;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbError_type;
         private Guna.UI2.WinForms.Guna2CustomRadioButton rbPaused;
         private Guna.UI2.WinForms.Guna2CustomRadioButton rbOpen;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel18;
         private Guna.UI2.WinForms.Guna2CustomRadioButton rbClosed;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel19;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton rbFreelance;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton rbContract;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton rbInternship;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton rbFulltime;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel16;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel17;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel14;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton rbFarttime;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel15;
         private Guna.UI2.WinForms.Guna2TextBox txt_skill;
         private Guna.UI2.WinForms.Guna2TextBox txt_salary;
         private Guna.UI2.WinForms.Guna2TextBox txt_des;
@@ -704,11 +547,11 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel13;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbError;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2ComboBox txt_Type;
     }
 }

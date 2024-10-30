@@ -1890,3 +1890,6 @@ D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.
 D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.xml
 D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
 D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Security.xml
+D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCHomeRe.resources
+D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UC_Job.resources
+D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UC_ListApply_Job.resources

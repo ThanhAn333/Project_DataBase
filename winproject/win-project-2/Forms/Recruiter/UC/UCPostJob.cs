@@ -34,6 +34,7 @@ namespace win_project_2.Forms.Recruiter.UC
             string skillRequire = txt_skill.Text;
             DateTime postedDate = DateTime.Now;
             decimal salary = decimal.Parse(txt_salary.Text);
+            string type = txt_Type.Text;
             string company = txt_company.Text;
 
             if (string.IsNullOrEmpty(title) || string.IsNullOrEmpty(description) || string.IsNullOrEmpty(location) ||
@@ -43,14 +44,6 @@ namespace win_project_2.Forms.Recruiter.UC
                 lbError.Text = "Vui lòng điền đầy đủ thông tin !";
                 return;
             }
-            //Type  ('Full-time', 'Part-time', 'Contract', 'Internship', 'Freelance')),
-            //Status(Status IN('Open', 'Closed', 'Paused')),
-            string type = "";
-            if (rbFulltime.Checked) { type = "Full-time"; }
-            else if (rbFarttime.Checked) { type = "Part-time"; }
-            else if (rbContract.Checked) { type = "Contract"; }
-            else if (rbInternship.Checked) { type = "Internship"; }
-            else if (rbFreelance.Checked) { type = "Freelance"; }
 
             string status = "";
             if (rbOpen.Checked) { status = "Open"; }
