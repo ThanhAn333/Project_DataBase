@@ -45,7 +45,7 @@ namespace win_project_2.Forms.Candidate.UC
             dgviewMessage.DataSource = messagesTable;
 
             // Khởi tạo SignalR
-            connection = new HubConnection("http://localhost:53748"); // Thay đổi với URL của bạn
+            connection = new HubConnection("https://localhost:5000"); // Thay đổi với URL của bạn
             hubProxy = connection.CreateHubProxy("ChatHub");
 
             // Nhận tin nhắn từ server

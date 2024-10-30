@@ -364,6 +364,12 @@
     <Compile Include="Forms\Candidate\HomeEmployee.Designer.cs">
       <DependentUpon>HomeEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Candidate\UC\FormDetailJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Candidate\UC\FormDetailJob.Designer.cs">
+      <DependentUpon>FormDetailJob.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Candidate\UC\UCMessage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -436,13 +442,7 @@
     <Compile Include="Forms\UCComponents\Application.Designer.cs">
       <DependentUpon>Application.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UCComponents\JobDetail.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\UCComponents\JobDetail.Designer.cs">
-      <DependentUpon>JobDetail.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Application.cs" />
+    <Compile Include="Models\Applications.cs" />
     <Compile Include="Models\Job.cs" />
     <Compile Include="Models\JobPost.cs" />
     <Compile Include="Models\JobSkill.cs" />
@@ -660,6 +660,9 @@
     <EmbeddedResource Include="Forms\Candidate\HomeEmployee.resx">
       <DependentUpon>HomeEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Candidate\UC\FormDetailJob.resx">
+      <DependentUpon>FormDetailJob.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Candidate\UC\UCMessage.resx">
       <DependentUpon>UCMessage.cs</DependentUpon>
     </EmbeddedResource>
@@ -752,9 +755,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UCComponents\Application.resx">
       <DependentUpon>Application.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UCComponents\JobDetail.resx">
-      <DependentUpon>JobDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Microsoft.AspNet.SignalR.Messaging;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -35,7 +37,6 @@ namespace win_project_2.Forms
             lbType.Text = type;
             lbdate.Text = date;
 
-           
         }
         private void FDetail1_Load(object sender, EventArgs e)
         {
@@ -55,20 +56,40 @@ namespace win_project_2.Forms
 
             Job appliedJob = new Job(jobId, title, "Description", "Location", "SkillRequire", "Salary", "Type", "Company", DateTime.Now, "Status", employer);
 
-            win_project_2.Models.Application application = new win_project_2.Models.Application(0, applicant, appliedJob,title, status, applicationDate);
+            win_project_2.Models.Applications application = new win_project_2.Models.Applications(0, applicant, appliedJob,title, status, applicationDate);
 
             ApplicationDAO applicationDAO = new ApplicationDAO();
             if (applicationDAO.CheckApplicationExists(userId, jobId))
             {
                 MessageBox.Show("Bạn đã nộp đơn cho công việc này rồi!");
+                this.Close();
             }
             else
             {
-                
-                applicationDAO.AddApplication(application);
-                MessageBox.Show("Đã nộp đơn ứng tuyển thành công!");
-            }
 
+                try
+                {
+                    applicationDAO.AddApplication(application);
+                    MessageBox.Show("Đã nộp đơn ứng tuyển thành công !");
+                    this.Close();
+                }
+                catch (SqlException ex)
+                {
+                    // Kiểm tra mã lỗi để xác định nếu đó là lỗi từ trigger
+                    if (ex.Number == 50000) // Số lỗi từ RAISERROR
+                    {
+                        MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        this.Close();
+                    }
+                    else
+                    {
+                        // Xử lý lỗi khác nếu cần
+                        MessageBox.Show("Đã xảy ra lỗi khi thêm đơn ứng tuyển.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+
+            }
+            
         }
     }
 }

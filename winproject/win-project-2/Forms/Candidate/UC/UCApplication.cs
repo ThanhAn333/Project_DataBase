@@ -27,12 +27,14 @@ namespace win_project_2.Forms.UC
             DataTable dt = application.DoDuLieuApplication();
             foreach (DataRow row in dt.Rows)
             {
-                UCComponents.Application application = new UCComponents.Application(); 
-                string title = row["Title"].ToString();
+                UCComponents.Application application = new UCComponents.Application();
+                int applicationID = (int)row["ApplicationID"];
+                int jobid = (int)row["JobID"];
+                string title = row["ApplicationTitle"].ToString();
                 string date = row["ApplicationDate"].ToString();
                 string status = row["Status"].ToString();
                 
-                application.themThongTin(title,date,status);
+                application.themThongTin(applicationID,jobid,title,date,status);
                 fpanelHienThi.Controls.Add(application);
                 application.BringToFront();
 

@@ -23,7 +23,7 @@ namespace win_project_2.DAO
             List<Job> jobs = new List<Job>();
             using (SqlConnection conn = dbConn.GetConnection())
             {
-                string query = "SELECT * FROM ViewAllJobs"; 
+                string query = "SELECT * FROM ViewJobs"; 
                 SqlCommand cmd = new SqlCommand(query, conn);
 
                 conn.Open();
@@ -81,7 +81,7 @@ namespace win_project_2.DAO
 
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "SELECT * FROM ViewJobDetails WHERE JobID = @JobID"; // Giả định bạn có view này
+                string query = "SELECT * FROM ViewJobs WHERE JobID = @JobID"; // Giả định bạn có view này
                 SqlCommand command = new SqlCommand(query, connection);
                 command.Parameters.AddWithValue("@JobID", jobId);
 
@@ -153,7 +153,7 @@ namespace win_project_2.DAO
             using (SqlConnection connection = dbConn.GetConnection())
             {
                 DataTable dt = new DataTable();
-                string query = "SELECT * FROM ViewJobSearch WHERE Title LIKE '%' + @TimKiem + '%'"; // Giả định bạn có view này
+                string query = "SELECT * FROM ViewJobs WHERE Title LIKE '%' + @TimKiem + '%'"; // Giả định bạn có view này
                 SqlCommand cmd = new SqlCommand(query, connection);
                 cmd.Parameters.AddWithValue("@TimKiem", timKiem);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
@@ -170,7 +170,7 @@ namespace win_project_2.DAO
                 DataTable dt = new DataTable();
                 try
                 {
-                    string query = "SELECT DISTINCT Location FROM ViewAllJobs"; // Giả định bạn có view này
+                    string query = "SELECT DISTINCT Location FROM ViewJobs";
                     SqlCommand cmd = new SqlCommand(query, connection);
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
                     da.Fill(dt);
@@ -192,7 +192,7 @@ namespace win_project_2.DAO
                 try
                 {
                     connection.Open();
-                    string query = "SELECT * FROM ViewJobsByLocation WHERE Location = @Location"; // Giả định bạn có view này
+                    string query = "SELECT * FROM ViewJobs WHERE Location = @Location"; // Giả định bạn có view này
                     SqlCommand cmd = new SqlCommand(query, connection);
                     cmd.Parameters.AddWithValue("@Location", location);
 
@@ -213,7 +213,7 @@ namespace win_project_2.DAO
             DataTable dataTable = new DataTable();
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string sql = "SELECT * FROM ViewAllJobs"; // Giả định bạn có view này
+                string sql = "SELECT * FROM ViewJobs"; // Giả định bạn có view này
                 SqlCommand cmd = new SqlCommand(sql, connection);
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
 
