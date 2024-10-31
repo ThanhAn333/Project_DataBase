@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FDetail1));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lbdate = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbCompany = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -58,7 +59,7 @@
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Shapes3 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
-            this.lbdate = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox5)).BeginInit();
@@ -73,6 +74,7 @@
             // 
             this.guna2Panel1.BorderColor = System.Drawing.Color.SteelBlue;
             this.guna2Panel1.BorderThickness = 15;
+            this.guna2Panel1.Controls.Add(this.guna2Button1);
             this.guna2Panel1.Controls.Add(this.lbdate);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel1.Controls.Add(this.lbCompany);
@@ -107,6 +109,18 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(810, 847);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // lbdate
+            // 
+            this.lbdate.AutoSize = false;
+            this.lbdate.BackColor = System.Drawing.Color.Transparent;
+            this.lbdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbdate.Location = new System.Drawing.Point(669, 139);
+            this.lbdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lbdate.Name = "lbdate";
+            this.lbdate.Size = new System.Drawing.Size(129, 26);
+            this.lbdate.TabIndex = 115;
+            this.lbdate.Text = "30-40tr";
             // 
             // guna2HtmlLabel1
             // 
@@ -494,17 +508,21 @@
             this.guna2Shapes1.Text = "guna2Shapes1";
             this.guna2Shapes1.Zoom = 80;
             // 
-            // lbdate
+            // guna2Button1
             // 
-            this.lbdate.AutoSize = false;
-            this.lbdate.BackColor = System.Drawing.Color.Transparent;
-            this.lbdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbdate.Location = new System.Drawing.Point(669, 139);
-            this.lbdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lbdate.Name = "lbdate";
-            this.lbdate.Size = new System.Drawing.Size(129, 26);
-            this.lbdate.TabIndex = 115;
-            this.lbdate.Text = "30-40tr";
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(759, 0);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(51, 36);
+            this.guna2Button1.TabIndex = 116;
+            this.guna2Button1.Text = "X";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // FDetail1
             // 
@@ -562,5 +580,6 @@
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes3;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes1;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbdate;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
