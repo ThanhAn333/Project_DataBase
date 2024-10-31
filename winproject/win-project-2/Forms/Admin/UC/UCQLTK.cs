@@ -273,5 +273,53 @@ namespace win_project_2.UserControls
                 }
             }
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            // Lấy ID từ TextBox
+            int userId;
+            if (int.TryParse(tbtimkiem.Text, out userId))
+            {
+                bool found = false; // Biến để kiểm tra xem đã tìm thấy hay chưa
+
+                // Làm sạch màu nền của tất cả các dòng
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    row.DefaultCellStyle.BackColor = Color.White; // Đặt lại màu nền
+                    row.Selected = false; // Bỏ chọn dòng
+                }
+
+                // Lặp qua từng dòng trong DataGridView để tìm kiếm UserID
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    // Kiểm tra UserID của dòng với ID nhập vào
+                    if ((int)row.Cells["UserID"].Value == userId)
+                    {
+                        // Tô màu dòng tương ứng
+                        // Tô màu dòng
+                        row.Selected = true; // Chọn dòng
+                        found = true; // Đã tìm thấy
+                        break; // Ngừng tìm kiếm
+                    }
+                }
+
+                // Hiện thông báo nếu không tìm thấy
+                if (!found)
+                {
+                    label1.Text = "Không tìm thấy người dùng với ID này.";
+                }
+                else
+                {
+                    // Xóa thông báo không tìm thấy nếu có
+                    label1.Text = string.Empty;
+                }
+            }
+            else
+            {
+                // Hiện thông báo nếu ID không hợp lệ
+                label1.Text = "Vui lòng nhập ID hợp lệ.";
+            }
+        }
+    
     }
 }

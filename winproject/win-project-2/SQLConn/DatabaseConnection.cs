@@ -8,7 +8,8 @@ namespace win_project_2.SQLConn
     {
         public static string strconn = @"Data Source=LAPTOP-87CNGKV0\SQLEXPRESS01;Initial Catalog=APPJOB;Integrated Security=True;Encrypt=False";
 
-
+        //LAPTOP-163UHFS2\SQLEXPRESS
+        
 
         private SqlConnection con = new SqlConnection(strconn);
 

@@ -1001,7 +1001,6 @@ D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UC.UCApplication.resources
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UC.UCHome.resources
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UCComponents.Application.resources
-D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UCComponents.JobDetail.resources
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Properties.Resources.resources
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCAccept.resources
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCListChat.resources
@@ -1649,7 +1648,6 @@ D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winpro
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\obj\Debug\win-project-2.pdb
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCHomeRe.resources
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UC_Job.resources
-D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UC_ListApply_Job.resources
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCAccept.resources
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCPostJob.resources
 D:\project\DBMS\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win-project-2.csproj.App.config
@@ -1924,3 +1922,7 @@ D:\project\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_
 D:\project\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UC_HisJob.resources
 D:\project\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.JobDetail.resources
 D:\project\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.Jobmini.resources
+D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Candidate.UC.FormDetailJob.resources
+D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.JobDetail.resources
+D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.Jobmini.resources
+D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UC_HisJob.resources
