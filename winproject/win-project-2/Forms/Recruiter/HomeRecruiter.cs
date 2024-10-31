@@ -50,6 +50,7 @@ namespace win_project_2.Forms.Recruiter
             btn_Home.Checked = true;
             btnPostJob.Checked = false;
             btnMessenge.Checked = false;
+            btnHisJob.Checked = false;
         }
         private void btnPostJob_Click(object sender, EventArgs e)
         {
@@ -59,6 +60,7 @@ namespace win_project_2.Forms.Recruiter
             btn_Home.Checked = false;
             btnPostJob.Checked = true;
             btnMessenge.Checked = false;
+            btnHisJob.Checked = false;
         }
 
         private void btnMessenge_Click_1(object sender, EventArgs e)
@@ -74,6 +76,17 @@ namespace win_project_2.Forms.Recruiter
         private void btn_logout_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            pnHienThi.Controls.Clear();
+            UC_HisJob uC_HisJob = new UC_HisJob();
+            addHienThi(uC_HisJob);
+            btnHisJob.Checked = true;
+            btn_Home.Checked = false;
+            btnPostJob.Checked = false;
+            btnMessenge.Checked = false;
         }
     }
 }

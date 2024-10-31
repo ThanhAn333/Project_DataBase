@@ -133,15 +133,14 @@ namespace win_project_2.DAO
         }
 
         // Xóa công việc sử dụng stored procedure
-        public void DeleteJob(int jobId)
+        public void DeleteJob(int jobId, int employerId)
         {
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "sp_DeleteJob"; // Tên stored procedure
-                SqlCommand command = new SqlCommand(query, connection);
+                SqlCommand command = new SqlCommand("sp_DeleteJob", connection);
                 command.CommandType = CommandType.StoredProcedure;
                 command.Parameters.AddWithValue("@JobID", jobId);
-
+                command.Parameters.AddWithValue("@EmployerID", employerId);
                 connection.Open();
                 command.ExecuteNonQuery();
             }
@@ -182,6 +181,25 @@ namespace win_project_2.DAO
                 return dt;
             }
         }
+        public DataTable HienThiTitle()
+        {
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                DataTable dt = new DataTable();
+                try
+                {
+                    string query = "SELECT DISTINCT Title FROM ViewJobs";
+                    SqlCommand cmd = new SqlCommand(query, connection);
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dt);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+                return dt;
+            }
+        }
 
         // Lấy dữ liệu theo địa điểm
         public DataTable LayDuLieuLocation(string location)
@@ -195,6 +213,28 @@ namespace win_project_2.DAO
                     string query = "SELECT * FROM ViewJobs WHERE Location = @Location"; // Giả định bạn có view này
                     SqlCommand cmd = new SqlCommand(query, connection);
                     cmd.Parameters.AddWithValue("@Location", location);
+
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dt);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+                return dt;
+            }
+        }
+        public DataTable LayDuLieuTitle(string title)
+        {
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                DataTable dt = new DataTable();
+                try
+                {
+                    connection.Open();
+                    string query = "SELECT * FROM ViewJobs WHERE Title = @Title"; // Giả định bạn có view này
+                    SqlCommand cmd = new SqlCommand(query, connection);
+                    cmd.Parameters.AddWithValue("@Title", title);
 
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
                     da.Fill(dt);

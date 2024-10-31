@@ -22,9 +22,6 @@ namespace win_project_2.Forms.Recruiter.UC
         {
             InitializeComponent();
         }
-
-        UserDangNhap us = new UserDangNhap();
-
         private void btn_Post_Click(object sender, EventArgs e)
         {
             int employer = UserDangNhap.userId;

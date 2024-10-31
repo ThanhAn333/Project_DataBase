@@ -37,8 +37,6 @@ namespace win_project_2.Forms.UC
                 application.themThongTin(applicationID,jobid,title,date,status);
                 fpanelHienThi.Controls.Add(application);
                 application.BringToFront();
-
-
             }
 
 

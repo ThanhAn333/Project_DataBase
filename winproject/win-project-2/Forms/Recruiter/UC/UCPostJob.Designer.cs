@@ -290,11 +290,11 @@
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft YaHei UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(547, 15);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(404, 15);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(165, 61);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(475, 61);
             this.guna2HtmlLabel1.TabIndex = 0;
-            this.guna2HtmlLabel1.Text = "Post Job";
+            this.guna2HtmlLabel1.Text = "Đăng Công Việc";
             // 
             // txt_company
             // 
