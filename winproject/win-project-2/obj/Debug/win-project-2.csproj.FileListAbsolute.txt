@@ -957,7 +957,6 @@ D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.For
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UC.UCApplication.resources
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UC.UCHome.resources
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UCComponents.Application.resources
-D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UCComponents.JobDetail.resources
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Properties.Resources.resources
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCAccept.resources
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCListChat.resources
@@ -1909,4 +1908,4 @@ D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.Sig
 D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.xml
 D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
 D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Security.xml
-
+D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Candidate.UC.FormDetailJob.resources
