@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using win_project_2.DAO;
 using win_project_2.Models;
 using System.IO;
+using OfficeOpenXml;
 
 
 namespace win_project_2.UserControls
@@ -114,47 +115,59 @@ namespace win_project_2.UserControls
             try
             {
                 UserDAO userDAO = new UserDAO();
-                int maxUserID = userDAO.GetMaxUserID();
 
-                // Nếu bạn có một OpenFileDialog để chọn ảnh
-                string imagePath = null;
-                using (OpenFileDialog openFileDialog = new OpenFileDialog())
-                {
-                    openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp"; // Các định dạng ảnh
-                    if (openFileDialog.ShowDialog() == DialogResult.OK)
-                    {
-                        // Lưu ảnh vào thư mục Images và lấy đường dẫn
-                        string fileName = Path.GetFileName(openFileDialog.FileName);
-                        imagePath = Path.Combine("Images", fileName); // Thay đổi đường dẫn nếu cần
+                // Khai báo biến lưu trữ đường dẫn ảnh
+                string imagePath = SelectImage();
 
-                        // Sao chép ảnh vào thư mục
-                        File.Copy(openFileDialog.FileName, Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagePath), true);
-                    }
-                }
-
+                // Tạo đối tượng User mới
                 User newUser = new User(
-                    maxUserID + 1,
+                    0, // Giả sử UserID là 0 hoặc bạn có thể thay thế bằng giá trị phù hợp
                     txt_ten.Texts,
                     txt_gmail.Texts,
                     txt_matkhau.Texts,
                     txt_role.Texts,
-                    !string.IsNullOrEmpty(txt_diachi.Texts) ? txt_diachi.Texts : null,
-                    !string.IsNullOrEmpty(txt_ngaysinh.Texts) ? Convert.ToDateTime(txt_ngaysinh.Texts) : DateTime.MinValue,
-                    !string.IsNullOrEmpty(txt_sdt.Texts) ? txt_sdt.Texts : null,
+                    !string.IsNullOrEmpty(txt_diachi.Texts) ? null : txt_diachi.Texts,
+                    !string.IsNullOrEmpty(txt_ngaysinh.Texts) ? DateTime.MinValue : Convert.ToDateTime(txt_ngaysinh.Texts),
+                   ! string.IsNullOrEmpty(txt_sdt.Texts) ? null : txt_sdt.Texts,
                     imagePath, // Đường dẫn ảnh đã lưu
-                    DateTime.Now,
-                    DateTime.Now
+                    DateTime.Now, // CreatedAt
+                    DateTime.Now  // UpdatedAt
                 );
 
                 // Thêm người dùng vào cơ sở dữ liệu
                 userDAO.AddUser(newUser);
                 MessageBox.Show("Thêm người dùng thành công!");
+
+                // Tải lại danh sách người dùng
                 LoadAllUser();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
+        }
+
+
+
+        // Phương thức để chọn ảnh từ máy tính
+        private string SelectImage()
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp"; // Các định dạng ảnh
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string fileName = Path.GetFileName(openFileDialog.FileName);
+                    string imagePath = Path.Combine("Images", fileName); // Đường dẫn thư mục lưu ảnh
+
+                    // Sao chép ảnh vào thư mục Images trong dự án
+                    File.Copy(openFileDialog.FileName, Path.Combine(AppDomain.CurrentDomain.BaseDirectory, imagePath), true);
+                    return imagePath; // Trả về đường dẫn ảnh
+                }
+            }
+
+            return null; // Trả về null nếu không chọn ảnh
         }
 
 
@@ -320,6 +333,100 @@ namespace win_project_2.UserControls
                 label1.Text = "Vui lòng nhập ID hợp lệ.";
             }
         }
-    
+
+        public void ExportDataTableToCSV(DataTable dataTable, string filePath)
+        {
+            using (StreamWriter writer = new StreamWriter(filePath))
+            {
+                // Viết tiêu đề
+                for (int i = 0; i < dataTable.Columns.Count; i++)
+                {
+                    writer.Write(dataTable.Columns[i].ColumnName);
+                    if (i < dataTable.Columns.Count - 1)
+                        writer.Write(",");
+                }
+                writer.WriteLine();
+
+                // Viết dữ liệu
+                foreach (DataRow row in dataTable.Rows)
+                {
+                    for (int i = 0; i < dataTable.Columns.Count; i++)
+                    {
+                        writer.Write(row[i].ToString());
+                        if (i < dataTable.Columns.Count - 1)
+                            writer.Write(",");
+                    }
+                    writer.WriteLine();
+                }
+            }
+        }
+
+        // Gọi hàm xuất dữ liệu từ DataTable
+       
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            UserDAO userDAO = new UserDAO();
+            DataTable userList = userDAO.GetUserList(); // Gọi stored procedure
+
+            SaveFileDialog saveFileDialog = new SaveFileDialog
+            {
+                FileName = "UserList.csv",
+                Filter = "CSV files (*.csv)|*.csv",
+                Title = "Save a CSV File"
+            };
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                ExportDataTableToCSV(userList, saveFileDialog.FileName);
+                MessageBox.Show("Dữ liệu đã được xuất thành công!");
+            }
+        }
+
+
+        public void ExportDataGridViewToExcel(DataGridView dataGridView, string filePath)
+        {
+            using (ExcelPackage excelPackage = new ExcelPackage())
+            {
+                ExcelWorksheet worksheet = excelPackage.Workbook.Worksheets.Add("Users");
+
+                // Viết tiêu đề
+                for (int i = 1; i <= dataGridView.Columns.Count; i++)
+                {
+                    worksheet.Cells[1, i].Value = dataGridView.Columns[i - 1].HeaderText;
+                }
+
+                // Viết dữ liệu
+                for (int i = 0; i < dataGridView.Rows.Count; i++)
+                {
+                    for (int j = 0; j < dataGridView.Columns.Count; j++)
+                    {
+                        worksheet.Cells[i + 2, j + 1].Value = dataGridView.Rows[i].Cells[j].Value;
+                    }
+                }
+
+                FileInfo excelFile = new FileInfo(filePath);
+                excelPackage.SaveAs(excelFile);
+            }
+        }
+
+        // Gọi hàm xuất dữ liệu từ DataGridView
+       
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog
+            {
+                FileName = "UserList.xlsx",
+                Filter = "Excel files (*.xlsx)|*.xlsx",
+                Title = "Save an Excel File"
+            };
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                ExportDataGridViewToExcel(dataGridView1, saveFileDialog.FileName);
+                MessageBox.Show("Dữ liệu đã được xuất thành công!");
+            }
+        }
     }
 }

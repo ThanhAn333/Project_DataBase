@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OfficeOpenXml;
+using System;
 using System.Windows.Forms;
 using win_project_2.Forms;
 using win_project_2.Forms.General;
@@ -11,10 +12,12 @@ namespace win_project_2
         [STAThread]
         static void Main()
         {
-                // Nếu kết nối thành công, mở LoginForm
+
+                ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+            // Nếu kết nối thành công, mở LoginForm
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new LoginForm());
+                Application.Run(new FAdmin());
      
         }
     }

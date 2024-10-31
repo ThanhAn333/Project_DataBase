@@ -1926,3 +1926,10 @@ D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.JobDetail.resources
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.Jobmini.resources
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UC_HisJob.resources
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\EPPlus.dll
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\EPPlus.Interfaces.dll
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\EPPlus.System.Drawing.dll
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\System.ComponentModel.Annotations.dll
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\EPPlus.xml
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
