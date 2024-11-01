@@ -35,9 +35,9 @@ namespace win_project_2.Forms
             txb_Email.Text = UserDangNhap.email;
             txb_SDT.Text = UserDangNhap.phone;
             dtBirthday.Value = DateTime.Parse(UserDangNhap.birthday);
-            if(UserDangNhap.image != "" || UserDangNhap.image == null)
+            if(!string.IsNullOrEmpty(UserDangNhap.image) && File.Exists(UserDangNhap.image))
             {
-                //avatar_box.Image = Image.FromFile(UserDangNhap.image);
+                avatar_box.Image = Image.FromFile(UserDangNhap.image);
 
             }
             else
@@ -100,6 +100,8 @@ namespace win_project_2.Forms
                 if(imange != null)
                 {
                     user.image = imange;
+                    UserDangNhap.image = imange;
+
                 }
                 
 
