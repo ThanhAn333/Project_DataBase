@@ -53,7 +53,7 @@ namespace win_project_2.Forms.Recruiter.UC
                     job1.Salary,
                     job1.Company,
                     job1.Type,
-                    job1.PostedDate.ToString(),
+                    job1.PostedDate,
                     job1.Status
                     );
                 job.Show();

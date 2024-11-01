@@ -29,6 +29,16 @@ namespace win_project_2.Forms.Recruiter
             pnHienThi.Controls.Add(uc);
             uc.BringToFront();
         }
+        private void HomeRecruiter_Load(object sender, EventArgs e)
+        {
+            panelHienThi.Controls.Clear();
+            UCHomeRe uC = new UCHomeRe();
+            addHienThi(uC);
+            btn_Home.Checked = true;
+            btnPostJob.Checked = false;
+            btnHisJob.Checked = false;
+            btnMessage.Checked = false;
+        }
         private void btn_mini_profile_click(object sender, MouseEventArgs e)
         {
             this.Hide();
@@ -42,11 +52,12 @@ namespace win_project_2.Forms.Recruiter
 
         }
 
+
         private void btn_Home_Click_1(object sender, EventArgs e)
         {
             pnHienThi.Controls.Clear();
             UCHomeRe uC = new UCHomeRe();
-            pnHienThi.Controls.Add(uC);
+            addHienThi(uC);
             btn_Home.Checked = true;
             btnPostJob.Checked = false;
             btnMessenge.Checked = false;

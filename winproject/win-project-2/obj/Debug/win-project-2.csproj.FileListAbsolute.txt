@@ -1920,6 +1920,16 @@ D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winpro
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.JobDetail.resources
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.Jobmini.resources
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UC_HisJob.resources
+<<<<<<< HEAD
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCCandidate.resources
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.FDetail2.resources
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.FormApplicationCandidate.resources
+=======
+D:\project\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\EPPlus.dll
+D:\project\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\EPPlus.Interfaces.dll
+D:\project\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\EPPlus.System.Drawing.dll
+D:\project\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+D:\project\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\System.ComponentModel.Annotations.dll
+D:\project\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\EPPlus.xml
+D:\project\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+>>>>>>> f9913d4d32ed75b77e50f6b53d32979b2e92f402
