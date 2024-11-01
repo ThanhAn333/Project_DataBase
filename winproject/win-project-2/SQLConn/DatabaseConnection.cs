@@ -6,7 +6,7 @@ namespace win_project_2.SQLConn
 {
     public class DatabaseConnection
     {
-        public static string strconn = @"Data Source=LAPTOP-87CNGKV0\SQLEXPRESS01;Initial Catalog=APPJOB;Integrated Security=True;Encrypt=False";
+        public static string strconn = @"Data Source=LAPTOP-163UHFS2\SQLEXPRESS;Initial Catalog=APPJOB;Integrated Security=True;Encrypt=False";
 
         //LAPTOP-163UHFS2\SQLEXPRESS
         //LAPTOP-87CNGKV0\SQLEXPRESS01

@@ -126,16 +126,16 @@ namespace win_project_2.UserControls
                     txt_gmail.Texts,
                     txt_matkhau.Texts,
                     txt_role.Texts,
-                    !string.IsNullOrEmpty(txt_diachi.Texts) ? null : txt_diachi.Texts,
-                    !string.IsNullOrEmpty(txt_ngaysinh.Texts) ? DateTime.MinValue : Convert.ToDateTime(txt_ngaysinh.Texts),
-                   ! string.IsNullOrEmpty(txt_sdt.Texts) ? null : txt_sdt.Texts,
+                    string.IsNullOrEmpty(txt_diachi.Texts) ? null : txt_diachi.Texts,
+                    string.IsNullOrEmpty(txt_ngaysinh.Texts) ? DateTime.MinValue : Convert.ToDateTime(txt_ngaysinh.Texts),
+                    string.IsNullOrEmpty(txt_sdt.Texts) ? null : txt_sdt.Texts,
                     imagePath, // Đường dẫn ảnh đã lưu
                     DateTime.Now, // CreatedAt
                     DateTime.Now  // UpdatedAt
                 );
 
                 // Thêm người dùng vào cơ sở dữ liệu
-                userDAO.AddUser(newUser);
+                userDAO.AddUser1(newUser);
                 MessageBox.Show("Thêm người dùng thành công!");
 
                 // Tải lại danh sách người dùng

@@ -18,11 +18,11 @@ namespace win_project_2.DAO
         }
 
         // Add User using stored procedure
-        public void AddUser(User user)
+        public void AddUser1(User user)
         {
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                SqlCommand command = new SqlCommand("sp_AddUser", connection)
+                SqlCommand command = new SqlCommand("sp_AddUser1", connection)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
