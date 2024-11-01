@@ -7,13 +7,12 @@ namespace win_project_2.SQLConn
 {
     public class DatabaseConnection
     {
-<<<<<<< HEAD
+
         public static string strconn = @"Data Source=LAPTOP-IGR3NG0G\THANHAN;Initial Catalog=APPJOB;Integrated Security=True;Encrypt=False";
         //Data Source = LAPTOP - 163UHFS2\SQLEXPRESS;Initial Catalog = APPJOB; Integrated Security = True; Encrypt=False
-=======
-        public static string strconn = @"Data Source=LAPTOP-87CNGKV0\SQLEXPRESS01;Initial Catalog=APPJOB;Integrated Security=True;Encrypt=False";
 
->>>>>>> f9913d4d32ed75b77e50f6b53d32979b2e92f402
+        
+
         //LAPTOP-163UHFS2\SQLEXPRESS
         //LAPTOP-87CNGKV0\SQLEXPRESS01
 

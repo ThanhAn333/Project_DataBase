@@ -57,17 +57,17 @@
             this.btnEmployee = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2CirclePictureBox4 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-<<<<<<< HEAD
+
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CirclePictureBox3 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-=======
+
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
->>>>>>> f9913d4d32ed75b77e50f6b53d32979b2e92f402
+
             this.panelHienThi.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
@@ -346,19 +346,19 @@
             this.btnHisJob.FocusedColor = System.Drawing.Color.DodgerBlue;
             this.btnHisJob.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnHisJob.ForeColor = System.Drawing.Color.Black;
-<<<<<<< HEAD
+
             this.btnHisJob.Location = new System.Drawing.Point(70, 326);
             this.btnHisJob.Name = "btnHisJob";
             this.btnHisJob.Size = new System.Drawing.Size(180, 100);
             this.btnHisJob.TabIndex = 26;
             this.btnHisJob.Text = "Lịch Sử Đăng";
-=======
+
             this.btnHisJob.Location = new System.Drawing.Point(70, 350);
             this.btnHisJob.Name = "btnHisJob";
             this.btnHisJob.Size = new System.Drawing.Size(180, 100);
             this.btnHisJob.TabIndex = 26;
             this.btnHisJob.Text = "Công Việc Đã Đăng";
->>>>>>> f9913d4d32ed75b77e50f6b53d32979b2e92f402
+
             this.btnHisJob.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // btnPostJob
@@ -518,7 +518,6 @@
             this.guna2PictureBox2.TabIndex = 1;
             this.guna2PictureBox2.TabStop = false;
             // 
-<<<<<<< HEAD
             // guna2CirclePictureBox3
             // 
             this.guna2CirclePictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox3.Image")));
@@ -581,8 +580,7 @@
             this.guna2CirclePictureBox1.TabIndex = 0;
             this.guna2CirclePictureBox1.TabStop = false;
             // 
-=======
->>>>>>> f9913d4d32ed75b77e50f6b53d32979b2e92f402
+
             // HomeRecruiter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -597,11 +595,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "HomeRecruiter";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-<<<<<<< HEAD
-=======
+
+
             this.Load += new System.EventHandler(this.HomeRecruiter_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
->>>>>>> f9913d4d32ed75b77e50f6b53d32979b2e92f402
+
             this.panelHienThi.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel4.ResumeLayout(false);
