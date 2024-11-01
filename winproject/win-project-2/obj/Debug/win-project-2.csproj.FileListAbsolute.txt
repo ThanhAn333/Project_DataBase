@@ -957,7 +957,6 @@ D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.For
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UC.UCApplication.resources
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UC.UCHome.resources
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UCComponents.Application.resources
-D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UCComponents.JobDetail.resources
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Properties.Resources.resources
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCAccept.resources
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCListChat.resources
@@ -1002,7 +1001,6 @@ D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UC.UCApplication.resources
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UC.UCHome.resources
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UCComponents.Application.resources
-D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UCComponents.JobDetail.resources
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Properties.Resources.resources
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCAccept.resources
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCListChat.resources
@@ -1466,9 +1464,6 @@ D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_
 D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.General.FormRegister.resources
 D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.HomeRecruiter.resources
 D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCAccept.resources
-D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCApply_Job.resources
-D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCHome.resources
-D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCJob.resources
 D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCPostJob.resources
 D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.ThoDetail.resources
 D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.FChat.resources
@@ -1481,7 +1476,6 @@ D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_
 D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UC.UCApplication.resources
 D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UC.UCHome.resources
 D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UCComponents.Application.resources
-D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UCComponents.JobDetail.resources
 D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Properties.Resources.resources
 D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCAccept.resources
 D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCListChat.resources
@@ -1621,7 +1615,6 @@ D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winpro
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCHomeRe.resources
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCPostJob.resources
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UC_Job.resources
-D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UC_ListApply_Job.resources
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.ThoDetail.resources
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.FChat.resources
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.FHome.resources
@@ -1654,7 +1647,6 @@ D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winpro
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\obj\Debug\win-project-2.pdb
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCHomeRe.resources
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UC_Job.resources
-D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UC_ListApply_Job.resources
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCAccept.resources
 D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCPostJob.resources
 D:\project\DBMS\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win-project-2.csproj.App.config
@@ -1892,7 +1884,6 @@ D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Ho
 D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Security.xml
 D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCHomeRe.resources
 D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UC_Job.resources
-D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UC_ListApply_Job.resources
 D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
 D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
 D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.dll
@@ -1909,4 +1900,45 @@ D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.Sig
 D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.xml
 D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
 D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Security.xml
-
+D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Candidate.UC.FormDetailJob.resources
+D:\project\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+D:\project\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+D:\project\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\project\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.dll
+D:\project\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\project\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Security.dll
+D:\project\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Owin.dll
+D:\project\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Client.pdb
+D:\project\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+D:\project\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Core.pdb
+D:\project\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+D:\project\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.pdb
+D:\project\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\project\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.xml
+D:\project\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\project\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.Owin.Security.xml
+D:\project\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Candidate.UC.FormDetailJob.resources
+D:\project\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UC_HisJob.resources
+D:\project\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.JobDetail.resources
+D:\project\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.Jobmini.resources
+D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Candidate.UC.FormDetailJob.resources
+D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.JobDetail.resources
+D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.Jobmini.resources
+D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UC_HisJob.resources
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\EPPlus.dll
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\EPPlus.Interfaces.dll
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\EPPlus.System.Drawing.dll
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\System.ComponentModel.Annotations.dll
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\EPPlus.xml
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\EPPlus.dll
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\EPPlus.Interfaces.dll
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\EPPlus.System.Drawing.dll
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\System.ComponentModel.Annotations.dll
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\EPPlus.xml
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.JobDetail.resources
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.Jobmini.resources
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UC_HisJob.resources

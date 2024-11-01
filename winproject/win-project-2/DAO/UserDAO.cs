@@ -16,13 +16,13 @@ namespace win_project_2.DAO
         {
             dbConn = new DatabaseConnection();
         }
-         
+
         // Add User using stored procedure
-        public void AddUser(User user)
+        public void AddUser1(User user)
         {
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                SqlCommand command = new SqlCommand("sp_AddUser", connection)
+                SqlCommand command = new SqlCommand("sp_AddUser1", connection)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
@@ -42,6 +42,7 @@ namespace win_project_2.DAO
                 command.ExecuteNonQuery();
             }
         }
+
 
         // Get User by ID using view
         public User GetUserByID(int userId)
@@ -235,5 +236,20 @@ namespace win_project_2.DAO
                 return dt;  
             }
         }
+        public DataTable GetUserList()
+        {
+            DataTable dt = new DataTable();
+            using (SqlConnection conn = dbConn.GetConnection())
+            {
+                SqlCommand cmd = new SqlCommand("GetUserList", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                conn.Open();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+            }
+            return dt;
+        }
+
     }
 }

@@ -12,12 +12,14 @@ namespace win_project_2.Forms.Recruiter.UC
 {
     public partial class UC_Job : UserControl
     {
+        private int jobid;
         public UC_Job()
         {
             InitializeComponent();
         }
-        public void thongtin(string namejob, string salary, string location, string company)
+        public void thongtin(int id, string namejob, string salary, string location, string company)
         {
+            jobid = id;
             lblNameJob.Text = namejob;
             lblSalary.Text = salary;
             lblLocation.Text = location;
@@ -26,7 +28,7 @@ namespace win_project_2.Forms.Recruiter.UC
 
         private void btnDetail_Click(object sender, EventArgs e)
         {
-            UC_ListApply_Job uC_ListApp_Job = new UC_ListApply_Job();
+            UC_HisJob uC_ListApp_Job = new UC_HisJob();
             uC_ListApp_Job.Show();
 
         }

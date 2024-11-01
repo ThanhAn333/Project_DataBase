@@ -61,6 +61,7 @@
             this.guna2CirclePictureBox4 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnHisJob = new Guna.UI2.WinForms.Guna2GradientButton();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.panelHienThi.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
@@ -387,6 +388,7 @@
             // 
             // guna2Panel9
             // 
+            this.guna2Panel9.Controls.Add(this.btnHisJob);
             this.guna2Panel9.Controls.Add(this.btnPostJob);
             this.guna2Panel9.Controls.Add(this.btn_logout);
             this.guna2Panel9.Controls.Add(this.btnMessenge);
@@ -411,11 +413,11 @@
             this.btnPostJob.FocusedColor = System.Drawing.Color.DodgerBlue;
             this.btnPostJob.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnPostJob.ForeColor = System.Drawing.Color.Black;
-            this.btnPostJob.Location = new System.Drawing.Point(70, 176);
+            this.btnPostJob.Location = new System.Drawing.Point(70, 210);
             this.btnPostJob.Name = "btnPostJob";
             this.btnPostJob.Size = new System.Drawing.Size(180, 100);
             this.btnPostJob.TabIndex = 25;
-            this.btnPostJob.Text = "Post Job";
+            this.btnPostJob.Text = "Đăng Việc";
             this.btnPostJob.Click += new System.EventHandler(this.btnPostJob_Click);
             // 
             // btn_logout
@@ -451,11 +453,11 @@
             this.btnMessenge.FocusedColor = System.Drawing.Color.Blue;
             this.btnMessenge.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMessenge.ForeColor = System.Drawing.Color.Black;
-            this.btnMessenge.Location = new System.Drawing.Point(69, 311);
+            this.btnMessenge.Location = new System.Drawing.Point(70, 490);
             this.btnMessenge.Name = "btnMessenge";
             this.btnMessenge.Size = new System.Drawing.Size(180, 100);
             this.btnMessenge.TabIndex = 21;
-            this.btnMessenge.Text = "Message";
+            this.btnMessenge.Text = "Nhắn Tin";
             this.btnMessenge.Click += new System.EventHandler(this.btnMessenge_Click_1);
             // 
             // btn_Home
@@ -475,11 +477,11 @@
             this.btn_Home.FocusedColor = System.Drawing.Color.DarkBlue;
             this.btn_Home.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Home.ForeColor = System.Drawing.Color.Black;
-            this.btn_Home.Location = new System.Drawing.Point(70, 50);
+            this.btn_Home.Location = new System.Drawing.Point(70, 70);
             this.btn_Home.Name = "btn_Home";
             this.btn_Home.Size = new System.Drawing.Size(180, 100);
             this.btn_Home.TabIndex = 19;
-            this.btn_Home.Text = "Home";
+            this.btn_Home.Text = "Trang Chủ";
             this.btn_Home.Click += new System.EventHandler(this.btn_Home_Click_1);
             // 
             // guna2CirclePictureBox4
@@ -522,6 +524,27 @@
             this.guna2Panel10.Name = "guna2Panel10";
             this.guna2Panel10.Size = new System.Drawing.Size(1942, 78);
             this.guna2Panel10.TabIndex = 25;
+            // 
+            // btnHisJob
+            // 
+            this.btnHisJob.BorderColor = System.Drawing.Color.White;
+            this.btnHisJob.BorderRadius = 5;
+            this.btnHisJob.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHisJob.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHisJob.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHisJob.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHisJob.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHisJob.FillColor = System.Drawing.Color.SteelBlue;
+            this.btnHisJob.FillColor2 = System.Drawing.Color.Transparent;
+            this.btnHisJob.FocusedColor = System.Drawing.Color.DodgerBlue;
+            this.btnHisJob.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnHisJob.ForeColor = System.Drawing.Color.Black;
+            this.btnHisJob.Location = new System.Drawing.Point(70, 350);
+            this.btnHisJob.Name = "btnHisJob";
+            this.btnHisJob.Size = new System.Drawing.Size(180, 100);
+            this.btnHisJob.TabIndex = 26;
+            this.btnHisJob.Text = "Lịch Sử Đăng";
+            this.btnHisJob.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // HomeRecruiter
             // 
@@ -594,5 +617,6 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox4;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel10;
+        private Guna.UI2.WinForms.Guna2GradientButton btnHisJob;
     }
 }
