@@ -404,6 +404,18 @@
     <Compile Include="Forms\General\FormRegister.Designer.cs">
       <DependentUpon>FormRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Recruiter\FDetail2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recruiter\FDetail2.Designer.cs">
+      <DependentUpon>FDetail2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Recruiter\FormApplicationCandidate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recruiter\FormApplicationCandidate.Designer.cs">
+      <DependentUpon>FormApplicationCandidate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Recruiter\HomeRecruiter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -439,6 +451,12 @@
     </Compile>
     <Compile Include="Forms\Recruiter\UC\UCAccept.Designer.cs">
       <DependentUpon>UCAccept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UCComponents\UCCandidate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UCComponents\UCCandidate.Designer.cs">
+      <DependentUpon>UCCandidate.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Recruiter\UC\UCHomeRe.cs">
       <SubType>UserControl</SubType>
@@ -485,65 +503,11 @@
     <Compile Include="Forms\Candidate\FDetail1.Designer.cs">
       <DependentUpon>FDetail1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FListChat.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FListChat.Designer.cs">
-      <DependentUpon>FListChat.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FListNguoiTho.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FListNguoiTho.Designer.cs">
-      <DependentUpon>FListNguoiTho.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FListNTapply.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FListNTapply.Designer.cs">
-      <DependentUpon>FListNTapply.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FListReview.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FListReview.Designer.cs">
-      <DependentUpon>FListReview.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FListWaitJob.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FListWaitJob.Designer.cs">
-      <DependentUpon>FListWaitJob.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FPostEmloyee.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FPostEmloyee.Designer.cs">
-      <DependentUpon>FPostEmloyee.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Recruiter\FRating.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Recruiter\FRating.Designer.cs">
       <DependentUpon>FRating.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FShowListJob.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FShowListJob.Designer.cs">
-      <DependentUpon>FShowListJob.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FShowPostEmloyee.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FShowPostEmloyee.Designer.cs">
-      <DependentUpon>FShowPostEmloyee.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FShowRating.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FShowRating.Designer.cs">
-      <DependentUpon>FShowRating.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\UCComponents\ThoDetail.cs">
       <SubType>Form</SubType>
@@ -551,41 +515,11 @@
     <Compile Include="Forms\UCComponents\ThoDetail.Designer.cs">
       <DependentUpon>ThoDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FChat.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FChat.Designer.cs">
-      <DependentUpon>FChat.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FHome.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FHome.Designer.cs">
-      <DependentUpon>FHome.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FStatistic.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FStatistic.Designer.cs">
-      <DependentUpon>FStatistic.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\UCComponents\FUserInfor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\UCComponents\FUserInfor.Designer.cs">
       <DependentUpon>FUserInfor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\NhanVienView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\NhanVienView.Designer.cs">
-      <DependentUpon>NhanVienView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FInfor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FInfor.Designer.cs">
-      <DependentUpon>FInfor.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\General\LoginForm.cs">
       <SubType>Form</SubType>
@@ -604,18 +538,6 @@
     <Compile Include="Service\StartChat.cs" />
     <Compile Include="Service\UserDangNhap.cs" />
     <Compile Include="SQLConn\DatabaseConnection.cs" />
-    <Compile Include="UserControls\UCAccept.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\UCAccept.Designer.cs">
-      <DependentUpon>UCAccept.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\UCListChat.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\UCListChat.Designer.cs">
-      <DependentUpon>UCListChat.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Admin\UC\UCQLBC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -640,47 +562,11 @@
     <Compile Include="Forms\Admin\UC\UCQLTK.Designer.cs">
       <DependentUpon>UCQLTK.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UCRating.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\UCRating.Designer.cs">
-      <DependentUpon>UCRating.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\UCReceive.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\UCReceive.Designer.cs">
-      <DependentUpon>UCReceive.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\UCSendMesage.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\UCSendMesage.Designer.cs">
-      <DependentUpon>UCSendMesage.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\UCComponents\UCShowJobcs.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Forms\UCComponents\UCShowJobcs.Designer.cs">
       <DependentUpon>UCShowJobcs.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\UCWaitJob.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\UCWaitJob.Designer.cs">
-      <DependentUpon>UCWaitJob.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\UCWriteRV.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\UCWriteRV.Designer.cs">
-      <DependentUpon>UCWriteRV.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\UserControl1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -700,35 +586,14 @@
     <EmbeddedResource Include="Forms\Candidate\FDetail1.resx">
       <DependentUpon>FDetail1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FListChat.resx">
-      <DependentUpon>FListChat.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Recruiter\FDetail2.resx">
+      <DependentUpon>FDetail2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FListNguoiTho.resx">
-      <DependentUpon>FListNguoiTho.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FListNTapply.resx">
-      <DependentUpon>FListNTapply.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FListReview.resx">
-      <DependentUpon>FListReview.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FListWaitJob.resx">
-      <DependentUpon>FListWaitJob.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FPostEmloyee.resx">
-      <DependentUpon>FPostEmloyee.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Recruiter\FormApplicationCandidate.resx">
+      <DependentUpon>FormApplicationCandidate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Recruiter\FRating.resx">
       <DependentUpon>FRating.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FShowListJob.resx">
-      <DependentUpon>FShowListJob.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FShowPostEmloyee.resx">
-      <DependentUpon>FShowPostEmloyee.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FShowRating.resx">
-      <DependentUpon>FShowRating.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\General\FormRegister.resx">
       <DependentUpon>FormRegister.cs</DependentUpon>
@@ -745,6 +610,9 @@
     <EmbeddedResource Include="Forms\Recruiter\UC\UCAccept.resx">
       <DependentUpon>UCAccept.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UCComponents\UCCandidate.resx">
+      <DependentUpon>UCCandidate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Recruiter\UC\UCHomeRe.resx">
       <DependentUpon>UCHomeRe.cs</DependentUpon>
     </EmbeddedResource>
@@ -760,26 +628,11 @@
     <EmbeddedResource Include="Forms\UCComponents\ThoDetail.resx">
       <DependentUpon>ThoDetail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FChat.resx">
-      <DependentUpon>FChat.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FHome.resx">
-      <DependentUpon>FHome.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FStatistic.resx">
-      <DependentUpon>FStatistic.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FInfor.resx">
-      <DependentUpon>FInfor.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\UCComponents\FUserInfor.resx">
       <DependentUpon>FUserInfor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\General\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\NhanVienView.resx">
-      <DependentUpon>NhanVienView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Candidate\UC\UCApplication.resx">
       <DependentUpon>UCApplication.cs</DependentUpon>
@@ -795,12 +648,6 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UCAccept.resx">
-      <DependentUpon>UCAccept.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UCListChat.resx">
-      <DependentUpon>UCListChat.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Admin\UC\UCQLBC.resx">
       <DependentUpon>UCQLBC.cs</DependentUpon>
     </EmbeddedResource>
@@ -813,26 +660,8 @@
     <EmbeddedResource Include="Forms\Admin\UC\UCQLTK.resx">
       <DependentUpon>UCQLTK.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UCRating.resx">
-      <DependentUpon>UCRating.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UCReceive.resx">
-      <DependentUpon>UCReceive.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UCSendMesage.resx">
-      <DependentUpon>UCSendMesage.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\UCComponents\UCShowJobcs.resx">
       <DependentUpon>UCShowJobcs.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UCWaitJob.resx">
-      <DependentUpon>UCWaitJob.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UCWriteRV.resx">
-      <DependentUpon>UCWriteRV.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UserControl1.resx">
-      <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Program\packages.config" />

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using win_project_2.DAO;
+using win_project_2.Models;
 
 namespace win_project_2.Forms.Recruiter.UC
 {
@@ -25,11 +27,42 @@ namespace win_project_2.Forms.Recruiter.UC
             lblLocation.Text = location;
             lblCompany.Text = company;
         }
-
+        public int GetJobID()
+        {
+            return jobid;
+        }
         private void btnDetail_Click(object sender, EventArgs e)
         {
-            UC_HisJob uC_ListApp_Job = new UC_HisJob();
-            uC_ListApp_Job.Show();
+
+            FDetail2 fDetail2 = new FDetail2();
+
+            // Lấy JobID từ biến và truyền sang form FDetail1
+            int id = GetJobID();
+            Job job = new Job();
+            JobDAO jobDao = new JobDAO();
+            job = jobDao.GetJobByID(id);
+
+
+            if (job != null)
+            {
+                fDetail2.themThongTin(
+                    job.JobID,
+                    job.Title,
+                    job.Description,
+                    job.SkillRequire,
+                    job.Location,
+                    job.Salary,
+                    job.Company,
+                    job.Type,
+                    job.PostedDate.ToString()
+                );
+
+                fDetail2.Show();
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy thông tin công việc.");
+            }
 
         }
         public void SetData(DataRow row)

@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Windows.Markup;
 
 namespace win_project_2.SQLConn
 {
     public class DatabaseConnection
     {
-        public static string strconn = @"Data Source=LAPTOP-163UHFS2\SQLEXPRESS;Initial Catalog=APPJOB;Integrated Security=True;Encrypt=False";
-
+        public static string strconn = @"Data Source=LAPTOP-IGR3NG0G\THANHAN;Initial Catalog=APPJOB;Integrated Security=True;Encrypt=False";
+        //Data Source = LAPTOP - 163UHFS2\SQLEXPRESS;Initial Catalog = APPJOB; Integrated Security = True; Encrypt=False
         //LAPTOP-163UHFS2\SQLEXPRESS
         //LAPTOP-87CNGKV0\SQLEXPRESS01
 

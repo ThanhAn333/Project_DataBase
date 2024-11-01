@@ -21,9 +21,6 @@ namespace win_project_2.UserControls
             InitializeComponent();
             
         }
-       
-
-        
         
         public void thongtin(int id,string namejob, string salary, string location, string company, string date)
         {

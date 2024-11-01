@@ -117,5 +117,25 @@ namespace win_project_2.DAO
             return dataTable;
 
         }
+
+        public DataTable DoDuLieuCandidateApplication(int jobid)
+        {
+            DataTable dataTable = new DataTable();
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                string sql = "SELECT * FROM vw_CandidateApplicationsByJob WHERE JobID = @JobID";
+
+                using (SqlCommand cmd = new SqlCommand(sql, connection))
+                {
+                    cmd.Parameters.AddWithValue("@JobID", jobid);
+
+                    using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                    {
+                        da.Fill(dataTable);
+                    }
+                }
+            }
+            return dataTable;
+        }
     }
 }

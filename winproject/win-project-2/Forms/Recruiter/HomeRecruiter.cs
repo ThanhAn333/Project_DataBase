@@ -88,5 +88,7 @@ namespace win_project_2.Forms.Recruiter
             btnPostJob.Checked = false;
             btnMessenge.Checked = false;
         }
+
+        
     }
 }
