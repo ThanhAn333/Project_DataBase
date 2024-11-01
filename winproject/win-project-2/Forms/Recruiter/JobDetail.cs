@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using win_project_2.DAO;
 using win_project_2.Forms.Candidate.UC;
+using win_project_2.Models;
 using win_project_2.Service;
 
 namespace win_project_2.Forms.Recruiter
@@ -21,7 +22,7 @@ namespace win_project_2.Forms.Recruiter
         {
             InitializeComponent();
         }
-        public void themThongTin(int jobid, string jobname, string description, string skillRequire, string location, string salary, string company, string type, string date, string status)
+        public void themThongTin(int jobid, string jobname, string description, string skillRequire, string location, string salary, string company, string type, DateTime date, string status)
         {
             jobID = jobid;
             txt_title.Text = jobname;
@@ -31,7 +32,7 @@ namespace win_project_2.Forms.Recruiter
             txt_salary.Text = salary;
             txt_company.Text = company;
             txt_Type.Text = type;
-            dtPostday.Text = date;
+            dtPostday.Value = date;
             txt_Status.Text = status;
         }
         int employer = UserDangNhap.userId;
@@ -64,7 +65,24 @@ namespace win_project_2.Forms.Recruiter
 
         private void btn_Update_Click(object sender, EventArgs e)
         {
-
+            JobDAO jobDAO = new JobDAO();
+            //int jobID, string title, string description, string location, string skillRequire, string salary,
+            //    string type, string company, DateTime postedDate, string status, int employer
+            Job updateJob = new Job(
+                getJobID(),
+                txt_title.Text,
+                txt_des.Text,
+                txt_locaton.Text,
+                txt_skill.Text,
+                txt_salary.Text,
+                txt_Type.Text,
+                txt_company.Text,
+                dtPostday.Value,
+                txt_Status.Text,
+                employer
+            );
+            jobDAO.UpdateJob(updateJob);
+            MessageBox.Show("Cập nhật công việc thành công!");
         }
     }
 }

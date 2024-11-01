@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCHomeRe));
             this.fpanelJob = new System.Windows.Forms.FlowLayoutPanel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.cbTitle = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
@@ -43,7 +41,7 @@
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.panelTong = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel1.SuspendLayout();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.panelTong.SuspendLayout();
@@ -57,27 +55,6 @@
             this.fpanelJob.Name = "fpanelJob";
             this.fpanelJob.Size = new System.Drawing.Size(1612, 486);
             this.fpanelJob.TabIndex = 0;
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(54, 5);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(701, 38);
-            this.guna2HtmlLabel1.TabIndex = 0;
-            this.guna2HtmlLabel1.Text = "Việc làm của bạn !";
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.BorderThickness = 2;
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1612, 45);
-            this.guna2Panel1.TabIndex = 6;
             // 
             // cbTitle
             // 
@@ -109,7 +86,7 @@
             this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.SteelBlue;
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.SteelBlue;
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 45);
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(1612, 129);
             this.guna2GradientPanel1.TabIndex = 5;
@@ -249,21 +226,31 @@
             // 
             this.guna2Panel2.Controls.Add(this.fpanelJob);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 174);
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 129);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1612, 506);
+            this.guna2Panel2.Size = new System.Drawing.Size(1612, 551);
             this.guna2Panel2.TabIndex = 7;
             // 
             // panelTong
             // 
             this.panelTong.Controls.Add(this.guna2Panel2);
             this.panelTong.Controls.Add(this.guna2GradientPanel1);
-            this.panelTong.Controls.Add(this.guna2Panel1);
             this.panelTong.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelTong.Location = new System.Drawing.Point(0, 0);
             this.panelTong.Name = "panelTong";
             this.panelTong.Size = new System.Drawing.Size(1612, 680);
             this.panelTong.TabIndex = 3;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.AutoSize = false;
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(54, 5);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(701, 38);
+            this.guna2HtmlLabel1.TabIndex = 0;
+            this.guna2HtmlLabel1.Text = "Việc làm của bạn !";
             // 
             // UCHomeRe
             // 
@@ -273,7 +260,6 @@
             this.Name = "UCHomeRe";
             this.Size = new System.Drawing.Size(1612, 680);
             this.Load += new System.EventHandler(this.UCHomeRe_Load);
-            this.guna2Panel1.ResumeLayout(false);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             this.panelTong.ResumeLayout(false);
@@ -284,8 +270,6 @@
         #endregion
 
         private System.Windows.Forms.FlowLayoutPanel fpanelJob;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2ComboBox cbTitle;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2Button guna2Button6;
@@ -297,5 +281,6 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Panel panelTong;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
     }
 }

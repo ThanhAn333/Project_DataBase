@@ -54,6 +54,7 @@
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnHisJob = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnPostJob = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_logout = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnMessenge = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -61,7 +62,6 @@
             this.guna2CirclePictureBox4 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnHisJob = new Guna.UI2.WinForms.Guna2GradientButton();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.panelHienThi.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
@@ -399,6 +399,27 @@
             this.guna2Panel9.Size = new System.Drawing.Size(255, 898);
             this.guna2Panel9.TabIndex = 26;
             // 
+            // btnHisJob
+            // 
+            this.btnHisJob.BorderColor = System.Drawing.Color.White;
+            this.btnHisJob.BorderRadius = 5;
+            this.btnHisJob.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHisJob.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHisJob.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHisJob.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHisJob.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHisJob.FillColor = System.Drawing.Color.SteelBlue;
+            this.btnHisJob.FillColor2 = System.Drawing.Color.Transparent;
+            this.btnHisJob.FocusedColor = System.Drawing.Color.DodgerBlue;
+            this.btnHisJob.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnHisJob.ForeColor = System.Drawing.Color.Black;
+            this.btnHisJob.Location = new System.Drawing.Point(70, 350);
+            this.btnHisJob.Name = "btnHisJob";
+            this.btnHisJob.Size = new System.Drawing.Size(180, 100);
+            this.btnHisJob.TabIndex = 26;
+            this.btnHisJob.Text = "Công Việc Đã Đăng";
+            this.btnHisJob.Click += new System.EventHandler(this.guna2GradientButton1_Click);
+            // 
             // btnPostJob
             // 
             this.btnPostJob.BorderColor = System.Drawing.Color.White;
@@ -488,7 +509,7 @@
             // 
             this.guna2CirclePictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox4.Image")));
             this.guna2CirclePictureBox4.ImageRotate = 0F;
-            this.guna2CirclePictureBox4.Location = new System.Drawing.Point(1882, 8);
+            this.guna2CirclePictureBox4.Location = new System.Drawing.Point(1875, 8);
             this.guna2CirclePictureBox4.Name = "guna2CirclePictureBox4";
             this.guna2CirclePictureBox4.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox4.Size = new System.Drawing.Size(64, 64);
@@ -507,9 +528,9 @@
             this.guna2Button2.ForeColor = System.Drawing.Color.Black;
             this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
             this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.guna2Button2.Location = new System.Drawing.Point(1749, 6);
+            this.guna2Button2.Location = new System.Drawing.Point(1655, 6);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(180, 69);
+            this.guna2Button2.Size = new System.Drawing.Size(274, 69);
             this.guna2Button2.TabIndex = 1;
             this.guna2Button2.Text = "Profile";
             // 
@@ -525,27 +546,6 @@
             this.guna2Panel10.Size = new System.Drawing.Size(1942, 78);
             this.guna2Panel10.TabIndex = 25;
             // 
-            // btnHisJob
-            // 
-            this.btnHisJob.BorderColor = System.Drawing.Color.White;
-            this.btnHisJob.BorderRadius = 5;
-            this.btnHisJob.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnHisJob.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnHisJob.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnHisJob.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnHisJob.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnHisJob.FillColor = System.Drawing.Color.SteelBlue;
-            this.btnHisJob.FillColor2 = System.Drawing.Color.Transparent;
-            this.btnHisJob.FocusedColor = System.Drawing.Color.DodgerBlue;
-            this.btnHisJob.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnHisJob.ForeColor = System.Drawing.Color.Black;
-            this.btnHisJob.Location = new System.Drawing.Point(70, 350);
-            this.btnHisJob.Name = "btnHisJob";
-            this.btnHisJob.Size = new System.Drawing.Size(180, 100);
-            this.btnHisJob.TabIndex = 26;
-            this.btnHisJob.Text = "Lịch Sử Đăng";
-            this.btnHisJob.Click += new System.EventHandler(this.guna2GradientButton1_Click);
-            // 
             // HomeRecruiter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -560,6 +560,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "HomeRecruiter";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.HomeRecruiter_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.panelHienThi.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);

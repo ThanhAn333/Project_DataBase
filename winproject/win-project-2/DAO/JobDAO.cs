@@ -121,12 +121,12 @@ namespace win_project_2.DAO
                 command.Parameters.AddWithValue("@Title", job.Title);
                 command.Parameters.AddWithValue("@Description", job.Description);
                 command.Parameters.AddWithValue("@Location", job.Location);
+                command.Parameters.AddWithValue("@SkillRequire", job.SkillRequire);
                 command.Parameters.AddWithValue("@Salary", job.Salary);
                 command.Parameters.AddWithValue("@Type", job.Type);
                 command.Parameters.AddWithValue("@Company", job.Company);
                 command.Parameters.AddWithValue("@Status", job.Status);
-                command.Parameters.AddWithValue("@PostedDate", job.PostedDate);
-
+                command.Parameters.AddWithValue("@EmployerID", job.EmployerID);
                 connection.Open();
                 command.ExecuteNonQuery();
             }

@@ -28,15 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JobDetail));
             this.txt_Type = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lbError_status = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.rbPaused = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.rbOpen = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel18 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.rbClosed = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.guna2HtmlLabel19 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txt_skill = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_salary = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_des = new Guna.UI2.WinForms.Guna2TextBox();
@@ -58,11 +51,9 @@
             this.lbError = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
-            this.btnQuayLai = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.txt_Status = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnQuayLai)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_Type
@@ -83,7 +74,7 @@
             "Freelance"});
             this.txt_Type.Location = new System.Drawing.Point(268, 348);
             this.txt_Type.Name = "txt_Type";
-            this.txt_Type.Size = new System.Drawing.Size(242, 36);
+            this.txt_Type.Size = new System.Drawing.Size(275, 36);
             this.txt_Type.TabIndex = 238;
             // 
             // lbError_status
@@ -92,93 +83,12 @@
             this.lbError_status.BackColor = System.Drawing.Color.Transparent;
             this.lbError_status.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbError_status.ForeColor = System.Drawing.Color.Red;
-            this.lbError_status.Location = new System.Drawing.Point(829, 476);
+            this.lbError_status.Location = new System.Drawing.Point(873, 404);
             this.lbError_status.Name = "lbError_status";
             this.lbError_status.Size = new System.Drawing.Size(181, 34);
             this.lbError_status.TabIndex = 237;
             this.lbError_status.Text = "Vui lòng chọn trạng thái";
             this.lbError_status.Visible = false;
-            // 
-            // rbPaused
-            // 
-            this.rbPaused.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbPaused.CheckedState.BorderThickness = 0;
-            this.rbPaused.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbPaused.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rbPaused.Location = new System.Drawing.Point(872, 440);
-            this.rbPaused.Name = "rbPaused";
-            this.rbPaused.Size = new System.Drawing.Size(22, 25);
-            this.rbPaused.TabIndex = 236;
-            this.rbPaused.Text = "guna2CustomRadioButton6";
-            this.rbPaused.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rbPaused.UncheckedState.BorderThickness = 2;
-            this.rbPaused.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rbPaused.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // rbOpen
-            // 
-            this.rbOpen.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbOpen.CheckedState.BorderThickness = 0;
-            this.rbOpen.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbOpen.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rbOpen.Location = new System.Drawing.Point(872, 350);
-            this.rbOpen.Name = "rbOpen";
-            this.rbOpen.Size = new System.Drawing.Size(22, 25);
-            this.rbOpen.TabIndex = 235;
-            this.rbOpen.Text = "guna2CustomRadioButton7";
-            this.rbOpen.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rbOpen.UncheckedState.BorderThickness = 2;
-            this.rbOpen.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rbOpen.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // guna2HtmlLabel10
-            // 
-            this.guna2HtmlLabel10.AutoSize = false;
-            this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel10.Font = new System.Drawing.Font("Sylfaen", 12F);
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(900, 440);
-            this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
-            this.guna2HtmlLabel10.Size = new System.Drawing.Size(96, 25);
-            this.guna2HtmlLabel10.TabIndex = 234;
-            this.guna2HtmlLabel10.Text = "Paused";
-            // 
-            // guna2HtmlLabel18
-            // 
-            this.guna2HtmlLabel18.AutoSize = false;
-            this.guna2HtmlLabel18.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel18.Font = new System.Drawing.Font("Sylfaen", 12F);
-            this.guna2HtmlLabel18.Location = new System.Drawing.Point(900, 395);
-            this.guna2HtmlLabel18.Name = "guna2HtmlLabel18";
-            this.guna2HtmlLabel18.Size = new System.Drawing.Size(96, 25);
-            this.guna2HtmlLabel18.TabIndex = 233;
-            this.guna2HtmlLabel18.Text = "Closed";
-            // 
-            // rbClosed
-            // 
-            this.rbClosed.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbClosed.CheckedState.BorderThickness = 0;
-            this.rbClosed.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbClosed.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rbClosed.Location = new System.Drawing.Point(872, 395);
-            this.rbClosed.Name = "rbClosed";
-            this.rbClosed.Size = new System.Drawing.Size(22, 25);
-            this.rbClosed.TabIndex = 232;
-            this.rbClosed.Text = "guna2CustomRadioButton2";
-            this.rbClosed.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rbClosed.UncheckedState.BorderThickness = 2;
-            this.rbClosed.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rbClosed.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // guna2HtmlLabel19
-            // 
-            this.guna2HtmlLabel19.AutoSize = false;
-            this.guna2HtmlLabel19.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel19.Font = new System.Drawing.Font("Sylfaen", 12F);
-            this.guna2HtmlLabel19.Location = new System.Drawing.Point(900, 350);
-            this.guna2HtmlLabel19.Name = "guna2HtmlLabel19";
-            this.guna2HtmlLabel19.Size = new System.Drawing.Size(88, 25);
-            this.guna2HtmlLabel19.TabIndex = 231;
-            this.guna2HtmlLabel19.Text = "Open";
             // 
             // txt_skill
             // 
@@ -198,7 +108,7 @@
             this.txt_skill.PasswordChar = '\0';
             this.txt_skill.PlaceholderText = "";
             this.txt_skill.SelectedText = "";
-            this.txt_skill.Size = new System.Drawing.Size(242, 40);
+            this.txt_skill.Size = new System.Drawing.Size(275, 40);
             this.txt_skill.TabIndex = 230;
             // 
             // txt_salary
@@ -219,7 +129,7 @@
             this.txt_salary.PasswordChar = '\0';
             this.txt_salary.PlaceholderText = "";
             this.txt_salary.SelectedText = "";
-            this.txt_salary.Size = new System.Drawing.Size(242, 40);
+            this.txt_salary.Size = new System.Drawing.Size(275, 40);
             this.txt_salary.TabIndex = 229;
             // 
             // txt_des
@@ -234,7 +144,7 @@
             this.txt_des.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_des.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txt_des.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_des.Location = new System.Drawing.Point(268, 616);
+            this.txt_des.Location = new System.Drawing.Point(281, 479);
             this.txt_des.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_des.Name = "txt_des";
             this.txt_des.PasswordChar = '\0';
@@ -261,7 +171,7 @@
             this.txt_locaton.PasswordChar = '\0';
             this.txt_locaton.PlaceholderText = "";
             this.txt_locaton.SelectedText = "";
-            this.txt_locaton.Size = new System.Drawing.Size(242, 40);
+            this.txt_locaton.Size = new System.Drawing.Size(275, 40);
             this.txt_locaton.TabIndex = 227;
             // 
             // guna2HtmlLabel3
@@ -293,7 +203,7 @@
             this.txt_title.PasswordChar = '\0';
             this.txt_title.PlaceholderText = "";
             this.txt_title.SelectedText = "";
-            this.txt_title.Size = new System.Drawing.Size(242, 40);
+            this.txt_title.Size = new System.Drawing.Size(275, 40);
             this.txt_title.TabIndex = 224;
             // 
             // txt_company
@@ -314,7 +224,7 @@
             this.txt_company.PasswordChar = '\0';
             this.txt_company.PlaceholderText = "";
             this.txt_company.SelectedText = "";
-            this.txt_company.Size = new System.Drawing.Size(242, 40);
+            this.txt_company.Size = new System.Drawing.Size(275, 40);
             this.txt_company.TabIndex = 226;
             // 
             // guna2HtmlLabel11
@@ -333,7 +243,7 @@
             this.guna2HtmlLabel9.AutoSize = false;
             this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel9.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(101, 606);
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(114, 469);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
             this.guna2HtmlLabel9.Size = new System.Drawing.Size(134, 40);
             this.guna2HtmlLabel9.TabIndex = 222;
@@ -350,7 +260,7 @@
             this.dtPostday.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtPostday.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtPostday.Name = "dtPostday";
-            this.dtPostday.Size = new System.Drawing.Size(242, 36);
+            this.dtPostday.Size = new System.Drawing.Size(275, 40);
             this.dtPostday.TabIndex = 221;
             this.dtPostday.Value = new System.DateTime(2024, 10, 18, 22, 4, 54, 455);
             // 
@@ -364,9 +274,9 @@
             this.btn_Update.FillColor = System.Drawing.Color.Gray;
             this.btn_Update.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Update.ForeColor = System.Drawing.Color.White;
-            this.btn_Update.Location = new System.Drawing.Point(268, 774);
+            this.btn_Update.Location = new System.Drawing.Point(281, 637);
             this.btn_Update.Name = "btn_Update";
-            this.btn_Update.Size = new System.Drawing.Size(180, 45);
+            this.btn_Update.Size = new System.Drawing.Size(242, 45);
             this.btn_Update.TabIndex = 220;
             this.btn_Update.Text = "Sửa Công Việc";
             this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
@@ -464,7 +374,6 @@
             // guna2Panel1
             // 
             this.guna2Panel1.Controls.Add(this.btnExit);
-            this.guna2Panel1.Controls.Add(this.btnQuayLai);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel1.CustomBorderColor = System.Drawing.Color.Black;
             this.guna2Panel1.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 2);
@@ -491,19 +400,6 @@
             this.btnExit.Text = "X";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // btnQuayLai
-            // 
-            this.btnQuayLai.BackColor = System.Drawing.Color.Transparent;
-            this.btnQuayLai.FillColor = System.Drawing.Color.Transparent;
-            this.btnQuayLai.Image = ((System.Drawing.Image)(resources.GetObject("btnQuayLai.Image")));
-            this.btnQuayLai.ImageRotate = 0F;
-            this.btnQuayLai.Location = new System.Drawing.Point(3, 12);
-            this.btnQuayLai.Name = "btnQuayLai";
-            this.btnQuayLai.Size = new System.Drawing.Size(59, 46);
-            this.btnQuayLai.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnQuayLai.TabIndex = 1;
-            this.btnQuayLai.TabStop = false;
-            // 
             // btnDelete
             // 
             this.btnDelete.BorderRadius = 5;
@@ -514,9 +410,9 @@
             this.btnDelete.FillColor = System.Drawing.Color.Gray;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(922, 774);
+            this.btnDelete.Location = new System.Drawing.Point(873, 637);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(180, 45);
+            this.btnDelete.Size = new System.Drawing.Size(242, 45);
             this.btnDelete.TabIndex = 239;
             this.btnDelete.Text = "Xóa Công Việc";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -534,10 +430,10 @@
             this.txt_Status.Items.AddRange(new object[] {
             "Open",
             "Closed",
-            "Páued"});
-            this.txt_Status.Location = new System.Drawing.Point(953, 339);
+            "Paused"});
+            this.txt_Status.Location = new System.Drawing.Point(873, 348);
             this.txt_Status.Name = "txt_Status";
-            this.txt_Status.Size = new System.Drawing.Size(242, 36);
+            this.txt_Status.Size = new System.Drawing.Size(275, 36);
             this.txt_Status.TabIndex = 240;
             // 
             // JobDetail
@@ -549,12 +445,6 @@
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.txt_Type);
             this.Controls.Add(this.lbError_status);
-            this.Controls.Add(this.rbPaused);
-            this.Controls.Add(this.rbOpen);
-            this.Controls.Add(this.guna2HtmlLabel10);
-            this.Controls.Add(this.guna2HtmlLabel18);
-            this.Controls.Add(this.rbClosed);
-            this.Controls.Add(this.guna2HtmlLabel19);
             this.Controls.Add(this.txt_skill);
             this.Controls.Add(this.txt_salary);
             this.Controls.Add(this.txt_des);
@@ -578,7 +468,6 @@
             this.Text = "JobDetail";
             this.Load += new System.EventHandler(this.JobDetail_Load);
             this.guna2Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnQuayLai)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -587,12 +476,6 @@
 
         private Guna.UI2.WinForms.Guna2ComboBox txt_Type;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbError_status;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton rbPaused;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton rbOpen;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel18;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton rbClosed;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel19;
         private Guna.UI2.WinForms.Guna2TextBox txt_skill;
         private Guna.UI2.WinForms.Guna2TextBox txt_salary;
         private Guna.UI2.WinForms.Guna2TextBox txt_des;
@@ -613,7 +496,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel13;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbError;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2PictureBox btnQuayLai;
         private Guna.UI2.WinForms.Guna2Button btnDelete;
         private Guna.UI2.WinForms.Guna2Button btnExit;
         private Guna.UI2.WinForms.Guna2ComboBox txt_Status;
