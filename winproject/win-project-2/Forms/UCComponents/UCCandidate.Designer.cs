@@ -58,7 +58,6 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(220, 282);
             this.guna2Panel1.TabIndex = 0;
-            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // btnDetail
             // 
@@ -70,12 +69,12 @@
             this.btnDetail.FillColor = System.Drawing.Color.SteelBlue;
             this.btnDetail.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnDetail.ForeColor = System.Drawing.Color.White;
-            this.btnDetail.Location = new System.Drawing.Point(85, 246);
+            this.btnDetail.Location = new System.Drawing.Point(38, 245);
             this.btnDetail.Name = "btnDetail";
-            this.btnDetail.Size = new System.Drawing.Size(126, 33);
+            this.btnDetail.Size = new System.Drawing.Size(150, 33);
             this.btnDetail.TabIndex = 7;
             this.btnDetail.Text = "Xem chi tiết";
-            
+            this.btnDetail.Click += new System.EventHandler(this.btnDetail_Click);
             // 
             // lbldate
             // 
@@ -143,6 +142,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.Name = "UCCandidate";
             this.Size = new System.Drawing.Size(220, 282);
+            this.Load += new System.EventHandler(this.UCCandidate_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();

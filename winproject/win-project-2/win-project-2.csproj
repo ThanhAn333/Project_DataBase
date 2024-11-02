@@ -416,6 +416,12 @@
     <Compile Include="Forms\Recruiter\FormApplicationCandidate.Designer.cs">
       <DependentUpon>FormApplicationCandidate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Recruiter\FormInfoCandidate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Recruiter\FormInfoCandidate.Designer.cs">
+      <DependentUpon>FormInfoCandidate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Recruiter\HomeRecruiter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -509,12 +515,6 @@
     <Compile Include="Forms\Recruiter\FRating.Designer.cs">
       <DependentUpon>FRating.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UCComponents\ThoDetail.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\UCComponents\ThoDetail.Designer.cs">
-      <DependentUpon>ThoDetail.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\UCComponents\FUserInfor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -592,6 +592,9 @@
     <EmbeddedResource Include="Forms\Recruiter\FormApplicationCandidate.resx">
       <DependentUpon>FormApplicationCandidate.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Recruiter\FormInfoCandidate.resx">
+      <DependentUpon>FormInfoCandidate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Recruiter\FRating.resx">
       <DependentUpon>FRating.cs</DependentUpon>
     </EmbeddedResource>
@@ -624,9 +627,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Recruiter\UC\UC_HisJob.resx">
       <DependentUpon>UC_HisJob.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UCComponents\ThoDetail.resx">
-      <DependentUpon>ThoDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UCComponents\FUserInfor.resx">
       <DependentUpon>FUserInfor.cs</DependentUpon>

@@ -68,15 +68,16 @@
             this.txb_Email = new Guna.UI2.WinForms.Guna2TextBox();
             this.txb_SDT = new Guna.UI2.WinForms.Guna2TextBox();
             this.txb_Name = new Guna.UI2.WinForms.Guna2TextBox();
-            this.avatar_box = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btn_Luu = new Guna.UI2.WinForms.Guna2Button();
             this.dtBirthday = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txb_skill_descript = new Guna.UI2.WinForms.Guna2TextBox();
             this.dgSkill = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btnLuu = new Guna.UI2.WinForms.Guna2Button();
             this.Level = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.avatar_box)).BeginInit();
+            this.btnclose = new Guna.UI2.WinForms.Guna2Button();
+            this.avatar_box = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgSkill)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avatar_box)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_Profie
@@ -564,19 +565,6 @@
             this.txb_Name.Size = new System.Drawing.Size(456, 37);
             this.txb_Name.TabIndex = 3;
             // 
-            // avatar_box
-            // 
-            this.avatar_box.Image = global::win_project_2.Properties.Resources.avatar_trang_4;
-            this.avatar_box.ImageRotate = 0F;
-            this.avatar_box.Location = new System.Drawing.Point(144, 316);
-            this.avatar_box.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.avatar_box.Name = "avatar_box";
-            this.avatar_box.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.avatar_box.Size = new System.Drawing.Size(141, 142);
-            this.avatar_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.avatar_box.TabIndex = 1;
-            this.avatar_box.TabStop = false;
-            // 
             // btn_Luu
             // 
             this.btn_Luu.Animated = true;
@@ -729,12 +717,40 @@
             this.Level.Size = new System.Drawing.Size(407, 24);
             this.Level.TabIndex = 29;
             // 
+            // btnclose
+            // 
+            this.btnclose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnclose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnclose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnclose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnclose.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnclose.ForeColor = System.Drawing.Color.White;
+            this.btnclose.Location = new System.Drawing.Point(1491, -2);
+            this.btnclose.Name = "btnclose";
+            this.btnclose.Size = new System.Drawing.Size(56, 45);
+            this.btnclose.TabIndex = 30;
+            this.btnclose.Text = "X";
+            // 
+            // avatar_box
+            // 
+            this.avatar_box.Image = global::win_project_2.Properties.Resources.avatar_trang_4;
+            this.avatar_box.ImageRotate = 0F;
+            this.avatar_box.Location = new System.Drawing.Point(144, 316);
+            this.avatar_box.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.avatar_box.Name = "avatar_box";
+            this.avatar_box.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.avatar_box.Size = new System.Drawing.Size(141, 142);
+            this.avatar_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.avatar_box.TabIndex = 1;
+            this.avatar_box.TabStop = false;
+            // 
             // FUserInfor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1545, 954);
+            this.Controls.Add(this.btnclose);
             this.Controls.Add(this.Level);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.dgSkill);
@@ -780,8 +796,8 @@
             this.Name = "FUserInfor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FThoInfor";
-            ((System.ComponentModel.ISupportInitialize)(this.avatar_box)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgSkill)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.avatar_box)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -833,5 +849,6 @@
         private Guna.UI2.WinForms.Guna2DataGridView dgSkill;
         private Guna.UI2.WinForms.Guna2Button btnLuu;
         private System.Windows.Forms.ComboBox Level;
+        private Guna.UI2.WinForms.Guna2Button btnclose;
     }
 }

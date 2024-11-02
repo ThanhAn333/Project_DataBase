@@ -36,14 +36,15 @@ namespace win_project_2.Forms.Recruiter
             DataTable dt = application.DoDuLieuCandidateApplication(getJobID());
             foreach (DataRow row in dt.Rows)
             {
+                
                 UCCandidate uCCandidate = new UCCandidate();
-
+                int userid = (int)row["UserID"];
                 string name = row["CandidateName"].ToString();
                 string email = row["CandidateEmail"].ToString();
                 string date = row["ApplicationDate"].ToString();
 
-
-                uCCandidate.themThongTin(name, email, date);
+                
+                uCCandidate.themThongTin(userid, name, email, date);
                 panelHienThi.Controls.Add(uCCandidate);
                 uCCandidate.BringToFront();
             }

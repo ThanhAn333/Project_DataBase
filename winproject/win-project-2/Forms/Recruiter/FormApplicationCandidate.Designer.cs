@@ -73,6 +73,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormApplicationCandidate";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormApplicationCandidate";
             this.Load += new System.EventHandler(this.FormApplicationCandidate_Load);
             this.guna2Panel1.ResumeLayout(false);

@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Windows.Forms;
 using win_project_2.SQLConn;
 using win_project_2.Models;
+using System.Security.Cryptography;
 
 namespace win_project_2.DAO
 {
@@ -250,6 +251,24 @@ namespace win_project_2.DAO
             }
             return dt;
         }
+        public DataTable doDuLieuThongTinNguoidung(int userid)
+        {
+            DataTable dataTable = new DataTable();
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                string sql = "SELECT * FROM vw_InfoUser where @UserID = UserID";
 
+                using (SqlCommand cmd = new SqlCommand(sql, connection))
+                {
+                    cmd.Parameters.AddWithValue("UserID",userid);
+
+                    using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                    {
+                        da.Fill(dataTable);
+                    }
+                }
+            }
+            return dataTable;
+        }
     }
 }
