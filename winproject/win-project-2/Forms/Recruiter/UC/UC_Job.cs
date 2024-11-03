@@ -14,7 +14,7 @@ namespace win_project_2.Forms.Recruiter.UC
 {
     public partial class UC_Job : UserControl
     {
-        private int jobid;
+        public  int jobid;
         public UC_Job()
         {
             InitializeComponent();
@@ -67,6 +67,8 @@ namespace win_project_2.Forms.Recruiter.UC
         }
         public void SetData(DataRow row)
         {
+
+            jobid = Convert.ToInt32(row["JobID"]);
             lblNameJob.Text = row["Title"].ToString();    // Tên cột trong DataTable
             lblSalary.Text = row["Salary"].ToString();
             lblLocation.Text = row["Location"].ToString();

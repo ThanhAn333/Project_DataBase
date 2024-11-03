@@ -146,6 +146,19 @@ namespace win_project_2.DAO
             }
         }
 
+        public void DeleteJob1(int jobId)
+        {
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                SqlCommand command = new SqlCommand("sp_DeleteJob1", connection);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@JobID", jobId);
+
+                connection.Open();
+                command.ExecuteNonQuery();
+            }
+        }
+
         // Tìm kiếm công việc
         public DataTable TimKiemJob(string timKiem)
         {
