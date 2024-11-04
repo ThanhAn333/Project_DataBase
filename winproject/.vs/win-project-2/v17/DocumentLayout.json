@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\PROJECT_MOI\\Project_DataBase\\winproject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\PROJECT_MOI\\Project_DataBase\\winproject\\win-project-2\\forms\\recruiter\\forminfocandidate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|d:\\nam3\\h\u1EC7 qt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\project\\project_moi\\project_database\\winproject\\win-project-2\\forms\\recruiter\\forminfocandidate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\recruiter\\forminfocandidate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|d:\\nam3\\h\u1EC7 qt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\project\\project_moi\\project_database\\winproject\\win-project-2\\dao\\applicationdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\PROJECT_MOI\\Project_DataBase\\winproject\\win-project-2\\dao\\applicationdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\dao\\applicationdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -188,7 +188,7 @@
               "RelativeDocumentMoniker": "win-project-2\\Forms\\Recruiter\\FormInfoCandidate.cs",
               "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\PROJECT_MOI\\Project_DataBase\\winproject\\win-project-2\\Forms\\Recruiter\\FormInfoCandidate.cs",
               "RelativeToolTip": "win-project-2\\Forms\\Recruiter\\FormInfoCandidate.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAwwEsAAACMAAAA",
+              "ViewState": "AQIAAEgAAAAAAAAAAADwv0sAAACMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-02T14:06:55.925Z",
               "EditorCaption": ""
@@ -203,8 +203,7 @@
               "RelativeToolTip": "win-project-2\\DAO\\ApplicationDAO.cs",
               "ViewState": "AQIAAIkAAAAAAAAAAAAQwI8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T14:21:42.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T14:21:42.87Z"
             },
             {
               "$type": "Document",
@@ -214,9 +213,8 @@
               "RelativeDocumentMoniker": "win-project-2\\Forms\\Recruiter\\HomeRecruiter.cs",
               "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\PROJECT_MOI\\Project_DataBase\\winproject\\win-project-2\\Forms\\Recruiter\\HomeRecruiter.cs [Design]",
               "RelativeToolTip": "win-project-2\\Forms\\Recruiter\\HomeRecruiter.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T14:14:25.689Z",
-              "EditorCaption": " [Design]"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-11-02T14:14:25.689Z"
             },
             {
               "$type": "Document",
@@ -227,9 +225,8 @@
               "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\PROJECT_MOI\\Project_DataBase\\winproject\\win-project-2\\Forms\\UCComponents\\UCCandidate.cs",
               "RelativeToolTip": "win-project-2\\Forms\\UCComponents\\UCCandidate.cs",
               "ViewState": "AQIAACYAAAAAAAAAAIAxwD0AAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T08:18:28.723Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003302|",
+              "WhenOpened": "2024-11-01T08:18:28.723Z"
             },
             {
               "$type": "Document",
@@ -240,9 +237,8 @@
               "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\PROJECT_MOI\\Project_DataBase\\winproject\\win-project-2\\Forms\\Recruiter\\FormApplicationCandidate.cs",
               "RelativeToolTip": "win-project-2\\Forms\\Recruiter\\FormApplicationCandidate.cs",
               "ViewState": "AQIAABwAAAAAAAAAAAAEwDAAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T08:29:28.987Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-11-01T08:29:28.987Z"
             },
             {
               "$type": "Document",
@@ -254,8 +250,7 @@
               "RelativeToolTip": "win-project-2\\DAO\\UserDAO.cs",
               "ViewState": "AQIAAOcAAAAAAAAAAAAmwAIBAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T14:25:40.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T14:25:40.748Z"
             },
             {
               "$type": "Document",
@@ -265,9 +260,8 @@
               "RelativeDocumentMoniker": "win-project-2\\Forms\\Recruiter\\FormApplicationCandidate.cs",
               "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\PROJECT_MOI\\Project_DataBase\\winproject\\win-project-2\\Forms\\Recruiter\\FormApplicationCandidate.cs [Design]",
               "RelativeToolTip": "win-project-2\\Forms\\Recruiter\\FormApplicationCandidate.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T08:25:05.108Z",
-              "EditorCaption": " [Design]"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-11-01T08:25:05.108Z"
             },
             {
               "$type": "Document",
@@ -277,9 +271,8 @@
               "RelativeDocumentMoniker": "win-project-2\\Forms\\Recruiter\\FormInfoCandidate.cs",
               "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\PROJECT_MOI\\Project_DataBase\\winproject\\win-project-2\\Forms\\Recruiter\\FormInfoCandidate.cs [Design]",
               "RelativeToolTip": "win-project-2\\Forms\\Recruiter\\FormInfoCandidate.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T13:56:35.179Z",
-              "EditorCaption": " [Design]"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-11-02T13:56:35.179Z"
             },
             {
               "$type": "Document",
@@ -289,9 +282,8 @@
               "RelativeDocumentMoniker": "win-project-2\\Forms\\UCComponents\\UCCandidate.cs",
               "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\PROJECT_MOI\\Project_DataBase\\winproject\\win-project-2\\Forms\\UCComponents\\UCCandidate.cs [Design]",
               "RelativeToolTip": "win-project-2\\Forms\\UCComponents\\UCCandidate.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T08:07:01.943Z",
-              "EditorCaption": " [Design]"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003302|",
+              "WhenOpened": "2024-11-01T08:07:01.943Z"
             },
             {
               "$type": "Document",
@@ -336,9 +328,8 @@
               "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\PROJECT_MOI\\Project_DataBase\\winproject\\win-project-2\\Forms\\Recruiter\\FormInfoCandidate.Designer.cs",
               "RelativeToolTip": "win-project-2\\Forms\\Recruiter\\FormInfoCandidate.Designer.cs",
               "ViewState": "AQIAAGoCAAAAAAAAAAAAAHsCAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T00:56:57.117Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001384|",
+              "WhenOpened": "2024-11-04T00:56:57.117Z"
             },
             {
               "$type": "Document",
@@ -383,9 +374,8 @@
               "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\PROJECT_MOI\\Project_DataBase\\winproject\\win-project-2\\Forms\\UCComponents\\UCCandidate.Designer.cs",
               "RelativeToolTip": "win-project-2\\Forms\\UCComponents\\UCCandidate.Designer.cs",
               "ViewState": "AQIAACkAAAAAAAAAAAAAADsAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T08:21:36.508Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001384|",
+              "WhenOpened": "2024-11-01T08:21:36.508Z"
             },
             {
               "$type": "Document",
@@ -507,9 +497,8 @@
               "ToolTip": "D:\\Nam3\\H\u1EC7 QT C\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Project\\PROJECT_MOI\\Project_DataBase\\winproject\\win-project-2\\Forms\\Recruiter\\HomeRecruiter.Designer.cs",
               "RelativeToolTip": "win-project-2\\Forms\\Recruiter\\HomeRecruiter.Designer.cs",
               "ViewState": "AQIAALIBAAAAAAAAAAAWwAcCAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T08:37:48.906Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001384|",
+              "WhenOpened": "2024-11-01T08:37:48.906Z"
             },
             {
               "$type": "Document",

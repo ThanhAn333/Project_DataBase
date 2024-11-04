@@ -428,5 +428,10 @@ namespace win_project_2.UserControls
                 MessageBox.Show("Dữ liệu đã được xuất thành công!");
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

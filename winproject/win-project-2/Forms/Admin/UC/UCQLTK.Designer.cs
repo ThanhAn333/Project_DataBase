@@ -53,6 +53,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_avatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -394,18 +395,18 @@
             // 
             // tbtimkiem
             // 
-            this.tbtimkiem.Location = new System.Drawing.Point(863, 495);
+            this.tbtimkiem.Location = new System.Drawing.Point(882, 622);
             this.tbtimkiem.Name = "tbtimkiem";
-            this.tbtimkiem.Size = new System.Drawing.Size(100, 26);
+            this.tbtimkiem.Size = new System.Drawing.Size(127, 26);
             this.tbtimkiem.TabIndex = 55;
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(806, 580);
+            this.label1.Location = new System.Drawing.Point(779, 535);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(216, 23);
             this.label1.TabIndex = 57;
-            this.label1.Text = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // guna2Button2
             // 
@@ -416,12 +417,12 @@
             this.guna2Button2.FillColor = System.Drawing.Color.Indigo;
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(1129, 486);
+            this.guna2Button2.Location = new System.Drawing.Point(783, 475);
             this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(135, 35);
             this.guna2Button2.TabIndex = 58;
-            this.guna2Button2.Text = "export";
+            this.guna2Button2.Text = "In file CVS";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Button3
@@ -433,18 +434,30 @@
             this.guna2Button3.FillColor = System.Drawing.Color.Indigo;
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(1129, 551);
+            this.guna2Button3.Location = new System.Drawing.Point(963, 475);
             this.guna2Button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(135, 35);
             this.guna2Button3.TabIndex = 59;
-            this.guna2Button3.Text = "excel";
+            this.guna2Button3.Text = "In file excel";
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.ForeColor = System.Drawing.Color.Indigo;
+            this.label2.Location = new System.Drawing.Point(878, 573);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(198, 26);
+            this.label2.TabIndex = 60;
+            this.label2.Text = "Nhập ID:";
             // 
             // UCQLTK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.label1);
@@ -507,5 +520,6 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private System.Windows.Forms.Label label2;
     }
 }
