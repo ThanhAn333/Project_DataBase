@@ -251,17 +251,21 @@ namespace win_project_2.DAO
             }
             return dt;
         }
-        public DataTable doDuLieuThongTinNguoidung(int userid)
+        public DataTable doDuLieuThongTinNguoidung(int userId, int jobId)
         {
             DataTable dataTable = new DataTable();
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string sql = "SELECT * FROM vw_InfoUser where @UserID = UserID";
+                
+                string sql = "SELECT * FROM vw_CandidateApplicationsByJob WHERE UserID = @UserID AND JobID = @JobID";
 
                 using (SqlCommand cmd = new SqlCommand(sql, connection))
                 {
-                    cmd.Parameters.AddWithValue("UserID",userid);
+                    // Thêm các tham số cho UserID và JobID
+                    cmd.Parameters.AddWithValue("@UserID", userId);
+                    cmd.Parameters.AddWithValue("@JobID", jobId);
 
+                    // Dùng SqlDataAdapter để điền dữ liệu vào DataTable
                     using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                     {
                         da.Fill(dataTable);
@@ -270,5 +274,6 @@ namespace win_project_2.DAO
             }
             return dataTable;
         }
+
     }
 }

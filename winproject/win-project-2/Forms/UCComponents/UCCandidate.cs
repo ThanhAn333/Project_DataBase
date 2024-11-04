@@ -14,12 +14,14 @@ namespace win_project_2.Forms.Recruiter.UC
     public partial class UCCandidate : UserControl
     {
         private int userID;
+        private int jobID;
         public UCCandidate()
         {
             InitializeComponent();
         }
-        public void themThongTin(int userid, string name, string email, string date)
+        public void themThongTin(int jobid, int userid, string name, string email, string date)
         {
+            jobID = jobid;
             userID = userid;
             lblname.Text = name;
             lblemail.Text = email;
@@ -30,6 +32,10 @@ namespace win_project_2.Forms.Recruiter.UC
             return userID;
         }
 
+        public int getJobID()
+        {
+            return jobID;
+        }
         private void UCCandidate_Load(object sender, EventArgs e)
         {
            
@@ -39,21 +45,22 @@ namespace win_project_2.Forms.Recruiter.UC
         {
             UserDAO userDAO = new UserDAO();
 
-            DataTable dt = userDAO.doDuLieuThongTinNguoidung(getUserID());
+            DataTable dt = userDAO.doDuLieuThongTinNguoidung(getUserID(),getJobID());
             foreach (DataRow row in dt.Rows)
             {
 
                 FormInfoCandidate formInfoCandidate = new FormInfoCandidate();
-
+                int applicationid = (int)row["ApplicationID"];
+                int jobid = (int)row["JobID"];
                 int userid = (int)row["UserID"];
-                string name = row["Name"].ToString();
-                string email = row["Email"].ToString();
+                string name = row["CandidateName"].ToString();
+                string email = row["CandidateEmail"].ToString();
                 string address = row["Address"].ToString();
                 string date = row["DateOfBirth"].ToString();
                 string phone = row["PhoneNumber"].ToString();
 
-                formInfoCandidate.themThongTin(userid, name, date, phone, email, address);
-
+                formInfoCandidate.themThongTin(applicationid,jobid,userid, name, date, phone, email, address);
+               
                 formInfoCandidate.Show();
 
             }

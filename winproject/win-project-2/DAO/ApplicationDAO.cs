@@ -38,42 +38,65 @@ namespace win_project_2.DAO
             }
         }
 
-        // Read
-        public Applications GetApplicationByID(int applicationId)
+        public int? GetApplicationID(int jobId, int userId)
         {
-            Applications application = null;
-
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                SqlCommand command = new SqlCommand("sp_GetApplicationByID", connection);
+                SqlCommand command = new SqlCommand("sp_GetApplicationID", connection);
                 command.CommandType = CommandType.StoredProcedure;
-                command.Parameters.AddWithValue("@ApplicationID", applicationId);
+
+                command.Parameters.AddWithValue("@JobID", jobId);
+                command.Parameters.AddWithValue("@UserID", userId);
+
+                // Thêm tham số đầu ra để nhận ApplicationID
+                SqlParameter outputParam = new SqlParameter("@ApplicationID", SqlDbType.Int)
+                {
+                    Direction = ParameterDirection.Output
+                };
+                command.Parameters.Add(outputParam);
 
                 connection.Open();
-                SqlDataReader reader = command.ExecuteReader();
 
-                if (reader.Read())
+                try
                 {
-                    UserDAO userDAO = new UserDAO();
-                    JobDAO jobDAO = new JobDAO();
+                    // Thực thi lệnh
+                    command.ExecuteNonQuery();
 
-                    User user = userDAO.GetUserByID((int)reader["UserID"]);
-                    Job job = jobDAO.GetJobByID((int)reader["JobID"]);
-
-                    application = new Applications(
-                        (int)reader["ApplicationID"],
-                        user,
-                        job,
-                        reader["Title"].ToString(),
-                        reader["Status"].ToString(),
-                        (DateTime)reader["ApplicationDate"]
-                    );
+                    // Kiểm tra giá trị của outputParam, nếu không phải DBNull thì trả về ApplicationID
+                    if (outputParam.Value != DBNull.Value)
+                    {
+                        return (int)outputParam.Value;
+                    }
+                    else
+                    {
+                        // Trường hợp không tìm thấy ApplicationID
+                    
+                        return null;
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    // Xử lý ngoại lệ SQL nếu có lỗi
+                    
+                    return null;
                 }
             }
-
-            return application;
         }
 
+
+        public void UpdateApplication(int applicationId, string newstatus)
+        {
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                SqlCommand command = new SqlCommand("sp_UpdateApplicationStatus", connection);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@ApplicationID", applicationId);
+                command.Parameters.AddWithValue("@NewStatus", newstatus);
+
+                connection.Open();
+                command.ExecuteNonQuery();
+            }
+        }
         // Delete
         public void DeleteApplication(int applicationId)
         {
@@ -117,7 +140,23 @@ namespace win_project_2.DAO
             return dataTable;
 
         }
+        public string GetApplicationStatus(int applicationid)
+        {
+            string status = string.Empty;
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                using (SqlCommand command = new SqlCommand("sp_GetApplicationStatus", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@ApplicationID", applicationid);
 
+                    connection.Open(); 
+                    status = command.ExecuteScalar()?.ToString();
+                }
+            }
+            return status;
+
+        }
         public DataTable DoDuLieuCandidateApplication(int jobid)
         {
             DataTable dataTable = new DataTable();
