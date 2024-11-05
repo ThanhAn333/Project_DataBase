@@ -413,7 +413,7 @@
             this.btnHisJob.FocusedColor = System.Drawing.Color.DodgerBlue;
             this.btnHisJob.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.btnHisJob.ForeColor = System.Drawing.Color.Black;
-            this.btnHisJob.Location = new System.Drawing.Point(70, 350);
+            this.btnHisJob.Location = new System.Drawing.Point(72, 311);
             this.btnHisJob.Name = "btnHisJob";
             this.btnHisJob.Size = new System.Drawing.Size(180, 100);
             this.btnHisJob.TabIndex = 26;

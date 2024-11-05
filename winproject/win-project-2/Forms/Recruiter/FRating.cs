@@ -17,29 +17,42 @@ namespace win_project_2.Forms
 {
     public partial class FRating : Form
     {
-        int _user_id;
-        int _job_id;
-        public FRating(int user_id, int job_id)
+        private int candidateID;
+        public FRating()
         {
             InitializeComponent();
-            _user_id = user_id;
-            _job_id = job_id;
+        }
+
+        public void themThongTin(int candidateid)
+        {
+            candidateID = candidateid;
         }
 
         private async void btn_up_Click(object sender, EventArgs e)
         {
-            ReviewDAO reviewDAO = new ReviewDAO();
+            try
+            {
+                ReviewDAO reviewDAO = new ReviewDAO();
 
-            Review review = new Review(
-                userID: _user_id,
-                jobID: _job_id,
-                rating: (int)RatingStar.Value,
-                comment: txb_cmt.Text,
-                reviewDate: DateTime.Now
-               );
+                Review review = new Review(
+                    candidateID,
+                    UserDangNhap.userId,
+                    rating: (int)RatingStar.Value,
+                    comment: txb_cmt.Text,
+                    reviewDate: DateTime.Now
+                );
 
-            // Thêm Review vào cơ sở dữ liệu
-            reviewDAO.AddReview(review);
+                // Thêm Review vào cơ sở dữ liệu
+                reviewDAO.AddReview(review);
+
+                // Hiển thị thông báo thành công và đóng form
+                MessageBox.Show("Thêm đánh giá thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi thêm đánh giá: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

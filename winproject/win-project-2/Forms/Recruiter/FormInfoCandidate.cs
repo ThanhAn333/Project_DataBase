@@ -51,6 +51,8 @@ namespace win_project_2.Forms.Recruiter
         {
             return applicationId;
         }
+
+        ApplicationDAO application = new ApplicationDAO();
         private void FormInfoCandidate_Load(object sender, EventArgs e)
         {
              
@@ -64,12 +66,16 @@ namespace win_project_2.Forms.Recruiter
                 txb_skill_descript.Text = skill.Description;
                 Level.SelectedItem = skill.ProficiencyLevel;
             }
-            
+            ReviewDAO reviewDAO = new ReviewDAO();
+            DataTable dt = reviewDAO.DoDuLieuBangReview(getUserID());
+            dgreview.DataSource = dt;
+
+            lbltrangthai.Text = application.GetApplicationStatus(getApplicationID());
         }
 
         private void btnRecject_Click(object sender, EventArgs e)
         {
-            ApplicationDAO application = new ApplicationDAO();
+           
             string currentStatus = application.GetApplicationStatus(getApplicationID());
             if(currentStatus == "Rejected")
             {
@@ -80,6 +86,32 @@ namespace win_project_2.Forms.Recruiter
             {
                 application.UpdateApplication(getApplicationID(), "Rejected");
                 MessageBox.Show("Trạng thái đã được cập nhật thành công thành 'Rejected'.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                FRating fRating = new FRating();
+                fRating.themThongTin(getUserID());
+                fRating.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Đã xảy ra lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnaccept_Click(object sender, EventArgs e)
+        {
+            ApplicationDAO application = new ApplicationDAO();
+            string currentStatus = application.GetApplicationStatus(getApplicationID());
+            if (currentStatus == "Accepted")
+            {
+                MessageBox.Show("Đơn ứng tuyển này đã được chấp nhận.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            try
+            {
+                application.UpdateApplication(getApplicationID(), "Accepted");
+                MessageBox.Show("Trạng thái đã được cập nhật thành công thành 'Accepted'.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                FRating fRating = new FRating();
+                fRating.themThongTin(getUserID());
+                fRating.Show();
             }
             catch (Exception ex)
             {

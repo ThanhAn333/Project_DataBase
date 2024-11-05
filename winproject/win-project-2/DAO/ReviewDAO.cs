@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using win_project_2.SQLConn;
 using win_project_2.Models;
 using System.Data;
+using System.Security.Cryptography;
 
 namespace win_project_2.DAO
 {
@@ -24,19 +25,40 @@ namespace win_project_2.DAO
         {
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                SqlCommand command = new SqlCommand("sp_AddNewReview", connection);
+                SqlCommand command = new SqlCommand("sp_AddReview", connection);
                 command.CommandType = CommandType.StoredProcedure;
 
-                // Thêm các tham số cho thủ tục lưu trữ
-                command.Parameters.AddWithValue("@UserID", review.UserID);
-                command.Parameters.AddWithValue("@JobID", review.JobID);
+                
+                command.Parameters.AddWithValue("@CandidateID", review.CandidateID);
+                command.Parameters.AddWithValue("@EmployerID", review.EmployerID);
                 command.Parameters.AddWithValue("@Rating", review.Rating);
                 command.Parameters.AddWithValue("@Comment", review.Comment ?? (object)DBNull.Value);
+                
 
-                // Mở kết nối và thực thi thủ tục lưu trữ
+                
                 connection.Open();
                 command.ExecuteNonQuery();
             }
+        }
+
+        public DataTable DoDuLieuBangReview(int userid)
+        {
+            DataTable dataTable = new DataTable();
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                string sql = "SELECT * FROM vw_Review WHERE CandidateID = @CandidateID";
+
+                using (SqlCommand cmd = new SqlCommand(sql, connection))
+                {
+                    cmd.Parameters.AddWithValue("@CandidateID", userid);
+
+                    using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                    {
+                        da.Fill(dataTable);
+                    }
+                }
+            }
+            return dataTable;
         }
     }
 }
