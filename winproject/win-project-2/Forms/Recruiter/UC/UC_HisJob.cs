@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using win_project_2.DAO;
+using win_project_2.Models;
+using win_project_2.Service;
 
 namespace win_project_2.Forms.Recruiter.UC
 {
@@ -18,24 +20,27 @@ namespace win_project_2.Forms.Recruiter.UC
         {
             InitializeComponent();
         }
+        int employerID = UserDangNhap.userId;
         ApplicationDAO application = new ApplicationDAO();
         JobDAO job = new JobDAO();
         public void load()
         {
             fpanelHienThi.Controls.Clear();
-
-            DataTable dt = job.DoDuLieuJob();
-            foreach (DataRow row in dt.Rows)
+            List<Job> jobs = job.GetJobsByEmployer(employerID);
+            foreach (Job job in jobs)
             {
-                Jobmini job = new Jobmini();
-                int jobid = (int)row["JobID"];
-                string title = row["Title"].ToString();
-                string salary = row["Salary"].ToString();
-                string status = row["status"].ToString();
+                Jobmini jobMini = new Jobmini();
 
-                job.themThongTin(jobid, title, salary, status);
-                fpanelHienThi.Controls.Add(job);
-                job.BringToFront();
+                // Lấy thông tin từ đối tượng Job
+                int jobId = job.JobID;
+                string title = job.Title;
+                string salary = job.Salary;
+                string status = job.Status;
+
+                // Thêm thông tin vào Jobmini
+                jobMini.themThongTin(jobId, title, salary, status);
+                fpanelHienThi.Controls.Add(jobMini);
+                jobMini.BringToFront();
             }
         }
 

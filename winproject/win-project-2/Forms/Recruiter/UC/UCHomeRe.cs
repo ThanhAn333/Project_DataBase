@@ -20,7 +20,7 @@ namespace win_project_2.Forms.Recruiter.UC
         {
             InitializeComponent();
         }
-
+        int employerID = UserDangNhap.userId;
         JobDAO jobDao = new JobDAO();
         private DataTable search;
         private void FilterResults(string selectedTitle)
@@ -63,11 +63,22 @@ namespace win_project_2.Forms.Recruiter.UC
                 fpanelJob.Controls.Add(uCJob);
             }
         }
+        public void addJob1(List<Job> jobList)
+        {
+            fpanelJob.Controls.Clear();
+
+            foreach (var job in jobList)
+            {
+                UC_Job uCJob = new UC_Job();
+                uCJob.thongtin(job.JobID, job.Title, job.Salary, job.Location, job.Company);
+                fpanelJob.Controls.Add(uCJob);
+            }
+        }
         public void load()
         {
             fpanelJob.Controls.Clear();
-            DataTable dt = jobDao.DoDuLieuJob();
-            addJob(dt);
+            List<Job> jobList = jobDao.GetJobsByEmployer(employerID);
+            addJob1(jobList);
 
         }
         private void cbTitle_SelectedIndexChanged(object sender, EventArgs e)
