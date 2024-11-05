@@ -58,8 +58,8 @@ namespace win_project_2.Forms.Recruiter.UC
                 string address = row["Address"].ToString();
                 string date = row["DateOfBirth"].ToString();
                 string phone = row["PhoneNumber"].ToString();
-
-                formInfoCandidate.themThongTin(applicationid,jobid,userid, name, date, phone, email, address);
+                decimal rating = (decimal)row["Rating"];
+                formInfoCandidate.themThongTin(applicationid,jobid,userid, name, date, phone, email, address, rating);
                
                 formInfoCandidate.Show();
 

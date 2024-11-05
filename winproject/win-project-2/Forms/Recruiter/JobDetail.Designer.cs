@@ -464,6 +464,7 @@
             this.Controls.Add(this.guna2HtmlLabel13);
             this.Controls.Add(this.lbError);
             this.Controls.Add(this.guna2Panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "JobDetail";
             this.Text = "JobDetail";
             this.Load += new System.EventHandler(this.JobDetail_Load);

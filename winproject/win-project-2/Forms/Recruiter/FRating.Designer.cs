@@ -135,6 +135,7 @@
             this.Controls.Add(this.txb_cmt);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.guna2Panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FRating";
             this.Text = "FRating";

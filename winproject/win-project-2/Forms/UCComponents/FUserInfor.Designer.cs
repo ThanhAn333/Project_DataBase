@@ -47,20 +47,14 @@
             this.guna2Shapes2 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2Shapes3 = new Guna.UI2.WinForms.Guna2Shapes();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.guna2Shapes4 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2Shapes5 = new Guna.UI2.WinForms.Guna2Shapes();
-            this.guna2RatingStar1 = new Guna.UI2.WinForms.Guna2RatingStar();
-            this.lb_DoneJob = new System.Windows.Forms.Label();
-            this.lb_FavTho = new System.Windows.Forms.Label();
+            this.rating = new Guna.UI2.WinForms.Guna2RatingStar();
             this.guna2Shapes6 = new Guna.UI2.WinForms.Guna2Shapes();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.guna2Shapes7 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.btn_upload_avatar = new Guna.UI2.WinForms.Guna2Button();
@@ -71,13 +65,18 @@
             this.btn_Luu = new Guna.UI2.WinForms.Guna2Button();
             this.dtBirthday = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txb_skill_descript = new Guna.UI2.WinForms.Guna2TextBox();
-            this.dgSkill = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btnLuu = new Guna.UI2.WinForms.Guna2Button();
             this.Level = new System.Windows.Forms.ComboBox();
             this.btnclose = new Guna.UI2.WinForms.Guna2Button();
             this.avatar_box = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgSkill)).BeginInit();
+            this.dgreview = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.ReviewID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Comment = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ReviewDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.avatar_box)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgreview)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_Profie
@@ -239,16 +238,6 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "Địa chỉ Email";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label7.Location = new System.Drawing.Point(276, 630);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(191, 18);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Số công việc đã hoàn thành";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -258,16 +247,6 @@
             this.label8.Size = new System.Drawing.Size(66, 18);
             this.label8.TabIndex = 12;
             this.label8.Text = "Đánh giá";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label9.Location = new System.Drawing.Point(60, 630);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(85, 18);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "Bậc kĩ năng";
             // 
             // guna2Shapes4
             // 
@@ -305,36 +284,16 @@
             this.guna2Shapes5.Text = "guna2Shapes4";
             this.guna2Shapes5.Zoom = 80;
             // 
-            // guna2RatingStar1
+            // rating
             // 
-            this.guna2RatingStar1.BorderColor = System.Drawing.Color.Black;
-            this.guna2RatingStar1.BorderThickness = 1;
-            this.guna2RatingStar1.Location = new System.Drawing.Point(179, 596);
-            this.guna2RatingStar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2RatingStar1.Name = "guna2RatingStar1";
-            this.guna2RatingStar1.RatingColor = System.Drawing.Color.Yellow;
-            this.guna2RatingStar1.Size = new System.Drawing.Size(75, 22);
-            this.guna2RatingStar1.TabIndex = 14;
-            // 
-            // lb_DoneJob
-            // 
-            this.lb_DoneJob.AutoSize = true;
-            this.lb_DoneJob.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lb_DoneJob.Location = new System.Drawing.Point(91, 594);
-            this.lb_DoneJob.Name = "lb_DoneJob";
-            this.lb_DoneJob.Size = new System.Drawing.Size(23, 25);
-            this.lb_DoneJob.TabIndex = 4;
-            this.lb_DoneJob.Text = "0";
-            // 
-            // lb_FavTho
-            // 
-            this.lb_FavTho.AutoSize = true;
-            this.lb_FavTho.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lb_FavTho.Location = new System.Drawing.Point(339, 590);
-            this.lb_FavTho.Name = "lb_FavTho";
-            this.lb_FavTho.Size = new System.Drawing.Size(23, 25);
-            this.lb_FavTho.TabIndex = 4;
-            this.lb_FavTho.Text = "0";
+            this.rating.BorderColor = System.Drawing.Color.Black;
+            this.rating.BorderThickness = 1;
+            this.rating.Location = new System.Drawing.Point(179, 596);
+            this.rating.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rating.Name = "rating";
+            this.rating.RatingColor = System.Drawing.Color.Yellow;
+            this.rating.Size = new System.Drawing.Size(75, 22);
+            this.rating.TabIndex = 14;
             // 
             // guna2Shapes6
             // 
@@ -384,28 +343,6 @@
             this.label12.Size = new System.Drawing.Size(68, 22);
             this.label12.TabIndex = 20;
             this.label12.Text = "Profile";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label13.Location = new System.Drawing.Point(136, 34);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(111, 22);
-            this.label13.TabIndex = 20;
-            this.label13.Text = "Notification";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label14.Location = new System.Drawing.Point(275, 34);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(76, 22);
-            this.label14.TabIndex = 20;
-            this.label14.Text = "Privacy";
             // 
             // guna2Shapes7
             // 
@@ -628,60 +565,6 @@
             this.txb_skill_descript.Size = new System.Drawing.Size(405, 152);
             this.txb_skill_descript.TabIndex = 25;
             // 
-            // dgSkill
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgSkill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgSkill.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgSkill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgSkill.ColumnHeadersHeight = 4;
-            this.dgSkill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgSkill.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgSkill.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgSkill.Location = new System.Drawing.Point(512, 629);
-            this.dgSkill.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dgSkill.Name = "dgSkill";
-            this.dgSkill.RowHeadersVisible = false;
-            this.dgSkill.RowHeadersWidth = 51;
-            this.dgSkill.RowTemplate.Height = 24;
-            this.dgSkill.Size = new System.Drawing.Size(951, 252);
-            this.dgSkill.TabIndex = 26;
-            this.dgSkill.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgSkill.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgSkill.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgSkill.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgSkill.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgSkill.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgSkill.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgSkill.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dgSkill.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgSkill.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgSkill.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgSkill.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgSkill.ThemeStyle.HeaderStyle.Height = 4;
-            this.dgSkill.ThemeStyle.ReadOnly = false;
-            this.dgSkill.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgSkill.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgSkill.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgSkill.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgSkill.ThemeStyle.RowsStyle.Height = 24;
-            this.dgSkill.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgSkill.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
             // btnLuu
             // 
             this.btnLuu.Animated = true;
@@ -730,6 +613,7 @@
             this.btnclose.Size = new System.Drawing.Size(56, 45);
             this.btnclose.TabIndex = 30;
             this.btnclose.Text = "X";
+            this.btnclose.Click += new System.EventHandler(this.btnclose_Click_1);
             // 
             // avatar_box
             // 
@@ -744,40 +628,129 @@
             this.avatar_box.TabIndex = 1;
             this.avatar_box.TabStop = false;
             // 
+            // dgreview
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgreview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgreview.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgreview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgreview.ColumnHeadersHeight = 4;
+            this.dgreview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgreview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ReviewID,
+            this.Name,
+            this.dataGridViewTextBoxColumn1,
+            this.Comment,
+            this.ReviewDate});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgreview.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgreview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgreview.Location = new System.Drawing.Point(512, 647);
+            this.dgreview.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgreview.Name = "dgreview";
+            this.dgreview.RowHeadersVisible = false;
+            this.dgreview.RowHeadersWidth = 51;
+            this.dgreview.RowTemplate.Height = 24;
+            this.dgreview.Size = new System.Drawing.Size(1008, 234);
+            this.dgreview.TabIndex = 69;
+            this.dgreview.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgreview.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgreview.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgreview.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgreview.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgreview.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgreview.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgreview.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dgreview.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgreview.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgreview.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgreview.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgreview.ThemeStyle.HeaderStyle.Height = 4;
+            this.dgreview.ThemeStyle.ReadOnly = false;
+            this.dgreview.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgreview.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgreview.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgreview.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgreview.ThemeStyle.RowsStyle.Height = 24;
+            this.dgreview.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgreview.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // ReviewID
+            // 
+            this.ReviewID.DataPropertyName = "ReviewID";
+            this.ReviewID.HeaderText = "ReviewID";
+            this.ReviewID.MinimumWidth = 6;
+            this.ReviewID.Name = "ReviewID";
+            // 
+            // Name
+            // 
+            this.Name.DataPropertyName = "EmployerName";
+            this.Name.HeaderText = "Employer";
+            this.Name.MinimumWidth = 6;
+            this.Name.Name = "Name";
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Rating";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Rating";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // Comment
+            // 
+            this.Comment.DataPropertyName = "Comment";
+            this.Comment.HeaderText = "Comment";
+            this.Comment.MinimumWidth = 6;
+            this.Comment.Name = "Comment";
+            // 
+            // ReviewDate
+            // 
+            this.ReviewDate.DataPropertyName = "ReviewDate";
+            this.ReviewDate.HeaderText = "ReviewDate";
+            this.ReviewDate.MinimumWidth = 6;
+            this.ReviewDate.Name = "ReviewDate";
+            // 
             // FUserInfor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1545, 954);
+            this.Controls.Add(this.dgreview);
             this.Controls.Add(this.btnclose);
             this.Controls.Add(this.Level);
             this.Controls.Add(this.btnLuu);
-            this.Controls.Add(this.dgSkill);
             this.Controls.Add(this.txb_skill_descript);
             this.Controls.Add(this.dtBirthday);
             this.Controls.Add(this.btn_Luu);
             this.Controls.Add(this.guna2Shapes7);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.txb_skill_name);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.btn_upload_avatar);
-            this.Controls.Add(this.guna2RatingStar1);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.rating);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.guna2Shapes2);
             this.Controls.Add(this.guna2Shapes1);
             this.Controls.Add(this.txb_Email);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txb_SDT);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.lb_FavTho);
-            this.Controls.Add(this.lb_DoneJob);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txb_Name);
             this.Controls.Add(this.avatar_box);
@@ -793,11 +766,11 @@
             this.Controls.Add(this.guna2Shapes6);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "FUserInfor";
+            //this.Name = "FUserInfor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FThoInfor";
-            ((System.ComponentModel.ISupportInitialize)(this.dgSkill)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.avatar_box)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgreview)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -821,20 +794,14 @@
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes2;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes3;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes4;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes5;
-        private Guna.UI2.WinForms.Guna2RatingStar guna2RatingStar1;
-        private System.Windows.Forms.Label lb_DoneJob;
-        private System.Windows.Forms.Label lb_FavTho;
+        private Guna.UI2.WinForms.Guna2RatingStar rating;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes6;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
         private Guna.UI2.WinForms.Guna2Shapes guna2Shapes7;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button btn_upload_avatar;
@@ -846,9 +813,14 @@
         private Guna.UI2.WinForms.Guna2DateTimePicker dtBirthday;
         private Guna.UI2.WinForms.Guna2TextBox txb_skill_descript;
         private Guna.UI2.WinForms.Guna2DataGridViewStyler guna2DataGridViewStyler1;
-        private Guna.UI2.WinForms.Guna2DataGridView dgSkill;
         private Guna.UI2.WinForms.Guna2Button btnLuu;
         private System.Windows.Forms.ComboBox Level;
         private Guna.UI2.WinForms.Guna2Button btnclose;
+        private Guna.UI2.WinForms.Guna2DataGridView dgreview;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ReviewID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Comment;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ReviewDate;
     }
 }

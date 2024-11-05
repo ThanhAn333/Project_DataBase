@@ -71,7 +71,7 @@
             this.ClientSize = new System.Drawing.Size(1434, 797);
             this.Controls.Add(this.panelHienThi);
             this.Controls.Add(this.guna2Panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormApplicationCandidate";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormApplicationCandidate";

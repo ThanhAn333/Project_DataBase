@@ -63,5 +63,10 @@ namespace win_project_2.Forms.Recruiter
             }
 
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

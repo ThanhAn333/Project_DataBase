@@ -28,7 +28,7 @@ namespace win_project_2.Forms.Recruiter
             this.Close();
         }
 
-        public void themThongTin(int applicationid,int jobid, int userid, string name, string birthday, string phone, string email, string address)
+        public void themThongTin(int applicationid,int jobid, int userid, string name, string birthday, string phone, string email, string address, decimal rating)
         {
             applicationId = applicationid;
             jobID = jobid;
@@ -38,6 +38,8 @@ namespace win_project_2.Forms.Recruiter
             dtBirthday.Text = birthday;
             txb_Email.Text = email;
             txtaddress.Text = address;
+            rating1.Value = Convert.ToInt32(rating);
+        
         }
         public int getUserID()
         {

@@ -35,6 +35,7 @@ namespace win_project_2.Forms
             txb_Email.Text = UserDangNhap.email;
             txb_SDT.Text = UserDangNhap.phone;
             dtBirthday.Value = DateTime.Parse(UserDangNhap.birthday);
+            rating.Value = Convert.ToInt32(UserDangNhap.rating);
             if(!string.IsNullOrEmpty(UserDangNhap.image) && File.Exists(UserDangNhap.image))
             {
                 avatar_box.Image = Image.FromFile(UserDangNhap.image);
@@ -55,6 +56,10 @@ namespace win_project_2.Forms
                 txb_skill_descript.Text = skill.Description;
                 Level.SelectedItem = skill.ProficiencyLevel;
             }
+
+            ReviewDAO reviewDAO = new ReviewDAO();
+            DataTable dt = reviewDAO.DoDuLieuBangReview(UserDangNhap.userId);
+            dgreview.DataSource = dt;
 
         }
 
@@ -136,6 +141,11 @@ namespace win_project_2.Forms
         }
 
         private void btnclose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnclose_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }

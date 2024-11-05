@@ -82,6 +82,7 @@
             this.guna2Button1.Size = new System.Drawing.Size(51, 36);
             this.guna2Button1.TabIndex = 116;
             this.guna2Button1.Text = "X";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // lbdate
             // 
