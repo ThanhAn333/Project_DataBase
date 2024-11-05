@@ -79,6 +79,39 @@ namespace win_project_2.DAO
             return user;
         }
 
+
+        public User GetUserByID1(int userId) //phân quyền Employer
+        {
+            User user = null;
+
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                SqlCommand command = new SqlCommand("SELECT * FROM EmployerView WHERE UserID = @UserID", connection);
+                command.Parameters.AddWithValue("@UserID", userId);
+
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    user = new User(
+                        (int)reader["UserID"],
+                        reader["Name"].ToString(),
+                        reader["Email"].ToString(),
+                        reader["Password"].ToString(),
+                        reader["Role"].ToString(),
+                        reader["Address"] != DBNull.Value ? reader["Address"].ToString() : null,
+                        reader["DateOfBirth"] != DBNull.Value ? (DateTime)reader["DateOfBirth"] : DateTime.MinValue,
+                        reader["PhoneNumber"] != DBNull.Value ? reader["PhoneNumber"].ToString() : null,
+                        reader["ProfilePicture"] != DBNull.Value ? reader["ProfilePicture"].ToString() : null,
+                        reader["CreatedAt"] != DBNull.Value ? (DateTime)reader["CreatedAt"] : DateTime.MinValue,
+                        reader["UpdatedAt"] != DBNull.Value ? (DateTime)reader["UpdatedAt"] : DateTime.MinValue
+                    );
+                }
+            }
+
+            return user;
+        }
         // Update User using stored procedure
         public void UpdateUser(User user)
         {
@@ -104,6 +137,44 @@ namespace win_project_2.DAO
                 command.ExecuteNonQuery();
             }
         }
+
+        //phân quyền cập nhật Employer 
+        public void UpdateEmployerView(User user)
+        {
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                // Câu lệnh SQL để cập nhật EmployerView
+                string query = @"
+            UPDATE EmployerView
+            SET 
+                Name = @Name,
+                Email = @Email,
+                Address = @Address,
+                DateOfBirth = @DateOfBirth,
+                PhoneNumber = @PhoneNumber,
+                ProfilePicture = @ProfilePicture,
+                UpdatedAt = @UpdatedAt
+            WHERE UserID = @UserID";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    // Thiết lập các tham số cho câu lệnh SQL
+                    command.Parameters.AddWithValue("@UserID", user.UserID);
+                    command.Parameters.AddWithValue("@Name", user.Name);
+                    command.Parameters.AddWithValue("@Email", user.Email);
+                    command.Parameters.AddWithValue("@Address", user.Address ?? (object)DBNull.Value);
+                    command.Parameters.AddWithValue("@DateOfBirth", user.birthDate == DateTime.MinValue ? (object)DBNull.Value : user.birthDate);
+                    command.Parameters.AddWithValue("@PhoneNumber", user.PhoneNumber ?? (object)DBNull.Value);
+                    command.Parameters.AddWithValue("@ProfilePicture", user.image ?? (object)DBNull.Value);
+                    command.Parameters.AddWithValue("@UpdatedAt", DateTime.Now);
+
+                    // Mở kết nối và thực hiện lệnh cập nhật
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
 
         // Delete User using stored procedure
         public void DeleteUser(int userId)
@@ -180,6 +251,29 @@ namespace win_project_2.DAO
             using (SqlConnection connection = dbConn.GetConnection())
             {
                 string query = "SELECT * FROM vw_User";  // Use view
+                SqlCommand command = new SqlCommand(query, connection);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                DataTable userTable = new DataTable();
+
+                try
+                {
+                    connection.Open();
+                    adapter.Fill(userTable);
+                    return userTable;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message);
+                    return null;
+                }
+            }
+        }
+
+        public DataTable LoadAllUsers1()
+        {
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                string query = "SELECT * FROM EmployerView";  // view của Emplyer
                 SqlCommand command = new SqlCommand(query, connection);
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
                 DataTable userTable = new DataTable();
