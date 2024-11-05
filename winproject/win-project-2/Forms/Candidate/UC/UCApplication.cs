@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using win_project_2.DAO;
+using win_project_2.Service;
 using win_project_2.UserControls;
 
 namespace win_project_2.Forms.UC
@@ -24,7 +25,7 @@ namespace win_project_2.Forms.UC
         {
             fpanelHienThi.Controls.Clear();
 
-            DataTable dt = application.DoDuLieuApplication();
+            DataTable dt = application.DoDuLieuApplication(UserDangNhap.userId);
             foreach (DataRow row in dt.Rows)
             {
                 UCComponents.Application application = new UCComponents.Application();

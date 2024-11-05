@@ -59,6 +59,11 @@ namespace win_project_2.Forms
             win_project_2.Models.Applications application = new win_project_2.Models.Applications(0, applicant, appliedJob,title, status, applicationDate);
 
             ApplicationDAO applicationDAO = new ApplicationDAO();
+            if (!applicationDAO.checkAgeApplication(userId))
+            {
+                MessageBox.Show("Bạn không đủ tuổi để nộp đơn ứng tuyển. Vui lòng kiểm tra lại thông tin của bạn.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; // Dừng lại nếu không đủ tuổi
+            }
             if (applicationDAO.CheckApplicationExists(userId, jobId))
             {
                 MessageBox.Show("Bạn đã nộp đơn cho công việc này rồi!");
@@ -69,6 +74,7 @@ namespace win_project_2.Forms
 
                 try
                 {
+                    
                     applicationDAO.AddApplication(application);
                     MessageBox.Show("Đã nộp đơn ứng tuyển thành công !");
                     this.Close();

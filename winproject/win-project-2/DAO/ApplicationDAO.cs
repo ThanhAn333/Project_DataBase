@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 using win_project_2.SQLConn;
 using win_project_2.Models;
 using System.Windows.Forms;
+using System.Security.Cryptography;
+using Firebase.Auth;
 
 namespace win_project_2.DAO
 {
@@ -125,20 +127,27 @@ namespace win_project_2.DAO
                 return count > 0;
             }
         }
-        public DataTable DoDuLieuApplication()
+        public DataTable DoDuLieuApplication(int userid)
         {
             DataTable dataTable = new DataTable();
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string sql = "SELECT * FROM vw_AllApplications";
-                SqlCommand cmd = new SqlCommand(sql, connection);
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                // Mở kết nối
+                connection.Open();
 
-                da.Fill(dataTable);
+                // Đặt câu lệnh SQL
+                string sql = "SELECT * FROM vw_AllApplications WHERE UserID = @UserID";
+                using (SqlCommand cmd = new SqlCommand(sql, connection))
+                {
+                    // Thêm tham số vào câu lệnh SQL
+                    cmd.Parameters.Add(new SqlParameter("@UserID", userid));
 
+                    // Tạo SqlDataAdapter và điền dữ liệu vào DataTable
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dataTable);
+                }
             }
             return dataTable;
-
         }
         public string GetApplicationStatus(int applicationid)
         {
@@ -175,6 +184,30 @@ namespace win_project_2.DAO
                 }
             }
             return dataTable;
+        }
+
+        public bool checkAgeApplication(int userid)
+        {
+            bool isEligible = false;
+
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                connection.Open(); // Mở kết nối
+
+                // Sử dụng cú pháp gọi hàm đúng với một SELECT
+                SqlCommand command = new SqlCommand("SELECT dbo.fn_CheckAgeCandidate(@UserID)", connection);
+                command.Parameters.Add(new SqlParameter("@UserID", userid));
+
+                // Thực hiện câu lệnh và lấy kết quả
+                var result = command.ExecuteScalar();
+
+                if (result != null && result is bool)
+                {
+                    isEligible = (bool)result; // Kiểm tra nếu giá trị trả về là true
+                }
+            }
+
+            return isEligible;
         }
     }
 }
