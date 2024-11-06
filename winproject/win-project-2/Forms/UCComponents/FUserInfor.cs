@@ -92,7 +92,8 @@ namespace win_project_2.Forms
         private void btnLuu_Click(object sender, EventArgs e)
         {
             UserDAO userDAO = new UserDAO();
-            User user = userDAO.GetUserByID(UserDangNhap.userId);
+            //User user = userDAO.GetUserByID(UserDangNhap.userId);
+            User user = userDAO.GetUserByID1(UserDangNhap.userId);
 
             if (user != null)
             {
@@ -108,9 +109,10 @@ namespace win_project_2.Forms
                     UserDangNhap.image = imange;
 
                 }
-                
 
-                userDAO.UpdateUser(user);
+               // userDAO.UpdateUser(user);
+
+                userDAO.UpdateEmployerView(user);//phân quyền 
 
                 MessageBox.Show("Thông tin người dùng đã được cập nhật!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
