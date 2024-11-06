@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using win_project_2.DAO;
+using win_project_2.Forms.UCComponents;
 using win_project_2.Models;
 using win_project_2.Service;
 
@@ -19,10 +20,11 @@ namespace win_project_2.Forms
     public partial class FDetail1 : Form
     {
         private int jobID;
+        public int recruiterID;
         public FDetail1()
         {
             InitializeComponent();
-
+            
         }
 
         public void themThongTin(int jobid, string jobname, string description, string skillRequire,string location, string salary, string company, string type, string date)
@@ -101,6 +103,14 @@ namespace win_project_2.Forms
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Chat_Click(object sender, EventArgs e)
+        {
+            JobDAO jobDAO = new JobDAO();
+            int recruiterID = jobDAO.GetIdRecruiter(jobID) ?? -1;
+            FormChat formChat = new FormChat(recruiterID);
+            formChat.ShowDialog();
         }
     }
 }
