@@ -222,7 +222,7 @@ namespace win_project_2.DAO
         }
 
         // Register user
-        public void Register(string name, string email, string password, string role, string address, DateTime dateofbirth, string phonenumber)
+        public void Register(string name, string email, string password, string role, string address, DateTime dateofbirth, string phonenumber, decimal rating)
         {
             using (SqlConnection connection = dbConn.GetConnection())
             {
@@ -239,6 +239,8 @@ namespace win_project_2.DAO
                 command.Parameters.AddWithValue("@DateOfBirth", dateofbirth);
                 command.Parameters.AddWithValue("@PhoneNumber", phonenumber);
                 command.Parameters.AddWithValue("@CreatedAt", DateTime.Now);
+                command.Parameters.AddWithValue("@Rating", rating);
+
 
                 connection.Open();
                 command.ExecuteNonQuery();

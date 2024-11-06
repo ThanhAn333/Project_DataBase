@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,6 +19,7 @@ namespace win_project_2.Forms.Recruiter
         private int userID;
         private int jobID;
         private int applicationId;
+        private decimal Rating1;
         public FormInfoCandidate()
         {
             InitializeComponent();
@@ -27,7 +29,7 @@ namespace win_project_2.Forms.Recruiter
         {
             this.Close();
         }
-
+        
         public void themThongTin(int applicationid,int jobid, int userid, string name, string birthday, string phone, string email, string address, decimal rating)
         {
             applicationId = applicationid;
@@ -38,8 +40,13 @@ namespace win_project_2.Forms.Recruiter
             dtBirthday.Text = birthday;
             txb_Email.Text = email;
             txtaddress.Text = address;
-            rating1.Value = Convert.ToInt32(rating);
+            Rating1 = rating;
+            
         
+        }
+        public decimal getRating()
+        {
+            return Rating1;
         }
         public int getUserID()
         {
@@ -72,7 +79,9 @@ namespace win_project_2.Forms.Recruiter
             DataTable dt = reviewDAO.DoDuLieuBangReview(getUserID());
             dgreview.DataSource = dt;
 
+            rating1.Value = Convert.ToInt32(getRating());
             lbltrangthai.Text = application.GetApplicationStatus(getApplicationID());
+            
         }
 
         private void btnRecject_Click(object sender, EventArgs e)

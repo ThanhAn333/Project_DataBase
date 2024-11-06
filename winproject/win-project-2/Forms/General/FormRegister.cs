@@ -124,7 +124,7 @@ namespace win_project_2.Forms.General
             try
             {
                 UserDAO userDAO = new UserDAO();
-                userDAO.Register(name, email, password, role, address, dateOfBirth, phoneNumber);
+                userDAO.Register(name, email, password, role, address, dateOfBirth, phoneNumber,0);
 
                 MessageBox.Show("Đăng ký thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
