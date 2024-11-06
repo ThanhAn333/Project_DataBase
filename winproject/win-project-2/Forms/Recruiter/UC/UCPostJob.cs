@@ -34,18 +34,25 @@ namespace win_project_2.Forms.Recruiter.UC
             string type = txt_Type.Text;
             string company = txt_company.Text;
 
-            if (string.IsNullOrEmpty(title) || string.IsNullOrEmpty(description) || string.IsNullOrEmpty(location) ||
-                string.IsNullOrEmpty(skillRequire) || !decimal.TryParse(txt_salary.Text, out salary) || string.IsNullOrEmpty(company))
+            // Kiểm tra xem các trường có bị bỏ trống hoặc không hợp lệ
+            if (string.IsNullOrWhiteSpace(title) ||
+                string.IsNullOrWhiteSpace(description) ||
+                string.IsNullOrWhiteSpace(location) ||
+                string.IsNullOrWhiteSpace(skillRequire) ||
+                !decimal.TryParse(txt_salary.Text, out salary) ||
+                string.IsNullOrWhiteSpace(company))
             {
                 lbError.Visible = true;
-                lbError.Text = "Vui lòng điền đầy đủ thông tin !";
+                lbError.Text = "Vui lòng điền đầy đủ thông tin!";
                 return;
             }
 
+            // Kiểm tra trạng thái công việc
             string status = "";
             if (rbOpen.Checked) { status = "Open"; }
             else if (rbClosed.Checked) { status = "Closed"; }
             else if (rbPaused.Checked) { status = "Paused"; }
+
             try
             {
                 JobDAO jobDAO = new JobDAO();

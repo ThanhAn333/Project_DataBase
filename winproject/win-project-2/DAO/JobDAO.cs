@@ -223,7 +223,7 @@ namespace win_project_2.DAO
                 try
                 {
                     connection.Open();
-                    string query = "SELECT * FROM ViewJobs WHERE Location = @Location"; // Giả định bạn có view này
+                    string query = "SELECT * FROM ViewJobs WHERE Location = @Location"; 
                     SqlCommand cmd = new SqlCommand(query, connection);
                     cmd.Parameters.AddWithValue("@Location", location);
 
@@ -260,13 +260,25 @@ namespace win_project_2.DAO
             }
         }
 
-        // Lấy dữ liệu công việc
         public DataTable DoDuLieuJob()
         {
             DataTable dataTable = new DataTable();
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string sql = "SELECT * FROM ViewJobs"; // Giả định bạn có view này
+                string sql = "SELECT * FROM ViewJobs Where Status = 'Open'"; 
+                SqlCommand cmd = new SqlCommand(sql, connection);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+                da.Fill(dataTable);
+            }
+            return dataTable;
+        }
+        public DataTable DoDuLieuAllJob()
+        {
+            DataTable dataTable = new DataTable();
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                string sql = "SELECT * FROM ViewJobs";
                 SqlCommand cmd = new SqlCommand(sql, connection);
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
 

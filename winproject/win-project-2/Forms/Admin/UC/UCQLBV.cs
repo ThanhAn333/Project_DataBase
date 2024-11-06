@@ -32,7 +32,7 @@ namespace win_project_2.UserControls
 
             // Tạo một thể hiện của JobDAO và lấy DataTable
             JobDAO jobDao = new JobDAO();
-            DataTable jobsDataTable = jobDao.DoDuLieuJob();
+            DataTable jobsDataTable = jobDao.DoDuLieuAllJob();
 
             // Duyệt qua từng hàng trong DataTable
             foreach (DataRow row in jobsDataTable.Rows)

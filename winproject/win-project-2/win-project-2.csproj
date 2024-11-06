@@ -496,13 +496,10 @@
     </Compile>
     <Compile Include="Models\Applications.cs" />
     <Compile Include="Models\Job.cs" />
-    <Compile Include="Models\JobPost.cs" />
-    <Compile Include="Models\JobSkill.cs" />
     <Compile Include="Models\Message.cs" />
     <Compile Include="Models\Review.cs" />
     <Compile Include="Models\Skill.cs" />
     <Compile Include="Models\User.cs" />
-    <Compile Include="Models\UserSkill.cs" />
     <Compile Include="Forms\Candidate\FDetail1.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -65,6 +66,7 @@ namespace win_project_2.Forms.Recruiter
 
         private void btn_Update_Click(object sender, EventArgs e)
         {
+
             JobDAO jobDAO = new JobDAO();
             //int jobID, string title, string description, string location, string skillRequire, string salary,
             //    string type, string company, DateTime postedDate, string status, int employer
@@ -81,8 +83,26 @@ namespace win_project_2.Forms.Recruiter
                 txt_Status.Text,
                 employer
             );
-            jobDAO.UpdateJob(updateJob);
-            MessageBox.Show("Cập nhật công việc thành công!");
+
+            try
+            {
+                jobDAO.UpdateJob(updateJob);
+                MessageBox.Show("Cập nhật công việc thành công!");
+            }
+            catch (SqlException ex)
+            {
+                if (ex.Number == 50000) // Số lỗi từ RAISERROR
+                {
+                    MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    this.Close();
+                }
+                else
+                {
+                    // Xử lý lỗi khác nếu cần
+                    MessageBox.Show("Đã xảy ra lỗi khi cập nhật công việc.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            
         }
     }
 }
