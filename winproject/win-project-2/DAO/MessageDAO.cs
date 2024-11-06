@@ -80,5 +80,31 @@ namespace win_project_2.DAO
             return messages;
         }
 
+        public List<int> GetDistinctReceiverIDsBySender(int senderId)
+        {
+            List<int> receiverIDs = new List<int>();
+
+            using (SqlConnection conn = dbConn.GetConnection())
+            {
+                conn.Open();
+
+                SqlCommand command = new SqlCommand("GetDistinctReceiversBySender", conn);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@SenderID", senderId);
+
+                
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    receiverIDs.Add(reader.GetInt32(0));
+                }
+            }
+
+            return receiverIDs;
+        }
+
+
+
     }
 }

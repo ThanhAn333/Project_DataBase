@@ -28,20 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.listConversation = new System.Windows.Forms.ListView();
             this.btn_send = new System.Windows.Forms.Button();
             this.tb_mess = new Guna.UI2.WinForms.Guna2TextBox();
             this.listMessage = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
-            // listView1
+            // listConversation
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(56, 98);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(429, 508);
-            this.listView1.TabIndex = 7;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listConversation.HideSelection = false;
+            this.listConversation.Location = new System.Drawing.Point(56, 98);
+            this.listConversation.Name = "listConversation";
+            this.listConversation.Size = new System.Drawing.Size(429, 508);
+            this.listConversation.TabIndex = 7;
+            this.listConversation.UseCompatibleStateImageBehavior = false;
+            this.listConversation.Click += new System.EventHandler(this.listMessage_SelectedIndexChanged);
             // 
             // btn_send
             // 
@@ -87,7 +88,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1443, 793);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.listConversation);
             this.Controls.Add(this.btn_send);
             this.Controls.Add(this.tb_mess);
             this.Controls.Add(this.listMessage);
@@ -99,7 +100,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listConversation;
         private System.Windows.Forms.Button btn_send;
         private Guna.UI2.WinForms.Guna2TextBox tb_mess;
         private System.Windows.Forms.ListView listMessage;

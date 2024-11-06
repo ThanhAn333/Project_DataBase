@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using win_project_2.DAO;
 using win_project_2.Service;
+using win_project_2.Models;
 
 
 
@@ -22,12 +23,12 @@ namespace win_project_2.Forms.UCComponents
             InitializeComponent();
             _id_receiver = id_receiver;
 
+            //
+
             listMessage.View = View.Details;
             listMessage.Columns.Add("Sender", 100);
             listMessage.Columns.Add("Content", 300);
             listMessage.Columns.Add("Timestamp", 150);
-
-
 
             LoadMessagesToListView(UserDangNhap.userId, _id_receiver);
             int user1ID = int.Parse(UserDangNhap.userId.ToString());
@@ -37,23 +38,81 @@ namespace win_project_2.Forms.UCComponents
             List<Message> messages = messageDAO.LoadMessages(user1ID, user2ID);
 
             DisplayMessagesInListView(messages);
+
+            //List conversation
+
+            DisplayConversationInListView();
         }
 
         public void DisplayMessagesInListView(List<Message> messages)
         {
             listMessage.Items.Clear();
 
+            UserDAO userDAO = new UserDAO();
+
             foreach (var message in messages)
             {
-                ListViewItem item = new ListViewItem(message.SenderID.ToString());
+                
+                string senderName = userDAO.GetUserNameByID(message.SenderID) ?? "Unknown"; // Kiểm tra nếu tên không tồn tại
 
+                
+                ListViewItem item = new ListViewItem(senderName);
                 item.SubItems.Add(message.Content);
-
                 item.SubItems.Add(message.Timestamp.ToString("g"));
 
                 listMessage.Items.Add(item);
             }
+
         }
+
+        public void DisplayConversationInListView()
+        {
+            listConversation.Items.Clear();
+            UserDAO userDAO = new UserDAO();
+            MessageDAO messageDAO = new MessageDAO();
+
+            List<int> receiverIDs = messageDAO.GetDistinctReceiverIDsBySender(UserDangNhap.userId);
+
+            foreach (int receiverID in receiverIDs)
+            {
+                
+                string receiverName = userDAO.GetUserNameByID(receiverID);
+
+                
+                ListViewItem item = new ListViewItem(receiverName);
+                item.Tag = receiverID;
+                listConversation.Items.Add(item);
+            }
+
+        }
+
+
+        private int selectedReceiverID; // Variable to store the selected receiverID
+
+        private void listConversation_ItemSelectionChanged(object sender, ListViewItemSelectionChangedEventArgs e)
+        {
+            if (e.IsSelected)
+            {
+                // Get the receiverID from the selected item's Tag
+                selectedReceiverID = (int)e.Item.Tag;
+                // You can now use selectedReceiverID for other operations in your form
+
+
+                listMessage.Items.Clear();
+
+
+                LoadMessagesToListView(UserDangNhap.userId, _id_receiver);
+                int user1ID = int.Parse(UserDangNhap.userId.ToString());
+                int user2ID = int.Parse(selectedReceiverID.ToString());
+
+                MessageDAO messageDAO = new MessageDAO();
+                List<Message> messages = messageDAO.LoadMessages(user1ID, user2ID);
+
+                DisplayMessagesInListView(messages);
+
+            }
+        }
+
 
         private void btn_send_Click(object sender, EventArgs e)
         {
@@ -89,7 +148,30 @@ namespace win_project_2.Forms.UCComponents
 
         private void listMessage_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (listConversation.SelectedItems.Count > 0)
+            {
+                // Get the selected item
+                ListViewItem selectedItem = listConversation.SelectedItems[0];
 
+                // Retrieve the Tag (which stores the receiverID)
+                int receiverID = (int)selectedItem.Tag;
+
+                // Assign it to your variable or use it as needed
+                selectedReceiverID = receiverID;
+
+                listMessage.Items.Clear();
+
+
+                LoadMessagesToListView(UserDangNhap.userId, _id_receiver);
+                int user1ID = int.Parse(UserDangNhap.userId.ToString());
+                int user2ID = int.Parse(selectedReceiverID.ToString());
+
+                MessageDAO messageDAO = new MessageDAO();
+                List<Message> messages = messageDAO.LoadMessages(user1ID, user2ID);
+
+                DisplayMessagesInListView(messages);
+
+            }
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)

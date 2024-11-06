@@ -371,5 +371,28 @@ namespace win_project_2.DAO
             return dataTable;
         }
 
+
+        public string GetUserNameByID(int userId)
+        {
+            string userName = null;
+
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                SqlCommand command = new SqlCommand("SELECT Name FROM [User] WHERE UserID = @UserID", connection);
+                command.Parameters.AddWithValue("@UserID", userId);
+
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    userName = reader["Name"].ToString();
+                }
+            }
+
+            return userName ?? "Unknown"; // Trả về "Unknown" nếu không tìm thấy người dùng
+        }
+
+
     }
 }
