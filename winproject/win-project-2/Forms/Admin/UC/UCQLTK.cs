@@ -12,6 +12,12 @@ using win_project_2.DAO;
 using win_project_2.Models;
 using System.IO;
 using OfficeOpenXml;
+using ExcelDataReader;
+using System.Data.SqlClient;
+using win_project_2.SQLConn;
+
+
+
 
 
 namespace win_project_2.UserControls
@@ -21,9 +27,10 @@ namespace win_project_2.UserControls
         public UCQLTK()
         {
             InitializeComponent();
+            dbConn = new DatabaseConnection();
             LoadAllUser();
         }
-
+        private DatabaseConnection dbConn;
         private void LoadAllUser()
         {
             UserDAO userDAO = new UserDAO();  // Khởi tạo đối tượng UserDAO
@@ -35,7 +42,7 @@ namespace win_project_2.UserControls
 
                 // Thiết lập tiêu đề cho các cột
                 dataGridView1.Columns["Name"].HeaderText = "Tên";
-                dataGridView1.Columns["Email"].HeaderText = "Gmail";
+                dataGridView1.Columns["Email"].HeaderText = "Email";
                 dataGridView1.Columns["Address"].HeaderText = "Địa chỉ";
                 dataGridView1.Columns["Password"].HeaderText = "Mật khẩu";
                 dataGridView1.Columns["DateOfBirth"].HeaderText = "Ngày sinh";
@@ -433,5 +440,103 @@ namespace win_project_2.UserControls
         {
 
         }
+
+
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Excel Files|*.xls;*.xlsx";
+            openFileDialog.Title = "Select an Excel File";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string excelFilePath = openFileDialog.FileName;
+                DataTable dataTable = ReadExcelFile(excelFilePath);
+                ImportDataToSql(dataTable);
+                LoadAllUser();
+            }
+        }
+
+        private DataTable ReadExcelFile(string filePath)
+        {
+            using (var stream = File.Open(filePath, FileMode.Open, FileAccess.Read))
+            {
+                using (var reader = ExcelReaderFactory.CreateReader(stream))
+                {
+                    var result = reader.AsDataSet(new ExcelDataSetConfiguration()
+                    {
+                        ConfigureDataTable = (_) => new ExcelDataTableConfiguration() { UseHeaderRow = true }
+                    });
+                    return result.Tables[0];
+                }
+            }
+        }
+
+        private void ImportDataToSql(DataTable dataTable)
+        {
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                connection.Open();
+
+                foreach (DataRow row in dataTable.Rows)
+                {
+                    string email = row["Email"].ToString();
+
+                    if (!EmailExists(connection, email))
+                    {
+                        using (SqlCommand cmd = new SqlCommand("InsertUser", connection))
+                        {
+                            cmd.CommandType = CommandType.StoredProcedure;
+
+                            cmd.Parameters.AddWithValue("@Name", row["Tên"]);
+                            cmd.Parameters.AddWithValue("@Email", row["Email"]);
+                            cmd.Parameters.AddWithValue("@Password", row["Mật khẩu"]);
+                            cmd.Parameters.AddWithValue("@Role", row["Vai trò"]);
+                            cmd.Parameters.AddWithValue("@Address", row["Địa chỉ"]);
+
+                            // Kiểm tra và gán giá trị cho DateOfBirth
+                            if (row["Ngày sinh"] == DBNull.Value)
+                            {
+                                cmd.Parameters.AddWithValue("@DateOfBirth", DBNull.Value);
+                            }
+                            else
+                            {
+                                cmd.Parameters.AddWithValue("@DateOfBirth", Convert.ToDateTime(row["Ngày sinh"]));
+                            }
+
+                            cmd.Parameters.AddWithValue("@PhoneNumber", row["số điện thoại"]);
+                            cmd.Parameters.AddWithValue("@ProfilePicture", row["Ảnh đại diện"]);
+                            cmd.Parameters.AddWithValue("@CreatedAt", DateTime.Now);
+                            cmd.Parameters.AddWithValue("@UpdatedAt", DateTime.Now);
+
+                            cmd.ExecuteNonQuery();
+                        }
+                    }
+                }
+
+                MessageBox.Show("Dữ liệu đã được nhập thành công vào cơ sở dữ liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private bool EmailExists(SqlConnection connection, string email)
+        {
+            using (SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM [dbo].[User] WHERE Email = @Email", connection))
+            {
+                cmd.Parameters.AddWithValue("@Email", email);
+                int count = (int)cmd.ExecuteScalar();
+                return count > 0;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
     }
 }
