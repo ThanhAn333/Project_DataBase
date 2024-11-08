@@ -509,7 +509,7 @@ namespace win_project_2.UserControls
                             cmd.Parameters.AddWithValue("@ProfilePicture", row["Ảnh đại diện"]);
                             cmd.Parameters.AddWithValue("@CreatedAt", DateTime.Now);
                             cmd.Parameters.AddWithValue("@UpdatedAt", DateTime.Now);
-
+                            cmd.Parameters.AddWithValue("@Rating", row["Rating"]);
                             cmd.ExecuteNonQuery();
                         }
                     }
@@ -529,14 +529,21 @@ namespace win_project_2.UserControls
             }
         }
 
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            int userId;
+            if (!int.TryParse(tbtimkiem.Text, out userId))
+            {
+                MessageBox.Show("Vui lòng nhập UserID hợp lệ.");
+                return;
+            }
 
+            int lockDuration = (int)guna2NumericUpDown1.Value; // Số phút khóa
+            string reason = textBox1.Text;
 
-
-
-
-
-
-
-
+            UserDAO userDAO = new UserDAO();
+            userDAO.LockAccount(userId, lockDuration, reason);
+            MessageBox.Show("Tài khoản đã bị khóa.");
+        }
     }
 }

@@ -393,7 +393,43 @@ namespace win_project_2.DAO
             return userName ?? "Unknown"; // Trả về "Unknown" nếu không tìm thấy người dùng
         }
 
-       
+        public (bool IsLocked, DateTime? LockUntil, string Reason) IsAccountLocked(int userId)
+        {
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                string query = "SELECT lock_until, lock_reason FROM UserLocks WHERE user_id = @userId AND lock_until > GETDATE()";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@userId", userId);
+                connection.Open();
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        DateTime lockUntil = reader.GetDateTime(0);
+                        string reason = reader.GetString(1);
+                        return (true, lockUntil, reason);
+                    }
+                }
+            }
+            return (false, null, null);
+        }
+
+        public void LockAccount(int userId, int minutes, string reason)
+        {
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                connection.Open();
+                string query = @"INSERT INTO UserLocks (user_id, lock_until, lock_reason) 
+                         VALUES (@userId, @lockUntil, @reason)";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@userId", userId);
+                cmd.Parameters.AddWithValue("@lockUntil", DateTime.Now.AddMinutes(minutes));
+                cmd.Parameters.AddWithValue("@reason", reason);
+
+                cmd.ExecuteNonQuery();
+            }
+        }
 
 
     }
