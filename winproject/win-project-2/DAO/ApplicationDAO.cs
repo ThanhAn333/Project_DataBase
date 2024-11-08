@@ -171,10 +171,11 @@ namespace win_project_2.DAO
             DataTable dataTable = new DataTable();
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string sql = "SELECT * FROM vw_CandidateApplicationsByJob WHERE JobID = @JobID";
+                string sql = "sp_XepHangUngVien";
 
                 using (SqlCommand cmd = new SqlCommand(sql, connection))
                 {
+                    cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@JobID", jobid);
 
                     using (SqlDataAdapter da = new SqlDataAdapter(cmd))

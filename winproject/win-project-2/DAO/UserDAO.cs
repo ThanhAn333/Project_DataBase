@@ -86,7 +86,7 @@ namespace win_project_2.DAO
 
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                SqlCommand command = new SqlCommand("SELECT * FROM EmployerView WHERE UserID = @UserID", connection);
+                SqlCommand command = new SqlCommand("SELECT * FROM CandidateView WHERE UserID = @UserID", connection);
                 command.Parameters.AddWithValue("@UserID", userId);
 
                 connection.Open();
@@ -98,7 +98,7 @@ namespace win_project_2.DAO
                         (int)reader["UserID"],
                         reader["Name"].ToString(),
                         reader["Email"].ToString(),
-                        reader["Password"].ToString(),
+                        "",
                         reader["Role"].ToString(),
                         reader["Address"] != DBNull.Value ? reader["Address"].ToString() : null,
                         reader["DateOfBirth"] != DBNull.Value ? (DateTime)reader["DateOfBirth"] : DateTime.MinValue,
@@ -139,13 +139,13 @@ namespace win_project_2.DAO
         }
 
         //phân quyền cập nhật Employer 
-        public void UpdateEmployerView(User user)
+        public void UpdateCandidateView(User user)
         {
             using (SqlConnection connection = dbConn.GetConnection())
             {
                 // Câu lệnh SQL để cập nhật EmployerView
                 string query = @"
-            UPDATE EmployerView
+            UPDATE CandidateView
             SET 
                 Name = @Name,
                 Email = @Email,

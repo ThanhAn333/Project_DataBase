@@ -112,7 +112,7 @@ namespace win_project_2.Forms
 
                // userDAO.UpdateUser(user);
 
-                userDAO.UpdateEmployerView(user);//phân quyền 
+                userDAO.UpdateCandidateView(user);//phân quyền 
 
                 MessageBox.Show("Thông tin người dùng đã được cập nhật!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

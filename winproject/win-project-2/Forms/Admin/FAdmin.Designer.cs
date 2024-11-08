@@ -44,6 +44,7 @@
             this.panelAdmin = new Guna.UI2.WinForms.Guna2Panel();
             this.ucqltk1 = new win_project_2.UserControls.UCQLTK();
             this.ucqlbv1 = new win_project_2.UserControls.UCQLBV();
+            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
@@ -172,6 +173,7 @@
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.Indigo;
+            this.guna2Panel2.Controls.Add(this.guna2Button5);
             this.guna2Panel2.Controls.Add(this.guna2Button7);
             this.guna2Panel2.Controls.Add(this.guna2Button8);
             this.guna2Panel2.Controls.Add(this.label2);
@@ -282,6 +284,27 @@
             this.ucqlbv1.Size = new System.Drawing.Size(852, 840);
             this.ucqlbv1.TabIndex = 1;
             // 
+            // guna2Button5
+            // 
+            this.guna2Button5.BorderColor = System.Drawing.Color.White;
+            this.guna2Button5.BorderRadius = 1;
+            this.guna2Button5.BorderThickness = 2;
+            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button5.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button5.ForeColor = System.Drawing.Color.White;
+            this.guna2Button5.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button5.Image")));
+            this.guna2Button5.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2Button5.Location = new System.Drawing.Point(56, 448);
+            this.guna2Button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Button5.Name = "guna2Button5";
+            this.guna2Button5.Size = new System.Drawing.Size(246, 57);
+            this.guna2Button5.TabIndex = 4;
+            this.guna2Button5.Text = "Thống kê";
+            // 
             // FAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -319,5 +342,6 @@
         private Guna.UI2.WinForms.Guna2Panel panelAdmin;
         private UserControls.UCQLBV ucqlbv1;
         private UserControls.UCQLTK ucqltk1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button5;
     }
 }
