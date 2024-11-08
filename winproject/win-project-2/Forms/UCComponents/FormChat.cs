@@ -52,10 +52,10 @@ namespace win_project_2.Forms.UCComponents
 
             foreach (var message in messages)
             {
-                
+
                 string senderName = userDAO.GetUserNameByID(message.SenderID) ?? "Unknown"; // Kiểm tra nếu tên không tồn tại
 
-                
+
                 ListViewItem item = new ListViewItem(senderName);
                 item.SubItems.Add(message.Content);
                 item.SubItems.Add(message.Timestamp.ToString("g"));
@@ -71,14 +71,14 @@ namespace win_project_2.Forms.UCComponents
             UserDAO userDAO = new UserDAO();
             MessageDAO messageDAO = new MessageDAO();
 
-            List<int> receiverIDs = messageDAO.GetDistinctReceiverIDsBySender(UserDangNhap.userId);
+            List<int> receiverIDs = messageDAO.GetDistinctUserIDsBySenderOrReceiver(UserDangNhap.userId);
 
             foreach (int receiverID in receiverIDs)
             {
-                
+
                 string receiverName = userDAO.GetUserNameByID(receiverID);
 
-                
+
                 ListViewItem item = new ListViewItem(receiverName);
                 item.Tag = receiverID;
                 listConversation.Items.Add(item);
@@ -99,7 +99,7 @@ namespace win_project_2.Forms.UCComponents
 
 
                 listMessage.Items.Clear();
-                _id_receiver = selectedReceiverID;
+
 
                 LoadMessagesToListView(UserDangNhap.userId, _id_receiver);
                 int user1ID = int.Parse(UserDangNhap.userId.ToString());
@@ -123,12 +123,13 @@ namespace win_project_2.Forms.UCComponents
             int user1ID = int.Parse(UserDangNhap.userId.ToString());
             int user2ID = int.Parse(_id_receiver.ToString());
 
-            
+
             List<Message> messages = messageDAO.LoadMessages(user1ID, user2ID);
 
 
             // Hiển thị tin nhắn lên ListView
             DisplayMessagesInListView(messages);
+
         }
 
         public void LoadMessagesToListView(int senderId, int receiverId)
@@ -138,7 +139,7 @@ namespace win_project_2.Forms.UCComponents
             MessageDAO messageDAO = new MessageDAO();
             //List<win_project_2.Models.Message> messages = messageDAO.LoadMessages(senderId, receiverId);
 
-            
+
         }
 
         private void tb_mess_TextChanged(object sender, EventArgs e)
@@ -160,6 +161,7 @@ namespace win_project_2.Forms.UCComponents
                 selectedReceiverID = receiverID;
 
                 listMessage.Items.Clear();
+                _id_receiver = selectedReceiverID;
 
 
                 LoadMessagesToListView(UserDangNhap.userId, _id_receiver);

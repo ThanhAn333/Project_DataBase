@@ -1899,3 +1899,10 @@ D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winpro
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\ExcelDataReader.xml
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\ExcelDataReader.DataSet.pdb
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\ExcelDataReader.DataSet.xml
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\ExcelDataReader.DataSet.dll
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\ExcelDataReader.dll
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\ExcelReader.dll
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\ExcelDataReader.pdb
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\ExcelDataReader.xml
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\ExcelDataReader.DataSet.pdb
+D:\Project\Project_DataBase\winproject\win-project-2\bin\Debug\ExcelDataReader.DataSet.xml

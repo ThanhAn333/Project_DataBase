@@ -80,28 +80,31 @@ namespace win_project_2.DAO
             return messages;
         }
 
-        public List<int> GetDistinctReceiverIDsBySender(int senderId)
+        public List<int> GetDistinctUserIDsBySenderOrReceiver(int userId)
         {
-            List<int> receiverIDs = new List<int>();
+            List<int> userIDs = new List<int>();
 
             using (SqlConnection conn = dbConn.GetConnection())
             {
                 conn.Open();
 
+                // Tạo SqlCommand gọi thủ tục lưu trữ
                 SqlCommand command = new SqlCommand("GetDistinctReceiversBySender", conn);
                 command.CommandType = CommandType.StoredProcedure;
-                command.Parameters.AddWithValue("@SenderID", senderId);
+                command.Parameters.AddWithValue("@UserID", userId);
 
-                
-                SqlDataReader reader = command.ExecuteReader();
-
-                while (reader.Read())
+                // Thực hiện SqlDataReader
+                using (SqlDataReader reader = command.ExecuteReader())
                 {
-                    receiverIDs.Add(reader.GetInt32(0));
+                    while (reader.Read())
+                    {
+                        // Thêm UserID vào danh sách
+                        userIDs.Add(reader.GetInt32(0));
+                    }
                 }
             }
 
-            return receiverIDs;
+            return userIDs;
         }
 
 
