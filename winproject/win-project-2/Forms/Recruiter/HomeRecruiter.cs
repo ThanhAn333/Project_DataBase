@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using win_project_2.Forms.Candidate.UC;
 using win_project_2.Forms.Recruiter.UC;
 using win_project_2.Forms.UC;
+using win_project_2.Forms.UCComponents;
 
 namespace win_project_2.Forms.Recruiter
 {
@@ -77,16 +78,14 @@ namespace win_project_2.Forms.Recruiter
         private void btnMessenge_Click_1(object sender, EventArgs e)
         {
             pnHienThi.Controls.Clear();
-            //UCMessage 
-            //addHienThi(uC_ListJob);
-            btn_Home.Checked = false;
-            btnPostJob.Checked = false;
-            btnMessenge.Checked = true;
+
+            FormChat formChat = new FormChat(_userId);
+            formChat.Show();
         }
 
         private void btn_logout_Click_1(object sender, EventArgs e)
         {
-            Application.Exit();
+            System.Windows.Forms.Application.Exit();
         }
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
