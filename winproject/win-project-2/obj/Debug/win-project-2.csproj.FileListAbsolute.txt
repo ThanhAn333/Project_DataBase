@@ -1884,3 +1884,18 @@ D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.FormInfoCandidate.resources
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UCComponents.FormChat.resources
 D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UCComponents.FormChat.resources
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\ExcelDataReader.DataSet.dll
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\ExcelDataReader.dll
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\ExcelReader.dll
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\ExcelDataReader.pdb
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\ExcelDataReader.xml
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\ExcelDataReader.DataSet.pdb
+D:\dbms\Project_DataBase\winproject\win-project-2\bin\Debug\ExcelDataReader.DataSet.xml
+D:\dbms\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UCComponents.FormChat.resources
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\ExcelDataReader.DataSet.dll
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\ExcelDataReader.dll
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\ExcelReader.dll
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\ExcelDataReader.pdb
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\ExcelDataReader.xml
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\ExcelDataReader.DataSet.pdb
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\bin\Debug\ExcelDataReader.DataSet.xml
