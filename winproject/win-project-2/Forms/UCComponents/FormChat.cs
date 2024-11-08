@@ -99,7 +99,7 @@ namespace win_project_2.Forms.UCComponents
 
 
                 listMessage.Items.Clear();
-
+                _id_receiver = selectedReceiverID;
 
                 LoadMessagesToListView(UserDangNhap.userId, _id_receiver);
                 int user1ID = int.Parse(UserDangNhap.userId.ToString());

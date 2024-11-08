@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using win_project_2.Forms.Candidate.UC;
 using win_project_2.Forms.UC;
+using win_project_2.Forms.UCComponents;
 using win_project_2.Service;
 
 namespace win_project_2.Forms.Employer
@@ -65,12 +66,8 @@ namespace win_project_2.Forms.Employer
 
         private void btnMessage_Click(object sender, EventArgs e)
         {
-            panelHienThi.Controls.Clear();
-            UCMessage uCMessage = new UCMessage();
-            addHienThi(uCMessage);
-            btnHome.Checked = false;
-            btnApplication.Checked = false;
-            btnMessage.Checked = true;
+            FormChat formChat = new FormChat(_userId);
+            formChat.Show();
         }
 
         private void btnProfile_Click(object sender, EventArgs e)
@@ -81,7 +78,7 @@ namespace win_project_2.Forms.Employer
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            System.Windows.Forms.Application.Exit();
         }
     }
 }
