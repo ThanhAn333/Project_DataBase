@@ -326,5 +326,36 @@ namespace win_project_2.DAO
             return jobList;
         }
 
+
+        public int? GetIdRecruiter(int jobId)
+        {
+            int? employerId = null;
+
+            using (SqlConnection conn = dbConn.GetConnection())
+            {
+                try
+                {
+                    conn.Open();
+                    using (SqlCommand command = new SqlCommand("SELECT EmployerID FROM Job WHERE JobID = @JobID", conn))
+                    {
+                        command.Parameters.AddWithValue("@JobID", jobId);
+
+                        object result = command.ExecuteScalar();
+                        if (result != null && result != DBNull.Value)
+                        {
+                            employerId = Convert.ToInt32(result);
+                        }
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    Console.WriteLine("Error while retrieving EmployerID: " + ex.Message);
+                    throw;
+                }
+            }
+
+            return employerId;
+        }
+
     }
 }

@@ -276,6 +276,7 @@
             this.Chat.TabIndex = 105;
             this.Chat.Text = "Nhắn tin";
             this.Chat.UseTransparentBackground = true;
+            this.Chat.Click += new System.EventHandler(this.Chat_Click);
             // 
             // Nopdon
             // 

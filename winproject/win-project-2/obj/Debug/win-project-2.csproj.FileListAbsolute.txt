@@ -937,7 +937,6 @@ D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.For
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.FRating.resources
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.General.FormRegister.resources
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.HomeRecruiter.resources
-D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.ThoDetail.resources
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.FUserInfor.resources
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.LoginForm.resources
 D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UC.UCApplication.resources
@@ -1882,3 +1881,6 @@ D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_
 D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.FormApplicationCandidate.resources
 D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.FormInfoCandidate.resources
 D:\project\DBMS\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.UC.UCCandidate.resources
+D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.Recruiter.FormInfoCandidate.resources
+D:\Project\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UCComponents.FormChat.resources
+D:\Nam3\Hệ QT Cơ sở dữ liệu\Project\PROJECT_MOI\Project_DataBase\winproject\win-project-2\obj\Debug\win_project_2.Forms.UCComponents.FormChat.resources
