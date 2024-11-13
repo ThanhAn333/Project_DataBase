@@ -397,39 +397,41 @@ namespace win_project_2.DAO
         {
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                string query = "SELECT lock_until, lock_reason FROM UserLocks WHERE user_id = @userId AND lock_until > GETDATE()";
-                SqlCommand cmd = new SqlCommand(query, connection);
-                cmd.Parameters.AddWithValue("@userId", userId);
-                connection.Open();
+                SqlCommand cmd = new SqlCommand("IsAccountLocked", connection);
+                cmd.CommandType = CommandType.StoredProcedure;
 
-                using (SqlDataReader reader = cmd.ExecuteReader())
-                {
-                    if (reader.Read())
-                    {
-                        DateTime lockUntil = reader.GetDateTime(0);
-                        string reason = reader.GetString(1);
-                        return (true, lockUntil, reason);
-                    }
-                }
+                cmd.Parameters.AddWithValue("@userId", userId);
+                cmd.Parameters.Add(new SqlParameter("@IsLocked", SqlDbType.Bit) { Direction = ParameterDirection.Output });
+                cmd.Parameters.Add(new SqlParameter("@LockUntil", SqlDbType.DateTime) { Direction = ParameterDirection.Output });
+                cmd.Parameters.Add(new SqlParameter("@Reason", SqlDbType.NVarChar, 255) { Direction = ParameterDirection.Output });
+
+                connection.Open();
+                cmd.ExecuteNonQuery();
+
+                bool isLocked = (bool)cmd.Parameters["@IsLocked"].Value;
+                DateTime? lockUntil = cmd.Parameters["@LockUntil"].Value as DateTime?;
+                string reason = cmd.Parameters["@Reason"].Value as string;
+
+                return (isLocked, lockUntil, reason);
             }
-            return (false, null, null);
         }
 
         public void LockAccount(int userId, int minutes, string reason)
         {
             using (SqlConnection connection = dbConn.GetConnection())
             {
-                connection.Open();
-                string query = @"INSERT INTO UserLocks (user_id, lock_until, lock_reason) 
-                         VALUES (@userId, @lockUntil, @reason)";
-                SqlCommand cmd = new SqlCommand(query, connection);
-                cmd.Parameters.AddWithValue("@userId", userId);
-                cmd.Parameters.AddWithValue("@lockUntil", DateTime.Now.AddMinutes(minutes));
-                cmd.Parameters.AddWithValue("@reason", reason);
+                SqlCommand cmd = new SqlCommand("LockAccount", connection);
+                cmd.CommandType = CommandType.StoredProcedure;
 
+                cmd.Parameters.AddWithValue("@userId", userId);
+                cmd.Parameters.AddWithValue("@Minutes", minutes);
+                cmd.Parameters.AddWithValue("@Reason", reason);
+
+                connection.Open();
                 cmd.ExecuteNonQuery();
             }
         }
+
 
 
     }
