@@ -169,7 +169,7 @@
             this.guna2HtmlLabel10.Location = new System.Drawing.Point(529, 428);
             this.guna2HtmlLabel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
-            this.guna2HtmlLabel10.Size = new System.Drawing.Size(169, 27);
+            this.guna2HtmlLabel10.Size = new System.Drawing.Size(225, 60);
             this.guna2HtmlLabel10.TabIndex = 112;
             this.guna2HtmlLabel10.Text = "Công Ty";
             // 
@@ -193,7 +193,7 @@
             this.guna2HtmlLabel8.Location = new System.Drawing.Point(528, 641);
             this.guna2HtmlLabel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(133, 27);
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(226, 48);
             this.guna2HtmlLabel8.TabIndex = 110;
             this.guna2HtmlLabel8.Text = "Loại";
             // 
@@ -411,10 +411,10 @@
             this.lb_jobname.BackColor = System.Drawing.Color.Transparent;
             this.lb_jobname.Font = new System.Drawing.Font("Microsoft YaHei UI", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_jobname.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.lb_jobname.Location = new System.Drawing.Point(295, 85);
+            this.lb_jobname.Location = new System.Drawing.Point(253, 79);
             this.lb_jobname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lb_jobname.Name = "lb_jobname";
-            this.lb_jobname.Size = new System.Drawing.Size(402, 50);
+            this.lb_jobname.Size = new System.Drawing.Size(515, 106);
             this.lb_jobname.TabIndex = 93;
             this.lb_jobname.Text = "jobname";
             this.lb_jobname.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -438,7 +438,7 @@
             this.guna2HtmlLabel3.Location = new System.Drawing.Point(528, 213);
             this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(196, 27);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(226, 50);
             this.guna2HtmlLabel3.TabIndex = 91;
             this.guna2HtmlLabel3.Text = "Mức lương";
             // 
@@ -450,7 +450,7 @@
             this.guna2HtmlLabel6.Location = new System.Drawing.Point(166, 213);
             this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(171, 27);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(200, 68);
             this.guna2HtmlLabel6.TabIndex = 90;
             this.guna2HtmlLabel6.Text = "Mô tả";
             // 
@@ -462,7 +462,7 @@
             this.lbYeuCau.Location = new System.Drawing.Point(166, 428);
             this.lbYeuCau.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lbYeuCau.Name = "lbYeuCau";
-            this.lbYeuCau.Size = new System.Drawing.Size(158, 27);
+            this.lbYeuCau.Size = new System.Drawing.Size(193, 39);
             this.lbYeuCau.TabIndex = 89;
             this.lbYeuCau.Text = "Yêu cầu";
             // 
@@ -474,7 +474,7 @@
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(166, 641);
             this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(230, 27);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(256, 50);
             this.guna2HtmlLabel2.TabIndex = 88;
             this.guna2HtmlLabel2.Text = "Địa điểm làm việc";
             // 
@@ -486,7 +486,7 @@
             this.guna2HtmlLabel4.Location = new System.Drawing.Point(64, 35);
             this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(358, 27);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(389, 40);
             this.guna2HtmlLabel4.TabIndex = 87;
             this.guna2HtmlLabel4.Text = "Thông tin công việc";
             // 

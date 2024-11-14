@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using win_project_2.Forms.Admin.UC;
 using win_project_2.UserControls;
 
 namespace win_project_2.Forms
@@ -56,6 +57,11 @@ namespace win_project_2.Forms
         private void ucqltk1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2Button5_Click_1(object sender, EventArgs e)
+        {
+            ShowUserControl(new UCTK());
         }
     }
 }

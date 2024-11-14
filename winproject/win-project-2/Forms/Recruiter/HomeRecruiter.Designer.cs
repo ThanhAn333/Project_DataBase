@@ -52,7 +52,6 @@
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnEmployee = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnHisJob = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnPostJob = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btn_logout = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -60,7 +59,6 @@
             this.btn_Home = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2CirclePictureBox4 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.panelHienThi.SuspendLayout();
@@ -368,7 +366,6 @@
             // 
             // guna2Panel9
             // 
-            this.guna2Panel9.Controls.Add(this.btnEmployee);
             this.guna2Panel9.Controls.Add(this.btnHisJob);
             this.guna2Panel9.Controls.Add(this.btnPostJob);
             this.guna2Panel9.Controls.Add(this.btn_logout);
@@ -379,25 +376,6 @@
             this.guna2Panel9.Name = "guna2Panel9";
             this.guna2Panel9.Size = new System.Drawing.Size(255, 898);
             this.guna2Panel9.TabIndex = 26;
-            // 
-            // btnEmployee
-            // 
-            this.btnEmployee.BorderRadius = 5;
-            this.btnEmployee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEmployee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEmployee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEmployee.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEmployee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEmployee.FillColor = System.Drawing.Color.SteelBlue;
-            this.btnEmployee.FillColor2 = System.Drawing.Color.Transparent;
-            this.btnEmployee.FocusedColor = System.Drawing.Color.Blue;
-            this.btnEmployee.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmployee.ForeColor = System.Drawing.Color.Black;
-            this.btnEmployee.Location = new System.Drawing.Point(72, 572);
-            this.btnEmployee.Name = "btnEmployee";
-            this.btnEmployee.Size = new System.Drawing.Size(180, 100);
-            this.btnEmployee.TabIndex = 28;
-            this.btnEmployee.Text = "Employee";
             // 
             // btnHisJob
             // 
@@ -508,7 +486,6 @@
             // guna2Panel10
             // 
             this.guna2Panel10.Controls.Add(this.guna2CirclePictureBox4);
-            this.guna2Panel10.Controls.Add(this.guna2Button2);
             this.guna2Panel10.Controls.Add(this.guna2PictureBox2);
             this.guna2Panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel10.FillColor = System.Drawing.Color.Transparent;
@@ -528,23 +505,6 @@
             this.guna2CirclePictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox4.TabIndex = 2;
             this.guna2CirclePictureBox4.TabStop = false;
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.White;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
-            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.guna2Button2.Location = new System.Drawing.Point(1655, 6);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(274, 69);
-            this.guna2Button2.TabIndex = 1;
-            this.guna2Button2.Text = "Profile";
             // 
             // guna2PictureBox2
             // 
@@ -637,9 +597,7 @@
         private Guna.UI2.WinForms.Guna2GradientButton btnMessenge;
         private Guna.UI2.WinForms.Guna2GradientButton btn_Home;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel10;
         private Guna.UI2.WinForms.Guna2GradientButton btnHisJob;
-        private Guna.UI2.WinForms.Guna2GradientButton btnEmployee;
     }
 }

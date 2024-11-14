@@ -347,10 +347,10 @@
             this.lb_jobname.BackColor = System.Drawing.Color.Transparent;
             this.lb_jobname.Font = new System.Drawing.Font("Microsoft YaHei UI", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_jobname.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.lb_jobname.Location = new System.Drawing.Point(295, 85);
+            this.lb_jobname.Location = new System.Drawing.Point(247, 85);
             this.lb_jobname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lb_jobname.Name = "lb_jobname";
-            this.lb_jobname.Size = new System.Drawing.Size(402, 50);
+            this.lb_jobname.Size = new System.Drawing.Size(503, 123);
             this.lb_jobname.TabIndex = 93;
             this.lb_jobname.Text = "jobname";
             this.lb_jobname.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;

@@ -43,7 +43,7 @@ namespace win_project_2.Forms
             }
             else
             {
-                avatar_box.Image = Image.FromFile("D:\\Nam3\\Hệ QT Cơ sở dữ liệu\\Project\\PROJECT_MOI\\Project_DataBase\\winproject\\win-project-2\\Resources\\user.png");
+                avatar_box.Image = Image.FromFile("D:\\Nam3\\DBMS(HQTCSDL)\\Project\\PROJECT_MOI\\Project_DataBase\\winproject\\win-project-2\\Resources\\user.png");
             }
 
             SkillDAO skillDAO = new SkillDAO();

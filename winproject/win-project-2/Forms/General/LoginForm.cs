@@ -67,6 +67,7 @@ namespace win_project_2
             UserDangNhap.address = dr["Address"].ToString();
             UserDangNhap.birthday = dr["DateOfBirth"].ToString();
             UserDangNhap.rating = (decimal)dr["Rating"];
+            UserDangNhap.image = dr["ProfilePicture"].ToString();
 
             var result = userDAO.Login(txtEmail.Text, txtPassword.Text);
 

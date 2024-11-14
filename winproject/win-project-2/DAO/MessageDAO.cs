@@ -98,8 +98,10 @@ namespace win_project_2.DAO
                 {
                     while (reader.Read())
                     {
-                        // Thêm UserID vào danh sách
-                        userIDs.Add(reader.GetInt32(0));
+                        if (!reader.IsDBNull(0))
+                        {
+                            userIDs.Add(reader.GetInt32(0));
+                        }
                     }
                 }
             }

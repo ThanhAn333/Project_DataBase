@@ -52,9 +52,9 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(510, 27);
+            this.label1.Location = new System.Drawing.Point(310, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 26);
+            this.label1.Size = new System.Drawing.Size(446, 46);
             this.label1.TabIndex = 1;
             this.label1.Text = "Đánh giá";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;

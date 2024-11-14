@@ -52,7 +52,7 @@
             this.lblNameJob.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.lblNameJob.Location = new System.Drawing.Point(18, 14);
             this.lblNameJob.Name = "lblNameJob";
-            this.lblNameJob.Size = new System.Drawing.Size(213, 22);
+            this.lblNameJob.Size = new System.Drawing.Size(287, 35);
             this.lblNameJob.TabIndex = 0;
             this.lblNameJob.Text = "ten cong viec";
             this.lblNameJob.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -63,7 +63,7 @@
             this.lb_senderid.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lb_senderid.Location = new System.Drawing.Point(19, 44);
             this.lb_senderid.Name = "lb_senderid";
-            this.lb_senderid.Size = new System.Drawing.Size(107, 21);
+            this.lb_senderid.Size = new System.Drawing.Size(175, 21);
             this.lb_senderid.TabIndex = 1;
             this.lb_senderid.Text = "Company :";
             this.lb_senderid.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
