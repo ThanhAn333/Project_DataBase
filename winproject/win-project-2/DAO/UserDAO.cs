@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using win_project_2.SQLConn;
 using win_project_2.Models;
 using System.Security.Cryptography;
+using System.Collections.Generic;
 
 namespace win_project_2.DAO
 {
@@ -370,6 +371,44 @@ namespace win_project_2.DAO
             }
             return dataTable;
         }
+        public Dictionary<int, int> GetUserRegistrationsByMonth()
+        {
+            Dictionary<int, int> registrations = new Dictionary<int, int>();
+
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                try
+                {
+                    connection.Open(); // Đã sửa "conection" thành "connection"
+                    string query = @"
+                SELECT 
+                    MONTH(CreatedAt) AS Thang, 
+                    COUNT(UserID) AS SoLuongDangKy
+                FROM [dbo].[User]
+                WHERE YEAR(CreatedAt) = YEAR(GETDATE())
+                GROUP BY MONTH(CreatedAt)
+                ORDER BY Thang";
+
+                    SqlCommand cmd = new SqlCommand(query, connection);
+                    SqlDataReader reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        int thang = reader.GetInt32(0);
+                        int soLuong = reader.GetInt32(1);
+                        registrations[thang] = soLuong;
+                    }
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Lỗi khi truy vấn dữ liệu: " + ex.Message);
+                }
+            }
+
+            return registrations;
+        }
+
 
 
         public string GetUserNameByID(int userId)
@@ -393,7 +432,44 @@ namespace win_project_2.DAO
             return userName ?? "Unknown"; // Trả về "Unknown" nếu không tìm thấy người dùng
         }
 
-       
+        
+        public (bool IsLocked, DateTime? LockUntil, string Reason) IsAccountLocked(int userId)
+        {
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                string query = "SELECT lock_until, lock_reason FROM UserLocks WHERE user_id = @userId AND lock_until > GETDATE()";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@userId", userId);
+                connection.Open();
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        DateTime lockUntil = reader.GetDateTime(0);
+                        string reason = reader.GetString(1);
+                        return (true, lockUntil, reason);
+                    }
+                }
+            }
+            return (false, null, null);
+        }
+
+        public void LockAccount(int userId, int minutes, string reason)
+        {
+            using (SqlConnection connection = dbConn.GetConnection())
+            {
+                connection.Open();
+                string query = @"INSERT INTO UserLocks (user_id, lock_until, lock_reason) 
+                         VALUES (@userId, @lockUntil, @reason)";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@userId", userId);
+                cmd.Parameters.AddWithValue("@lockUntil", DateTime.Now.AddMinutes(minutes));
+                cmd.Parameters.AddWithValue("@reason", reason);
+
+                cmd.ExecuteNonQuery();
+            }
+        }
 
 
     }

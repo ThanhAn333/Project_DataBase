@@ -35,7 +35,8 @@ namespace win_project_2
             }
 
             UserDAO userDAO = new UserDAO();
-            DataTable dt = userDAO.layThongTinTK(txtEmail.Text,txtPassword.Text);
+            DataTable dt = userDAO.layThongTinTK(txtEmail.Text, txtPassword.Text);
+
             if (dt == null || dt.Rows.Count == 0)
             {
                 lberror.Visible = true;
@@ -43,8 +44,21 @@ namespace win_project_2
                 txtPassword.ResetText();
                 return;
             }
+
             DataRow dr = dt.Rows[0];
-            UserDangNhap.userId = (int)dr["UserID"];
+            int userId = (int)dr["UserID"];
+
+            // Kiểm tra trạng thái khóa tài khoản
+            var lockStatus = userDAO.IsAccountLocked(userId);
+            if (lockStatus.IsLocked)
+            {
+                lberror.Visible = true;
+                lberror.Text = $"Tài khoản của bạn đang bị khóa tạm thời đến {lockStatus.LockUntil}. Lý do: {lockStatus.Reason}";
+                return;
+            }
+
+            // Nếu không bị khóa, tiến hành xử lý đăng nhập
+            UserDangNhap.userId = userId;
             UserDangNhap.email = dr["Email"].ToString();
             UserDangNhap.name = dr["Name"].ToString();
             UserDangNhap.role = dr["Role"].ToString();
@@ -52,9 +66,7 @@ namespace win_project_2
             UserDangNhap.password = dr["Password"].ToString();
             UserDangNhap.address = dr["Address"].ToString();
             UserDangNhap.birthday = dr["DateOfBirth"].ToString();
-            UserDangNhap.image = dr["ProfilePicture"].ToString();
             UserDangNhap.rating = (decimal)dr["Rating"];
-            
 
             var result = userDAO.Login(txtEmail.Text, txtPassword.Text);
 
@@ -64,14 +76,12 @@ namespace win_project_2
 
                 if (role == "Candidate")
                 {
-                    int userId = result.UserID ?? 0;
                     HomeEmployee fHome = new HomeEmployee(userId);
                     fHome.Show();
                     this.Hide();
                 }
                 else if (role == "Employer")
                 {
-                    int userId = result.UserID ?? 0;
                     HomeRecruiter homeRecruiter = new HomeRecruiter(userId);
                     homeRecruiter.Show();
                     this.Hide();
@@ -95,6 +105,7 @@ namespace win_project_2
                 txtPassword.ResetText();
             }
         }
+
 
 
         private void btnSignUp_Click(object sender, EventArgs e)
