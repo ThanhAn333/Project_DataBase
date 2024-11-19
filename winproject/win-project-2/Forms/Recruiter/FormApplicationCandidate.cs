@@ -44,9 +44,10 @@ namespace win_project_2.Forms.Recruiter
                 string name = row["CandidateName"].ToString();
                 string email = row["CandidateEmail"].ToString();
                 string date = row["ApplicationDate"].ToString();
+                float overallScore = Convert.ToSingle(row["OverallScore"]);
 
-                
-                uCCandidate.themThongTin(jobid,userid, name, email, date);
+
+                uCCandidate.themThongTin(jobid,userid, name, email, date,overallScore);
                 panelHienThi.Controls.Add(uCCandidate);
                 uCCandidate.BringToFront();
             }

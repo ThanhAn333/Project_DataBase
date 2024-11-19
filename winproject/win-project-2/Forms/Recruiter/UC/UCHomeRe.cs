@@ -77,7 +77,7 @@ namespace win_project_2.Forms.Recruiter.UC
         public void load()
         {
             fpanelJob.Controls.Clear();
-            List<Job> jobList = jobDao.GetJobsByEmployer(employerID);
+            List<Job> jobList = jobDao.GetJobsByEmployer(UserDangNhap.userId);
             addJob1(jobList);
 
         }

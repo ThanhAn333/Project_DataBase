@@ -166,25 +166,22 @@ namespace win_project_2.DAO
             return status;
 
         }
-        public DataTable DoDuLieuCandidateApplication(int jobid)
+
+        public DataTable DoDuLieuCandidateApplication(int jobID)
         {
-            DataTable dataTable = new DataTable();
-            using (SqlConnection connection = dbConn.GetConnection())
+            DataTable dt = new DataTable();
+            string query = "EXEC sp_XepHangUngVien @JobID";
+
+            using (SqlConnection conn = dbConn.GetConnection())
             {
-                string sql = "sp_XepHangUngVien";
-
-                using (SqlCommand cmd = new SqlCommand(sql, connection))
+                using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@JobID", jobid);
-
-                    using (SqlDataAdapter da = new SqlDataAdapter(cmd))
-                    {
-                        da.Fill(dataTable);
-                    }
+                    cmd.Parameters.AddWithValue("@JobID", jobID);
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(dt);
                 }
             }
-            return dataTable;
+            return dt;
         }
 
         public bool checkAgeApplication(int userid)

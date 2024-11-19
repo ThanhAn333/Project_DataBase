@@ -521,7 +521,7 @@ namespace win_project_2.UserControls
 
         private bool EmailExists(SqlConnection connection, string email)
         {
-            using (SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM [dbo].[User] WHERE Email = @Email", connection))
+            using (SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM vw_User WHERE Email = @Email", connection))
             {
                 cmd.Parameters.AddWithValue("@Email", email);
                 int count = (int)cmd.ExecuteScalar();

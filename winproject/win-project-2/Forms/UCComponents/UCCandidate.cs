@@ -19,13 +19,14 @@ namespace win_project_2.Forms.Recruiter.UC
         {
             InitializeComponent();
         }
-        public void themThongTin(int jobid, int userid, string name, string email, string date)
+        public void themThongTin(int jobid, int userid, string name, string email, string date, float diemuutien)
         {
             jobID = jobid;
             userID = userid;
             lblname.Text = name;
             lblemail.Text = email;
             lbldate.Text = date;
+            lbdiemuutien.Text = diemuutien.ToString("0.00");
         }
         public int getUserID()
         {
@@ -64,6 +65,11 @@ namespace win_project_2.Forms.Recruiter.UC
                 formInfoCandidate.Show();
 
             }
+        }
+
+        private void lbdiemuutien_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

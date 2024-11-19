@@ -37,6 +37,8 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblname = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.lbdiemuutien = new System.Windows.Forms.Label();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -46,6 +48,8 @@
             this.guna2Panel1.BorderColor = System.Drawing.Color.SteelBlue;
             this.guna2Panel1.BorderRadius = 15;
             this.guna2Panel1.BorderThickness = 2;
+            this.guna2Panel1.Controls.Add(this.lbdiemuutien);
+            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel2);
             this.guna2Panel1.Controls.Add(this.btnDetail);
             this.guna2Panel1.Controls.Add(this.lbldate);
             this.guna2Panel1.Controls.Add(this.lblemail);
@@ -79,7 +83,7 @@
             // lbldate
             // 
             this.lbldate.AutoSize = true;
-            this.lbldate.Location = new System.Drawing.Point(82, 213);
+            this.lbldate.Location = new System.Drawing.Point(76, 182);
             this.lbldate.Name = "lbldate";
             this.lbldate.Size = new System.Drawing.Size(44, 16);
             this.lbldate.TabIndex = 6;
@@ -88,7 +92,7 @@
             // lblemail
             // 
             this.lblemail.AutoSize = true;
-            this.lblemail.Location = new System.Drawing.Point(82, 162);
+            this.lblemail.Location = new System.Drawing.Point(79, 147);
             this.lblemail.Name = "lblemail";
             this.lblemail.Size = new System.Drawing.Size(44, 16);
             this.lblemail.TabIndex = 5;
@@ -98,7 +102,7 @@
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(15, 162);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(12, 147);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(47, 21);
             this.guna2HtmlLabel3.TabIndex = 4;
@@ -108,7 +112,7 @@
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(15, 208);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(9, 177);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(46, 21);
             this.guna2HtmlLabel1.TabIndex = 2;
@@ -135,6 +139,28 @@
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             // 
+            // lbdiemuutien
+            // 
+            this.lbdiemuutien.AutoSize = true;
+            this.lbdiemuutien.ForeColor = System.Drawing.Color.Red;
+            this.lbdiemuutien.Location = new System.Drawing.Point(159, 217);
+            this.lbdiemuutien.Name = "lbdiemuutien";
+            this.lbdiemuutien.Size = new System.Drawing.Size(44, 16);
+            this.lbdiemuutien.TabIndex = 9;
+            this.lbdiemuutien.Text = "label2";
+            this.lbdiemuutien.Click += new System.EventHandler(this.lbdiemuutien_Click);
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.AutoSize = false;
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(9, 215);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(168, 24);
+            this.guna2HtmlLabel2.TabIndex = 8;
+            this.guna2HtmlLabel2.Text = "Điểm ưu tiên";
+            // 
             // UCCandidate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -160,5 +186,7 @@
         private System.Windows.Forms.Label lbldate;
         private System.Windows.Forms.Label lblemail;
         private Guna.UI2.WinForms.Guna2Button btnDetail;
+        private System.Windows.Forms.Label lbdiemuutien;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
     }
 }
